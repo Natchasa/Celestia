@@ -1,0 +1,1665 @@
+/* Celestia Web Application - Custom Stylesheet */
+/* Celestia Glowing Dark Mode - Cosmic Purple & Radiant Gold */
+
+:root {
+    --bg-color: #120322; /* Deep Dark Cosmic Void */
+    --card-bg: rgba(36, 12, 60, 0.85); /* Deep Purple Glass */
+    --card-bg-alt: rgba(54, 18, 88, 0.9); /* Slightly lighter purple glass */
+    --text-color: #FFFFFF; /* High contrast pure white text */
+    --text-muted: #D4C2EA; /* Metallic silver-purple */
+    
+    /* Glowing Gold System (Exact Celestia Logo Swatches) */
+    --gold-primary: #FDC94D; /* Radiant Celestial Gold */
+    --gold-light: #FFF3D1;
+    --gold-dark: #FDC94D; /* Vibrant Gold */
+    --gold-gradient: linear-gradient(135deg, #FDC94D 0%, #FFF3D1 50%, #D99E1B 100%);
+    --gold-glow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 8px rgba(253, 201, 77, 0.25);
+    --gold-border: 1px solid rgba(253, 201, 77, 0.45);
+    
+    /* Glowing Purple System (Exact Celestia Logo Swatches) */
+    --purple-primary: #7A2CB8; /* Vibrant Royal Purple */
+    --purple-dark: #2A0A4A; /* Deepest Cosmic Purple */
+    --purple-light: #4A1A78;
+    --purple-gradient: linear-gradient(135deg, #8B32D4 0%, #4A1578 100%);
+    --purple-glow: 0 0 20px rgba(139, 50, 212, 0.6), 0 0 40px rgba(122, 44, 184, 0.35);
+    --purple-border: 1px solid rgba(139, 50, 212, 0.35);
+    
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --font-serif: 'Cinzel', 'Sarabun', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Sarabun', sans-serif;
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(122, 44, 184, 0.15);
+    --shadow-glow: 0 0 10px rgba(253, 201, 77, 0.15);
+    --coral-primary: #FDC94D;
+    --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle at 50% 0%, #2A0E45 0%, #120322 75%, #0A0114 100%) no-repeat fixed;
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Celestial Background Elements */
+.stars-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(1.5px 1.5px at 15% 15%, rgba(122, 44, 184, 0.07) 100%, transparent),
+        radial-gradient(2px 2px at 45% 35%, rgba(253, 201, 77, 0.07) 100%, transparent),
+        radial-gradient(1.5px 1.5px at 75% 65%, rgba(122, 44, 184, 0.07) 100%, transparent),
+        radial-gradient(2.5px 2.5px at 85% 20%, rgba(253, 201, 77, 0.06) 100%, transparent),
+        radial-gradient(2px 2px at 25% 75%, rgba(122, 44, 184, 0.07) 100%, transparent);
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.glow-accent-1 {
+    position: fixed;
+    top: -20%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(122, 44, 184, 0.06) 0%, rgba(250, 246, 255, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.glow-accent-2 {
+    position: fixed;
+    bottom: -15%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(253, 201, 77, 0.06) 0%, rgba(250, 246, 255, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(253, 201, 77, 0.05);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold-primary);
+    border-radius: 3px;
+}
+
+/* App Container */
+.app-container {
+    max-width: 680px; /* Perfect width for readability and mobile simulation */
+    margin: 0 auto;
+    padding: 24px 16px 40px 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.lang-selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: -10px;
+    z-index: 10;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding: 2px 6px;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+}
+
+.lang-btn:hover {
+    color: var(--text-color);
+}
+
+.lang-btn.active {
+    color: var(--coral-primary);
+    background-color: rgba(253, 201, 77, 0.05);
+    border: 1px solid rgba(109, 82, 134, 0.12);
+}
+
+.lang-divider {
+    font-size: 0.72rem;
+    color: rgba(109, 82, 134, 0.25);
+    user-select: none;
+}
+
+/* App Header */
+.app-header {
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 4px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.celestia-lockup-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px;
+    filter: drop-shadow(0 4px 14px rgba(51, 20, 82, 0.2)) drop-shadow(0 0 12px rgba(253, 201, 77, 0.35));
+    transition: var(--transition-smooth);
+}
+
+.celestia-lockup-img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 6px 18px rgba(122, 44, 184, 0.35)) drop-shadow(0 0 16px rgba(253, 201, 77, 0.5));
+}
+
+/* Access Gate Overlay (auth.js) */
+body.auth-locked {
+    overflow: hidden;
+}
+
+.auth-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: radial-gradient(circle at 50% 30%, rgba(139, 50, 212, 0.25) 0%, transparent 55%), var(--bg-color);
+    background-color: var(--bg-color);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.auth-overlay-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 360px;
+    background: var(--card-bg);
+    border: var(--gold-border);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-soft), var(--purple-glow);
+    padding: 28px 24px 24px;
+    text-align: center;
+}
+
+.auth-logo {
+    margin-bottom: 14px;
+}
+
+.auth-logo-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(253, 201, 77, 0.3));
+}
+
+.auth-subtitle {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(253, 201, 77, 0.25);
+    background: rgba(18, 3, 34, 0.6);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.auth-input-shake {
+    animation: auth-shake 0.35s;
+    border-color: #E05C5C;
+}
+
+@keyframes auth-shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+
+.auth-error {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    color: #FF8A8A;
+    margin: -4px 0 0;
+}
+
+.auth-submit-btn {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    background: var(--gold-gradient);
+    color: var(--purple-dark);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: var(--gold-glow);
+}
+
+.auth-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 1px rgba(74, 59, 44, 0.05);
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+
+.header-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold-gradient);
+    margin: 16px auto 0 auto;
+    opacity: 0.7;
+}
+
+/* Navigation Tabs */
+.mode-tabs {
+    display: flex;
+    background-color: rgba(253, 201, 77, 0.07);
+    border: var(--gold-border);
+    border-color: rgba(253, 201, 77, 0.18);
+    border-radius: var(--border-radius-md);
+    padding: 4px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-inset);
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px 4px;
+    border-radius: calc(var(--border-radius-md) - 2px);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important; color: #1E0836 !important; border-color: #FFFFFF !important; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+    color: #ffffff;
+    box-shadow: var(--purple-glow);
+    font-weight: 700;
+}
+
+.tab-btn.active .tab-icon {
+    filter: drop-shadow(0 0 4px var(--gold-primary));
+}
+
+.tab-icon {
+    font-size: 0.9rem;
+    color: var(--gold-primary);
+}
+
+/* Views Management */
+.tab-view {
+    display: none;
+}
+
+.tab-view.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Selector Controls */
+.selector-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.control-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.button-mode-toggle {
+    display: flex;
+    background-color: rgba(253, 201, 77, 0.05);
+    border: var(--gold-border);
+    border-color: rgba(109, 82, 134, 0.12);
+    border-radius: var(--border-radius-sm);
+    padding: 2px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: calc(var(--border-radius-sm) - 2px);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.toggle-btn.active {
+    background: var(--gold-primary);
+    color: #FFFFFF;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(253, 201, 77, 0.25);
+}
+
+/* Active Equation Display Card */
+.equation-display-card {
+    background: var(--card-bg-alt);
+    border: var(--gold-border);
+    border-radius: var(--border-radius-md);
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    border-left: 4px solid var(--gold-primary);
+}
+
+.instruction-text {
+    font-size: 0.75rem;
+    color: var(--gold-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.equation-builder-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.eq-token-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 48px;
+}
+
+.eq-placeholder {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.eq-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.eq-action-btn {
+    background: var(--card-bg);
+    border: 1px solid rgba(253, 201, 77, 0.2);
+    width: 38px;
+    height: 38px;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.eq-action-btn:hover:not(:disabled) {
+    border-color: var(--gold-primary);
+    color: var(--text-color);
+    box-shadow: 0 2px 6px rgba(253, 201, 77, 0.15);
+    transform: translateY(-1px);
+}
+
+.eq-action-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.eq-action-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.action-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Tokens inside the builder */
+.token {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(36, 12, 60, 0.95) !important;
+    border: 1.5px solid #FDC94D !important;
+    padding: 3px 10px 3px 4px !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+    color: #FFFFFF !important;
+    animation: popIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.token-symbol {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.token-coin {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    background: linear-gradient(135deg, #FDC94D 0%, #FFF3D1 50%, #D99E1B 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+    flex-shrink: 0 !important;
+}
+
+.token-coin .planet-img-icon,
+.token-img {
+    width: 15px !important;
+    height: 15px !important;
+    filter: brightness(0) drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.4)) !important;
+}
+
+.token-text {
+    color: #FDC94D !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+}
+
+.eq-operator {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-primary);
+    padding: 0 2px;
+}
+
+/* Search Mode Selector (Equation vs Keyword) */
+.search-mode-selector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.search-type-btn {
+    flex: 1;
+    background: rgba(45, 15, 72, 0.85);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: #D4C2EA;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    text-align: center;
+    user-select: none;
+}
+
+.search-type-btn:hover {
+    border-color: #FDC94D;
+    color: #FFFFFF;
+}
+
+.search-type-btn.active {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border-color: #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Keyboard Section */
+.keyboard-section {
+    margin-bottom: 24px;
+}
+
+.keyboard-grid-6x4 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+}
+
+/* Keyboard styling optimized for mobile.
+   22 planet buttons in a 6-col grid (rows of 6/6/6/4). min-height stays
+   comfortably above the ~44px recommended minimum touch target. */
+@media (max-width: 520px) {
+    .keyboard-grid-6x4 {
+        gap: 5px;
+    }
+    .planet-btn {
+        min-height: 56px;
+        padding: 6px 2px;
+    }
+    .planet-btn-icon {
+        font-size: 1.15rem;
+        margin-bottom: 2px;
+    }
+    .planet-svg {
+        width: 18px;
+        height: 18px;
+    }
+    .token-symbol .planet-svg {
+        width: 14px;
+        height: 14px;
+    }
+    .planet-btn-label {
+        font-size: 0.58rem;
+    }
+    .mode-text-active .planet-btn {
+        min-height: 46px;
+        padding: 4px 1px;
+    }
+    .mode-text-active .planet-btn-icon {
+        width: 12px;
+        height: 12px;
+        margin-bottom: 1px;
+    }
+    .mode-text-active .planet-btn-icon .planet-svg {
+        width: 12px;
+        height: 12px;
+    }
+    .mode-text-active .planet-btn-label {
+        font-size: 0.65rem;
+    }
+}
+
+/* Extra-small phones (older/narrow Android, iPhone SE-class ~360-380px) */
+@media (max-width: 380px) {
+    .keyboard-grid-6x4 {
+        gap: 4px;
+    }
+    .planet-btn {
+        min-height: 50px;
+        padding: 4px 1px;
+    }
+    .planet-btn-label {
+        font-size: 0.52rem;
+    }
+}
+
+.planet-btn {
+    background: linear-gradient(135deg, rgba(246, 240, 250, 0.8) 0%, rgba(235, 220, 247, 0.8) 100%); /* Lavender Glassmorphism */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(253, 201, 77, 0.35); /* Elegant gold border */
+    border-radius: var(--border-radius-sm);
+    padding: 10px 4px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    box-shadow: 0 4px 15px rgba(122, 44, 184, 0.04), inset 0 2px 4px rgba(255, 255, 255, 0.65), inset 0 -2px 4px rgba(0, 0, 0, 0.02);
+    position: relative;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Highlighting personal points - Unified with the Glam Theme */
+.planet-btn.personal {
+    background: linear-gradient(135deg, rgba(65, 25, 95, 0.85) 0%, rgba(40, 12, 65, 0.85) 100%); /* Pale gold glass */
+    border-color: rgba(253, 201, 77, 0.55);
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.7), inset 0 -2px 4px rgba(0, 0, 0, 0.02);
+}
+.planet-btn.personal .planet-btn-icon {
+    background: #ffffff;
+    border-color: rgba(253, 201, 77, 0.22);
+}
+.planet-btn.personal .planet-btn-label {
+    color: var(--text-color);
+}
+
+.planet-btn:hover {
+    border-color: rgba(253, 201, 77, 0.7);
+    background: linear-gradient(135deg, rgba(60, 20, 95, 0.95) 0%, rgba(45, 15, 72, 0.95) 100%);
+    box-shadow: 0 6px 20px rgba(122, 44, 184, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.planet-btn.personal:hover {
+    border-color: rgba(253, 201, 77, 0.85);
+    background: linear-gradient(135deg, rgba(254, 251, 242, 0.95) 0%, rgba(250, 240, 212, 0.95) 100%);
+    box-shadow: 0 6px 20px rgba(253, 201, 77, 0.16), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.planet-btn:active {
+    transform: translateY(0);
+}
+
+.planet-btn.selected {
+    background: linear-gradient(135deg, #7A2CB8 0%, #7A2CB8 100%); /* Glamorous purple gradient */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-color: transparent;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(122, 44, 184, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+.planet-btn.selected .planet-btn-icon,
+.planet-btn.selected .planet-btn-label {
+    color: #FFFFFF !important;
+}
+/* Selected state for Personal Points - Purple Gradient */
+.planet-btn.personal.selected {
+    background: linear-gradient(135deg, #7A2CB8 0%, #7A2CB8 100%);
+    box-shadow: 0 6px 20px rgba(122, 44, 184, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Disable styles for button selection logic */
+.planet-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Button UI variations depending on toggle mode */
+.planet-btn-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--gold-gradient); /* Always gold coin background */
+    border: 1px solid rgba(255, 255, 255, 0.35); /* Elegant white/gold border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    transition: var(--transition-smooth);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1.5px 2px rgba(255, 255, 255, 0.4), inset 0 -1.5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.planet-btn.personal .planet-btn-icon {
+    border-color: var(--gold-primary);
+}
+
+.planet-btn.selected .planet-btn-icon {
+    box-shadow: 0 3px 8px rgba(122, 44, 184, 0.25), inset 0 1.5px 2px rgba(255, 255, 255, 0.4);
+}
+
+.planet-btn.personal.selected .planet-btn-icon {
+    box-shadow: 0 3px 8px rgba(122, 44, 184, 0.25), inset 0 1.5px 2px rgba(255, 255, 255, 0.4);
+}
+
+
+.planet-svg {
+    width: 22px;
+    height: 22px;
+    color: var(--coral-primary);
+    transition: var(--transition-smooth);
+}
+
+.planet-btn-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-align: center;
+    /* Regular (non-personal) buttons sit on a light lavender background,
+       so a dark purple reads far better here than the light --text-muted. */
+    color: var(--purple-dark);
+}
+
+.planet-btn.selected .planet-btn-label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.planet-btn.personal.selected .planet-btn-label {
+    color: #ffffff !important;
+}
+
+/* Style variants for textual modes */
+.mode-text-active .planet-btn {
+    min-height: 52px;
+    padding: 8px 4px;
+}
+
+.mode-text-active .planet-btn-icon {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+    opacity: 0.6;
+}
+.mode-text-active .planet-btn-icon .planet-svg {
+    width: 14px;
+    height: 14px;
+}
+
+.mode-text-active .planet-btn-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    /* Same light-background contrast fix as the base label — personal
+       buttons still get white text via the higher-specificity rule above. */
+    color: var(--purple-dark);
+}
+
+.mode-text-active .planet-btn.selected .planet-btn-label {
+    color: #FFFFFF;
+}
+
+/* Interpretation Card */
+.interpretation-container {
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.interp-match-count {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0;
+}
+
+.interp-match-card {
+    padding: 18px 20px;
+}
+
+.interp-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: var(--gold-border);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(253, 201, 77, 0.45); /* slightly brighter gold on hover */
+    box-shadow: 0 16px 40px rgba(122, 44, 184, 0.07);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gold-gradient);
+}
+
+.interp-eq-title {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interp-factors-names {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 18px;
+    border-bottom: 1px dashed rgba(253, 201, 77, 0.2);
+    padding-bottom: 10px;
+}
+
+.interp-body {
+    margin-bottom: 20px;
+}
+
+.interp-thai-desc {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* Original English Collapse details */
+.interp-english-details {
+    border-top: 1px solid rgba(253, 201, 77, 0.15);
+    padding-top: 14px;
+}
+
+.collapse-trigger {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--gold-dark);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    user-select: none;
+}
+
+.collapse-icon {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.collapse-trigger.expanded .collapse-icon {
+    transform: rotate(180deg);
+}
+
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.collapse-content.open {
+    max-height: 200px;
+    margin-top: 8px;
+}
+
+.interp-english-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    font-style: italic;
+    background-color: rgba(253, 201, 77, 0.03);
+    padding: 10px;
+    border-left: 2px solid var(--gold-primary);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Card metadata info */
+.interp-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.confidence-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(253, 201, 77, 0.08);
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(253, 201, 77, 0.15);
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--purple-primary); /* Primary Purple */
+    border-radius: 50%;
+}
+
+.dot.gold {
+    background-color: var(--gold-primary);
+}
+
+/* No matches styling */
+.no-match-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(253, 201, 77, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.no-match-icon {
+    font-size: 2rem;
+    color: var(--gold-primary);
+    margin-bottom: 8px;
+}
+
+.no-match-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.no-match-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.no-match-tips {
+    text-align: left;
+    background-color: rgba(253, 201, 77, 0.04);
+    border-radius: var(--border-radius-sm);
+    padding: 12px;
+    border-left: 2px solid var(--gold-primary);
+}
+
+.no-match-tips-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 6px;
+}
+
+.no-match-tips ul {
+    list-style: none;
+}
+
+.no-match-tips li {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.no-match-tips li::before {
+    content: "•";
+    color: var(--gold-primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Search Tab View Styling */
+.search-bar-container {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.search-inputs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 520px) {
+    .search-inputs-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Asteroid tab: both fields are compact dropdowns, so keep them side by side
+   even on narrow phones instead of the generic single-column mobile collapse. */
+.search-inputs-grid.asteroid-search-row {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 380px) {
+    .search-inputs-grid.asteroid-search-row {
+        gap: 8px;
+    }
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.search-field-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding-left: 2px;
+    font-family: var(--font-sans);
+}
+
+.search-input {
+    width: 100%;
+    background-color: var(--card-bg);
+    border: var(--gold-border);
+    border-radius: var(--border-radius-md);
+    padding: 14px 44px 14px 16px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    outline: none;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-smooth);
+}
+
+.search-input:focus {
+    border-color: var(--purple-primary);
+    box-shadow: var(--purple-glow);
+}
+
+.search-clear-btn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+/* Small utility button to reset the House tab's house/star selection */
+.house-clear-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(45, 15, 72, 0.85);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #D4C2EA;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.house-clear-btn svg {
+    width: 12px;
+    height: 12px;
+}
+
+.house-clear-btn:hover {
+    border-color: #FDC94D;
+    color: #FFFFFF;
+}
+
+.search-clear-btn:hover {
+    color: var(--text-color);
+}
+
+.search-meta {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    padding-left: 4px;
+}
+
+.search-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 2px;
+}
+
+.search-item {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(253, 201, 77, 0.15);
+    border-radius: var(--border-radius-sm);
+    padding: 14px 16px;
+    box-shadow: 0 2px 8px rgba(74, 59, 44, 0.01);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    animation: popIn 0.25s ease;
+}
+
+.search-item:hover {
+    border-color: var(--gold-primary);
+    box-shadow: 0 4px 12px rgba(253, 201, 77, 0.08);
+}
+
+.search-item-eq {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-item-factors {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.search-item-desc {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 4px;
+}
+
+.search-item-en-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 2px;
+}
+
+/* App Footer */
+.app-footer {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.app-footer p {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+
+.app-footer .footer-note {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* Multiple match selection tabs in result */
+.multi-matches-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.multi-match-tab {
+    background: rgba(253, 201, 77, 0.08);
+    border: 1px solid rgba(253, 201, 77, 0.15);
+    padding: 6px 12px;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.multi-match-tab.active {
+    background: var(--gold-primary);
+    color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 2px 6px rgba(253, 201, 77, 0.2);
+}
+
+/* Cropped PNG Planet Icons styling */
+.planet-img-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    transition: var(--transition-smooth);
+    filter: brightness(0) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2)); /* Black outline on gold coin background */
+}
+
+/* Constrain sizing in text mode */
+.mode-text-active .planet-btn-icon .planet-img-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Invert colors when the button is selected */
+.planet-btn.selected .planet-img-icon {
+    filter: brightness(0) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.planet-btn.personal.selected .planet-img-icon {
+    filter: brightness(0) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Mobile responsive sizing for cropped PNG icons */
+@media (max-width: 520px) {
+    .planet-img-icon {
+        width: 24px;
+        height: 24px;
+    }
+    .mode-text-active .planet-btn-icon .planet-img-icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+/* House & Asteroid Tab Layouts styling */
+
+/* House System + House Number dropdowns, side by side (even on mobile —
+   they're compact selects, not free-text inputs, so there's room). */
+.house-dropdown-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 380px) {
+    .house-dropdown-row {
+        gap: 8px;
+    }
+}
+
+.house-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .house-layout-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .house-interpretation-card {
+        grid-column: span 2;
+    }
+}
+
+/* Asteroid view split layout */
+.asteroid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .asteroid-layout {
+        flex-direction: row;
+    }
+    .asteroid-sidebar {
+        width: 280px;
+        flex-shrink: 0;
+        border-right: 1px dashed rgba(109, 82, 134, 0.15);
+        padding-right: 20px;
+    }
+    .asteroid-detail-panel {
+        flex: 1;
+    }
+}
+
+.asteroid-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.asteroid-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.asteroid-list::-webkit-scrollbar-thumb {
+    background: rgba(109, 82, 134, 0.2);
+    border-radius: 99px;
+}
+
+.asteroid-list-item {
+    background: var(--card-bg);
+    border: 1px solid rgba(109, 82, 134, 0.18);
+    border-radius: var(--border-radius-sm);
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.asteroid-list-item:hover {
+    border-color: var(--gold-primary);
+    background: rgba(253, 201, 77, 0.03);
+}
+
+.asteroid-list-item.active {
+    background: rgba(122, 44, 184, 0.06); /* Soft purple background */
+    border-color: var(--purple-primary); /* Theme purple */
+}
+
+/* Zodiac signs styling */
+.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 520px) {
+    .zodiac-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .zodiac-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.zodiac-btn {
+    background: var(--card-bg);
+    border: 1px solid rgba(109, 82, 134, 0.2);
+    border-radius: 6px;
+    padding: 8px 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition-smooth);
+}
+
+.zodiac-btn .zodiac-name-th {
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.zodiac-btn .zodiac-name-en {
+    font-size: 0.58rem;
+    color: var(--text-muted);
+}
+
+/* Zodiac element color coding */
+.zodiac-btn.fire { border-bottom: 3px solid #ff4500; }
+.zodiac-btn.earth { border-bottom: 3px solid #8b5a2b; }
+.zodiac-btn.air { border-bottom: 3px solid #fdc94d; }
+.zodiac-btn.water { border-bottom: 3px solid #1e90ff; }
+
+.zodiac-btn:hover {
+    background: var(--card-bg-alt);
+    transform: translateY(-1px);
+}
+
+.zodiac-btn.active {
+    color: #ffffff;
+}
+
+.zodiac-btn.fire.active { background: #ff4500; border-color: transparent; }
+.zodiac-btn.earth.active { background: #8b5a2b; border-color: transparent; }
+.zodiac-btn.air.active { background: #c8941a; border-color: transparent; }
+.zodiac-btn.water.active { background: #1e90ff; border-color: transparent; }
+
+.zodiac-btn.fire.active .zodiac-name-en,
+.zodiac-btn.earth.active .zodiac-name-en,
+.zodiac-btn.air.active .zodiac-name-en,
+.zodiac-btn.water.active .zodiac-name-en {
+    color: rgba(255,255,255,0.8);
+}
+
+.zodiac-btn.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* House search results */
+.house-search-results-list {
+    margin-top: 15px;
+}
+
+
+/* ==========================================================================
+   CELESTIA RADIANT GLOW DARK MODE OVERRIDES (#120322 Cosmic Purple & #FDC94D Gold)
+   ========================================================================== */
+
+body {
+    background: radial-gradient(circle at 50% 0%, #2A0E4A 0%, #140428 65%, #0B0116 100%) no-repeat fixed !important;
+    color: #FFFFFF !important;
+}
+
+/* Background Pulsating Nebula Orbs */
+.glow-accent-1 {
+    background: radial-gradient(circle, rgba(122, 44, 184, 0.35) 0%, rgba(253, 201, 77, 0.12) 45%, transparent 70%) !important;
+    filter: blur(50px) !important;
+}
+
+.glow-accent-2 {
+    background: radial-gradient(circle, rgba(253, 201, 77, 0.25) 0%, rgba(51, 20, 82, 0.4) 55%, transparent 70%) !important;
+    filter: blur(50px) !important;
+}
+
+/* Card & Container Glowing Glassmorphism */
+.card,
+.house-selection-panel,
+.mode-tabs,
+.keyboard-card,
+.search-container,
+.asteroid-filter-bar,
+.asteroid-card {
+    background: rgba(36, 12, 60, 0.85) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(253, 201, 77, 0.45) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 8px rgba(253, 201, 77, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
+    color: #FFFFFF !important;
+}
+
+/* Text & Title Color Fixes for Dark Mode */
+.interp-eq-title,
+.control-label,
+.grid-label,
+.formula-order-badge,
+.card-header-title {
+    color: #FDC94D !important;
+    text-shadow: 0 0 12px rgba(253, 201, 77, 0.4) !important;
+}
+
+p, span, div, label {
+    color: inherit;
+}
+
+/* Navigation Tabs Glowing Style */
+.tab-btn {
+    background: rgba(45, 15, 72, 0.85) !important;
+    border: 1px solid rgba(253, 201, 77, 0.35) !important;
+    color: #D4C2EA !important;
+    transition: var(--transition-smooth) !important;
+}
+
+.tab-btn:hover {
+    border-color: #FDC94D !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 15px rgba(253, 201, 77, 0.3) !important;
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+/* Mode Select & Formula Buttons Glow */
+.type-btn,
+.mode-btn,
+.system-pill,
+.house-square,
+.planet-btn.compact {
+    background: linear-gradient(135deg, rgba(50, 16, 80, 0.9) 0%, rgba(30, 8, 50, 0.9) 100%) !important;
+    border: 1px solid rgba(253, 201, 77, 0.4) !important;
+    color: #FDF4DC !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
+}
+
+.type-btn:hover,
+.mode-btn:hover,
+.system-pill:hover,
+.house-square:hover,
+.planet-btn.compact:hover {
+    border-color: #FDC94D !important;
+    box-shadow: 0 0 15px rgba(253, 201, 77, 0.4) !important;
+    background: linear-gradient(135deg, rgba(70, 24, 110, 0.95) 0%, rgba(45, 14, 75, 0.95) 100%) !important;
+}
+
+/* Active Selected States - Radiant Glowing Gold */
+.type-btn.active,
+.mode-btn.active,
+.system-pill.active,
+.house-square.active,
+.planet-btn.compact.selected,
+.planet-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+.planet-btn.compact.selected .planet-btn-label,
+.system-pill.active,
+.house-square.active {
+    color: #1A0530 !important;
+    text-shadow: none !important;
+}
+
+/* Glowing Search Box */
+.search-input {
+    background: rgba(26, 7, 45, 0.9) !important;
+    border: 1px solid rgba(253, 201, 77, 0.4) !important;
+    color: #FFFFFF !important;
+}
+
+.search-input:focus {
+    border-color: #FDC94D !important;
+    box-shadow: 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+/* Glowing Result Badges & Accent Chips */
+.interp-cat-chip,
+.badge,
+.tag {
+    background: linear-gradient(135deg, #7A2CB8 0%, #331452 100%) !important;
+    border: 1px solid #FDC94D !important;
+    color: #FDC94D !important;
+    box-shadow: 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}

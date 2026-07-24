@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security hardening: restrict all resource loading to self + the two known Google Fonts hosts.
+         script-src has NO 'unsafe-inline'/'unsafe-eval' so injected <script> or on*= handlers cannot execute.
+         style-src keeps 'unsafe-inline' because the app renders many inline style="" attributes from app.js;
+         narrowing that further would require moving those into styles.css classes. -->
+    <!-- script-src/connect-src widened to allow the EmailJS SDK (admin login-notification) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Celestia - ระบบค้นหาสมการและแปลความหมายสูตรดาวเคราะห์ยูเรเนียน</title>
+    <!-- Fonts: Cinzel (Classic Serif), Noto Sans Symbols, and Sarabun (Clean Thai sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Symbols:wght@400;500;600;700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css?v=110">
+</head>
+<body class="auth-locked">
+    <!-- Access Gate: lightweight shared-password overlay + admin login notification (auth.js) -->
+    <div class="auth-overlay" id="auth-overlay">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <img src="celestia-lockup-header.png?v=111" alt="Celestia" class="auth-logo-img">
+            </div>
+            <p class="auth-subtitle">กรุณากรอกรหัสผ่านเพื่อเข้าใช้งาน</p>
+            <form id="auth-form" class="auth-form" autocomplete="off">
+                <input type="password" class="auth-input" id="auth-password-input" placeholder="รหัสผ่าน" autocomplete="current-password" required>
+                <p class="auth-error" id="auth-error" style="display:none;"></p>
+                <button type="submit" class="auth-submit-btn" id="auth-submit-btn">เข้าสู่ระบบ</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <!-- Celestial Background Accents -->
+        <div class="stars-bg"></div>
+        <div class="glow-accent-1"></div>
+        <div class="glow-accent-2"></div>
+
+        <header class="app-header">
+            <div class="logo-container">
+                <img src="celestia-lockup-header.png?v=111" alt="Celestia" class="celestia-lockup-img">
+            </div>
+            <div class="header-divider"></div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="mode-tabs">
+            <button class="tab-btn active" data-tab="uranian" id="tab-uranian">
+                <span class="tab-icon">🪐</span>
+                <span>Planetary</span>
+            </button>
+            <button class="tab-btn" data-tab="house" id="tab-house">
+                <span class="tab-icon">🏠</span>
+                <span>House</span>
+            </button>
+            <button class="tab-btn" data-tab="asteroid" id="tab-asteroid">
+                <span class="tab-icon">☄️</span>
+                <span>Asteroid</span>
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <!-- Planetary Tab View (Combined Builder & Search) -->
+            <section class="tab-view active" id="uranian-view">
+                <!-- Search Inputs Area -->
+                <div class="search-inputs-grid" style="margin-bottom: 15px; grid-template-columns: 1fr;">
+                    <div class="search-field">
+                        <div class="search-mode-selector">
+                            <button class="search-type-btn active" id="search-type-equation" data-search-type="equation">🔣 ค้นหาตามสมการดาว</button>
+                            <button class="search-type-btn" id="search-type-keyword" data-search-type="keyword">🔍 ค้นหาตามคีย์เวิร์ดความหมาย</button>
+                        </div>
+                        <div class="search-bar-container" id="search-bar-key-container">
+                            <input type="text" class="search-input" id="search-input-key" placeholder="พิมพ์คีย์เวิร์ดความหมาย เช่น ความรัก, สุขภาพ, การเงิน...">
+                            <button class="search-clear-btn" id="search-clear-key" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Active Equation Display Bar -->
+                <div class="equation-display-card" id="equation-display-card" style="margin-bottom: 15px;">
+                    <div class="instruction-text" id="builder-instruction">เลือกดาวดวงที่ 1</div>
+                    <div class="equation-builder-row">
+                        <div class="eq-token-container" id="equation-tokens">
+                            <!-- Tokens will be injected here by app.js -->
+                            <span class="eq-placeholder">โปรดเลือกดาวด้านล่าง</span>
+                        </div>
+                        <div class="eq-actions">
+                            <button class="eq-action-btn delete-btn" title="ลบตัวล่าสุด" id="btn-delete" disabled>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="action-icon"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line></svg>
+                            </button>
+                            <button class="eq-action-btn clear-btn" title="ล้างสมการ" id="btn-clear" disabled>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="action-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Keyboard Grid -->
+                <div class="keyboard-section" id="keyboard-section" style="margin-bottom: 20px;">
+                    <div class="keyboard-grid-6x4" id="keyboard-grid">
+                        <!-- 22 planet buttons will be injected here by app.js -->
+                    </div>
+                </div>
+
+                <!-- Results Section (Dynamic Toggling) -->
+                <div class="uranian-results-container">
+                    <!-- Direct Interpretation Output Card -->
+                    <div class="interpretation-section" id="interpretation-results">
+                        <!-- Dynamic interpretation results will be injected here -->
+                    </div>
+
+                    <!-- Search Results Index List -->
+                    <div class="search-results-section" id="search-results-section">
+                        <div class="search-meta" id="search-meta">
+                            แสดงรายการดาวและคำแปลทั้งหมด (5,388 รายการ)
+                        </div>
+                        <div class="search-results-list" id="search-results-list">
+                            <!-- Dynamic search list items will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-view" id="house-view">
+                <div class="house-controls-toolbar" style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                    <button class="house-clear-btn" id="btn-house-clear" title="ล้างการเลือกเรือนและดาว เพื่อเริ่มค้นหาใหม่">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        <span>ล้างการเลือก</span>
+                    </button>
+                </div>
+                <!-- House System + House Number: side-by-side dropdowns -->
+                <div class="house-dropdown-row">
+                    <div class="search-field">
+                        <label class="search-field-label">ระบบเรือนชะตา</label>
+                        <select class="search-input" id="house-system-select">
+                            <!-- Injected by app.js -->
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label class="search-field-label">เรือนชะตาที่</label>
+                        <select class="search-input" id="house-number-select">
+                            <!-- Injected by app.js -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Planet/Factor Selector - same full-size grid as the Planetary tab -->
+                <div class="keyboard-section" style="margin-top: 18px; margin-bottom: 20px;">
+                    <label class="search-field-label" style="display: block; margin-bottom: 10px;">เลือกดาว/ปัจจัย:</label>
+                    <div class="keyboard-grid-6x4" id="house-planets-grid">
+                        <!-- Injected by app.js -->
+                    </div>
+                </div>
+
+                <!-- House Search Box -->
+                <div class="search-inputs-grid" style="margin-top: 15px; margin-bottom: 15px;">
+                    <div class="search-field" style="width: 100%;">
+                        <label class="search-field-label">ค้นหาความหมายในเรือนชะตา:</label>
+                        <div class="search-bar-container">
+                            <input type="text" class="search-input" id="search-input-house" placeholder="ค้นหาด้วยคำสำคัญ เช่น การเงิน, ความรัก, โชคชะตา...">
+                            <button class="search-clear-btn" id="search-clear-house" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-layout-grid">
+                    <!-- General Meaning Card -->
+                    <div class="house-general-card" id="house-general-card">
+                        <!-- Injected by app.js -->
+                    </div>
+
+                    <!-- Specific Meaning Output Card -->
+                    <div class="house-interpretation-card" id="house-interpretation-results">
+                        <!-- Injected by app.js -->
+                    </div>
+                </div>
+
+                <div class="house-search-results-list" id="house-search-results-list" style="display: none;">
+                    <!-- Keyword search matches will be injected here -->
+                </div>
+            </section>
+
+            <!-- Asteroid Tab View -->
+            <section class="tab-view" id="asteroid-view">
+                <div class="search-inputs-grid asteroid-search-row" style="margin-bottom: 20px;">
+                    <div class="search-field">
+                        <label class="search-field-label">เลือกดาวเคราะห์น้อย (Asteroids & TNPs):</label>
+                        <select class="search-input" id="search-select-asteroid-name">
+                            <option value="">ทุกดาว</option>
+                            <!-- Injected by app.js -->
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label class="search-field-label">กรองตามราศี:</label>
+                        <select class="search-input" id="search-select-asteroid-sign">
+                            <option value="">ทุกราศี</option>
+                            <option value="เมษ">เมษ (Aries)</option>
+                            <option value="พฤษภ">พฤษภ (Taurus)</option>
+                            <option value="มิถุน">มิถุน (Gemini)</option>
+                            <option value="กรกฎ">กรกฎ (Cancer)</option>
+                            <option value="สิงห์">สิงห์ (Leo)</option>
+                            <option value="กันย์">กันย์ (Virgo)</option>
+                            <option value="ตุลย์">ตุลย์ (Libra)</option>
+                            <option value="พิจิก">พิจิก (Scorpio)</option>
+                            <option value="ธนู">ธนู (Sagittarius)</option>
+                            <option value="มกร">มกร (Capricorn)</option>
+                            <option value="กุมภ์">กุมภ์ (Aquarius)</option>
+                            <option value="มีน">มีน (Pisces)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Keyword Search Box -->
+                <div class="search-inputs-grid" style="margin-bottom: 15px;">
+                    <div class="search-field" style="width: 100%;">
+                        <label class="search-field-label">ค้นหาด้วยคีย์เวิร์ด (ชื่อดาว/ความหมาย):</label>
+                        <div class="search-bar-container">
+                            <input type="text" class="search-input" id="search-input-asteroid-keyword" placeholder="ค้นหาด้วยคำสำคัญ เช่น ความรัก, สุขภาพ, การเงิน...">
+                            <button class="search-clear-btn" id="search-clear-asteroid-keyword" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asteroid-layout">
+                    <!-- Asteroids List Sidebar -->
+                    <div class="asteroid-sidebar">
+                        <div class="asteroid-list" id="asteroid-list">
+                            <!-- Injected by app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Asteroid Detail Panel -->
+                    <div class="asteroid-detail-panel" id="asteroid-detail-panel">
+                        <!-- Injected by app.js -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p id="footer-text">CELESTIA © 2026</p>
+            <p class="footer-note" id="footer-note">ฐานข้อมูลอ้างอิงจากคัมภีร์สูตรดาวพระเคราะห์สนธิ คำแปลดาวเคราะห์น้อยโดย Martha Lang-Wescott และระบบเรือนชะตาอ้างอิงจาก "Methodik der Astrologischen Häuser" โดย แฮร์มันน์ เลอเฟลด์ท (Hermann Lefeldt), Witte-Verlag Hamburg</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="auth.js?v=1"></script>
+    <script src="database.js?v=110"></script>
+    <script src="database_extra.js?v=110"></script>
+    <script src="app.js?v=110"></script>
+</body>
+</html>

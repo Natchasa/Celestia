@@ -107,12 +107,21 @@ body {
 
 /* App Container */
 .app-container {
+    width: 100%;
     max-width: 680px; /* Perfect width for readability and mobile simulation */
     margin: 0 auto;
-    padding: 24px 16px 40px 16px;
+    padding: 20px 14px 40px 14px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        padding: 12px 8px 30px 8px;
+    }
 }
 
 .lang-selector {
@@ -449,6 +458,10 @@ body.auth-locked {
     box-shadow: var(--shadow-soft);
     position: relative;
     border-left: 4px solid var(--gold-primary);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .instruction-text {
@@ -465,10 +478,12 @@ body.auth-locked {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    width: 100%;
 }
 
 .eq-token-container {
     flex: 1;
+    min-width: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -635,56 +650,95 @@ body.auth-locked {
    comfortably above the ~44px recommended minimum touch target. */
 @media (max-width: 520px) {
     .keyboard-grid-6x4 {
-        gap: 5px;
+        gap: 4px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .planet-btn {
-        min-height: 56px;
-        padding: 6px 2px;
+        min-height: 48px;
+        padding: 4px 1px;
+        min-width: 0;
+        box-sizing: border-box;
     }
     .planet-btn-icon {
-        font-size: 1.15rem;
+        width: 28px;
+        height: 28px;
         margin-bottom: 2px;
+        box-sizing: border-box;
     }
-    .planet-svg {
+    .planet-img-icon {
         width: 18px;
         height: 18px;
     }
-    .token-symbol .planet-svg {
-        width: 14px;
-        height: 14px;
-    }
     .planet-btn-label {
-        font-size: 0.58rem;
+        font-size: 0.54rem;
+        line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
     }
     .mode-text-active .planet-btn {
-        min-height: 46px;
-        padding: 4px 1px;
+        min-height: 42px;
+        padding: 3px 1px;
     }
     .mode-text-active .planet-btn-icon {
         width: 12px;
         height: 12px;
         margin-bottom: 1px;
     }
-    .mode-text-active .planet-btn-icon .planet-svg {
-        width: 12px;
-        height: 12px;
+    .mode-text-active .planet-btn-icon .planet-img-icon {
+        width: 10px;
+        height: 10px;
     }
     .mode-text-active .planet-btn-label {
-        font-size: 0.65rem;
+        font-size: 0.62rem;
+    }
+    .equation-display-card {
+        padding: 10px 10px;
+    }
+    .eq-action-btn {
+        width: 34px;
+        height: 34px;
+    }
+    .token {
+        padding: 2px 7px 2px 3px !important;
+        font-size: 0.78rem !important;
+    }
+    .token-coin {
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 3px !important;
+    }
+    .token-coin .planet-img-icon, .token-img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .token-text {
+        font-size: 0.75rem !important;
     }
 }
 
-/* Extra-small phones (older/narrow Android, iPhone SE-class ~360-380px) */
+/* Extra-small phones (older/narrow Android, iPhone SE-class ~320-380px) */
 @media (max-width: 380px) {
     .keyboard-grid-6x4 {
-        gap: 4px;
+        gap: 3px;
     }
     .planet-btn {
-        min-height: 50px;
-        padding: 4px 1px;
+        min-height: 44px;
+        padding: 3px 1px;
+    }
+    .planet-btn-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 1px;
+    }
+    .planet-img-icon {
+        width: 15px;
+        height: 15px;
     }
     .planet-btn-label {
-        font-size: 0.52rem;
+        font-size: 0.48rem;
     }
 }
 
@@ -777,6 +831,14 @@ body.auth-locked {
     margin-bottom: 6px;
     transition: var(--transition-smooth);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1.5px 2px rgba(255, 255, 255, 0.4), inset 0 -1.5px 2px rgba(0, 0, 0, 0.1);
+    /* iOS Safari fix: .planet-btn (ancestor) uses backdrop-filter, and the
+       .planet-img-icon child below uses filter (brightness+drop-shadow).
+       WebKit has a known compositing bug where a `filter` on a descendant of
+       a `backdrop-filter` element fails to paint at all (element goes fully
+       invisible) on iPhone Safari specifically. `isolation: isolate` forces
+       this icon circle into its own stacking context so its child's filter
+       composites independently of the ancestor's backdrop-filter layer. */
+    isolation: isolate;
 }
 
 .planet-btn.personal .planet-btn-icon {
@@ -1130,6 +1192,9 @@ body.auth-locked {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .search-field-label {
@@ -1138,6 +1203,10 @@ body.auth-locked {
     color: var(--text-muted);
     padding-left: 2px;
     font-family: var(--font-sans);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .search-input {
@@ -1152,6 +1221,32 @@ body.auth-locked {
     outline: none;
     box-shadow: var(--shadow-soft);
     transition: var(--transition-smooth);
+    box-sizing: border-box;
+}
+
+/* Custom styled dropdown select elements so text and custom arrow fit perfectly without clipping */
+select.search-input {
+    padding: 10px 28px 10px 12px !important;
+    font-size: 0.88rem !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23FDC94D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+    background-size: 12px 12px !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    select.search-input {
+        padding: 8px 22px 8px 10px !important;
+        font-size: 0.78rem !important;
+        background-position: right 8px center !important;
+    }
 }
 
 .search-input:focus {
@@ -1173,7 +1268,18 @@ body.auth-locked {
     transition: var(--transition-smooth);
 }
 
-/* Small utility button to reset the House tab's house/star selection */
+/* Small utility button to reset selection */
+.house-controls-toolbar,
+.asteroid-controls-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .house-clear-btn {
     display: inline-flex;
     align-items: center;
@@ -1181,13 +1287,15 @@ body.auth-locked {
     background: rgba(45, 15, 72, 0.85);
     border: 1px solid rgba(253, 201, 77, 0.35);
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 5px 10px;
     font-family: var(--font-sans);
     font-size: 0.72rem;
     font-weight: 600;
     color: #D4C2EA;
     cursor: pointer;
     transition: var(--transition-smooth);
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .house-clear-btn svg {
@@ -1327,6 +1435,12 @@ body.auth-locked {
     vertical-align: middle;
     transition: var(--transition-smooth);
     filter: brightness(0) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2)); /* Black outline on gold coin background */
+    /* Force this filtered image onto its own GPU compositing layer.
+       Paired with `isolation: isolate` on .planet-btn-icon above — belt and
+       braces against the iOS Safari bug where filter + backdrop-filter
+       nesting makes the filtered child render blank. */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 /* Constrain sizing in text mode */
@@ -1662,4 +1776,73 @@ p, span, div, label {
     border: 1px solid #FDC94D !important;
     color: #FDC94D !important;
     box-shadow: 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+/* Toggle Builder & Keyboard Button */
+.toggle-builder-btn {
+    background: linear-gradient(135deg, rgba(122, 44, 184, 0.9) 0%, rgba(60, 18, 98, 0.9) 100%) !important;
+    border: 1px solid rgba(253, 201, 77, 0.5) !important;
+    color: #FFF3D1 !important;
+    font-family: var(--font-sans);
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+    transition: var(--transition-smooth) !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 8px rgba(253, 201, 77, 0.2) !important;
+    user-select: none;
+}
+
+.toggle-builder-btn:hover {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    color: #1A0530 !important;
+    border-color: #FFFFFF !important;
+    box-shadow: 0 0 12px rgba(253, 201, 77, 0.4) !important;
+    transform: translateY(-1px);
+}
+
+/* Mobile Bottom Navigation Bar for 3 Main Tabs */
+@media (max-width: 680px) {
+    .mode-tabs {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9990 !important;
+        margin: 0 !important;
+        border-radius: 18px 18px 0 0 !important;
+        padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px)) 12px !important;
+        background: rgba(22, 6, 42, 0.95) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border-top: 1.5px solid rgba(253, 201, 77, 0.5) !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.7), 0 0 15px rgba(122, 44, 184, 0.4) !important;
+    }
+
+    .tab-btn {
+        flex-direction: column !important;
+        gap: 2px !important;
+        font-size: 0.7rem !important;
+        padding: 6px 2px !important;
+        border-radius: 10px !important;
+    }
+
+    .tab-icon {
+        font-size: 1.15rem !important;
+    }
+
+    .main-content {
+        padding-bottom: 80px !important;
+    }
+
+    .app-footer {
+        padding-bottom: 75px !important;
+    }
 }

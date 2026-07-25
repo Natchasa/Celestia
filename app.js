@@ -245,11 +245,12 @@ const STATE = {
     btnMode: 'symbol',              // 'symbol' or 'thai'
     searchType: 'equation',         // 'equation' or 'keyword'
     selectedFactors: [],            // Array of selected planet objects (max 3)
-    currentMatches: []              // Current database matches found
+    currentMatches: [],             // Current database matches found
+    builderCollapsed: false         // Auto-collapse keyboard when equation results are displayed
 };
 
 const HOUSE_STATE = {
-    system: 'เมอริเดียน',            // 'เมอริเดียน', 'ลัคนา', 'อาทิตย์', 'จันทร์', 'โลก', 'ราหู'
+    system: 'ลัคนา',                // 'เมอริเดียน', 'ลัคนา', 'อาทิตย์', 'จันทร์', 'โลก', 'ราหู'
     house: 1,                       // 1 to 12
     planet: 'Me'                    // Active planet ID in house tab
 };
@@ -302,6 +303,7 @@ const DOM = {
     houseSearchResultsList: document.getElementById('house-search-results-list'),
 
     // Asteroid tab DOMs
+    btnAsteroidClear: document.getElementById('btn-asteroid-clear'),
     searchSelectAsteroidName: document.getElementById('search-select-asteroid-name'),
     searchSelectAsteroidSign: document.getElementById('search-select-asteroid-sign'),
     searchInputAsteroidKeyword: document.getElementById('search-input-asteroid-keyword'),
@@ -327,11 +329,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // keyword/meaning search doesn't build an equation, so those controls are just noise.
 // Conversely, the free-text search box is only useful for keyword search — equation
 // search is done entirely by tapping stars, so the box is hidden in that mode.
+// Show the planet-selection keyboard & equation builder in equation search mode.
+// Free-text search box is shown in keyword mode.
 function updateSearchModeVisibility(type) {
-    const showBuilder = type !== 'keyword';
-    if (DOM.equationDisplayCard) DOM.equationDisplayCard.style.display = showBuilder ? '' : 'none';
-    if (DOM.keyboardSection) DOM.keyboardSection.style.display = showBuilder ? '' : 'none';
-    if (DOM.searchBarKeyContainer) DOM.searchBarKeyContainer.style.display = showBuilder ? 'none' : '';
+    if (type) STATE.searchType = type;
+    const isEquation = STATE.searchType === 'equation';
+
+    if (DOM.equationDisplayCard) DOM.equationDisplayCard.style.display = isEquation ? '' : 'none';
+    if (DOM.keyboardSection) DOM.keyboardSection.style.display = isEquation ? '' : 'none';
+    if (DOM.searchBarKeyContainer) DOM.searchBarKeyContainer.style.display = isEquation ? 'none' : '';
 }
 
 // 4. Keyboard rendering
@@ -397,6 +403,7 @@ function selectPlanet(planet) {
         STATE.selectedFactors.push(planet);
         updateBuilderUI();
         queryDatabase();
+        updateSearchModeVisibility();
         updateUranianResultsVisibility();
     }
 }
@@ -406,6 +413,7 @@ function deleteLastPlanet() {
         STATE.selectedFactors.pop();
         updateBuilderUI();
         queryDatabase();
+        updateSearchModeVisibility();
         updateUranianResultsVisibility();
     }
 }
@@ -415,6 +423,7 @@ function clearBuilder() {
     STATE.currentMatches = [];
     updateBuilderUI();
     queryDatabase();
+    updateSearchModeVisibility();
     updateUranianResultsVisibility();
 }
 
@@ -460,7 +469,7 @@ function updateBuilderUI() {
     } else {
         instr = "สมการเสร็จสมบูรณ์";
     }
-    DOM.builderInstruction.innerText = instr;
+    if (DOM.builderInstruction) DOM.builderInstruction.innerText = instr;
 
     DOM.btnDelete.disabled = len === 0;
     DOM.btnClear.disabled = len === 0;
@@ -568,8 +577,7 @@ function renderInterpretation() {
         const formulaStr = formatActiveFormula();
         container.innerHTML = `
             <div class="no-match-card">
-                <div class="no-match-icon">🪐</div>
-                <div class="no-match-title">ไม่พบคำแปลสมการโดยตรง</div>
+                <div class="no-match-title" style="margin-bottom: 10px;">🪐 ไม่พบคำแปลสมการโดยตรง</div>
                 <p class="no-match-desc">ไม่พบการตีความสูตรดั้งเดิมของ <strong>${escapeHtml(formulaStr)}</strong> ในตำราของ Alfred Witte</p>
                 <div class="no-match-tips">
                     <div class="no-match-tips-title">คำแนะนำทางโหราศาสตร์ยูเรเนียน:</div>
@@ -594,19 +602,21 @@ function renderInterpretation() {
     const matchCardsHTML = STATE.currentMatches.map(row => {
         const eqLabel = escapeHtml(formatEquationDisplay(row.eq)) || escapeHtml(formulaTitle);
         const factorsText = getFactorsBreakdownText(row);
-        const desc = escapeHtml(row.desc_th) || 'ไม่มีคำแปลภาษาไทย';
+        const descTh = escapeHtml(row.desc_th) || 'ไม่มีคำแปลภาษาไทย';
+        const descEn = row.desc_en ? escapeHtml(row.desc_en) : '';
         return `
             <div class="card interp-match-card">
                 <h3 class="interp-eq-title" style="font-size: 1.05rem; margin-bottom: 6px;">${eqLabel}</h3>
                 <div class="interp-factors-names">${factorsText}</div>
-                <p class="interp-thai-desc" style="margin-top: 10px;">${desc}</p>
+                <p class="interp-thai-desc" style="margin-top: 10px; font-size: 0.92rem; line-height: 1.6; color: var(--text-color);">${descTh}</p>
+                ${descEn ? `<p class="interp-en-desc" style="font-size: 0.82rem; line-height: 1.5; color: var(--text-muted); font-style: italic; border-top: 1px dashed rgba(109,82,134,0.15); padding-top: 8px; margin-top: 8px;">${descEn}</p>` : ''}
             </div>
         `;
     }).join('');
 
     const cardHTML = `
         <div class="interpretation-container">
-            <div class="interp-header">
+            <div class="interp-header" style="margin-bottom: 14px;">
                 <span>✨</span> ${escapeHtml(formulaTitle)} ${countNote}
             </div>
             ${matchCardsHTML}
@@ -731,6 +741,9 @@ function setupEventListeners() {
     }
     if (DOM.searchClearAsteroidKeyword) {
         DOM.searchClearAsteroidKeyword.addEventListener('click', clearAsteroidKeyword);
+    }
+    if (DOM.btnAsteroidClear) {
+        DOM.btnAsteroidClear.addEventListener('click', clearAsteroidSelection);
     }
 }
 
@@ -921,8 +934,10 @@ function loadFormulaFromSearch(row) {
 // every square/button visibly returns to its unselected color, and the user
 // picks a fresh house + star from a clean slate for the next lookup.
 function clearHouseSelection() {
+    HOUSE_STATE.system = 'ลัคนา';
     HOUSE_STATE.house = null;
     HOUSE_STATE.planet = null;
+    if (DOM.houseSystemSelect) DOM.houseSystemSelect.value = 'ลัคนา';
     renderHouseTab();
 }
 
@@ -1241,6 +1256,22 @@ function clearAsteroidKeyword() {
     refreshAsteroidFocusView();
 }
 
+function clearAsteroidSelection() {
+    ASTEROID_STATE.selectedAsteroid = 'The Aries Point';
+    ASTEROID_STATE.selectedSign = 'เมษ';
+    ASTEROID_STATE.signFilter = '';
+    ASTEROID_STATE.userPickedAsteroid = false;
+    ASTEROID_STATE.keyword = '';
+
+    if (DOM.searchSelectAsteroidName) DOM.searchSelectAsteroidName.value = '';
+    if (DOM.searchSelectAsteroidSign) DOM.searchSelectAsteroidSign.value = '';
+    if (DOM.searchInputAsteroidKeyword) DOM.searchInputAsteroidKeyword.value = '';
+    if (DOM.searchClearAsteroidKeyword) DOM.searchClearAsteroidKeyword.style.display = 'none';
+
+    renderAsteroidList();
+    refreshAsteroidFocusView();
+}
+
 function renderAsteroidList() {
     DOM.asteroidList.innerHTML = '';
 
@@ -1316,109 +1347,114 @@ function renderAsteroidDetails() {
     const panel = DOM.asteroidDetailPanel;
     panel.innerHTML = '';
 
-    const ast = ASTEROID_DB.find(a => a.name === ASTEROID_STATE.selectedAsteroid);
-    if (!ast) {
-        panel.innerHTML = `<div style="padding: 40px; text-align: center; color: var(--text-muted);">โปรดเลือกดาวเคราะห์น้อยจากรายการด้านซ้าย</div>`;
+    const signFilter = ASTEROID_STATE.signFilter;
+    const keyword = ASTEROID_STATE.keyword.trim();
+    const userPicked = ASTEROID_STATE.userPickedAsteroid;
+
+    // If user explicitly picked a single asteroid from dropdown or list
+    if (userPicked) {
+        const ast = ASTEROID_DB.find(a => a.name === ASTEROID_STATE.selectedAsteroid);
+        if (!ast) {
+            panel.innerHTML = `<div style="padding: 40px; text-align: center; color: var(--text-muted);">โปรดเลือกดาวเคราะห์น้อยจากรายการ</div>`;
+            return;
+        }
+        renderSingleAsteroidDetail(ast, panel);
         return;
     }
 
-    const signMeanings = ASTEROID_SIGN_DB.filter(row => row.name.toLowerCase() === ast.name.toLowerCase());
-    const focused = isAsteroidViewFocused();
+    // Otherwise, display ALL matching possibilities for the active sign / keyword filter
+    const matches = ASTEROID_DB.filter(ast =>
+        asteroidHasSignMeaning(ast.name, signFilter) &&
+        asteroidMatchesKeyword(ast, keyword)
+    );
 
-    const backButtonHTML = focused
-        ? `<button id="asteroid-focus-back" class="search-type-btn" style="width: auto; padding: 8px 16px; margin-bottom: 12px; display: inline-block;">← ดูดาวดวงอื่น</button>`
-        : '';
-
-    let signSectionHTML = '';
-    if (focused) {
-        // Focused single-answer view: the sign is already fixed by the top
-        // filter, so just show that one meaning — no grid of other signs.
-        const activeSignMeaningRow = signMeanings.find(m => m.sign_th === ASTEROID_STATE.selectedSign || m.sign_en.toLowerCase() === ASTEROID_STATE.selectedSign.toLowerCase());
-        const activeSignText = escapeHtml(activeSignMeaningRow ? activeSignMeaningRow.meaning : "ไม่มีข้อมูลความหมายในราศีนี้");
-
-        signSectionHTML = `
-            <div class="asteroid-sign-section" style="margin-top: 25px; border-top: 1px dashed rgba(109,82,134,0.2); padding-top: 20px;">
-                <div class="card" style="border-left: 4px solid #7A2CB8; background: rgba(122,44,184,0.03);">
-                    <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 6px;">ดาว ${escapeHtml(ast.name)} ในราศี${escapeHtml(ASTEROID_STATE.selectedSign)}</h4>
-                    <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-color);">${activeSignText}</p>
-                </div>
+    if (matches.length === 0) {
+        panel.innerHTML = `
+            <div class="card" style="text-align: center; padding: 40px; color: var(--text-muted);">
+                <div style="font-size: 2rem; margin-bottom: 8px;">☄️</div>
+                <div style="font-weight: 600; font-size: 1rem; margin-bottom: 6px;">ไม่พบข้อมูลดาวเคราะห์น้อย</div>
+                <p style="font-size: 0.82rem;">ลองเปลี่ยนราศีหรือคำค้นหาคีย์เวิร์ดใหม่อีกครั้ง</p>
             </div>
         `;
-    } else if (signMeanings.length > 0) {
-        let signsGridHTML = `<div class="zodiac-grid">`;
-        ZODIAC_SIGNS.forEach(sign => {
-            const hasMeaning = signMeanings.some(m => m.sign_th === sign.th || m.sign_en.toLowerCase() === sign.en.toLowerCase());
-            signsGridHTML += `
-                <button class="zodiac-btn ${sign.element} ${ASTEROID_STATE.selectedSign === sign.th ? 'active' : ''} ${!hasMeaning ? 'disabled' : ''}"
-                        data-sign="${escapeHtml(sign.th)}" ${!hasMeaning ? 'disabled' : ''}>
-                    <span class="zodiac-name-th">${escapeHtml(sign.th)}</span>
-                    <span class="zodiac-name-en">${escapeHtml(sign.en)}</span>
-                </button>
+        return;
+    }
+
+    const titleText = (signFilter || keyword)
+        ? `พบผลการค้นหา ${matches.length} รายการ (แสดงผลทุกความเป็นไปได้)`
+        : `รายการดาวเคราะห์น้อยทั้งหมด (${matches.length} รายการ)`;
+
+    let html = `
+        <div class="asteroid-results-header" style="font-size: 0.88rem; font-weight: 600; color: var(--gold-dark); margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+            <span>✨ ${escapeHtml(titleText)}</span>
+        </div>
+    `;
+
+    matches.forEach(ast => {
+        const signRow = signFilter ? ASTEROID_SIGN_DB.find(r => r.name.toLowerCase() === ast.name.toLowerCase() && r.sign_th === signFilter) : null;
+        
+        let signTextHTML = '';
+        if (signRow && signRow.meaning) {
+            signTextHTML = `
+                <div style="margin-top: 10px; padding: 10px 12px; background: rgba(122,44,184,0.06); border-left: 3px solid #7A2CB8; border-radius: 4px;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #FDC94D; margin-bottom: 4px;">ดาว ${escapeHtml(ast.name)} ในราศี${escapeHtml(signFilter)}:</div>
+                    <div style="font-size: 0.88rem; line-height: 1.5; color: var(--text-color);">${escapeHtml(signRow.meaning)}</div>
+                </div>
             `;
-        });
-        signsGridHTML += `</div>`;
+        }
 
-        const activeSignMeaningRow = signMeanings.find(m => m.sign_th === ASTEROID_STATE.selectedSign || m.sign_en.toLowerCase() === ASTEROID_STATE.selectedSign.toLowerCase());
-        const activeSignText = escapeHtml(activeSignMeaningRow ? activeSignMeaningRow.meaning : "ไม่มีข้อมูลความหมายในราศีนี้");
-
-        signSectionHTML = `
-            <div class="asteroid-sign-section" style="margin-top: 25px; border-top: 1px dashed rgba(109,82,134,0.2); padding-top: 20px;">
-                <h3 style="font-size: 1rem; color: var(--gold-dark); margin-bottom: 12px;">คำแปลของดาวในแต่ละราศี:</h3>
-                ${signsGridHTML}
-                <div class="card" style="margin-top: 15px; border-left: 4px solid #7A2CB8; background: rgba(122,44,184,0.03);">
-                    <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 6px;">ดาว ${escapeHtml(ast.name)} ในราศี${escapeHtml(ASTEROID_STATE.selectedSign)}</h4>
-                    <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-color);">${activeSignText}</p>
+        html += `
+            <div class="card asteroid-match-card" style="margin-bottom: 14px; padding: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+                    <div>
+                        <h3 class="interp-eq-title" style="font-size: 1.1rem; margin: 0; display: inline-block;">${escapeHtml(ast.name)}</h3>
+                        <span style="font-size: 0.65rem; background: rgba(122, 44, 184, 0.15); color: #7A2CB8; padding: 2px 8px; border-radius: 99px; font-weight: 600; display: inline-block; margin-left: 8px;">
+                            ${ast.type === 'TNP' ? 'ดาวเคราะห์ทรานส์เนปจูน' : (ast.type === 'Asteroid' ? 'ดาวเคราะห์น้อย' : 'จุดสำคัญ')}
+                        </span>
+                    </div>
                 </div>
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin-bottom: 4px;">${escapeHtml(ast.desc_th)}</p>
+                ${signTextHTML}
             </div>
         `;
-    } else {
-        signSectionHTML = `
-            <div style="margin-top: 25px; border-top: 1px dashed rgba(109,82,134,0.2); padding-top: 20px; color: var(--text-muted); font-size: 0.82rem; font-style: italic;">
-                *ดาวดวงนี้ไม่มีข้อมูลคำแปลเสริมตามการโคจรในจักรราศี
+    });
+
+    panel.innerHTML = html;
+}
+
+function renderSingleAsteroidDetail(ast, panel) {
+    const signFilter = ASTEROID_STATE.signFilter;
+    const signRow = signFilter ? ASTEROID_SIGN_DB.find(r => r.name.toLowerCase() === ast.name.toLowerCase() && r.sign_th === signFilter) : null;
+        
+    let signTextHTML = '';
+    if (signRow && signRow.meaning) {
+        signTextHTML = `
+            <div style="margin-top: 10px; padding: 10px 12px; background: rgba(122,44,184,0.06); border-left: 3px solid #7A2CB8; border-radius: 4px;">
+                <div style="font-size: 0.8rem; font-weight: 700; color: #FDC94D; margin-bottom: 4px;">ดาว ${escapeHtml(ast.name)} ในราศี${escapeHtml(signFilter)}:</div>
+                <div style="font-size: 0.88rem; line-height: 1.5; color: var(--text-color);">${escapeHtml(signRow.meaning)}</div>
             </div>
         `;
     }
 
     panel.innerHTML = `
-        ${backButtonHTML}
         <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-                <div>
-                    <h2 class="interp-eq-title" style="font-size: 1.3rem; margin: 0;">${escapeHtml(ast.name)}</h2>
-                    <span style="font-size: 0.68rem; background: rgba(122, 44, 184, 0.15); color: #7A2CB8; padding: 2px 8px; border-radius: 99px; font-weight: 600; display: inline-block; margin-top: 5px;">
-                        ประเภท: ${ast.type === 'TNP' ? 'ดาวเคราะห์ทรานส์เนปจูน' : (ast.type === 'Asteroid' ? 'ดาวเคราะห์น้อย' : 'จุดสำคัญ')}
-                    </span>
-                </div>
-                ${ast.source ? `<div style="font-size: 0.68rem; color: var(--text-muted); text-align: right; max-width: 180px;">แหล่งที่มา: ${escapeHtml(ast.source)}</div>` : ''}
+            <div style="margin-bottom: 12px;">
+                <h2 class="interp-eq-title" style="font-size: 1.3rem; margin: 0; display: inline-block;">${escapeHtml(ast.name)}</h2>
+                <span style="font-size: 0.68rem; background: rgba(122, 44, 184, 0.15); color: #7A2CB8; padding: 2px 8px; border-radius: 99px; font-weight: 600; display: inline-block; margin-left: 8px;">
+                    ประเภท: ${ast.type === 'TNP' ? 'ดาวเคราะห์ทรานส์เนปจูน' : (ast.type === 'Asteroid' ? 'ดาวเคราะห์น้อย' : 'จุดสำคัญ')}
+                </span>
             </div>
 
             <div class="asteroid-desc-block" style="background: rgba(109,82,134,0.03); padding: 15px; border-radius: 8px; border: 1px solid rgba(109,82,134,0.08);">
-                <h4 style="font-size: 0.85rem; color: var(--gold-dark); margin-bottom: 6px;">ความหมายภาษาไทย:</h4>
-                <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-color); margin-bottom: 12px;">${escapeHtml(ast.desc_th)}</p>
+                <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-color);">${escapeHtml(ast.desc_th)}</p>
 
                 ${ast.desc_en ? `
-                    <h4 style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; border-top: 1px dashed rgba(109,82,134,0.1); padding-top: 10px;">ภาษาอังกฤษต้นฉบับ (English Core):</h4>
-                    <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-muted); font-style: italic;">${escapeHtml(ast.desc_en)}</p>
+                    <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-muted); font-style: italic; border-top: 1px dashed rgba(109,82,134,0.15); padding-top: 8px; margin-top: 8px;">${escapeHtml(ast.desc_en)}</p>
                 ` : ''}
             </div>
 
-            ${signSectionHTML}
+            ${signTextHTML}
         </div>
     `;
-
-    panel.querySelectorAll('.zodiac-btn[data-sign]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            selectAsteroidSign(btn.dataset.sign);
-        });
-    });
-
-    const backBtn = document.getElementById('asteroid-focus-back');
-    if (backBtn) {
-        backBtn.addEventListener('click', () => {
-            ASTEROID_STATE.userPickedAsteroid = false;
-            refreshAsteroidFocusView();
-        });
-    }
 }
 
 function selectAsteroidSign(sign) {

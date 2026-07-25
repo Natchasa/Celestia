@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Symbols:wght@400;500;600;700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css?v=110">
+    <link rel="stylesheet" href="styles.css?v=114">
 </head>
 <body class="auth-locked">
     <!-- Access Gate: lightweight shared-password overlay + admin login notification (auth.js) -->
@@ -69,8 +69,8 @@
                 <div class="search-inputs-grid" style="margin-bottom: 15px; grid-template-columns: 1fr;">
                     <div class="search-field">
                         <div class="search-mode-selector">
-                            <button class="search-type-btn active" id="search-type-equation" data-search-type="equation">🔣 ค้นหาตามสมการดาว</button>
-                            <button class="search-type-btn" id="search-type-keyword" data-search-type="keyword">🔍 ค้นหาตามคีย์เวิร์ดความหมาย</button>
+                            <button class="search-type-btn active" id="search-type-equation" data-search-type="equation">🔣 ค้นจากสมการดาว</button>
+                            <button class="search-type-btn" id="search-type-keyword" data-search-type="keyword">🔍 ค้นจากคีย์เวิร์ด</button>
                         </div>
                         <div class="search-bar-container" id="search-bar-key-container">
                             <input type="text" class="search-input" id="search-input-key" placeholder="พิมพ์คีย์เวิร์ดความหมาย เช่น ความรัก, สุขภาพ, การเงิน...">
@@ -80,7 +80,6 @@
                 </div>
                 <!-- Active Equation Display Bar -->
                 <div class="equation-display-card" id="equation-display-card" style="margin-bottom: 15px;">
-                    <div class="instruction-text" id="builder-instruction">เลือกดาวดวงที่ 1</div>
                     <div class="equation-builder-row">
                         <div class="eq-token-container" id="equation-tokens">
                             <!-- Tokens will be injected here by app.js -->
@@ -123,7 +122,7 @@
                 </div>
             </section>
             <section class="tab-view" id="house-view">
-                <div class="house-controls-toolbar" style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                <div class="house-controls-toolbar">
                     <button class="house-clear-btn" id="btn-house-clear" title="ล้างการเลือกเรือนและดาว เพื่อเริ่มค้นหาใหม่">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         <span>ล้างการเลือก</span>
@@ -183,16 +182,22 @@
 
             <!-- Asteroid Tab View -->
             <section class="tab-view" id="asteroid-view">
-                <div class="search-inputs-grid asteroid-search-row" style="margin-bottom: 20px;">
+                <div class="asteroid-controls-toolbar">
+                    <button class="house-clear-btn" id="btn-asteroid-clear" title="ล้างการเลือกดาวและราศี เพื่อเริ่มค้นหาใหม่">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        <span>ล้างการเลือก</span>
+                    </button>
+                </div>
+                <div class="search-inputs-grid asteroid-search-row" style="margin-bottom: 15px;">
                     <div class="search-field">
-                        <label class="search-field-label">เลือกดาวเคราะห์น้อย (Asteroids & TNPs):</label>
+                        <label class="search-field-label">ค้นจากดาว</label>
                         <select class="search-input" id="search-select-asteroid-name">
                             <option value="">ทุกดาว</option>
                             <!-- Injected by app.js -->
                         </select>
                     </div>
                     <div class="search-field">
-                        <label class="search-field-label">กรองตามราศี:</label>
+                        <label class="search-field-label">ค้นจากราศี</label>
                         <select class="search-input" id="search-select-asteroid-sign">
                             <option value="">ทุกราศี</option>
                             <option value="เมษ">เมษ (Aries)</option>
@@ -214,9 +219,9 @@
                 <!-- Keyword Search Box -->
                 <div class="search-inputs-grid" style="margin-bottom: 15px;">
                     <div class="search-field" style="width: 100%;">
-                        <label class="search-field-label">ค้นหาด้วยคีย์เวิร์ด (ชื่อดาว/ความหมาย):</label>
+                        <label class="search-field-label">ค้นจากคีย์เวิร์ด</label>
                         <div class="search-bar-container">
-                            <input type="text" class="search-input" id="search-input-asteroid-keyword" placeholder="ค้นหาด้วยคำสำคัญ เช่น ความรัก, สุขภาพ, การเงิน...">
+                            <input type="text" class="search-input" id="search-input-asteroid-keyword" placeholder="ค้นจากคีย์เวิร์ด เช่น ความรัก, สุขภาพ, การเงิน...">
                             <button class="search-clear-btn" id="search-clear-asteroid-keyword" style="display: none;">✕</button>
                         </div>
                     </div>
@@ -248,7 +253,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="auth.js?v=1"></script>
     <script src="database.js?v=110"></script>
-    <script src="database_extra.js?v=110"></script>
-    <script src="app.js?v=110"></script>
+    <script src="database_extra.js?v=113"></script>
+    <script src="app.js?v=117"></script>
 </body>
 </html>

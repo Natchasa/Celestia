@@ -3,7 +3,7 @@
 
 const PLANETARY_DB = [
   {
-    "eq": "M/M",
+    "eq": "M หรือ M",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Meridian",
@@ -117,7 +117,7 @@ const PLANETARY_DB = [
     "b_en": "Meridian",
     "b_th": "เมอริเดียน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Contentment, to be benevolent, well-wishing, inoffensive, good natured.",
     "desc_th": "ความพึงพอใจ ความมีเมตตา ความปรารถนาดี ไม่เป็นภัย อัธยาศัยดี",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -267,7 +267,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Su",
+    "eq": "M หรือ Su",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Sun",
@@ -369,7 +369,7 @@ const PLANETARY_DB = [
     "b_en": "Sun",
     "b_th": "อาทิตย์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness of body and mind. Contentment, Optimism.",
     "desc_th": "ความสุขทั้งกายและใจ ความพึงพอใจ การมองโลกในแง่ดี",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -519,7 +519,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ar",
+    "eq": "M หรือ Ar",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Aries Point",
@@ -621,7 +621,7 @@ const PLANETARY_DB = [
     "b_en": "Aries Point",
     "b_th": "จุดเมษ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be mournful with others. To have losses. To lack repulse, or to be dull, to others. To feel abandoned or lonely.",
     "desc_th": "โศกเศร้าร่วมกับผู้อื่น มีความสูญเสีย ขาดความกระตือรือร้นหรือรู้สึกจืดชืดต่อผู้อื่น รู้สึกถูกทอดทิ้งหรือโดดเดี่ยว",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -771,7 +771,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง)"
   },
   {
-    "eq": "M/As",
+    "eq": "M หรือ As",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Ascendant",
@@ -873,7 +873,7 @@ const PLANETARY_DB = [
     "b_en": "Ascendant",
     "b_th": "ลัคนา",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Professional luck. To enjoy activities with others.",
     "desc_th": "โชคดีด้านหน้าที่การงาน สนุกกับกิจกรรมร่วมกับผู้อื่น",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -1023,7 +1023,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/No",
+    "eq": "M หรือ No",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Node",
@@ -1125,7 +1125,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck and happiness thru the own connections. Blissful feelings with others.",
     "desc_th": "โชคดีและความสุขจากความสัมพันธ์ของตน ความปีติร่วมกับผู้อื่น",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -1275,7 +1275,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Mo",
+    "eq": "M หรือ Mo",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Moon",
@@ -1377,7 +1377,7 @@ const PLANETARY_DB = [
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate state of mind. Happiness of female persons. Confinements (births).",
     "desc_th": "สภาพจิตใจที่เป็นสุข ความสุขของสตรี การคลอดบุตร",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -1414,7 +1414,7 @@ const PLANETARY_DB = [
     "b_th": "จันทร์",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
-    "desc_en": "[ไม่มีข้อความปรากฏในต้นฉบับสำหรับคู่นี้ - ตรวจสอบกับ PDF สแกนต้นฉบับจริงแล้ว (หน้า 38) พบว่าหลังคู่ M/Mo/Sa ต้นฉบับมีป้ายกำกับเพียงอันเดียว (พิมพ์เพี้ยนเป็น \"-We\") ก่อนกระโดดไปคู่ M/Mo/Pl ทันที จึงสรุปว่าข้อความของ Ur หายไปจากต้นฉบับจริง ส่วนป้าย \"-We\" นั้นจับคู่กับ Ne แทน (เนื้อหา \"deceitfulness, the mind strays\" ตรงกับธีมของเนปจูนมากกว่า)]",
+    "desc_en": "[ไม่มีข้อความปรากฏในต้นฉบับสำหรับคู่นี้ - ตรวจสอบกับ PDF สแกนต้นฉบับจริงแล้ว (หน้า 38) พบว่าหลังคู่ M หรือ Mo Sa ต้นฉบับมีป้ายกำกับเพียงอันเดียว (พิมพ์เพี้ยนเป็น \"-We\") ก่อนกระโดดไปคู่ M หรือ Mo Pl ทันที จึงสรุปว่าข้อความของ Ur หายไปจากต้นฉบับจริง ส่วนป้าย \"-We\" นั้นจับคู่กับ Ne แทน (เนื้อหา \"deceitfulness, the mind strays\" ตรงกับธีมของเนปจูนมากกว่า)]",
     "desc_th": "[ไม่มีข้อความในต้นฉบับสำหรับคู่นี้ - ตรวจสอบกับไฟล์ PDF สแกนต้นฉบับแล้ว พบว่าป้ายกำกับที่พิมพ์เพี้ยนเป็น \"-We\" ถูกจับคู่ไปกับเนปจูนแทน (เนื้อหาเข้าธีมหลอกลวง หรือ ไม่แน่นอนของเนปจูนมากกว่า) ส่วนช่องของยูเรนัสไม่มีข้อความเหลืออยู่เลยแม้แต่ในต้นฉบับสแกน]",
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง)"
   },
@@ -1527,7 +1527,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Me",
+    "eq": "M หรือ Me",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Mercury",
@@ -1629,7 +1629,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be elated. Cheerful. To think of luck and success.",
     "desc_th": "รู้สึกปลื้มปีติ ร่าเริง คิดถึงโชคลาภและความสำเร็จ",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -1779,7 +1779,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ve",
+    "eq": "M หรือ Ve",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Venus",
@@ -1881,7 +1881,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sensation of happiness in love. Lucky wishes come thru.",
     "desc_th": "ความรู้สึกเป็นสุขในความรัก ความปรารถนาที่โชคดีสำเร็จผล",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -1967,7 +1967,7 @@ const PLANETARY_DB = [
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "To wish for progeny. Wishing to be desired. The sower. Equals Jupiter, success.",
-    "desc_th": "ปรารถนามีบุตร ต้องการเป็นที่ปรารถนา ผู้หว่านเมล็ด หากประกอบกับพฤหัสบดี คือความสำเร็จ",
+    "desc_th": "ปรารถนามีบุตร ต้องการเป็นที่ปรารถนา ผู้หว่านเมล็ด หากประกอบกับพฤหัส คือความสำเร็จ",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
@@ -2031,7 +2031,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ma",
+    "eq": "M หรือ Ma",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Mars",
@@ -2133,7 +2133,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To intend to become betrothed. Wishing to make oneself happy. To deal honestly.",
     "desc_th": "ตั้งใจจะหมั้นหมาย ปรารถนาสร้างความสุขให้ตนเอง จัดการอย่างซื่อตรง",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -2287,7 +2287,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "General contentment. The state of mind affects the general world.",
@@ -2299,7 +2299,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Bodily well being.",
@@ -2311,7 +2311,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Contentment and harmony with others. To be jolly with others. The desire to make others happy.",
@@ -2323,7 +2323,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Harmonious connections with women, luck thru women.",
@@ -2335,7 +2335,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Harmonious connections, luck thru them.",
@@ -2347,7 +2347,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Contentment and mental tranquility.",
@@ -2359,7 +2359,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Blissful feelings thru love.",
@@ -2371,7 +2371,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Delight over a love act. Betrothal.",
@@ -2383,7 +2383,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Parting without sorrow. To be glad over a separation.",
@@ -2395,7 +2395,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden blissful feeling, happiness, luck.",
@@ -2407,7 +2407,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Premonition of loss. Disappointment with bliss, luck.",
@@ -2419,7 +2419,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "To be glad over increasing happiness, over development of things. Delight over luck transformation.",
@@ -2431,7 +2431,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Contented with modest circumstances.",
@@ -2443,7 +2443,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "[ไม่มีคู่นี้ในต้นฉบับ - ตรวจสอบกับ PDF สแกนต้นฉบับจริงแล้ว (หน้า 43) ยืนยันว่าต้นฉบับข้ามฮาเดสไปเลยในหน้านี้ ไม่ใช่ปัญหาจาก OCR]",
@@ -2455,7 +2455,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Happiness over accomplishment.",
@@ -2467,7 +2467,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Self-consciousness. To be conscious of one's own authority. Fortunate leadership.",
@@ -2479,7 +2479,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Luck or money thru science or commerce.",
@@ -2491,7 +2491,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "End of good fortune, luck or happiness. Luck thru rest or repose, to be still, not doing anything.",
@@ -2503,7 +2503,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Great optimism.",
@@ -2515,7 +2515,7 @@ const PLANETARY_DB = [
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Contentment thru sensibility (reason), adjustment, spiritual happiness.",
@@ -2523,7 +2523,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Sa",
+    "eq": "M หรือ Sa",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Saturn",
@@ -2602,7 +2602,7 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Mercury",
     "c_th": "พุธ",
-    "desc_en": "To subject oneself to thoughts of separation. To grasp them slowly. Brooding. To be obliged to separate. Equals Mars/Saturn, to take leave thru death.",
+    "desc_en": "To subject oneself to thoughts of separation. To grasp them slowly. Brooding. To be obliged to separate. Equals Mars หรือ Saturn, to take leave thru death.",
     "desc_th": "จมอยู่กับความคิดเรื่องการพลัดพราก ค่อยๆ ทำความเข้าใจ ครุ่นคิด จำต้องแยกจาก หากประกอบกับอังคาร หรือ เสาร์ คือการจากไปด้วยความตาย",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
@@ -2637,7 +2637,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Separation with happy ending. To change the domicile. To crowd one's luck or happiness.",
     "desc_th": "การพลัดพรากที่จบลงด้วยดี การย้ายที่อยู่อาศัย การเบียดบังโชคหรือความสุขของตน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -2775,7 +2775,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ur",
+    "eq": "M หรือ Ur",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Uranus",
@@ -2889,7 +2889,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be suddenly gladdened by good luck.",
     "desc_th": "ดีใจอย่างฉับพลันจากโชคดี",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -3027,7 +3027,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ne",
+    "eq": "M หรือ Ne",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Neptune",
@@ -3141,7 +3141,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money swindler. Speculator. To pretend being lucky, imaginary luck.",
     "desc_th": "นักต้มตุ๋นด้านการเงิน นักเก็งกำไร แสร้งทำเป็นโชคดี โชคที่เป็นเพียงจินตนาการ",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -3279,7 +3279,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Pl",
+    "eq": "M หรือ Pl",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Pluto",
@@ -3393,7 +3393,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate development of soul and spirit.",
     "desc_th": "พัฒนาการอันเป็นมงคลของจิตวิญญาณ",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -3531,7 +3531,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Cu",
+    "eq": "M หรือ Cu",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Cupido",
@@ -3645,7 +3645,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Contentment and happiness thru occupations dealing with art, marriage or community.",
     "desc_th": "ความพึงพอใจและความสุขจากอาชีพที่เกี่ยวข้องกับศิลปะ การแต่งงาน หรือชุมชน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -3719,7 +3719,7 @@ const PLANETARY_DB = [
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "To want to produce something artistic with others, equals Jupiter, to win a battle. To create successfully. Social leader.",
-    "desc_th": "ต้องการสร้างสรรค์งานศิลปะร่วมกับผู้อื่น หากประกอบกับพฤหัสบดี คือชนะการต่อสู้ สร้างสรรค์ได้สำเร็จ ผู้นำทางสังคม",
+    "desc_th": "ต้องการสร้างสรรค์งานศิลปะร่วมกับผู้อื่น หากประกอบกับพฤหัส คือชนะการต่อสู้ สร้างสรรค์ได้สำเร็จ ผู้นำทางสังคม",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
@@ -3783,7 +3783,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ha",
+    "eq": "M หรือ Ha",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Hades",
@@ -3897,7 +3897,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be sad on account of money or of losses. Clouded happiness.",
     "desc_th": "เศร้าใจเพราะเงินหรือความสูญเสีย ความสุขที่ถูกบดบัง",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -4035,7 +4035,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ze",
+    "eq": "M หรือ Ze",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Zeus",
@@ -4149,7 +4149,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To promote pleasure. To urge others to hilarity.",
     "desc_th": "ส่งเสริมความเพลิดเพลิน กระตุ้นให้ผู้อื่นร่าเริงสนุกสนาน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -4287,7 +4287,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Kr",
+    "eq": "M หรือ Kr",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Kronos",
@@ -4401,7 +4401,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Moneyed man. Financier. Money or property increase. Success thru own independence and initiative.",
     "desc_th": "ผู้มีฐานะทางการเงิน นักการเงิน เงินทองหรือทรัพย์สินเพิ่มพูน ความสำเร็จผ่านความเป็นอิสระและความคิดริเริ่มของตน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -4486,7 +4486,7 @@ const PLANETARY_DB = [
     "b_th": "โครนอส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
-    "desc_en": "Foreman or manager of machine works. Army officer, equals Mars, \"king of the sharpshooters\" (as well as Mars/Venus). To lead without failing.",
+    "desc_en": "Foreman or manager of machine works. Army officer, equals Mars, \"king of the sharpshooters\" (as well as Mars หรือ Venus). To lead without failing.",
     "desc_th": "หัวหน้างานหรือผู้จัดการโรงงานเครื่องจักร นายทหาร หากประกอบกับอังคาร คือ \"ราชานักแม่นปืน\" (เช่นเดียวกับอังคาร หรือ ศุกร์) เป็นผู้นำที่ไม่เคยพลาด",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
@@ -4539,7 +4539,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ap",
+    "eq": "M หรือ Ap",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Apollon",
@@ -4653,7 +4653,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck and success in commerce and science. Happy experiences.",
     "desc_th": "โชคดีและความสำเร็จในการค้าและวิทยาศาสตร์ ประสบการณ์ที่เป็นสุข",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -4791,7 +4791,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ap/note1",
+    "eq": "M หรือ Ap note1",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Apollon",
@@ -4803,7 +4803,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ap/note2",
+    "eq": "M หรือ Ap note2",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Apollon",
@@ -4815,7 +4815,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Ad",
+    "eq": "M หรือ Ad",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Admetos",
@@ -4929,7 +4929,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Insensible or indifferent towards good luck. Fortunate with minerals or soil conservation.",
     "desc_th": "ไม่รู้สึกหรือเฉยเมยต่อโชคดี โชคดีเรื่องแร่ธาตุหรือการอนุรักษ์ดิน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -5067,7 +5067,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Vu",
+    "eq": "M หรือ Vu",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Vulcanus",
@@ -5181,7 +5181,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck and success thru exercising own power.",
     "desc_th": "โชคดีและความสำเร็จผ่านการใช้อำนาจของตน",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
@@ -5319,7 +5319,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "M/Po",
+    "eq": "M หรือ Po",
     "a_en": "Meridian",
     "a_th": "เมอริเดียน",
     "b_en": "Poseidon",
@@ -5433,8 +5433,8 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
-    "desc_en": "Lucky mental disposition. To search for spiritual contentment, equals Mars/Hades, the own irresponsible doings.",
+    "c_th": "พฤหัส",
+    "desc_en": "Lucky mental disposition. To search for spiritual contentment, equals Mars หรือ Hades, the own irresponsible doings.",
     "desc_th": "อุปนิสัยทางความคิดที่โชคดี แสวงหาความอิ่มเอมทางจิตวิญญาณ หากประกอบกับอังคาร หรือ ฮาเดส คือการกระทำที่ขาดความรับผิดชอบของตนเอง",
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
@@ -5559,7 +5559,7 @@ const PLANETARY_DB = [
     "conf": "สูง (มีอักษรย่อกำกับชัดเจนในต้นฉบับ)"
   },
   {
-    "eq": "Ar/Ar",
+    "eq": "Ar หรือ Ar",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Aries Point",
@@ -5673,7 +5673,7 @@ const PLANETARY_DB = [
     "b_en": "Aries Point",
     "b_th": "จุดเมษ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Good luck, contentment. Money, Possessions.",
     "desc_th": "โชคดี ความพึงพอใจ เงินทอง ทรัพย์สิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -5823,7 +5823,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Su",
+    "eq": "Ar หรือ Su",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Sun",
@@ -5925,7 +5925,7 @@ const PLANETARY_DB = [
     "b_en": "Sun",
     "b_th": "อาทิตย์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Time of harvest of fruits of body's activities. Many people happy.",
     "desc_th": "ช่วงเวลาเก็บเกี่ยวผลจากกิจกรรมของร่างกาย ผู้คนจำนวนมากมีความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -6035,7 +6035,7 @@ const PLANETARY_DB = [
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Honors, dignities. Octave of Aries plus Sun minus Jupiter.",
-    "desc_th": "เกียรติยศ ศักดิ์ศรี (Octave: จุดเมษ+อาทิตย์-พฤหัสบดี)",
+    "desc_th": "เกียรติยศ ศักดิ์ศรี (Octave: จุดเมษ+อาทิตย์-พฤหัส)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -6075,7 +6075,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/As",
+    "eq": "Ar หรือ As",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Ascendant",
@@ -6177,7 +6177,7 @@ const PLANETARY_DB = [
     "b_en": "Ascendant",
     "b_th": "ลัคนา",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fertile places. To be pleased with each other. Jolly company.",
     "desc_th": "สถานที่อุดมสมบูรณ์ พึงพอใจซึ่งกันและกัน การอยู่ร่วมกันอย่างร่าเริง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -6327,7 +6327,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Mo",
+    "eq": "Ar หรือ Mo",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Moon",
@@ -6418,7 +6418,7 @@ const PLANETARY_DB = [
     "b_th": "จันทร์",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "The active woman, the wife, the mate. Industrious or working people. Equals Hades, soldiers; equals Sun/Cupido, units of the army.",
+    "desc_en": "The active woman, the wife, the mate. Industrious or working people. Equals Hades, soldiers; equals Sun หรือ Cupido, units of the army.",
     "desc_th": "สตรีที่กระตือรือร้น ภรรยา คู่ครอง ผู้คนที่ขยันทำงาน หากประกอบกับฮาเดส คือทหาร หากประกอบกับอาทิตย์ หรือ คิวปิโด คือหน่วยทหาร",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -6429,7 +6429,7 @@ const PLANETARY_DB = [
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness of female persons. Happy populace.",
     "desc_th": "ความสุขของสตรี ประชาชนที่มีความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -6579,7 +6579,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/No",
+    "eq": "Ar หรือ No",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Node",
@@ -6681,7 +6681,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy companionship with others.",
     "desc_th": "การอยู่ร่วมกันอย่างมีความสุขกับผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -6831,7 +6831,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Me",
+    "eq": "Ar หรือ Me",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Mercury",
@@ -6933,7 +6933,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Talkativeness. Masses indulging themselves in talking. General conversation.",
     "desc_th": "ช่างพูด มวลชนหมกมุ่นกับการพูดคุย การสนทนาโดยทั่วไป",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -7083,7 +7083,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ve",
+    "eq": "Ar หรือ Ve",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Venus",
@@ -7185,7 +7185,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Bliss.",
     "desc_th": "ความปีติสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -7335,7 +7335,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ma",
+    "eq": "Ar หรือ Ma",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Mars",
@@ -7437,7 +7437,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate action.",
     "desc_th": "การกระทำที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -7587,11 +7587,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ju",
+    "eq": "Ar หรือ Ju",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Good fortune in general. Success.",
@@ -7603,7 +7603,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "One's own feeling of happiness, to be made happy. Equals Admetos, to rest, to do nothing.",
@@ -7615,7 +7615,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Well-being of the body. To be rewarded for accomplishments in sports.",
@@ -7627,7 +7627,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Being fortunate with other persons.",
@@ -7639,7 +7639,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Happiness of a woman, fortunate with the public. Lucky hours.",
@@ -7651,7 +7651,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Good fortune in unions.",
@@ -7663,7 +7663,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Merry mood. Talkativeness.",
@@ -7675,7 +7675,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Love-happiness of or with woman.",
@@ -7687,7 +7687,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Love-happiness with man. Successful act. Births. Fruits.",
@@ -7699,7 +7699,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Happiness or good fortune thru separation, or in agriculture.",
@@ -7711,7 +7711,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden good fortune. Increase in property.",
@@ -7723,7 +7723,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Losses. Squandering of substance. Extravagance. Would-be fortune.",
@@ -7735,7 +7735,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "General fortunate development.",
@@ -7747,7 +7747,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Happiness in marital life.",
@@ -7759,7 +7759,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Fortune in misfortune. Equals Mars, losses in gambling or games.",
@@ -7771,7 +7771,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "The happiness in one's work. Fortunate creation.",
@@ -7783,7 +7783,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Happiness thru the authorities. Father, chief.",
@@ -7795,7 +7795,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Expanded fortune. Fortunate masses. Luck and increase in commerce and industry.",
@@ -7807,7 +7807,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "General rest and quiet. Gains from raw materials. Rich source of raw materials.",
@@ -7819,7 +7819,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "General optimism. Great success in general things or matters.",
@@ -7831,7 +7831,7 @@ const PLANETARY_DB = [
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "The common sense or reason.",
@@ -7839,7 +7839,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Sa",
+    "eq": "Ar หรือ Sa",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Saturn",
@@ -7953,7 +7953,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "News of losses. Change of property. Moving.",
     "desc_th": "ข่าวความสูญเสีย การเปลี่ยนแปลงทรัพย์สิน การย้ายที่อยู่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -8091,7 +8091,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ur",
+    "eq": "Ar หรือ Ur",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Uranus",
@@ -8205,7 +8205,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden luck. Increase in property. More important event.",
     "desc_th": "โชคดีฉับพลัน ทรัพย์สินเพิ่มพูน เหตุการณ์สำคัญยิ่งขึ้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -8338,12 +8338,12 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
-    "desc_en": "Propaganda. Sudden appearance of a new idea. Equals Mars/Saturn, equals Sun, to die suddenly.",
+    "desc_en": "Propaganda. Sudden appearance of a new idea. Equals Mars หรือ Saturn, equals Sun, to die suddenly.",
     "desc_th": "การโฆษณาชวนเชื่อ การปรากฏขึ้นของความคิดใหม่อย่างฉับพลัน หากประกอบกับอังคาร หรือ เสาร์ เทียบเท่าอาทิตย์ คือการเสียชีวิตกะทันหัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ne",
+    "eq": "Ar หรือ Ne",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Neptune",
@@ -8398,7 +8398,7 @@ const PLANETARY_DB = [
     "b_th": "เนปจูน",
     "c_en": "Moon",
     "c_th": "จันทร์",
-    "desc_en": "Sensitiveness in general. Weather sensitivity, equals Uranus/Neptune, death thru aviation.",
+    "desc_en": "Sensitiveness in general. Weather sensitivity, equals Uranus หรือ Neptune, death thru aviation.",
     "desc_th": "ความอ่อนไหวโดยทั่วไป ความไวต่อสภาพอากาศ หากประกอบกับยูเรนัส หรือ เนปจูน คือการเสียชีวิตจากการบิน",
     "conf": "ปานกลาง (OCR ต้นฉบับเพี้ยน หรือ ขาดบางส่วน อนุมานจากบริบทและลำดับดาวคงที่)"
   },
@@ -8457,7 +8457,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fraudulent money transactions.",
     "desc_th": "ธุรกรรมทางการเงินที่ฉ้อโกง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -8595,7 +8595,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Pl",
+    "eq": "Ar หรือ Pl",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Pluto",
@@ -8709,7 +8709,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate development and change. Changes in monetary matters.",
     "desc_th": "พัฒนาการและการเปลี่ยนแปลงที่โชคดี การเปลี่ยนแปลงด้านการเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -8847,7 +8847,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Cu",
+    "eq": "Ar หรือ Cu",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Cupido",
@@ -8961,7 +8961,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Banks. Financial institutions.",
     "desc_th": "ธนาคาร สถาบันการเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -9099,7 +9099,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ha",
+    "eq": "Ar หรือ Ha",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Hades",
@@ -9213,7 +9213,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Dirty financial transactions. Liver complaints. Tropical fevers. Money losses on account of catastrophes.",
     "desc_th": "ธุรกรรมการเงินที่สกปรก อาการป่วยที่ตับ ไข้เขตร้อน ความสูญเสียเงินทองจากหายนภัย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -9251,7 +9251,7 @@ const PLANETARY_DB = [
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Serious or fatal diseases. Equals Jupiter, cancer. Equals Uranus, shipping disaster with loss of life.",
-    "desc_th": "โรคร้ายแรงหรือถึงแก่ชีวิต หากประกอบกับพฤหัสบดี คือโรคมะเร็ง หากประกอบกับยูเรนัส คือภัยพิบัติทางเรือที่มีผู้เสียชีวิต",
+    "desc_th": "โรคร้ายแรงหรือถึงแก่ชีวิต หากประกอบกับพฤหัส คือโรคมะเร็ง หากประกอบกับยูเรนัส คือภัยพิบัติทางเรือที่มีผู้เสียชีวิต",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -9351,7 +9351,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ze",
+    "eq": "Ar หรือ Ze",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Zeus",
@@ -9465,7 +9465,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To produce coins. To create valuables. General successful work.",
     "desc_th": "การผลิตเหรียญกษาปณ์ การสร้างสิ่งมีค่า งานที่สำเร็จโดยทั่วไป",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -9514,7 +9514,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
-    "desc_en": "Painful work in general. Devastation by open fires (forest fires etc). Fires started by lightning. Equals Mars: choke damp. Minus Mars/Saturn, death by choke damp.",
+    "desc_en": "Painful work in general. Devastation by open fires (forest fires etc). Fires started by lightning. Equals Mars: choke damp. Minus Mars หรือ Saturn, death by choke damp.",
     "desc_th": "งานที่ทรมานโดยทั่วไป ความเสียหายจากไฟป่าที่ลุกลาม ไฟที่เกิดจากฟ้าผ่า หากประกอบกับอังคาร คือแก๊สอันตรายในเหมือง หากลบด้วยอังคาร หรือ เสาร์ คือความตายจากแก๊สอันตรายในเหมือง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -9603,7 +9603,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Kr",
+    "eq": "Ar หรือ Kr",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Kronos",
@@ -9706,7 +9706,7 @@ const PLANETARY_DB = [
     "b_th": "โครนอส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "Mining and smelting industry. Great deeds of leading persons. Minus Mercury/Hades, chemical industry.",
+    "desc_en": "Mining and smelting industry. Great deeds of leading persons. Minus Mercury หรือ Hades, chemical industry.",
     "desc_th": "อุตสาหกรรมเหมืองแร่และถลุงโลหะ ผลงานอันยิ่งใหญ่ของผู้นำ หากลบด้วยพุธ หรือ ฮาเดส คืออุตสาหกรรมเคมี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -9717,7 +9717,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Financial transactions. Banks. The successful leader.",
     "desc_th": "ธุรกรรมทางการเงิน ธนาคาร ผู้นำที่ประสบความสำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -9855,7 +9855,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ap",
+    "eq": "Ar หรือ Ap",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Apollon",
@@ -9969,7 +9969,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Extensive fortune. Several fortunate happenings at same time. Great financial institutions. Multitude with money. Science of money.",
     "desc_th": "โชคลาภมหาศาล เหตุการณ์โชคดีหลายอย่างพร้อมกัน สถาบันการเงินขนาดใหญ่ คนจำนวนมากที่มีเงิน เศรษฐศาสตร์การเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -10107,7 +10107,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ad",
+    "eq": "Ar หรือ Ad",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Admetos",
@@ -10221,7 +10221,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Moderate luck. Fortunate with property. Painless death. Overcoming of the difficulties in general.",
     "desc_th": "โชคปานกลาง โชคดีเรื่องทรัพย์สิน การเสียชีวิตโดยไม่ทรมาน การก้าวข้ามอุปสรรคโดยทั่วไป",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -10359,7 +10359,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Vu",
+    "eq": "Ar หรือ Vu",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Vulcanus",
@@ -10473,7 +10473,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Financial power. Power and influence thru possessions.",
     "desc_th": "อำนาจทางการเงิน อำนาจและอิทธิพลผ่านทรัพย์สิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -10611,7 +10611,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Po",
+    "eq": "Ar หรือ Po",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Poseidon",
@@ -10725,7 +10725,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate understanding, reason, wisdom.",
     "desc_th": "ความเข้าใจที่โชคดี เหตุผล ปัญญา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -10863,7 +10863,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Su",
+    "eq": "Su หรือ Su",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Sun",
@@ -10977,7 +10977,7 @@ const PLANETARY_DB = [
     "b_en": "Sun",
     "b_th": "อาทิตย์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The wellbeing of the body. Corpulence, fat.",
     "desc_th": "ความผาสุกของร่างกาย ความอ้วนท้วน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -11127,7 +11127,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/As",
+    "eq": "Su หรือ As",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Ascendant",
@@ -11229,7 +11229,7 @@ const PLANETARY_DB = [
     "b_en": "Ascendant",
     "b_th": "ลัคนา",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Lucky acquaintances. Advantages thru connections.",
     "desc_th": "คนรู้จักที่นำโชค ประโยชน์จากความสัมพันธ์เชื่อมโยง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -11379,7 +11379,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Mo",
+    "eq": "Su หรือ Mo",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Moon",
@@ -11481,7 +11481,7 @@ const PLANETARY_DB = [
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate friendship. Fortunate marriage. Child-birth, equals Ma, a son. Equals Ve, a girl. Increase in the family.",
     "desc_th": "มิตรภาพที่โชคดี การแต่งงานที่โชคดี การคลอดบุตร เทียบเท่าอังคารคือบุตรชาย เทียบเท่าศุกร์คือบุตรสาว การเพิ่มขึ้นของครอบครัว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -11631,7 +11631,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/No",
+    "eq": "Su หรือ No",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Node",
@@ -11733,7 +11733,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy bodily union. Luck and gain in public.",
     "desc_th": "การรวมกันทางกายที่มีความสุข โชคและผลได้ในที่สาธารณะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -11883,7 +11883,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Me",
+    "eq": "Su หรือ Me",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Mercury",
@@ -11985,7 +11985,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Talent for speaking. Travelling for pleasure. To be agile and serene. Lucky youth. Good natured and benign thinking.",
     "desc_th": "พรสวรรค์ด้านการพูด การเดินทางเพื่อความบันเทิง ความคล่องแคล่วและสงบเยือกเย็น วัยเยาว์ที่โชคดี ความคิดที่มีเมตตาและอ่อนโยน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -12135,7 +12135,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ve",
+    "eq": "Su หรือ Ve",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Venus",
@@ -12155,7 +12155,7 @@ const PLANETARY_DB = [
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "Perception of love, conception of love, equals Jupiter, willingness to help.",
-    "desc_th": "การรับรู้ความรัก มโนทัศน์แห่งความรัก เทียบเท่าพฤหัสบดีคือความเต็มใจช่วยเหลือ",
+    "desc_th": "การรับรู้ความรัก มโนทัศน์แห่งความรัก เทียบเท่าพฤหัสคือความเต็มใจช่วยเหลือ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -12237,7 +12237,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The happiness of a loving man. A body animated with the joy of love.",
     "desc_th": "ความสุขของชายผู้มีความรัก ร่างกายที่เปี่ยมชีวิตชีวาด้วยความปีติแห่งรัก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -12387,7 +12387,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ma",
+    "eq": "Su หรือ Ma",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Mars",
@@ -12489,7 +12489,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The fiance. A man happy in his activity. The victorious one.",
     "desc_th": "คู่หมั้น บุรุษที่มีความสุขในกิจกรรมของตน ผู้พิชิต",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -12651,11 +12651,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ju",
+    "eq": "Su หรือ Ju",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Bodily happiness. The fortunate man. The fortunate rich man. The cheerful man.",
@@ -12667,7 +12667,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "One's own feeling of happiness, successful and lucky times. Good experiences. General well being. Personal success.",
@@ -12679,7 +12679,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Well-to-do people. Fortunate day. Money-day. Success in general in daily business efforts. \"The Friend of Nature\" - who is bodily happy in nature.",
@@ -12691,7 +12691,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Fortunate with others. Comfortable with others. Equals Kr, income from services.",
@@ -12703,7 +12703,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Contented populace. Fortunate, happy husband. Bridegroom. Lucky day for women.",
@@ -12715,7 +12715,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "To prepare the way for bodily happiness. Lucky connections. Wealthy connections.",
@@ -12727,7 +12727,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Good physician. Persevering speaker. Good news. Success thru speaking, travel.",
@@ -12739,7 +12739,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Body happy in love. Man in love. Success with hobbies and favored activities.",
@@ -12751,7 +12751,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Man happy in work. Luck in attack. Happy fiance. Lucky decisions, expressions.",
@@ -12763,7 +12763,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Lost happiness, position. Malchance. Hindrances to success. Opposition.",
@@ -12775,7 +12775,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden luck in love, lottery. Forced luck. Sudden surprising luck.",
@@ -12787,7 +12787,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Passing happiness, luck, fortune. Becoming poor. Successful swindler. To be under false impressions while striving for success. Unclear conditions.",
@@ -12799,7 +12799,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Increase in health of good fortune. Organs function well. Good fortune develops during lifetime.",
@@ -12811,7 +12811,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Wealth thru marriage, happy husband. Good fortune in art. Success thru cooperation with others, sociability, business partners.",
@@ -12823,7 +12823,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "To be well in base surroundings. One who has become rich thru theft. Facing obstacles while striving for success. Handling obscure or sinister matters.",
@@ -12835,7 +12835,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Good inherited talents, ability to procreate. Fortune lies in production.",
@@ -12847,7 +12847,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Ruling thru wealth. Bodily good luck. Fortune thru authorities, lottery. Foundation of corporations (big establishments).",
@@ -12859,7 +12859,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Luck and success in commerce and industry. Good fortune for many.",
@@ -12871,7 +12871,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Termination of luck. Good fortune thru or in rest.",
@@ -12883,7 +12883,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Great health and virility of the body.",
@@ -12895,7 +12895,7 @@ const PLANETARY_DB = [
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Great reason, good comprehension, fortunate mental qualities. Wisdom.",
@@ -12903,7 +12903,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Sa",
+    "eq": "Su หรือ Sa",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Saturn",
@@ -13017,7 +13017,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate in old age. Loss thru older people. Fortunate experiences. Changed location.",
     "desc_th": "โชคดีในวัยชรา การสูญเสียผ่านผู้สูงอายุ ประสบการณ์ที่โชคดี การเปลี่ยนสถานที่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -13155,7 +13155,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ur",
+    "eq": "Su หรือ Ur",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Uranus",
@@ -13269,7 +13269,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Union or connection with happy results. Luck thru sudden resolutions or events. Advantageous decisions. Surprise full of joy.",
     "desc_th": "การรวมกันหรือความสัมพันธ์ที่ให้ผลดี โชคผ่านการตัดสินใจหรือเหตุการณ์ฉับพลัน การตัดสินใจที่เป็นประโยชน์ ความประหลาดใจที่เปี่ยมด้วยความปีติ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -13342,7 +13342,7 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
-    "desc_en": "Danger of burns or choke damp. High blood pressure. To insist upon his own ideas, to rage. Equals Ma/Sa, death by explosion of flammables.",
+    "desc_en": "Danger of burns or choke damp. High blood pressure. To insist upon his own ideas, to rage. Equals Ma หรือ Sa, death by explosion of flammables.",
     "desc_th": "อันตรายจากไฟไหม้หรือแก๊สพิษ ความดันโลหิตสูง การยืนกรานในความคิดของตนจนถึงขั้นเดือดดาล เทียบเท่าอังคาร หรือ เสาร์คือความตายจากการระเบิดของวัตถุไวไฟ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -13414,12 +13414,12 @@ const PLANETARY_DB = [
     "b_th": "อังคาร",
     "c_en": "Saturn",
     "c_th": "เสาร์",
-    "desc_en": "[หมายเหตุท้ายหน้าซึ่งขยายความจากข้อความ Ze ในหน้าเดียวกัน (\"Equals Ma/Sa\") ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้]  Sudden death thru accident or apoplexy.",
+    "desc_en": "[หมายเหตุท้ายหน้าซึ่งขยายความจากข้อความ Ze ในหน้าเดียวกัน (\"Equals Ma หรือ Sa\") ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้] Sudden death thru accident or apoplexy.",
     "desc_th": "การเสียชีวิตฉับพลันจากอุบัติเหตุหรือหัวใจวาย",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Su/Ne",
+    "eq": "Su หรือ Ne",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Neptune",
@@ -13533,7 +13533,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Income gained thru easy physical work. To be fortunate thru bodily conduct.",
     "desc_th": "รายได้จากงานกายที่ไม่หนักหนา ความโชคดีผ่านความประพฤติทางกาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -13671,7 +13671,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Pl",
+    "eq": "Su หรือ Pl",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Pluto",
@@ -13785,7 +13785,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Splendid development, to grow fat. Equals Aries, gastronomist.",
     "desc_th": "พัฒนาการที่งดงาม การอ้วนขึ้น เทียบเท่าจุดเมษคือนักชิมอาหาร",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -13923,7 +13923,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Cu",
+    "eq": "Su หรือ Cu",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Cupido",
@@ -14037,7 +14037,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate marriage. Wealth acquired thru art. Useful communities.",
     "desc_th": "การแต่งงานที่โชคดี ความมั่งคั่งที่ได้จากศิลปะ ชุมชนที่เป็นประโยชน์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -14175,7 +14175,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ha",
+    "eq": "Su หรือ Ha",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Hades",
@@ -14289,7 +14289,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck in not recognized, suppressed or bad enterprises, connected with dirty work. To make money thru dirty work. The lungs and liver act up. To be an egotist.",
     "desc_th": "โชคในกิจการที่ไม่ได้รับการยอมรับ ถูกกดไว้ หรือกิจการที่ไม่ดี เกี่ยวข้องกับงานสกปรก การหาเงินผ่านงานสกปรก ปอดและตับทำงานผิดปกติ ความเห็นแก่ตัว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -14427,7 +14427,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ต้นฉบับพิมพ์ขาดข้อความนี้จริง - นี่คือบันทึกลายมือของผู้อ่านคนก่อนที่เขียนเสริมไว้ในสำเนาสแกน ไม่ใช่ข้อความต้นฉบับที่พิมพ์จริง ใช้อ้างอิงเพิ่มเติมเท่านั้น)"
   },
   {
-    "eq": "Su/Ze",
+    "eq": "Su หรือ Ze",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Zeus",
@@ -14541,7 +14541,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Intercourse with consequences. Equals Hades, illegitimate intercourse with consequences. Minus Saturn, building destroyed by fire.",
     "desc_th": "การมีเพศสัมพันธ์ที่มีผลตามมา เทียบเท่าฮาเดสคือการมีเพศสัมพันธ์นอกสมรสที่มีผลตามมา ลบด้วยเสาร์คืออาคารที่ถูกไฟไหม้ทำลาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -14691,7 +14691,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Su/Kr",
+    "eq": "Su หรือ Kr",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Kronos",
@@ -14805,7 +14805,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness derived from authority. Fortunate ruler. Happiness thru independence. Successful leadership. Equals Meridian, great success.",
     "desc_th": "ความสุขที่ได้จากอำนาจ ผู้ปกครองที่โชคดี ความสุขผ่านความเป็นอิสระ ความเป็นผู้นำที่ประสบความสำเร็จ เทียบเท่าเมอริเดียนคือความสำเร็จอันยิ่งใหญ่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -14955,7 +14955,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ap",
+    "eq": "Su หรือ Ap",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Apollon",
@@ -15069,7 +15069,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great financier, richness. Glory and honor and success.",
     "desc_th": "นักการเงินผู้ยิ่งใหญ่ ความร่ำรวย เกียรติยศ ศักดิ์ศรี และความสำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -15207,7 +15207,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Ad",
+    "eq": "Su หรือ Ad",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Admetos",
@@ -15321,7 +15321,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be lucky or fortunate in the country. Equals Asc, luck or peace in homeland.",
     "desc_th": "ความโชคดีในชนบท เทียบเท่าลัคนาคือโชคหรือความสงบสุขในมาตุภูมิ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -15407,7 +15407,7 @@ const PLANETARY_DB = [
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "The products of the soil, the field. Equals Ju, good harvest.",
-    "desc_th": "ผลผลิตของดิน ทุ่งนา เทียบเท่าพฤหัสบดีคือการเก็บเกี่ยวที่ดี",
+    "desc_th": "ผลผลิตของดิน ทุ่งนา เทียบเท่าพฤหัสคือการเก็บเกี่ยวที่ดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -15459,7 +15459,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Vu",
+    "eq": "Su หรือ Vu",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Vulcanus",
@@ -15573,9 +15573,9 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
-    "desc_en": "[ต้นฉบับพิมพ์ขาดรายการนี้ไปจริง เนื่องจาก label \"-Ju\" ที่พิมพ์ไว้แท้จริงเป็นของ Ve (ดูหมายเหตุที่ Ve) ทำให้ไม่มีรายการของพฤหัสบดีแยกต่างหากในหน้านี้]",
-    "desc_th": "[ต้นฉบับขาดข้อความสำหรับพฤหัสบดีในหน้านี้จริง]",
+    "c_th": "พฤหัส",
+    "desc_en": "[ต้นฉบับพิมพ์ขาดรายการนี้ไปจริง เนื่องจาก label \"-Ju\" ที่พิมพ์ไว้แท้จริงเป็นของ Ve (ดูหมายเหตุที่ Ve) ทำให้ไม่มีรายการของพฤหัสแยกต่างหากในหน้านี้]",
+    "desc_th": "[ต้นฉบับขาดข้อความสำหรับพฤหัสในหน้านี้จริง]",
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง จากการตรวจสอบภาพสแกน PDF)"
   },
   {
@@ -15711,7 +15711,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Su/Po",
+    "eq": "Su หรือ Po",
     "a_en": "Sun",
     "a_th": "อาทิตย์",
     "b_en": "Poseidon",
@@ -15825,7 +15825,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Spiritualization of material things. Finding thru wisdom the right harmony between matter and mind, between heavenly and earthly things. To have a remarkable sense of and for justice.",
     "desc_th": "ความเป็นจิตวิญญาณของสิ่งทางวัตถุ การค้นพบความกลมกลืนที่ถูกต้องระหว่างวัตถุและจิตใจผ่านปัญญา ระหว่างสิ่งสวรรค์และทางโลก การมีสำนึกด้านความยุติธรรมอย่างโดดเด่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -15963,7 +15963,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/As",
+    "eq": "As หรือ As",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Ascendant",
@@ -16077,7 +16077,7 @@ const PLANETARY_DB = [
     "b_en": "Ascendant",
     "b_th": "ลัคนา",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate acquaintances. Happy relations to the place.",
     "desc_th": "คนรู้จักที่นำโชค ความสัมพันธ์ที่มีความสุขกับสถานที่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -16227,7 +16227,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Mo",
+    "eq": "As หรือ Mo",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Moon",
@@ -16329,7 +16329,7 @@ const PLANETARY_DB = [
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness (good luck with female acquaintances).",
     "desc_th": "ความสุข (โชคดีกับคนรู้จักที่เป็นสตรี)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -16479,7 +16479,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/No",
+    "eq": "As หรือ No",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Node",
@@ -16581,7 +16581,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate acquaintances, useful connections which show results.",
     "desc_th": "คนรู้จักที่นำโชค ความเชื่อมโยงที่เป็นประโยชน์ซึ่งให้ผล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -16731,7 +16731,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Me",
+    "eq": "As หรือ Me",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Mercury",
@@ -16833,7 +16833,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be hilarious with others. To be well thought of by others. To enjoy a good reputation.",
     "desc_th": "ความร่าเริงกับผู้อื่น การได้รับความคิดเห็นที่ดีจากผู้อื่น การมีชื่อเสียงที่ดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -16995,7 +16995,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "As/Ve",
+    "eq": "As หรือ Ve",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Venus",
@@ -17097,7 +17097,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be the object of love-happiness. Fortunate and agreeable experiences with others.",
     "desc_th": "การเป็นเป้าหมายแห่งความสุขในความรัก ประสบการณ์ที่โชคดีและน่าพึงใจกับผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -17247,7 +17247,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ma",
+    "eq": "As หรือ Ma",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Mars",
@@ -17349,7 +17349,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To betroth oneself. To be forced by others into the own good fortune. Advantages and profits thru the actions or deeds or accomplishments of others.",
     "desc_th": "การหมั้นหมาย การถูกผู้อื่นผลักดันสู่โชคดีของตนเอง ผลประโยชน์และกำไรผ่านการกระทำหรือความสำเร็จของผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -17511,11 +17511,11 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "As/Ju",
+    "eq": "As หรือ Ju",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "To experience good deeds from others. Luck with other people; or other people's luck (fortune).",
@@ -17527,7 +17527,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "To be fond of companionship. To be protected by others. To have protection. To keep good friendship. To get along well with others.",
@@ -17539,7 +17539,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Happy companionship with many.",
@@ -17551,7 +17551,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Pleasant associations.",
@@ -17563,7 +17563,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Luck thru acquaintanceship with women. Births.",
@@ -17575,7 +17575,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Good relations with other people.",
@@ -17587,7 +17587,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "To converse pleasantly with others.",
@@ -17599,7 +17599,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "To be loved by many.",
@@ -17611,7 +17611,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "To gain a willing ear. To receive proposals. To receive orders. Betrothal.",
@@ -17623,7 +17623,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Separations from friends.",
@@ -17635,7 +17635,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden luck with others or of others.",
@@ -17647,7 +17647,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "To speculate with others. To play games with others. To lose money thru others. Seeming lucky or fortunate with others.",
@@ -17659,7 +17659,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "To experience increasing benevolent deeds from other persons. Aptitude to readjust oneself.",
@@ -17671,7 +17671,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Wedding guests. Harmony in the family. One's own peaceful home is one's paradise.",
@@ -17683,7 +17683,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Friendly relation to single women. Money losses.",
@@ -17695,7 +17695,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Fatherhood. To advance thru patronage in one's own work.",
@@ -17707,7 +17707,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Harmonious relations with the father; with the chief, with the state.",
@@ -17719,7 +17719,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "To be fortunate with many. Good relations with business people or men of science.",
@@ -17731,7 +17731,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "To seek one's happiness in a peaceful environment. Luck and fortune thru being settled.",
@@ -17743,7 +17743,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Luck thru mighty enterprises, or thru enterprising and jolly people.",
@@ -17755,7 +17755,7 @@ const PLANETARY_DB = [
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "In the company of prudent and reasonable men.",
@@ -17763,7 +17763,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Sa",
+    "eq": "As หรือ Sa",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Saturn",
@@ -17877,7 +17877,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Separation with fortunate ending. Change of residence. Deserted by co-tenants.",
     "desc_th": "การพลัดพรากที่ลงเอยด้วยดี การเปลี่ยนที่อยู่อาศัย การถูกผู้ร่วมพักทอดทิ้ง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -18015,7 +18015,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ur",
+    "eq": "As หรือ Ur",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Uranus",
@@ -18129,7 +18129,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness (good fortune) with other people. Financial advantage thru them.",
     "desc_th": "ความสุข (โชคดี) กับผู้อื่น ประโยชน์ทางการเงินผ่านพวกเขา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -18267,19 +18267,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ur/Ad2",
+    "eq": "As หรือ Ur Ad2",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Ad2",
     "c_th": "Ad2",
-    "desc_en": "[หมายเหตุท้ายหน้า สมการซับซ้อน ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้] Ascendant plus Uranus minus Admetos plus Admetos equals Cu/Ze plus Kr, the state orders a strike.",
+    "desc_en": "[หมายเหตุท้ายหน้า สมการซับซ้อน ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้] Ascendant plus Uranus minus Admetos plus Admetos equals Cu หรือ Ze plus Kr, the state orders a strike.",
     "desc_th": "ลัคนา บวกยูเรนัส ลบแอดเมตอส บวกแอดเมตอส เทียบเท่าคิวปิโด หรือ เซอุส บวกโครนอส คือรัฐสั่งการให้เกิดการนัดหยุดงาน",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "As/Ne",
+    "eq": "As หรือ Ne",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Neptune",
@@ -18393,7 +18393,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To commit money frauds. Equals Saturn, money losses thru others.",
     "desc_th": "การหลอกลวงเรื่องเงิน เทียบเท่าเสาร์คือการสูญเสียเงินผ่านผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -18531,7 +18531,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Pl",
+    "eq": "As หรือ Pl",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Pluto",
@@ -18645,7 +18645,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate changes at the place, or of the place.",
     "desc_th": "การเปลี่ยนแปลงที่โชคดีในสถานที่ หรือของสถานที่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -18783,7 +18783,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Cu",
+    "eq": "As หรือ Cu",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Cupido",
@@ -18909,7 +18909,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Home comfort. To be satisfied with the apartment. To be jolly with other people.",
     "desc_th": "ความสุขสบายในบ้าน ความพึงพอใจกับอพาร์ตเมนต์ ความร่าเริงกับผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -19042,12 +19042,12 @@ const PLANETARY_DB = [
     "b_th": "คิวปิโด",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
-    "desc_en": "Consecrated places, churches or chapels. Family relations with priests or ministers. Equals Kronos/Vulcanus, the Vatican.",
+    "desc_en": "Consecrated places, churches or chapels. Family relations with priests or ministers. Equals Kronos หรือ Vulcanus, the Vatican.",
     "desc_th": "สถานที่ศักดิ์สิทธิ์ โบสถ์หรือชาเปล ความสัมพันธ์ครอบครัวกับบาทหลวงหรือศาสนาจารย์ เทียบเท่าโครนอส หรือ วัลคานุสคือวาติกัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ha",
+    "eq": "As หรือ Ha",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Hades",
@@ -19161,7 +19161,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Others in need of money.",
     "desc_th": "ผู้อื่นที่ขัดสนเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -19299,7 +19299,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ze",
+    "eq": "As หรือ Ze",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Zeus",
@@ -19378,7 +19378,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Mercury",
     "c_th": "พุธ",
-    "desc_en": "To wish for progeny. To have to entertain a great deal. Conversations about machines. To recognize and organize something. Equals Su/Pl, meat-stamps, equals Ap, talk about scientific new creations. To wish for many descendants.",
+    "desc_en": "To wish for progeny. To have to entertain a great deal. Conversations about machines. To recognize and organize something. Equals Su หรือ Pl, meat-stamps, equals Ap, talk about scientific new creations. To wish for many descendants.",
     "desc_th": "ความปรารถนามีทายาท การต้องรับรองแขกมาก การสนทนาเรื่องเครื่องจักร การรับรู้และจัดระเบียบบางสิ่ง เทียบเท่าอาทิตย์ หรือ พลูโตคือตราประทับเนื้อสัตว์ เทียบเท่าอพอลลอนคือการพูดคุยเรื่องสิ่งประดิษฐ์ทางวิทยาศาสตร์ใหม่ๆ ความปรารถนามีทายาทมากมาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -19413,7 +19413,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To create pleasure with others. To be forced by others to the own fortune or luck. Good things are forced upon us.",
     "desc_th": "การสร้างความเพลิดเพลินร่วมกับผู้อื่น การถูกผู้อื่นผลักดันสู่โชคของตน สิ่งดีๆถูกยัดเยียดให้เรา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -19551,7 +19551,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Kr",
+    "eq": "As หรือ Kr",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Kronos",
@@ -19665,7 +19665,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To receive money from superiors. Equals Su transiting, to receive wages.",
     "desc_th": "การรับเงินจากผู้บังคับบัญชา เทียบเท่าอาทิตย์จรคือการรับค่าจ้าง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -19815,7 +19815,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "As/Ap",
+    "eq": "As หรือ Ap",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Apollon",
@@ -19907,7 +19907,7 @@ const PLANETARY_DB = [
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "To be well liked as a customer. Equals Jupiter, because of prompt payment.",
-    "desc_th": "การเป็นที่ชื่นชอบในฐานะลูกค้า เทียบเท่าพฤหัสบดีเพราะการจ่ายเงินตรงเวลา",
+    "desc_th": "การเป็นที่ชื่นชอบในฐานะลูกค้า เทียบเท่าพฤหัสเพราะการจ่ายเงินตรงเวลา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -19929,7 +19929,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Solvent customers. To be fortunate with business people.",
     "desc_th": "ลูกค้าที่มีฐานะมั่นคง ความโชคดีกับนักธุรกิจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -19990,7 +19990,7 @@ const PLANETARY_DB = [
     "b_th": "อพอลลอน",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
-    "desc_en": "Door to door customers, tenant. Equals Moon, mass quarters. Equals Cu/Ze plus Moon, military mass quarters.",
+    "desc_en": "Door to door customers, tenant. Equals Moon, mass quarters. Equals Cu หรือ Ze plus Moon, military mass quarters.",
     "desc_th": "ลูกค้าที่เคาะประตูขาย ผู้เช่า เทียบเท่าจันทร์คือที่พักหมู่มาก เทียบเท่าคิวปิโด หรือ เซอุส บวกจันทร์คือที่พักทหารหมู่มาก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -20002,7 +20002,7 @@ const PLANETARY_DB = [
     "b_th": "อพอลลอน",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
-    "desc_en": "To do business with evil things. Antique business or dealer in antiques. Poor or unpleasant customers. Equals Ma/Ha plus Kr/M, commissioned to do chemical research.",
+    "desc_en": "To do business with evil things. Antique business or dealer in antiques. Poor or unpleasant customers. Equals Ma หรือ Ha plus Kr หรือ M, commissioned to do chemical research.",
     "desc_th": "การทำธุรกิจกับสิ่งชั่วร้าย ธุรกิจของโบราณหรือพ่อค้าของเก่า ลูกค้าที่ยากจนหรือไม่น่าพึงใจ เทียบเท่าอังคาร หรือ ฮาเดส บวกโครนอส หรือ เมอริเดียนคือได้รับมอบหมายให้ทำวิจัยทางเคมี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -20067,7 +20067,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Ad",
+    "eq": "As หรือ Ad",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Admetos",
@@ -20181,7 +20181,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate home surroundings, to find the own luck and happiness there.",
     "desc_th": "สิ่งแวดล้อมบ้านที่โชคดี การพบโชคและความสุขของตนที่นั่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -20319,7 +20319,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Vu",
+    "eq": "As หรือ Vu",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Vulcanus",
@@ -20445,7 +20445,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be infected by optimism of others.",
     "desc_th": "การติดความมองโลกในแง่ดีของผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -20571,7 +20571,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "As/Po",
+    "eq": "As หรือ Po",
     "a_en": "Ascendant",
     "a_th": "ลัคนา",
     "b_en": "Poseidon",
@@ -20685,7 +20685,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Friends who get advice, counsel, understanding and wisdom from the native. Equals Hades, lack of understanding and sense. Equals Mars, insensible, unreasonable actions of others.",
     "desc_th": "เพื่อนที่ได้รับคำแนะนำ ความเข้าใจ และปัญญาจากเจ้าของดวง เทียบเท่าฮาเดสคือการขาดความเข้าใจและสามัญสำนึก เทียบเท่าอังคารคือการกระทำที่ไร้เหตุผลของผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -20823,7 +20823,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Mo",
+    "eq": "Mo หรือ Mo",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Moon",
@@ -20937,7 +20937,7 @@ const PLANETARY_DB = [
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Contentment. Happiness of female persons. Happy hours.",
     "desc_th": "ความพึงพอใจ ความสุขของสตรี ชั่วโมงแห่งความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -21087,7 +21087,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/No",
+    "eq": "Mo หรือ No",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Node",
@@ -21189,7 +21189,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy (fortunate) union of a woman, also union with women.",
     "desc_th": "การรวมกันที่มีความสุขของสตรี รวมถึงการรวมกันกับสตรี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -21339,7 +21339,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Me",
+    "eq": "Mo หรือ Me",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Mercury",
@@ -21441,7 +21441,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The happy(fortunate) girl. The fortunate young woman. Equals Meridian, quick comprehension and retaining it.",
     "desc_th": "หญิงสาวที่มีความสุขและโชคดี สตรีวัยเยาว์ที่โชคดี เทียบเท่าเมอริเดียนคือความเข้าใจเร็วและจดจำได้",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
@@ -21591,7 +21591,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Mo/Ve",
+    "eq": "Mo หรือ Ve",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Venus",
@@ -21693,7 +21693,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The happily loving woman. The cheerful mother.",
     "desc_th": "สตรีผู้มีความรักอย่างมีความสุข มารดาที่ร่าเริง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -21843,19 +21843,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ve/M2",
+    "eq": "Mo หรือ Ve M2",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "M2",
     "c_th": "M2",
-    "desc_en": "[หมายเหตุท้ายหน้า สมการซับซ้อน ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้] Mo/Ve plus M minus Su, or Mo/Ve plus M equals Su plus Su, the mother.",
+    "desc_en": "[หมายเหตุท้ายหน้า สมการซับซ้อน ไม่ใช่หนึ่งใน 20 รายการหลักของบทนี้] Mo หรือ Ve plus M minus Su, or Mo หรือ Ve plus M equals Su plus Su, the mother.",
     "desc_th": "จันทร์ หรือ ศุกร์ บวกเมอริเดียน ลบอาทิตย์ หรือ จันทร์ หรือ ศุกร์ บวกเมอริเดียน เทียบเท่าอาทิตย์ คือมารดา",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Mo/Ma",
+    "eq": "Mo หรือ Ma",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Mars",
@@ -21957,7 +21957,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be fortunate in well regulated time and working conditions, finding the right kind of work, enjoying the work. The affianced woman. The happy wife. Pregnancy. The rich or orderly home.",
     "desc_th": "ความโชคดีในเวลาและสภาพการทำงานที่เป็นระเบียบ การพบงานที่เหมาะสม ความเพลิดเพลินในงาน คู่หมั้นสตรี ภรรยาที่มีความสุข การตั้งครรภ์ บ้านที่ร่ำรวยหรือเป็นระเบียบ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -22107,11 +22107,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ju",
+    "eq": "Mo หรือ Ju",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "The fortunate(happy) woman. The fortunate nation. Happy hours. Peace.",
@@ -22123,10 +22123,10 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
-    "desc_en": "Contentment. Many happy hours in the life-time. Being made happy by woman. To be pregnant, equals Su directed. Equals Su/Ma with male child.",
+    "desc_en": "Contentment. Many happy hours in the life-time. Being made happy by woman. To be pregnant, equals Su directed. Equals Su หรือ Ma with male child.",
     "desc_th": "ความพึงพอใจ ชั่วโมงแห่งความสุขมากมายในชีวิต การมีความสุขเพราะสตรี การตั้งครรภ์ เทียบเท่าอาทิตย์จร เทียบเท่าอาทิตย์ หรือ อังคารคือบุตรชาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -22135,7 +22135,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Happy hours. Happy and contented nations. Fortunate changes in general.",
@@ -22147,7 +22147,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "The daily repetition of happy hours. A man's happy woman. Equals Venus, to be pregnant with a girl.",
@@ -22159,7 +22159,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Acquaintance with cheerful and serene women. Happy and cheerful surroundings.",
@@ -22171,7 +22171,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Connection with cheerful and joyous women. To become pregnant. Equals Sa, the end of pregnancy. To be joyful and cheerful with several women.",
@@ -22183,7 +22183,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Happy hours with cheerful conversations. To think of happy hours. Thoughts of a happy woman.",
@@ -22195,7 +22195,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "A woman made happy by love. Harmonious nation. To love happy and cheerful hours.",
@@ -22207,7 +22207,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "The betrothed woman. To feel approaching motherhood. Serene and happy hours while working. Deeds which are caused by happiness.",
@@ -22219,7 +22219,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Girls whose betrothal has been broken off. Separated from happiness. To be separated from the mother. Saddening of happy moments.",
@@ -22231,7 +22231,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Suddenly happy (lucky) woman. Cheerful mood. The mind is excited thru luck or fortunate changes. Pregnancy. Equals Saturn, end of pregnancy.",
@@ -22243,7 +22243,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "The departing happiness of a woman. The woman who is a spendthrift. Happiness diminished thru falsehood and error. Girl suffering thru lover's unfaithfulness.",
@@ -22255,7 +22255,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Increasing fortune, sincerity.",
@@ -22267,7 +22267,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "The happy wedding participant. The bride. The happy hours of relaxation in the family. To be happy in company.",
@@ -22279,7 +22279,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Easy going, happy woman. Happy hours in sad circumstances.",
@@ -22291,7 +22291,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "To love to become a mother. A happy motherhood. Happiness in creating.",
@@ -22303,7 +22303,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "A woman having become well-to-do thru the State. Gain thru lottery by the wife. The populace made happy by the government. To be in good mood thru one's own ability.",
@@ -22315,7 +22315,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "The happy hours for many. Rapid spreading of good fortune. Many happy women.",
@@ -22327,7 +22327,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Restful, happy hours, thru being left alone. For women it may mean end of good fortune.",
@@ -22339,7 +22339,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Happy hours thru mighty successful creation. Growing of the own optimism.",
@@ -22351,7 +22351,7 @@ const PLANETARY_DB = [
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Happy hours in spiritual communion.",
@@ -22359,7 +22359,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Sa",
+    "eq": "Mo หรือ Sa",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Saturn",
@@ -22473,7 +22473,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Pleasant evening hours. The happily separated woman. The grass widow. Woman travelling. Equals Mercury, this woman being greeted.",
     "desc_th": "ชั่วโมงเย็นที่น่าพึงใจ สตรีที่แยกทางอย่างมีความสุข หญิงม่ายที่ยังมีคู่สมรสอยู่ สตรีที่เดินทาง เทียบเท่าพุธคือสตรีผู้นี้ได้รับการทักทาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -22611,7 +22611,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง จากการตรวจสอบภาพสแกน PDF)"
   },
   {
-    "eq": "Mo/Ur",
+    "eq": "Mo หรือ Ur",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Uranus",
@@ -22725,7 +22725,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden exciting joyful events, populace favored by good luck. A suddenly successful woman. A woman desiring children.",
     "desc_th": "เหตุการณ์ตื่นเต้นและปีติยินดีอย่างฉับพลัน ประชากรที่โชคดี สตรีที่ประสบความสำเร็จอย่างฉับพลัน สตรีที่ปรารถนามีบุตร",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -22863,7 +22863,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ne",
+    "eq": "Mo หรือ Ne",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Neptune",
@@ -22977,7 +22977,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "A woman made happy by sensitiveness. Sleep well. Undisturbed night rest. Pleasant dreams.",
     "desc_th": "สตรีที่มีความสุขจากความไวรับรู้ การนอนหลับสบาย การพักผ่อนกลางคืนที่ไม่ถูกรบกวน ความฝันที่น่าพึงใจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -23115,7 +23115,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Pl",
+    "eq": "Mo หรือ Pl",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Pluto",
@@ -23229,7 +23229,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate changes of no duration. Changeable fortune of people.",
     "desc_th": "การเปลี่ยนแปลงที่โชคดีแต่ไม่ยั่งยืน โชคที่เปลี่ยนแปลงง่ายของผู้คน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -23367,7 +23367,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Cu",
+    "eq": "Mo หรือ Cu",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Cupido",
@@ -23481,7 +23481,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Willingly marrying woman. Happy bride or wife. Happy leisure hours. Men happily associated with women.",
     "desc_th": "สตรีที่เต็มใจแต่งงาน เจ้าสาวหรือภรรยาที่มีความสุข ชั่วโมงพักผ่อนที่มีความสุข บุรุษที่มีความสุขในการคบหากับสตรี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -23619,7 +23619,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ha",
+    "eq": "Mo หรือ Ha",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Hades",
@@ -23733,7 +23733,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money worries. Earning money in a base, immoral way.",
     "desc_th": "ความกังวลเรื่องเงิน การหาเงินด้วยวิธีที่ต่ำทรามผิดศีลธรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -23871,7 +23871,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ze",
+    "eq": "Mo หรือ Ze",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Zeus",
@@ -23985,7 +23985,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Cheerful disposition. Fortune or luck thru creation. Bonfire. Light.",
     "desc_th": "อุปนิสัยร่าเริง โชคผ่านการสร้างสรรค์ กองไฟ แสงสว่าง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -23998,8 +23998,8 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
-    "desc_en": "Retarding interference, to stop something. Depressed mind. Late hours still working. Equals Ju/Sa, a building on fire.",
-    "desc_th": "การแทรกแซงที่ทำให้ล่าช้า การหยุดบางสิ่ง จิตใจหดหู่ ชั่วโมงดึกที่ยังทำงานอยู่ เทียบเท่าพฤหัสบดี หรือ เสาร์คืออาคารที่ไฟไหม้",
+    "desc_en": "Retarding interference, to stop something. Depressed mind. Late hours still working. Equals Ju หรือ Sa, a building on fire.",
+    "desc_th": "การแทรกแซงที่ทำให้ล่าช้า การหยุดบางสิ่ง จิตใจหดหู่ ชั่วโมงดึกที่ยังทำงานอยู่ เทียบเท่าพฤหัส หรือ เสาร์คืออาคารที่ไฟไหม้",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -24123,7 +24123,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Kr",
+    "eq": "Mo หรือ Kr",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Kronos",
@@ -24237,7 +24237,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Successful officialdom. Successful leading lady. Benefic independent women.",
     "desc_th": "ระบบราชการที่ประสบความสำเร็จ สตรีผู้นำที่ประสบความสำเร็จ สตรีที่เป็นอิสระและเป็นคุณ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -24375,7 +24375,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ap",
+    "eq": "Mo หรือ Ap",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Apollon",
@@ -24489,7 +24489,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Well being of nations. Many happy hours spent together with other people.",
     "desc_th": "ความผาสุกของชาติ ชั่วโมงแห่งความสุขมากมายที่ใช้ร่วมกับผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -24627,7 +24627,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Ad",
+    "eq": "Mo หรือ Ad",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Admetos",
@@ -24741,7 +24741,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Modest fortune. Happy in modest circumstances. To feel secure.",
     "desc_th": "โชคพอประมาณ ความสุขในสถานการณ์ที่พอเพียง ความรู้สึกมั่นคง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -24879,7 +24879,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Vu",
+    "eq": "Mo หรือ Vu",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Vulcanus",
@@ -24993,7 +24993,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To spread optimism around oneself. Dealing with optimistic women. To spend happy hours with them. To be fortunate with representatives of the public and with people having financial power. To cause public interest thru one's own good fortune.",
     "desc_th": "การแผ่การมองโลกในแง่ดีรอบตัว การรับมือกับสตรีที่มองโลกในแง่ดี การใช้ชั่วโมงแห่งความสุขร่วมกัน ความโชคดีกับตัวแทนสาธารณะและผู้มีอำนาจทางการเงิน การก่อความสนใจสาธารณะผ่านโชคดีของตนเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -25131,7 +25131,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Mo/Po",
+    "eq": "Mo หรือ Po",
     "a_en": "Moon",
     "a_th": "จันทร์",
     "b_en": "Poseidon",
@@ -25245,7 +25245,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate inspiration. Correct leadership by instinct.",
     "desc_th": "แรงบันดาลใจที่โชคดี ความเป็นผู้นำที่ถูกต้องด้วยสัญชาตญาณ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -25383,7 +25383,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/No",
+    "eq": "No หรือ No",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Node",
@@ -25497,7 +25497,7 @@ const PLANETARY_DB = [
     "b_en": "Node",
     "b_th": "ราหู",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate associations.",
     "desc_th": "ความสัมพันธ์ที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -25647,7 +25647,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Me",
+    "eq": "No หรือ Me",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Mercury",
@@ -25749,7 +25749,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To find good conversation. Eq. As, successful interview. To think of lucky or fortunate connection.",
     "desc_th": "การได้สนทนาที่ดี เทียบเท่าลัคนาคือการสัมภาษณ์ที่ประสบความสำเร็จ การคิดถึงความเชื่อมโยงที่โชคดีหรือเป็นมงคล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -25899,7 +25899,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ve",
+    "eq": "No หรือ Ve",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Venus",
@@ -26001,7 +26001,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate (happy) love union. Joy and happiness thru pleasant connections.",
     "desc_th": "การรวมกันแห่งความรักที่โชคดี (มีความสุข) ความปีติและความสุขผ่านความเชื่อมโยงอันน่าพึงใจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -26151,7 +26151,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ma",
+    "eq": "No หรือ Ma",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Mars",
@@ -26253,7 +26253,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate common action. Happy marital union. Betrothal.",
     "desc_th": "การกระทำร่วมกันที่โชคดี การรวมกันในชีวิตสมรสอย่างมีความสุข การหมั้นหมาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -26391,11 +26391,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ju",
+    "eq": "No หรือ Ju",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Fortunate union.",
@@ -26407,7 +26407,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "General popularity. To be well liked.",
@@ -26419,7 +26419,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Good relationships.",
@@ -26431,7 +26431,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Good bodily connections. Good personal connections.",
@@ -26443,7 +26443,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Good connections with others.",
@@ -26455,7 +26455,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Fortunate union with a woman, or for women.",
@@ -26467,7 +26467,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Good entertainer. Mental sympathy.",
@@ -26479,7 +26479,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Fortunate (happy) love union. Pleasant and harmonious connections.",
@@ -26491,7 +26491,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Union. Betrothal and progeny.",
@@ -26503,7 +26503,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Dissolution of a betrothal or marriage or good connection.",
@@ -26515,7 +26515,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Unexpected good acquaintance.",
@@ -26527,7 +26527,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Gradual cooling off of friendship.",
@@ -26539,7 +26539,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Getting acquainted for a fortunate connection.",
@@ -26551,7 +26551,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Good connection leading to marriage.",
@@ -26563,7 +26563,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Good relations to a single woman.",
@@ -26575,7 +26575,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Increase in the family in prospect.",
@@ -26587,7 +26587,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Protection. Acquaintance with the future husband. Good relations of the father or of the chief.",
@@ -26599,7 +26599,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "To be happily joined with many. Fine connections with merchants, scientists.",
@@ -26611,7 +26611,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "The end of a happy union.",
@@ -26623,7 +26623,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Influence and might thru fortunate connections.",
@@ -26635,7 +26635,7 @@ const PLANETARY_DB = [
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Fortunate connection with prudent and wise people. Fortunate spiritual relations.",
@@ -26643,7 +26643,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Sa",
+    "eq": "No หรือ Sa",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Saturn",
@@ -26757,7 +26757,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Pleasant separations. Quick and pleasant separations.",
     "desc_th": "การพลัดพรากที่น่ายินดี การพลัดพรากที่รวดเร็วและน่ายินดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -26895,7 +26895,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ur",
+    "eq": "No หรือ Ur",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Uranus",
@@ -26997,7 +26997,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To come into money suddenly thru acquaintances. To enjoy advantages.",
     "desc_th": "การได้เงินมาอย่างฉับพลันผ่านคนรู้จัก การได้รับประโยชน์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -27135,7 +27135,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
@@ -27147,7 +27147,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ne",
+    "eq": "No หรือ Ne",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Neptune",
@@ -27261,7 +27261,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To suffer money losses thru common interests. False speculations. Poor investments.",
     "desc_th": "การประสบความสูญเสียทางการเงินผ่านผลประโยชน์ร่วมกัน การเก็งกำไรที่ผิดพลาด การลงทุนที่ย่ำแย่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -27399,7 +27399,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "No/Pl",
+    "eq": "No หรือ Pl",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Pluto",
@@ -27513,7 +27513,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate changes in the connections.",
     "desc_th": "การเปลี่ยนแปลงที่โชคดีในความเชื่อมโยง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -27651,7 +27651,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Cu",
+    "eq": "No หรือ Cu",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Cupido",
@@ -27765,7 +27765,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Hilarity in social company. Jolly wedding. Fortunate social connection.",
     "desc_th": "ความรื่นเริงในกลุ่มสังคม งานแต่งงานที่สนุกสนาน ความเชื่อมโยงทางสังคมที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -27903,7 +27903,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ha",
+    "eq": "No หรือ Ha",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Hades",
@@ -28017,7 +28017,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be involved in money thefts. To be prompted to misappropriate or to extort something. Unpleasantness in money affairs. To be a witness to theft.",
     "desc_th": "การพัวพันในการขโมยเงิน การถูกกระตุ้นให้ยักยอกหรือรีดไถบางสิ่ง ความไม่น่ายินดีในเรื่องการเงิน การเป็นพยานการโจรกรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -28143,7 +28143,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ต้นฉบับสแกนซีดจางมาก อ่านได้เพียงบางส่วน ตรวจสอบกับภาพสแกนแล้วแต่ยังไม่สามารถอ่านครบทุกคำ)"
   },
   {
-    "eq": "No/Ze",
+    "eq": "No หรือ Ze",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Zeus",
@@ -28257,7 +28257,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joyful cooperation. Fortunate working together. Working with jewelry.",
     "desc_th": "ความร่วมมือที่ปีติยินดี การทำงานร่วมกันที่โชคดี การทำงานกับเครื่องประดับ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -28395,7 +28395,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Kr",
+    "eq": "No หรือ Kr",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Kronos",
@@ -28498,7 +28498,7 @@ const PLANETARY_DB = [
     "b_th": "โครนอส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "To be taken into custody. To be arrested. Thru one's own activities to contact the authorities. Equals Ma/Su, to execute sentence.",
+    "desc_en": "To be taken into custody. To be arrested. Thru one's own activities to contact the authorities. Equals Ma หรือ Su, to execute sentence.",
     "desc_th": "การถูกควบคุมตัว การถูกจับกุม การติดต่อกับผู้มีอำนาจผ่านกิจกรรมของตนเอง เทียบเท่าอังคาร หรือ อาทิตย์คือการลงโทษตามคำพิพากษา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -28509,7 +28509,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Reward. Good connection with authorities. To receive money. Court action.",
     "desc_th": "รางวัล ความเชื่อมโยงที่ดีกับผู้มีอำนาจ การได้รับเงิน การดำเนินคดีในศาล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -28647,7 +28647,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ap",
+    "eq": "No หรือ Ap",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Apollon",
@@ -28761,7 +28761,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Economically or scientifically united with many.",
     "desc_th": "การรวมตัวทางเศรษฐกิจหรือวิทยาศาสตร์กับผู้คนมากมาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -28899,7 +28899,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Ad",
+    "eq": "No หรือ Ad",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Admetos",
@@ -29013,7 +29013,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be happy and fortunate with few. Content with little. To have modest stroke of fortune.",
     "desc_th": "ความสุขและโชคดีกับคนเพียงไม่กี่คน ความพึงพอใจกับสิ่งเล็กน้อย โชคลาภที่พอประมาณ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -29151,7 +29151,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Vu",
+    "eq": "No หรือ Vu",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Vulcanus",
@@ -29265,7 +29265,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happily tied to influential persons.",
     "desc_th": "การผูกพันอย่างมีความสุขกับผู้ทรงอิทธิพล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -29403,7 +29403,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "No/Po",
+    "eq": "No หรือ Po",
     "a_en": "Node",
     "a_th": "ราหู",
     "b_en": "Poseidon",
@@ -29517,7 +29517,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Aligned with reasonable and prudent people. Connected with educated people.",
     "desc_th": "การสอดคล้องกับผู้มีเหตุผลและรอบคอบ การเชื่อมโยงกับผู้มีการศึกษา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -29679,7 +29679,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง จากการตรวจสอบภาพสแกน PDF)"
   },
   {
-    "eq": "Me/Me",
+    "eq": "Me หรือ Me",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Mercury",
@@ -29782,7 +29782,7 @@ const PLANETARY_DB = [
     "b_th": "พุธ",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "The mentally excited. Argument. Equals Ma/Sa, suicide.",
+    "desc_en": "The mentally excited. Argument. Equals Ma หรือ Sa, suicide.",
     "desc_th": "ความตื่นเต้นทางความคิด การโต้เถียง เทียบเท่าอังคาร หรือ เสาร์คือการฆ่าตัวตาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -29793,7 +29793,7 @@ const PLANETARY_DB = [
     "b_en": "Mercury",
     "b_th": "พุธ",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Acquisitiveness. Talkativeness. Happy mood.",
     "desc_th": "ความโลภอยากได้ ความช่างพูด อารมณ์ที่มีความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -29943,7 +29943,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Sa",
+    "eq": "Me หรือ Sa",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Saturn",
@@ -29955,7 +29955,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ve",
+    "eq": "Me หรือ Ve",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Venus",
@@ -30057,7 +30057,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy new acquaintances. Fond of ornaments. Jeweler. Sense of humor. Friendly.",
     "desc_th": "คนรู้จักใหม่ที่มีความสุข ความชื่นชอบเครื่องประดับ ช่างอัญมณี อารมณ์ขัน ความเป็นมิตร",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -30207,7 +30207,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ma",
+    "eq": "Me หรือ Ma",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Mars",
@@ -30309,7 +30309,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Cheerfully proceeding to action. Successful thinking. Valuable debates.",
     "desc_th": "การดำเนินสู่การกระทำอย่างร่าเริง ความคิดที่ประสบความสำเร็จ การโต้วาทีที่มีคุณค่า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -30382,7 +30382,7 @@ const PLANETARY_DB = [
     "b_th": "อังคาร",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
-    "desc_en": "To be ready for a misdeed. Cries for help. Equals Ma/Sa, to become a murderer as the result of a quarrel.",
+    "desc_en": "To be ready for a misdeed. Cries for help. Equals Ma หรือ Sa, to become a murderer as the result of a quarrel.",
     "desc_th": "ความพร้อมสำหรับการกระทำผิด เสียงร้องขอความช่วยเหลือ เทียบเท่าอังคาร หรือ เสาร์คือการกลายเป็นฆาตกรจากการทะเลาะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -30459,11 +30459,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ju",
+    "eq": "Me หรือ Ju",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Talent for speech. Fluent speech. Cheerful mood. Loquacity.",
@@ -30475,7 +30475,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "To be in a happy contented mood. Optimism.",
@@ -30487,7 +30487,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Merriment. Lively conversation.",
@@ -30499,7 +30499,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Happy mood. Lively and agile body.",
@@ -30511,7 +30511,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Happy and cheerful entertainment and conversation.",
@@ -30523,7 +30523,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Talkative woman.",
@@ -30535,7 +30535,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Master of ceremonies, cheerleader. To think about happy connections.",
@@ -30547,7 +30547,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Lovers' discourse. Teasing. Pleasant conversation. Agreements in ideas.",
@@ -30559,7 +30559,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Activity accompanied by merry chatter. Equals Mars, speaker, orator. Equals Meridian, merchant. To come to a decision.",
@@ -30571,7 +30571,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "To take leave gladly. Bon voyage.",
@@ -30583,7 +30583,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Speaker. Quick at repartee. Agitators. Equals Pluto, to abruptly readjust one's thinking. Great agility in thinking. To suddenly realize.",
@@ -30595,7 +30595,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Imaginative, fluent, orator. To try to dissuade. To speculate.",
@@ -30607,7 +30607,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "To recognize a fortunate change.",
@@ -30619,7 +30619,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Wedding speeches. Cheerfulness at a wedding.",
@@ -30631,7 +30631,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Obscene jokes, low, jolly entertainment. To become excited about atrocities.",
@@ -30643,7 +30643,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "A jester who carries one away by his speech and gestures.",
@@ -30655,7 +30655,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Celebrations at court. Rulers who are talkative. National celebrations. An artist with words.",
@@ -30667,7 +30667,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Success thru knowledge of languages. Fortunate entertainment with many.",
@@ -30679,7 +30679,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Luck thru deep thinking, a quiet pleasant conversation with a few friends.",
@@ -30691,7 +30691,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Constructive optimistic thinking.",
@@ -30703,7 +30703,7 @@ const PLANETARY_DB = [
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Happiness thru spiritual conversation (entertainment). To debate ideas with prudent and philosophically minded people.",
@@ -30711,7 +30711,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Sa",
+    "eq": "Me หรือ Sa",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Saturn",
@@ -30814,7 +30814,7 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "To be separated thru quarrel or dissention. A trip that has to be made. Equals Ma/Sa, a trip to death.",
+    "desc_en": "To be separated thru quarrel or dissention. A trip that has to be made. Equals Ma หรือ Sa, a trip to death.",
     "desc_th": "การพลัดพรากผ่านการทะเลาะหรือความบาดหมาง การเดินทางที่จำเป็นต้องทำ เทียบเท่าอังคาร หรือ เสาร์คือการเดินทางสู่ความตาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -30825,7 +30825,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Vacation trip. Pleasure trip. Fortunate and happy day.",
     "desc_th": "การเดินทางพักผ่อน การเดินทางเพื่อความเพลิดเพลิน วันที่โชคดีและมีความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -30851,7 +30851,7 @@ const PLANETARY_DB = [
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Homesickness. Melancholy. A trip in an airplane. Hopeless trip. Navigation. Equals Pluto, to be looking for something. Eq. Ju, to find it.",
-    "desc_th": "ความคิดถึงบ้าน ความเศร้าสร้อย การเดินทางด้วยเครื่องบิน การเดินทางที่สิ้นหวัง การเดินเรือ เทียบเท่าพลูโตคือการค้นหาบางสิ่ง เทียบเท่าพฤหัสบดีคือการพบมัน",
+    "desc_th": "ความคิดถึงบ้าน ความเศร้าสร้อย การเดินทางด้วยเครื่องบิน การเดินทางที่สิ้นหวัง การเดินเรือ เทียบเท่าพลูโตคือการค้นหาบางสิ่ง เทียบเท่าพฤหัสคือการพบมัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -30898,7 +30898,7 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Zeus",
     "c_th": "เซอุส",
-    "desc_en": "Enforced journey. Ejected. Fire alarm. Eq. Mo/Ne, to be called to put out fire.",
+    "desc_en": "Enforced journey. Ejected. Fire alarm. Eq. Mo หรือ Ne, to be called to put out fire.",
     "desc_th": "การเดินทางที่ถูกบังคับ การถูกขับไล่ สัญญาณเตือนไฟไหม้ เทียบเท่าจันทร์ หรือ เนปจูนคือการถูกเรียกให้ไปดับไฟ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -30963,7 +30963,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ur",
+    "eq": "Me หรือ Ur",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Uranus",
@@ -31077,7 +31077,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Orator, quick at repartee. Sudden merriment. Lucky news. Wish to act quickly.",
     "desc_th": "นักปราศรัย ปฏิภาณไหวพริบ ความรื่นเริงฉับพลัน ข่าวดี ความปรารถนาที่จะกระทำอย่างรวดเร็ว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -31215,7 +31215,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Sa",
+    "eq": "Me หรือ Sa",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Saturn",
@@ -31227,7 +31227,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ne",
+    "eq": "Me หรือ Ne",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Neptune",
@@ -31341,7 +31341,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Lucky (fortunate) imagination. To build air castles.",
     "desc_th": "จินตนาการที่โชคดี การสร้างวิมานในอากาศ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -31355,7 +31355,7 @@ const PLANETARY_DB = [
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Diseased mentality (sickly). Collection mania. To use mental products of others. Equals Ju, to be successful.",
-    "desc_th": "ความคิดที่ป่วยไข้ ความคลั่งไคล้การสะสม การใช้ผลผลิตทางความคิดของผู้อื่น เทียบเท่าพฤหัสบดีคือความสำเร็จ",
+    "desc_th": "ความคิดที่ป่วยไข้ ความคลั่งไคล้การสะสม การใช้ผลผลิตทางความคิดของผู้อื่น เทียบเท่าพฤหัสคือความสำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -31366,7 +31366,7 @@ const PLANETARY_DB = [
     "b_th": "เนปจูน",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
-    "desc_en": "Gifted civil engineer. Eq. Su, inventor. Eq. Me, epilepsy. Eq. Ma, to execute suddenly a treacherous act. Eq. Ma/Sa, with death as a consequence.",
+    "desc_en": "Gifted civil engineer. Eq. Su, inventor. Eq. Me, epilepsy. Eq. Ma, to execute suddenly a treacherous act. Eq. Ma หรือ Sa, with death as a consequence.",
     "desc_th": "วิศวกรโยธาผู้มีพรสวรรค์ เทียบเท่าอาทิตย์คือนักประดิษฐ์ เทียบเท่าพุธคือโรคลมชัก เทียบเท่าอังคารคือการกระทำการทรยศอย่างฉับพลัน เทียบเท่าอังคาร หรือ เสาร์คือผลลัพธ์เป็นความตาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -31479,7 +31479,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Pl",
+    "eq": "Me หรือ Pl",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Pluto",
@@ -31593,7 +31593,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To come to recognizing happy changes of conditions. Fortunate development of the trend of thoughts.",
     "desc_th": "การมาถึงการรับรู้การเปลี่ยนแปลงของสถานการณ์ที่มีความสุข พัฒนาการที่โชคดีของแนวความคิด",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -31731,7 +31731,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Cu",
+    "eq": "Me หรือ Cu",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Cupido",
@@ -31845,7 +31845,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Jewelry products. Mutual plans which are successful. Fortunate thru social entertainment with others or thru artistic thoughts.",
     "desc_th": "ผลิตภัณฑ์เครื่องประดับ แผนการร่วมที่ประสบความสำเร็จ ความโชคดีผ่านความบันเทิงทางสังคมกับผู้อื่นหรือผ่านความคิดทางศิลปะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -31983,7 +31983,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ha",
+    "eq": "Me หรือ Ha",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Hades",
@@ -32097,7 +32097,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To enrich oneself by conducting a fence. To feel at home in mixed society. To be influenced to buy second hand or old things. To be deceived in money matters. To love and to think of the past. To live in the past. Good fortune gone.",
     "desc_th": "การร่ำรวยด้วยการเป็นพ่อค้าของโจร การรู้สึกเป็นบ้านในสังคมปะปน การถูกชักจูงให้ซื้อของมือสองหรือของเก่า การถูกหลอกลวงในเรื่องการเงิน การรักและคิดถึงอดีต การใช้ชีวิตในอดีต โชคดีที่จากไป",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -32235,7 +32235,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ze",
+    "eq": "Me หรือ Ze",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Zeus",
@@ -32349,7 +32349,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Good command; good laws. Laws concerning pleasures or money. Success or profit thru rules or creative ideas.",
     "desc_th": "คำสั่งที่ดี กฎหมายที่ดี กฎหมายเกี่ยวกับความบันเทิงหรือเงิน ความสำเร็จหรือผลกำไรผ่านกฎเกณฑ์หรือความคิดสร้างสรรค์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -32487,7 +32487,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Kr",
+    "eq": "Me หรือ Kr",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Kronos",
@@ -32601,7 +32601,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Overflowing with mental enjoyment (recital, lecture). A good spiritual leader. To be sworn in (to take oath).",
     "desc_th": "ความเปี่ยมล้นด้วยความเพลิดเพลินทางความคิด (การบรรยาย การกล่าวสุนทรพจน์) ผู้นำทางจิตวิญญาณที่ดี การสาบานตน (การให้คำสัตย์ปฏิญาณ)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -32739,7 +32739,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ap",
+    "eq": "Me หรือ Ap",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Apollon",
@@ -32841,7 +32841,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy conversation with many.",
     "desc_th": "การสนทนาที่มีความสุขกับผู้คนมากมาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -32991,7 +32991,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Ad",
+    "eq": "Me หรือ Ad",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Admetos",
@@ -33105,7 +33105,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To concentrate one's own thoughts successfully. Fortunate or happy concentration of thoughts.",
     "desc_th": "การรวมสมาธิความคิดของตนเองอย่างสำเร็จ สมาธิทางความคิดที่โชคดีหรือมีความสุข",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -33243,7 +33243,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Vu",
+    "eq": "Me หรือ Vu",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Vulcanus",
@@ -33357,7 +33357,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To concentrate strongly on one's own fortune. The feeling of bliss.",
     "desc_th": "การรวมสมาธิอย่างแรงกล้ากับโชคชะตาของตนเอง ความรู้สึกเป็นสุขล้ำเลิศ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -33495,7 +33495,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Po",
+    "eq": "Me หรือ Po",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Poseidon",
@@ -33609,7 +33609,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy over ideas, over ideals. Happy conversations regarding these things.",
     "desc_th": "ความสุขในความคิด ในอุดมคติ การสนทนาที่มีความสุขเกี่ยวกับสิ่งเหล่านี้",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -33747,7 +33747,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ve",
+    "eq": "Ve หรือ Ve",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Venus",
@@ -33861,7 +33861,7 @@ const PLANETARY_DB = [
     "b_en": "Venus",
     "b_th": "ศุกร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness of love.",
     "desc_th": "ความสุขแห่งความรัก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -34011,7 +34011,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ma",
+    "eq": "Ve หรือ Ma",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Mars",
@@ -34107,7 +34107,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ne",
+    "eq": "Ma หรือ Ne",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Neptune",
@@ -34125,7 +34125,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy sex intercourse. Luck with relatives and intimate acquaintances. Equals Mars, energetic sexual love activity. Equals M, as occupation (prostitute).",
     "desc_th": "การมีเพศสัมพันธ์อย่างมีความสุข โชคดีกับญาติและคนรู้จักที่ใกล้ชิด เทียบเท่าอังคารคือกิจกรรมความรักเชิงเพศที่มีพลัง เทียบเท่าเมอริเดียนคืออาชีพ (โสเภณี)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -34210,7 +34210,7 @@ const PLANETARY_DB = [
     "b_th": "อังคาร",
     "c_en": "Zeus",
     "c_th": "เซอุส",
-    "desc_en": "Procreative sex activity among the next of kin or in marital life. Equals Ne/Ze, sterilization. Intimate relationship with leading people.",
+    "desc_en": "Procreative sex activity among the next of kin or in marital life. Equals Ne หรือ Ze, sterilization. Intimate relationship with leading people.",
     "desc_th": "กิจกรรมทางเพศเพื่อสืบพันธุ์ในหมู่ญาติใกล้ชิดหรือในชีวิตสมรส เทียบเท่าเนปจูน หรือ เซอุสคือการทำหมัน ความสัมพันธ์ที่ใกล้ชิดกับผู้นำ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -34275,11 +34275,11 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง จากการตรวจสอบภาพสแกน PDF)"
   },
   {
-    "eq": "Ve/Ju",
+    "eq": "Ve หรือ Ju",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Happiness of love. Rapture of joy. Goldsmiths.",
@@ -34291,7 +34291,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "To be recipient of love's joy. The sensation of love.",
@@ -34303,7 +34303,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Love's happiness. Gorgeous celebrations. Jewelry.",
@@ -34315,7 +34315,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Joyous love of a man. Love's happiness on the day.",
@@ -34327,7 +34327,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "To be admired. Pleasantness and success thru others.",
@@ -34339,7 +34339,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Joyous love of a woman.",
@@ -34351,7 +34351,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Rendez-vous. Union of love. Equals M, engagement. Happy connections.",
@@ -34363,7 +34363,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Thoughts of happy love. Joy thru confiding in friends.",
@@ -34375,7 +34375,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Happy sex intercourse. Harmony. Joy and happiness thru acts of friends or relatives. To act successfully in love and devotion.",
@@ -34387,7 +34387,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Doubtful happiness in love. Separated love. Slow ripening happiness in love.",
@@ -34399,7 +34399,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden setting in of love's joy.",
@@ -34411,7 +34411,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Hopelessness of love's happiness. Love and affection with obstacles. Equals Me, to talk of hopeless love.",
@@ -34423,7 +34423,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Good fortune and happiness on the way, developing. Coming happiness.",
@@ -34435,7 +34435,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Love's happiness in marital life. Equals Kr, to conclude peace with several powers. Much luck and happiness thru a union (association).",
@@ -34447,7 +34447,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Love's happiness tied to poverty. Through love to crime. Passed away love's happiness or good fortune.",
@@ -34459,7 +34459,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Longing for family increase. Longing for family happiness, for peace. The wish or will to create happiness. Equals Ur, sudden end of an engagement in battle.",
@@ -34471,7 +34471,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "A person bewitching by his or her appearance. Good fortune thru authorities. Equals M, a peacemaker.",
@@ -34483,7 +34483,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Luck and happiness thru many. Good friends and fortune thru them.",
@@ -34495,7 +34495,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Luck thru a few or with a few. To have a few good friends.",
@@ -34507,7 +34507,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Great longing for happiness. Great optimism.",
@@ -34519,7 +34519,7 @@ const PLANETARY_DB = [
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Happiness thru mental or spiritual success. Happiness thru wisdom, religion by reason of right.",
@@ -34527,7 +34527,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Sa",
+    "eq": "Ve หรือ Sa",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Saturn",
@@ -34641,7 +34641,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness of love with consequent separation. Happy for moments.",
     "desc_th": "ความสุขแห่งความรักที่ตามมาด้วยการพลัดพราก ความสุขชั่วขณะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -34779,7 +34779,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ur",
+    "eq": "Ve หรือ Ur",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Uranus",
@@ -34881,7 +34881,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "",
     "desc_th": "ต้นฉบับพิมพ์ไม่มีข้อความสำหรับปัจจัยนี้ (ยืนยันจากภาพสแกน PDF หน้า 139 ซึ่งเว้นข้าม -Ju ไปโดยตรงจาก -Me สู่ -Ma ไม่พบบันทึกลายมือเพิ่มเติมสำหรับปัจจัยนี้)",
     "conf": "ต่ำ (ยืนยันแล้วว่าต้นฉบับขาดข้อความนี้จริง จากการตรวจสอบภาพสแกน PDF)"
@@ -35031,7 +35031,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ne",
+    "eq": "Ve หรือ Ne",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Neptune",
@@ -35145,7 +35145,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Temporary happiness in an unfortunate love affair. Only for hours united in happy love.",
     "desc_th": "ความสุขชั่วคราวในความสัมพันธ์รักที่โชคร้าย รวมกันด้วยความรักที่มีความสุขเพียงไม่กี่ชั่วโมง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -35283,7 +35283,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Pl",
+    "eq": "Ve หรือ Pl",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Pluto",
@@ -35397,7 +35397,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joy and happiness over the beginning of a new development.",
     "desc_th": "ความปีติและความสุขต่อจุดเริ่มต้นของพัฒนาการใหม่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -35535,7 +35535,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Cu",
+    "eq": "Ve หรือ Cu",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Cupido",
@@ -35649,7 +35649,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great happiness in married life. To be happy in pleasant company.",
     "desc_th": "ความสุขอย่างมากในชีวิตสมรส ความสุขในการอยู่ร่วมกันอย่างน่าพึงใจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -35787,7 +35787,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ha",
+    "eq": "Ve หรือ Ha",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Hades",
@@ -35879,7 +35879,7 @@ const PLANETARY_DB = [
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Thinking about service relations. Obscene jokes. Owner of brothel. A go-between. Equals Ju, serving cheerfully, joy about service relations.",
-    "desc_th": "การคิดถึงความสัมพันธ์การรับใช้ เรื่องตลกลามก เจ้าของซ่อง คนกลาง เทียบเท่าพฤหัสบดีคือการรับใช้อย่างร่าเริง ความปีติเรื่องความสัมพันธ์การรับใช้",
+    "desc_th": "การคิดถึงความสัมพันธ์การรับใช้ เรื่องตลกลามก เจ้าของซ่อง คนกลาง เทียบเท่าพฤหัสคือการรับใช้อย่างร่าเริง ความปีติเรื่องความสัมพันธ์การรับใช้",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -35901,7 +35901,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Pleasant and happy service relations. Income from prostitution.",
     "desc_th": "ความสัมพันธ์การรับใช้ที่น่าพึงใจและมีความสุข รายได้จากการค้าประเวณี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -36039,7 +36039,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ze",
+    "eq": "Ve หรือ Ze",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Zeus",
@@ -36153,7 +36153,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Good progeny. Happiness thru devoted activities.",
     "desc_th": "ทายาทที่ดี ความสุขผ่านกิจกรรมที่อุทิศตน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -36291,7 +36291,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Kr",
+    "eq": "Ve หรือ Kr",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Kronos",
@@ -36405,7 +36405,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Gifts thru charitable persons. Endowments.",
     "desc_th": "ของขวัญผ่านผู้ทำการกุศล เงินบริจาค",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -36543,7 +36543,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Ve/Ap",
+    "eq": "Ve หรือ Ap",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Apollon",
@@ -36657,7 +36657,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Much happiness and joy thru friendship, science or art enterprises.",
     "desc_th": "ความสุขและความปีติมากมายผ่านมิตรภาพ วิทยาศาสตร์ หรือกิจการศิลปะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -36795,7 +36795,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Ad",
+    "eq": "Ve หรือ Ad",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Admetos",
@@ -36909,7 +36909,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy justified carelessness. Eating without worries.",
     "desc_th": "ความประมาทที่สมเหตุสมผลอย่างมีความสุข การรับประทานอาหารโดยไม่กังวล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -37047,7 +37047,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Vu",
+    "eq": "Ve หรือ Vu",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Vulcanus",
@@ -37161,7 +37161,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great happiness of love. Optimism caused by luck and success. Joy thru power of attraction, which one wields. The joy and happiness of a reunion.",
     "desc_th": "ความสุขอันยิ่งใหญ่แห่งความรัก การมองโลกในแง่ดีที่เกิดจากโชคดีและความสำเร็จ ความปีติผ่านพลังแห่งการดึงดูดที่ตนมี ความปีติและความสุขของการกลับมาพบกันอีกครั้ง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -37299,7 +37299,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Po",
+    "eq": "Ve หรือ Po",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "Poseidon",
@@ -37413,7 +37413,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The just and good faith. To be happy in one's religious faith or philosophy. Luck and happiness, sometimes good fortune thru it.",
     "desc_th": "ความศรัทธาที่ยุติธรรมและดี ความสุขในความศรัทธาทางศาสนาหรือปรัชญาของตน โชคดีและความสุข บางครั้งโชคลาภผ่านสิ่งนั้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -37551,7 +37551,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ve/Po = Ur/Ne",
+    "eq": "Ve หรือ Po = Ur หรือ Ne",
     "a_en": "Venus",
     "a_th": "ศุกร์",
     "b_en": "",
@@ -37563,7 +37563,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ma",
+    "eq": "Ma หรือ Ma",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Mars",
@@ -37677,7 +37677,7 @@ const PLANETARY_DB = [
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate acts. Accomplishments. Joy of work.",
     "desc_th": "การกระทำที่โชคดี ความสำเร็จ ความปีติในการงาน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -37827,11 +37827,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ju",
+    "eq": "Ma หรือ Ju",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Joyous happenings. Fortunate deed. Betrothal. Pregnancy. Propagation. To create something. Generation. To produce. Children. Fruits.",
@@ -37843,7 +37843,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "The betrothed person. Satisfaction and contentment in one's activity.",
@@ -37855,7 +37855,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "Fortunate unions. Fruitful. Births. General satisfaction thru one's activities.",
@@ -37867,7 +37867,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Exchange of rings. Betrothal. Procreation. The man who is happy and successful in his work.",
@@ -37879,7 +37879,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "The betrothal. A vow or pledge. Equals Su, the birth of a son.",
@@ -37891,7 +37891,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "The betrothed woman or girl. Birth of a girl. Persons who are content and satisfied with their activities.",
@@ -37903,7 +37903,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "The inception of a betrothal. To produce something. Desire for activity.",
@@ -37915,7 +37915,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Thoughts of betrothal. To produce something. Increase in family. Fortunate deeds in connection with them.",
@@ -37927,7 +37927,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Love's happiness connected with sexual intercourse. Pregnancy. Birth of a girl child. Successful pleasant work.",
@@ -37949,7 +37949,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "",
     "b_th": "",
     "c_en": "",
@@ -37963,7 +37963,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Annulment of an engagement. The parting of relationship. Confinement or end of pregnancy. The ripe fruit. To finish a successful activity. Unpleasant decision with good results.",
@@ -37975,7 +37975,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden betrothal. Disturbance of pregnancy. Abortion. The beginning of a surprisingly happy activity. Exciting activities which are successful.",
@@ -37987,7 +37987,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Denials of betrothals. Dissolution of promises, or understandings. Hopeless relationship. Impotence. Miscarriages. Not executed intentions. End of a happy activity.",
@@ -37999,7 +37999,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Inception of a fortunate activity. Successful build-up. Several lovers, or competitors.",
@@ -38011,7 +38011,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Betrothal with marriage following. Happy activity, which leads to doing acts. Successful artistic activity.",
@@ -38023,7 +38023,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Betrothal with difficulties. Miscarriage. Abortion. Bad or mediocre results or work accomplishments. Fruits which one does not harvest.",
@@ -38035,7 +38035,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Enforced betrothal (morally). To enforce the pay for the activities, for the work. Equals Sa, childless. To be successful thru knowing one's ability and accomplishments.",
@@ -38047,7 +38047,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Through happy activities to independence. Leadership thru one's own fortunate activities. Good fruits, fine accomplishments. Judgement passed by the authorities.",
@@ -38059,7 +38059,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Successful work in science and trade. Many fruits. Many births.",
@@ -38071,7 +38071,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Interruption of a fortunate activity. Miscarriage. Decrease of the birth rate. Poor fruits.",
@@ -38083,7 +38083,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Power thru successful accomplishments. Enforced, increased optimism. Mighty promise of results.",
@@ -38095,7 +38095,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Action dictated by reason-moral rightousness.",
@@ -38107,7 +38107,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Birth of a boy.",
@@ -38119,7 +38119,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Birth of a girl.",
@@ -38127,11 +38127,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ar/Ju-Sa",
+    "eq": "Ar หรือ Ju-Sa",
     "a_en": "Aries Point",
     "a_th": "จุดเมษ",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Parturition.",
@@ -38143,7 +38143,7 @@ const PLANETARY_DB = [
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "The end of pregnancy.",
@@ -38151,7 +38151,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
@@ -38243,7 +38243,7 @@ const PLANETARY_DB = [
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Thoughts or news about sickness, separation and death. Sick-calls. Equals Ju, destroyed hope. Violent words bring sorrow.",
-    "desc_th": "ความคิดหรือข่าวสารเกี่ยวกับความเจ็บป่วย การพลัดพราก และความตาย การเยี่ยมผู้ป่วย เทียบเท่าพฤหัสบดีคือความหวังที่ถูกทำลาย คำพูดรุนแรงนำมาซึ่งความโศกเศร้า",
+    "desc_th": "ความคิดหรือข่าวสารเกี่ยวกับความเจ็บป่วย การพลัดพราก และความตาย การเยี่ยมผู้ป่วย เทียบเท่าพฤหัสคือความหวังที่ถูกทำลาย คำพูดรุนแรงนำมาซึ่งความโศกเศร้า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -38259,11 +38259,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ju",
+    "eq": "Ma หรือ Ju",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Death of children.",
@@ -38277,7 +38277,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Quick death. Pleasant interruption of work. Vacations. Equals Ha, thru strange circumstances. A good deed, which is not appreciated.",
     "desc_th": "ความตายอย่างรวดเร็ว การหยุดชะงักของงานอันน่าพึงใจ วันหยุด เทียบเท่าฮาเดสคือผ่านสถานการณ์ประหลาด การกระทำที่ดีซึ่งไม่ได้รับการเห็นคุณค่า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -38302,7 +38302,7 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
-    "desc_en": "Violent separation and death. Sudden death. Sudden actions which separate. Equals Ma/Ze plus M, by fire-arms. Exciting acts which cause sorrow.",
+    "desc_en": "Violent separation and death. Sudden death. Sudden actions which separate. Equals Ma หรือ Ze plus M, by fire-arms. Exciting acts which cause sorrow.",
     "desc_th": "การพลัดพรากและความตายอย่างรุนแรง ความตายฉับพลัน การกระทำฉับพลันที่ทำให้พลัดพราก เทียบเท่าอังคาร หรือ เซอุสบวกเมอริเดียนคือด้วยอาวุธปืน การกระทำที่น่าตื่นเต้นซึ่งนำมาซึ่งความโศกเศร้า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38350,7 +38350,7 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
-    "desc_en": "Unusual death. Death thru severe sickness or privation. Sickness thru overexertion or privation. Equals Ma/Ur, thru injury.",
+    "desc_en": "Unusual death. Death thru severe sickness or privation. Sickness thru overexertion or privation. Equals Ma หรือ Ur, thru injury.",
     "desc_th": "ความตายที่ผิดปกติ ความตายจากความเจ็บป่วยรุนแรงหรือการขาดแคลน ความเจ็บป่วยจากการออกแรงเกินหรือการขาดแคลน เทียบเท่าอังคาร หรือ ยูเรนัสคือผ่านการบาดเจ็บ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38475,7 +38475,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa+Ze-As",
+    "eq": "Ma หรือ Sa+Ze-As",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
@@ -38499,7 +38499,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ur",
+    "eq": "Ma หรือ Ur",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Uranus",
@@ -38542,7 +38542,7 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
-    "desc_en": "Sudden injury to the body. The energetic or fierce man. Sudden bodily action. Equals Zeus, injury to the body thru fire or operation. Equals Ve/Asc., in connection with female persons.",
+    "desc_en": "Sudden injury to the body. The energetic or fierce man. Sudden bodily action. Equals Zeus, injury to the body thru fire or operation. Equals Ve หรือ Asc., in connection with female persons.",
     "desc_th": "การบาดเจ็บฉับพลันต่อร่างกาย ชายผู้เปี่ยมพลังหรือดุดัน การกระทำทางกายอย่างฉับพลัน เทียบเท่าเซอุสคือการบาดเจ็บต่อร่างกายจากไฟหรือการผ่าตัด เทียบเท่าศุกร์ หรือ ลัคนาคือเกี่ยวข้องกับสตรี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38591,7 +38591,7 @@ const PLANETARY_DB = [
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Surgical operations, equals Jupiter, successful. Intention to wound or injure, equals Zeus, by fire-arms. Sudden surprising or alarming news. Violent debates.",
-    "desc_th": "การผ่าตัด เทียบเท่าพฤหัสบดีคือประสบความสำเร็จ เจตนาทำร้ายหรือบาดเจ็บ เทียบเท่าเซอุสคือด้วยอาวุธปืน ข่าวที่น่าประหลาดใจหรือน่าตกใจฉับพลัน การโต้เถียงอย่างรุนแรง",
+    "desc_th": "การผ่าตัด เทียบเท่าพฤหัสคือประสบความสำเร็จ เจตนาทำร้ายหรือบาดเจ็บ เทียบเท่าเซอุสคือด้วยอาวุธปืน ข่าวที่น่าประหลาดใจหรือน่าตกใจฉับพลัน การโต้เถียงอย่างรุนแรง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -38607,14 +38607,14 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ma",
+    "eq": "Ne หรือ Ma",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Mars",
     "b_th": "อังคาร",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Fatal injury. (เทียบเท่ากับ Ma/Sa)",
+    "desc_en": "Fatal injury. (เทียบเท่ากับ Ma หรือ Sa)",
     "desc_th": "การบาดเจ็บถึงแก่ชีวิต (เทียบเท่ากับอังคาร หรือ เสาร์)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38625,7 +38625,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Good luck in injury, equals Sun, prize-fight. Fortunate in danger. Success thru spontaneous decisions and acts.",
     "desc_th": "โชคดีในการบาดเจ็บ เทียบเท่าอาทิตย์คือการแข่งขันชิงรางวัล โชคดีในอันตราย ความสำเร็จผ่านการตัดสินใจและการกระทำที่เกิดขึ้นเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -38650,7 +38650,7 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
-    "desc_en": "Injured by fire or lightening. Minus Ur/Sa, same thing.",
+    "desc_en": "Injured by fire or lightening. Minus Ur หรือ Sa, same thing.",
     "desc_th": "การบาดเจ็บจากไฟหรือฟ้าผ่า ลบยูเรนัส หรือ เสาร์ ก็มีความหมายเดียวกัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38722,7 +38722,7 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
-    "desc_en": "Uproar caused by the authorities, the chief, the boss, the superior. Equals Ma/Sa, fatal injury of a superior, equals Mars or Mercury Surgeon.",
+    "desc_en": "Uproar caused by the authorities, the chief, the boss, the superior. Equals Ma หรือ Sa, fatal injury of a superior, equals Mars or Mercury Surgeon.",
     "desc_th": "ความวุ่นวายที่เกิดจากเจ้าหน้าที่ หัวหน้า นายจ้าง ผู้บังคับบัญชา เทียบเท่าอังคาร หรือ เสาร์คือการบาดเจ็บถึงแก่ชีวิตของผู้บังคับบัญชา เทียบเท่าอังคารหรือพุธคือศัลยแพทย์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -38763,14 +38763,14 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Fatal injury. (ต้นฉบับพิมพ์ว่า \"Ma/Sa = Su plus Su\" ซึ่งดูคลาดเคลื่อนในเชิงเนื้อหา แต่คัดลอกตรงตามที่ปรากฏจริงในต้นฉบับ)",
+    "desc_en": "Fatal injury. (ต้นฉบับพิมพ์ว่า \"Ma หรือ Sa = Su plus Su\" ซึ่งดูคลาดเคลื่อนในเชิงเนื้อหา แต่คัดลอกตรงตามที่ปรากฏจริงในต้นฉบับ)",
     "desc_th": "การบาดเจ็บถึงแก่ชีวิต (ต้นฉบับพิมพ์ว่า \"อังคาร หรือ เสาร์ เทียบเท่า อาทิตย์บวกอาทิตย์\" ซึ่งดูคลาดเคลื่อนในเชิงเนื้อหา แต่คัดลอกตรงตามที่ปรากฏจริงในต้นฉบับ)",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
@@ -38787,7 +38787,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Ma/Ne",
+    "eq": "Ma หรือ Ne",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Neptune",
@@ -38895,7 +38895,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ve",
+    "eq": "Ma หรือ Ve",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Venus",
@@ -38913,7 +38913,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Denial of happiness. Happiness combined with great disappointments. Weak lungs.",
     "desc_th": "การปฏิเสธความสุข ความสุขที่ผสมกับความผิดหวังอย่างมาก ปอดที่อ่อนแอ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -38938,7 +38938,7 @@ const PLANETARY_DB = [
     "b_th": "เนปจูน",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
-    "desc_en": "Sudden destruction. Accidents. Attempted assassination. Equals Ma/Sa, death thru assassination. Equals Ze, by firearms.",
+    "desc_en": "Sudden destruction. Accidents. Attempted assassination. Equals Ma หรือ Sa, death thru assassination. Equals Ze, by firearms.",
     "desc_th": "การทำลายล้างฉับพลัน อุบัติเหตุ ความพยายามลอบสังหาร เทียบเท่าอังคาร หรือ เสาร์คือความตายจากการลอบสังหาร เทียบเท่าเซอุสคือด้วยอาวุธปืน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -39051,7 +39051,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Pl",
+    "eq": "Ma หรือ Pl",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Pluto",
@@ -39165,7 +39165,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Plans carried thru successfully. Plans bring or should bring good fortune and happiness. Equals Me, the joy of planning.",
     "desc_th": "แผนการที่ดำเนินไปอย่างประสบความสำเร็จ แผนการนำมาหรือควรนำมาซึ่งโชคดีและความสุข เทียบเท่าพุธคือความปีติในการวางแผน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -39251,7 +39251,7 @@ const PLANETARY_DB = [
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Great plans, great organizers. Plans of the government. Plans of leading persons. Equals Ju, masterful, successful organizer. The power of the government is split or divided among several. Equals Ze, war plan.",
-    "desc_th": "แผนการอันยิ่งใหญ่ ผู้จัดระเบียบผู้ยิ่งใหญ่ แผนการของรัฐบาล แผนการของผู้นำ เทียบเท่าพฤหัสบดีคือผู้จัดระเบียบที่เชี่ยวชาญและประสบความสำเร็จ อำนาจของรัฐบาลถูกแบ่งหรือกระจายในหมู่หลายคน เทียบเท่าเซอุสคือแผนสงคราม",
+    "desc_th": "แผนการอันยิ่งใหญ่ ผู้จัดระเบียบผู้ยิ่งใหญ่ แผนการของรัฐบาล แผนการของผู้นำ เทียบเท่าพฤหัสคือผู้จัดระเบียบที่เชี่ยวชาญและประสบความสำเร็จ อำนาจของรัฐบาลถูกแบ่งหรือกระจายในหมู่หลายคน เทียบเท่าเซอุสคือแผนสงคราม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -39303,7 +39303,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Cu",
+    "eq": "Ma หรือ Cu",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Cupido",
@@ -39417,7 +39417,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy marriage. Wedding. Happy working together. The results of working together.",
     "desc_th": "การแต่งงานที่มีความสุข พิธีแต่งงาน การทำงานร่วมกันอย่างมีความสุข ผลลัพธ์ของการทำงานร่วมกัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -39502,7 +39502,7 @@ const PLANETARY_DB = [
     "b_th": "คิวปิโด",
     "c_en": "Kronos",
     "c_th": "โครนอส",
-    "desc_en": "The marital life of the father. Equals Ma/Ne, legitimate marriage denied. Work projects subsidized by the state.",
+    "desc_en": "The marital life of the father. Equals Ma หรือ Ne, legitimate marriage denied. Work projects subsidized by the state.",
     "desc_th": "ชีวิตสมรสของบิดา เทียบเท่าอังคาร หรือ เนปจูนคือการแต่งงานที่ถูกต้องตามกฎหมายถูกปฏิเสธ โครงการงานที่รัฐอุดหนุน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -39555,7 +39555,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ha",
+    "eq": "Ma หรือ Ha",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Hades",
@@ -39669,7 +39669,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Capital punishment. Sentence. Killing. Quick, unusual death. Equals Cupido, in company of others.",
     "desc_th": "การประหารชีวิต การพิพากษาโทษ การฆ่า ความตายที่รวดเร็วผิดปกติ เทียบเท่าคิวปิโดคือในหมู่ผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -39807,7 +39807,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
@@ -39819,7 +39819,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ze",
+    "eq": "Ma หรือ Ze",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Zeus",
@@ -39863,7 +39863,7 @@ const PLANETARY_DB = [
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Injuries by torch flame; by firearms. The machinist. The man who works energetically. Energetic work on the day. Equals Ju, to hit the target or bull's eye.",
-    "desc_th": "การบาดเจ็บจากเปลวไฟคบเพลิง จากอาวุธปืน ช่างเครื่องจักร ชายผู้ทำงานอย่างเปี่ยมพลัง งานที่เปี่ยมพลังในวันนั้น เทียบเท่าพฤหัสบดีคือการยิงเข้าเป้า",
+    "desc_th": "การบาดเจ็บจากเปลวไฟคบเพลิง จากอาวุธปืน ช่างเครื่องจักร ชายผู้ทำงานอย่างเปี่ยมพลัง งานที่เปี่ยมพลังในวันนั้น เทียบเท่าพฤหัสคือการยิงเข้าเป้า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -39933,7 +39933,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Successful generation, creation or deed. Sure shot.",
     "desc_th": "การให้กำเนิด การสร้างสรรค์ หรือการกระทำที่ประสบความสำเร็จ การยิงที่แม่นยำ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -40071,7 +40071,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Kr",
+    "eq": "Ma หรือ Kr",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Kronos",
@@ -40185,7 +40185,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness thru the government. Money thru lawsuits. Giver of money. Inspector.",
     "desc_th": "ความสุขผ่านรัฐบาล เงินผ่านคดีความ ผู้ให้เงิน ผู้ตรวจสอบ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -40331,11 +40331,11 @@ const PLANETARY_DB = [
     "c_en": "",
     "c_th": "",
     "desc_en": "Example (U.S.A. chart, 8 min. past noon local time): Kronos plus Meridian equals Vulcanus plus Uranus equals Aries Point plus Sun equals Ascendant plus Sun. Zeus and Jupiter on this axis - war with successful ending, great industrial development. At Korean war start, the Cardinals directed equalled Mars radix; the kernel formula equalled Kronos plus Admetos equals Zeus(directed) plus Meridian equals Jupiter(directed) plus Meridian equals Saturn(directed) plus Saturn(radix), which brought about police action in Korea.",
-    "desc_th": "ตัวอย่าง (ดวงชะตาสหรัฐอเมริกา เวลา 8 นาทีหลังเที่ยงวันตามเวลาท้องถิ่น): โครนอสบวกเมอริเดียน เทียบเท่า วัลคานุสบวกยูเรนัส เทียบเท่า จุดเมษบวกอาทิตย์ เทียบเท่า ลัคนาบวกอาทิตย์ เซอุสและพฤหัสบดีอยู่บนแกนนี้ - สงครามที่จบลงด้วยความสำเร็จ การพัฒนาอุตสาหกรรมครั้งใหญ่ ในช่วงเริ่มสงครามเกาหลี แกนคาร์ดินัลที่กำหนดทิศทางเทียบเท่ากับอังคาร(ราศีกำเนิด) สูตรแก่นแท้เทียบเท่ากับ โครนอสบวกแอดเมตอส เทียบเท่า เซอุส(ทิศทาง)บวกเมอริเดียน เทียบเท่า พฤหัสบดี(ทิศทาง)บวกเมอริเดียน เทียบเท่า เสาร์(ทิศทาง)บวกเสาร์(ราศีกำเนิด) ซึ่งนำมาซึ่งปฏิบัติการตำรวจในเกาหลี (ข้อความนี้เป็นตัวอย่างประกอบเชิงอรรถท้ายบท มิใช่สูตรมาตรฐาน คัดลอกโดยตีความจากข้อความต้นฉบับที่มีคุณภาพการพิมพ์ต่ำบางส่วน)",
+    "desc_th": "ตัวอย่าง (ดวงชะตาสหรัฐอเมริกา เวลา 8 นาทีหลังเที่ยงวันตามเวลาท้องถิ่น): โครนอสบวกเมอริเดียน เทียบเท่า วัลคานุสบวกยูเรนัส เทียบเท่า จุดเมษบวกอาทิตย์ เทียบเท่า ลัคนาบวกอาทิตย์ เซอุสและพฤหัสอยู่บนแกนนี้ - สงครามที่จบลงด้วยความสำเร็จ การพัฒนาอุตสาหกรรมครั้งใหญ่ ในช่วงเริ่มสงครามเกาหลี แกนคาร์ดินัลที่กำหนดทิศทางเทียบเท่ากับอังคาร(ราศีกำเนิด) สูตรแก่นแท้เทียบเท่ากับ โครนอสบวกแอดเมตอส เทียบเท่า เซอุส(ทิศทาง)บวกเมอริเดียน เทียบเท่า พฤหัส(ทิศทาง)บวกเมอริเดียน เทียบเท่า เสาร์(ทิศทาง)บวกเสาร์(ราศีกำเนิด) ซึ่งนำมาซึ่งปฏิบัติการตำรวจในเกาหลี (ข้อความนี้เป็นตัวอย่างประกอบเชิงอรรถท้ายบท มิใช่สูตรมาตรฐาน คัดลอกโดยตีความจากข้อความต้นฉบับที่มีคุณภาพการพิมพ์ต่ำบางส่วน)",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Ma/Ap",
+    "eq": "Ma หรือ Ap",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Apollon",
@@ -40449,7 +40449,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck or success in trade, commerce or industry.",
     "desc_th": "โชคหรือความสำเร็จในการค้า พาณิชย์ หรืออุตสาหกรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -40587,7 +40587,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Ad",
+    "eq": "Ma หรือ Ad",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Admetos",
@@ -40701,7 +40701,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joy thru decreasing one's work. Fortunate work accomplished in a small circle.",
     "desc_th": "ความปีติจากการลดงานของตน งานที่โชคดีสำเร็จในวงเล็กๆ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -40839,7 +40839,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Vu",
+    "eq": "Ma หรือ Vu",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Vulcanus",
@@ -40953,7 +40953,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joyous and hopeful activity. Optimistic attitude. Joy over own successes.",
     "desc_th": "กิจกรรมอันน่ายินดีและเปี่ยมความหวัง ทัศนคติที่มองโลกในแง่ดี ความปีติต่อความสำเร็จของตนเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -41091,7 +41091,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Po",
+    "eq": "Ma หรือ Po",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Poseidon",
@@ -41205,7 +41205,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness thru own mental activity. Happy because of right action, own morals.",
     "desc_th": "ความสุขผ่านกิจกรรมทางจิตใจของตนเอง ความสุขเนื่องจากการกระทำที่ถูกต้อง ศีลธรรมของตนเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -41343,11 +41343,11 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ju",
+    "eq": "Ju หรือ Ju",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Good luck. Contentment. Happiness. Gaiety. Money. Success.",
@@ -41357,9 +41357,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
     "desc_en": "To be delighted. To be contented.",
@@ -41369,9 +41369,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Aries Point",
     "c_th": "จุดเมษ",
     "desc_en": "General contentment.",
@@ -41381,9 +41381,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
     "desc_en": "Happiness of the body. Health. Money.",
@@ -41393,9 +41393,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
     "desc_en": "Luck with other people.",
@@ -41405,9 +41405,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Moon",
     "c_th": "จันทร์",
     "desc_en": "Contented woman, happy woman.",
@@ -41417,9 +41417,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Node",
     "c_th": "ราหู",
     "desc_en": "Fortunate union.",
@@ -41429,9 +41429,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mercury",
     "c_th": "พุธ",
     "desc_en": "Loquaciousness. Joy.",
@@ -41441,9 +41441,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Venus",
     "c_th": "ศุกร์",
     "desc_en": "Fortunate in love.",
@@ -41453,21 +41453,21 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "Lucky deed. Equals Ha, quick and unusual death. Equals Ma/Sa, unusually quick death.",
+    "desc_en": "Lucky deed. Equals Ha, quick and unusual death. Equals Ma หรือ Sa, unusually quick death.",
     "desc_th": "การกระทำที่โชคดี เทียบเท่าฮาเดสคือความตายที่รวดเร็วและผิดปกติ เทียบเท่าอังคาร หรือ เสาร์คือความตายที่รวดเร็วผิดปกติ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
     "eq": "Ju+Ju-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Saturn",
     "c_th": "เสาร์",
     "desc_en": "Successful separation. Contentment in being alone.",
@@ -41477,9 +41477,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
     "desc_en": "Sudden strokes of good luck (windfalls).",
@@ -41489,9 +41489,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Neptune",
     "c_th": "เนปจูน",
     "desc_en": "Losses of money. Easily made money.",
@@ -41501,9 +41501,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Fortunate change, development or transformation.",
@@ -41513,9 +41513,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Cupido",
     "c_th": "คิวปิโด",
     "desc_en": "Happiness in married life. Good luck in associations, in the arts.",
@@ -41525,9 +41525,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Money losses. Lack of money. Clouded happiness.",
@@ -41537,9 +41537,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Zeus",
     "c_th": "เซอุส",
     "desc_en": "Benefic actions. Bringing good luck.",
@@ -41549,9 +41549,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Independence in money matters. Philanthropist.",
@@ -41561,9 +41561,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Apollon",
     "c_th": "อพอลลอน",
     "desc_en": "Luck and happiness of many. Much money. Grand capital.",
@@ -41573,9 +41573,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Admetos",
     "c_th": "แอดเมตอส",
     "desc_en": "Rest. Gains out of raw materials. Stoppage of income.",
@@ -41585,9 +41585,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Vulcanus",
     "c_th": "วัลคานุส",
     "desc_en": "Optimism. Mighty luck. Power of money, successful power. Benefic power, confidence.",
@@ -41597,9 +41597,9 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ju-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Jupiter",
-    "b_th": "พฤหัสบดี",
+    "b_th": "พฤหัส",
     "c_en": "Poseidon",
     "c_th": "โพไซดอน",
     "desc_en": "Reason. Right. Wisdom. Intelligence.",
@@ -41607,9 +41607,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Sa",
+    "eq": "Ju หรือ Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "",
@@ -41621,7 +41621,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Meridian",
@@ -41633,7 +41633,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Aries Point",
@@ -41645,7 +41645,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Sun",
@@ -41657,7 +41657,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Ascendant",
@@ -41669,7 +41669,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Moon",
@@ -41681,7 +41681,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Node",
@@ -41693,7 +41693,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Mercury",
@@ -41705,7 +41705,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Venus",
@@ -41717,7 +41717,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Mars",
@@ -41729,7 +41729,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Uranus",
@@ -41741,7 +41741,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Neptune",
@@ -41753,7 +41753,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Pluto",
@@ -41765,7 +41765,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Cupido",
@@ -41777,19 +41777,19 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
     "desc_en": "Content with little. Misfortune in or with buildings. Consequences of former errors show. Equals Ne, destruction of residences. Equals Ju, surmounting difficulties about shelter.",
-    "desc_th": "ความพึงพอใจกับสิ่งเล็กน้อย เคราะห์ร้ายในหรือกับอาคาร ผลของความผิดพลาดในอดีตปรากฏ เทียบเท่าเนปจูนคือการทำลายที่อยู่อาศัย เทียบเท่าพฤหัสบดีคือการเอาชนะความยากลำบากเรื่องที่พักพิง",
+    "desc_th": "ความพึงพอใจกับสิ่งเล็กน้อย เคราะห์ร้ายในหรือกับอาคาร ผลของความผิดพลาดในอดีตปรากฏ เทียบเท่าเนปจูนคือการทำลายที่อยู่อาศัย เทียบเท่าพฤหัสคือการเอาชนะความยากลำบากเรื่องที่พักพิง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
     "eq": "Ju+Sa-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Zeus",
@@ -41801,7 +41801,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Kronos",
@@ -41813,7 +41813,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Apollon",
@@ -41825,7 +41825,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Admetos",
@@ -41837,7 +41837,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Vulcanus",
@@ -41849,7 +41849,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Poseidon",
@@ -41859,7 +41859,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ze",
+    "eq": "Ur หรือ Ze",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Zeus",
@@ -41873,7 +41873,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Hades",
@@ -41885,7 +41885,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Sa-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Hades",
@@ -41895,21 +41895,21 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ur",
+    "eq": "Ju หรือ Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "",
     "c_th": "",
     "desc_en": "Sudden luck; or misfortune if Jupiter is posited in poor pictures.",
-    "desc_th": "โชคดีฉับพลัน หรือเคราะห์ร้ายหากพฤหัสบดีอยู่ในสมการที่ไม่ดี",
+    "desc_th": "โชคดีฉับพลัน หรือเคราะห์ร้ายหากพฤหัสอยู่ในสมการที่ไม่ดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
     "eq": "Ju+Ur-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Meridian",
@@ -41921,7 +41921,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Aries Point",
@@ -41933,7 +41933,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Sun",
@@ -41945,7 +41945,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Ascendant",
@@ -41957,7 +41957,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Moon",
@@ -41969,7 +41969,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Node",
@@ -41981,7 +41981,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Mercury",
@@ -41993,7 +41993,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Venus",
@@ -42005,7 +42005,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Mars",
@@ -42017,7 +42017,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Saturn",
@@ -42029,7 +42029,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Neptune",
@@ -42041,7 +42041,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Pluto",
@@ -42053,7 +42053,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Cupido",
@@ -42065,7 +42065,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Hades",
@@ -42077,7 +42077,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Zeus",
@@ -42089,7 +42089,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Kronos",
@@ -42101,7 +42101,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Apollon",
@@ -42113,7 +42113,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Admetos",
@@ -42125,7 +42125,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Vulcanus",
@@ -42137,7 +42137,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ur-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Poseidon",
@@ -42147,9 +42147,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ne",
+    "eq": "Ju หรือ Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "",
@@ -42161,7 +42161,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Meridian",
@@ -42173,7 +42173,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Aries Point",
@@ -42185,19 +42185,19 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
-    "desc_en": "Speculators, Spendthrifts. Wastage of sustenance (the body). The man who makes himself believe he is lucky and happy. Equals Su/Mo, money shortage of the parents.",
+    "desc_en": "Speculators, Spendthrifts. Wastage of sustenance (the body). The man who makes himself believe he is lucky and happy. Equals Su หรือ Mo, money shortage of the parents.",
     "desc_th": "นักเก็งกำไร ผู้ใช้จ่ายสุรุ่ยสุร่าย การสูญเปล่าของสิ่งเลี้ยงชีวิต (ร่างกาย) ชายผู้ทำให้ตนเองเชื่อว่าโชคดีและมีความสุข เทียบเท่าอาทิตย์ หรือ จันทร์คือการขาดแคลนเงินของบิดามารดา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
     "eq": "Ju+Ne-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Ascendant",
@@ -42209,7 +42209,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Moon",
@@ -42221,7 +42221,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Node",
@@ -42233,7 +42233,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Mercury",
@@ -42245,7 +42245,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Venus",
@@ -42257,7 +42257,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Mars",
@@ -42269,7 +42269,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Saturn",
@@ -42281,7 +42281,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Uranus",
@@ -42293,7 +42293,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Pluto",
@@ -42305,7 +42305,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Cupido",
@@ -42317,7 +42317,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Hades",
@@ -42329,7 +42329,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Zeus",
@@ -42341,7 +42341,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Kronos",
@@ -42353,7 +42353,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Apollon",
@@ -42365,7 +42365,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Admetos",
@@ -42377,7 +42377,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Vulcanus",
@@ -42389,7 +42389,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ne-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Poseidon",
@@ -42399,9 +42399,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Pl",
+    "eq": "Ju หรือ Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "",
@@ -42413,7 +42413,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Meridian",
@@ -42425,7 +42425,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Aries Point",
@@ -42437,7 +42437,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Sun",
@@ -42449,7 +42449,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Ascendant",
@@ -42461,7 +42461,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Moon",
@@ -42473,7 +42473,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Node",
@@ -42485,7 +42485,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Mercury",
@@ -42497,7 +42497,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Venus",
@@ -42509,7 +42509,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Mars",
@@ -42521,7 +42521,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Saturn",
@@ -42533,7 +42533,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Uranus",
@@ -42545,7 +42545,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Neptune",
@@ -42557,7 +42557,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Cupido",
@@ -42569,7 +42569,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Hades",
@@ -42581,7 +42581,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Zeus",
@@ -42593,7 +42593,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Kronos",
@@ -42605,7 +42605,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Apollon",
@@ -42617,7 +42617,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Admetos",
@@ -42629,7 +42629,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Vulcanus",
@@ -42641,7 +42641,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Pl-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Poseidon",
@@ -42659,13 +42659,13 @@ const PLANETARY_DB = [
     "c_en": "",
     "c_th": "",
     "desc_en": "Note (worked example, U.S.A. chart, 1952 presidential election, Nov. 4): Jupiter plus Pluto minus Kronos equals Sun equals Ascendant (a sensitive point, not an exact picture; its importance lies in equalling the Sun and Ascendant). Written as a sum: Jupiter plus Pluto equals Zeus plus Pluto equals Node plus Meridian equals Kronos plus Sun equals Kronos plus Ascendant. Kronos plus Ascendant here represents the administration that comes and goes with the President. [Continues under the \"Jupiter plus Cupido\" page footer:] On election day, Mercury(directed) plus Mars(directed) equals Zeus(directed) plus Kronos; the original sensitive point equals Zeus(directed), a half-square. Directing the point with the solar arc of about 173:50 for the election, it equals Zeus and Jupiter radix, here the successful warlord. Reading it: Jupiter(directed) plus Pluto(directed) equals Kronos(directed) plus Jupiter equals Kronos(directed) plus Zeus equals Jupiter plus Meridian equals Zeus plus Meridian(directed). Transiting, the same grouping appears on this axis: Kronos(directed) plus Kronos(directed) equals Zeus(directed) plus Pluto(directed).",
-    "desc_th": "หมายเหตุ (ตัวอย่างประกอบ ดวงชะตาสหรัฐอเมริกา การเลือกตั้งประธานาธิบดีปี 1952 วันที่ 4 พฤศจิกายน): พฤหัสบดีบวกพลูโตลบโครนอส เทียบเท่าอาทิตย์ เทียบเท่าลัคนา (เป็นจุดไวต่อการรับรู้ ไม่ใช่สมการที่แม่นยำ ความสำคัญอยู่ที่การเทียบเท่ากับอาทิตย์และลัคนา) เขียนในรูปผลรวม: พฤหัสบดีบวกพลูโต เทียบเท่า เซอุสบวกพลูโต เทียบเท่า ราหูบวกเมอริเดียน เทียบเท่า โครนอสบวกอาทิตย์ เทียบเท่า โครนอสบวกลัคนา โครนอสบวกลัคนาในที่นี้คือฝ่ายบริหารที่มาและไปพร้อมประธานาธิบดี [เนื้อความต่อเนื่องอยู่ท้ายหน้า \"Jupiter plus Cupido\":] ในวันเลือกตั้ง พุธ(ทิศทาง)บวกอังคาร(ทิศทาง) เทียบเท่า เซอุส(ทิศทาง)บวกโครนอส จุดไวต่อการรับรู้เดิมเทียบเท่าเซอุส(ทิศทาง) ที่มุมครึ่งฉาก เมื่อกำหนดทิศทางจุดด้วยส่วนโค้งสุริยะประมาณ 173:50 สำหรับวันเลือกตั้ง เทียบเท่าเซอุสและพฤหัสบดีในดวงกำเนิด ซึ่งในที่นี้คือขุนศึกผู้ประสบความสำเร็จ อ่านได้ว่า พฤหัสบดี(ทิศทาง)บวกพลูโต(ทิศทาง) เทียบเท่า โครนอส(ทิศทาง)บวกพฤหัสบดี เทียบเท่า โครนอส(ทิศทาง)บวกเซอุส เทียบเท่า พฤหัสบดีบวกเมอริเดียน เทียบเท่า เซอุสบวกเมอริเดียน(ทิศทาง) เมื่อพิจารณาดาวจร จะพบกลุ่มเดียวกันบนแกนนี้: โครนอส(ทิศทาง)บวกโครนอส(ทิศทาง) เทียบเท่า เซอุส(ทิศทาง)บวกพลูโต(ทิศทาง) (หมายเหตุนี้เป็นตัวอย่างประกอบเชิงอรรถท้ายบท มิใช่สูตรมาตรฐาน ต้นฉบับบางส่วนพิมพ์คุณภาพต่ำ คัดลอกโดยตีความเท่าที่อ่านได้)",
+    "desc_th": "หมายเหตุ (ตัวอย่างประกอบ ดวงชะตาสหรัฐอเมริกา การเลือกตั้งประธานาธิบดีปี 1952 วันที่ 4 พฤศจิกายน): พฤหัสบวกพลูโตลบโครนอส เทียบเท่าอาทิตย์ เทียบเท่าลัคนา (เป็นจุดไวต่อการรับรู้ ไม่ใช่สมการที่แม่นยำ ความสำคัญอยู่ที่การเทียบเท่ากับอาทิตย์และลัคนา) เขียนในรูปผลรวม: พฤหัสบวกพลูโต เทียบเท่า เซอุสบวกพลูโต เทียบเท่า ราหูบวกเมอริเดียน เทียบเท่า โครนอสบวกอาทิตย์ เทียบเท่า โครนอสบวกลัคนา โครนอสบวกลัคนาในที่นี้คือฝ่ายบริหารที่มาและไปพร้อมประธานาธิบดี [เนื้อความต่อเนื่องอยู่ท้ายหน้า \"Jupiter plus Cupido\":] ในวันเลือกตั้ง พุธ(ทิศทาง)บวกอังคาร(ทิศทาง) เทียบเท่า เซอุส(ทิศทาง)บวกโครนอส จุดไวต่อการรับรู้เดิมเทียบเท่าเซอุส(ทิศทาง) ที่มุมครึ่งฉาก เมื่อกำหนดทิศทางจุดด้วยส่วนโค้งสุริยะประมาณ 173:50 สำหรับวันเลือกตั้ง เทียบเท่าเซอุสและพฤหัสในดวงกำเนิด ซึ่งในที่นี้คือขุนศึกผู้ประสบความสำเร็จ อ่านได้ว่า พฤหัส(ทิศทาง)บวกพลูโต(ทิศทาง) เทียบเท่า โครนอส(ทิศทาง)บวกพฤหัส เทียบเท่า โครนอส(ทิศทาง)บวกเซอุส เทียบเท่า พฤหัสบวกเมอริเดียน เทียบเท่า เซอุสบวกเมอริเดียน(ทิศทาง) เมื่อพิจารณาดาวจร จะพบกลุ่มเดียวกันบนแกนนี้: โครนอส(ทิศทาง)บวกโครนอส(ทิศทาง) เทียบเท่า เซอุส(ทิศทาง)บวกพลูโต(ทิศทาง) (หมายเหตุนี้เป็นตัวอย่างประกอบเชิงอรรถท้ายบท มิใช่สูตรมาตรฐาน ต้นฉบับบางส่วนพิมพ์คุณภาพต่ำ คัดลอกโดยตีความเท่าที่อ่านได้)",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Ju/Cu",
+    "eq": "Ju หรือ Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "",
@@ -42677,7 +42677,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Meridian",
@@ -42689,7 +42689,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Aries Point",
@@ -42701,7 +42701,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Sun",
@@ -42713,7 +42713,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Ascendant",
@@ -42725,7 +42725,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Node",
@@ -42737,7 +42737,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Moon",
@@ -42749,7 +42749,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Mercury",
@@ -42761,7 +42761,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Venus",
@@ -42773,7 +42773,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Mars",
@@ -42785,7 +42785,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Saturn",
@@ -42797,7 +42797,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Uranus",
@@ -42809,7 +42809,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Neptune",
@@ -42821,7 +42821,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Pluto",
@@ -42833,7 +42833,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Hades",
@@ -42845,7 +42845,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Zeus",
@@ -42857,7 +42857,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Kronos",
@@ -42869,7 +42869,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Vulcanus",
@@ -42881,7 +42881,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Apollon",
@@ -42893,7 +42893,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Admetos",
@@ -42905,7 +42905,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Cu-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Poseidon",
@@ -42915,9 +42915,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ha",
+    "eq": "Ju หรือ Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "",
@@ -42929,7 +42929,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Meridian",
@@ -42941,7 +42941,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Aries Point",
@@ -42953,7 +42953,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Sun",
@@ -42965,7 +42965,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Ascendant",
@@ -42977,7 +42977,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Moon",
@@ -42989,7 +42989,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Node",
@@ -43001,7 +43001,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Mercury",
@@ -43013,7 +43013,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Venus",
@@ -43025,7 +43025,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Mars",
@@ -43037,7 +43037,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Saturn",
@@ -43049,7 +43049,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Uranus",
@@ -43061,7 +43061,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Neptune",
@@ -43073,7 +43073,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Pluto",
@@ -43085,7 +43085,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Cupido",
@@ -43097,7 +43097,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Zeus",
@@ -43109,7 +43109,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Kronos",
@@ -43121,7 +43121,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Apollon",
@@ -43133,7 +43133,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Admetos",
@@ -43145,7 +43145,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Poseidon",
@@ -43157,7 +43157,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ha-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Vulcanus",
@@ -43174,14 +43174,14 @@ const PLANETARY_DB = [
     "b_th": "",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Note (U.S.A. chart): Node(directed) plus Mercury(directed) and Sun(directed) plus Uranus equals Zeus(directed) plus Meridian minus Pluto(directed) plus Ascendant equals Pluto(directed) plus Sun. The last three sums furnish the connection with the radix Sun. The Ascendant and the directed Meridian of the U.S.A. chart and the current or transiting planets. The Meridian of the day equals Kronos/Moon radix, another proof that the radix Meridian is 15:14 Cancer.",
+    "desc_en": "Note (U.S.A. chart): Node(directed) plus Mercury(directed) and Sun(directed) plus Uranus equals Zeus(directed) plus Meridian minus Pluto(directed) plus Ascendant equals Pluto(directed) plus Sun. The last three sums furnish the connection with the radix Sun. The Ascendant and the directed Meridian of the U.S.A. chart and the current or transiting planets. The Meridian of the day equals Kronos หรือ Moon radix, another proof that the radix Meridian is 15:14 Cancer.",
     "desc_th": "หมายเหตุ (ดวงชะตาสหรัฐอเมริกา): ราหู(ทิศทาง)บวกพุธ(ทิศทาง) และ อาทิตย์(ทิศทาง)บวกยูเรนัส เทียบเท่า เซอุส(ทิศทาง)บวกเมอริเดียนลบพลูโต(ทิศทาง)บวกลัคนา เทียบเท่า พลูโต(ทิศทาง)บวกอาทิตย์ ผลรวมสามชุดสุดท้ายนี้แสดงความเชื่อมโยงกับอาทิตย์ในดวงกำเนิด ลัคนาและเมอริเดียนทิศทางของดวงชะตาสหรัฐอเมริกา และดาวจรปัจจุบัน เมอริเดียนของวันนั้นเทียบเท่าโครนอส หรือ จันทร์ในดวงกำเนิด เป็นอีกข้อพิสูจน์ว่าเมอริเดียนกำเนิดอยู่ที่ 15:14 ราศีกรกฎ (หมายเหตุนี้เป็นตัวอย่างประกอบเชิงอรรถท้ายบท ต้นฉบับบางส่วนพิมพ์คุณภาพต่ำ คัดลอกโดยตีความเท่าที่อ่านได้)",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
   },
   {
-    "eq": "Ju/Ze",
+    "eq": "Ju หรือ Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "",
@@ -43193,7 +43193,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Meridian",
@@ -43205,7 +43205,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Aries Point",
@@ -43217,7 +43217,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Sun",
@@ -43229,7 +43229,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Ascendant",
@@ -43241,7 +43241,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Moon",
@@ -43253,7 +43253,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Node",
@@ -43265,7 +43265,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Mercury",
@@ -43277,7 +43277,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Venus",
@@ -43289,7 +43289,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Mars",
@@ -43301,7 +43301,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Saturn",
@@ -43313,7 +43313,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Uranus",
@@ -43325,7 +43325,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Neptune",
@@ -43337,7 +43337,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Pluto",
@@ -43349,7 +43349,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Cupido",
@@ -43361,7 +43361,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Hades",
@@ -43373,7 +43373,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Kronos",
@@ -43385,7 +43385,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Apollon",
@@ -43397,7 +43397,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Admetos",
@@ -43409,7 +43409,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Vulcanus",
@@ -43421,7 +43421,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ze-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Poseidon",
@@ -43431,9 +43431,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Kr",
+    "eq": "Ju หรือ Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "",
@@ -43445,7 +43445,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Meridian",
@@ -43457,7 +43457,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Aries Point",
@@ -43469,7 +43469,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Sun",
@@ -43481,7 +43481,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Ascendant",
@@ -43493,7 +43493,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Moon",
@@ -43505,7 +43505,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Node",
@@ -43517,7 +43517,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Mercury",
@@ -43529,7 +43529,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Venus",
@@ -43541,7 +43541,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Mars",
@@ -43553,7 +43553,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Saturn",
@@ -43565,7 +43565,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Uranus",
@@ -43577,7 +43577,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Neptune",
@@ -43589,7 +43589,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Pluto",
@@ -43601,7 +43601,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Cupido",
@@ -43613,7 +43613,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Hades",
@@ -43625,7 +43625,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Zeus",
@@ -43637,7 +43637,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Apollon",
@@ -43649,7 +43649,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Admetos",
@@ -43661,7 +43661,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Vulcanus",
@@ -43673,7 +43673,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Kr-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Poseidon",
@@ -43683,9 +43683,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ap",
+    "eq": "Ju หรือ Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "",
@@ -43697,7 +43697,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Meridian",
@@ -43709,7 +43709,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Aries Point",
@@ -43721,7 +43721,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Sun",
@@ -43733,7 +43733,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Ascendant",
@@ -43745,7 +43745,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Moon",
@@ -43757,7 +43757,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Node",
@@ -43769,7 +43769,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Mercury",
@@ -43781,7 +43781,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Venus",
@@ -43793,7 +43793,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Mars",
@@ -43805,7 +43805,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Saturn",
@@ -43817,7 +43817,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Uranus",
@@ -43829,7 +43829,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Neptune",
@@ -43841,7 +43841,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Pluto",
@@ -43853,7 +43853,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Cupido",
@@ -43865,7 +43865,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Hades",
@@ -43877,7 +43877,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Zeus",
@@ -43889,7 +43889,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Kronos",
@@ -43901,7 +43901,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Admetos",
@@ -43913,7 +43913,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Vulcanus",
@@ -43925,7 +43925,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ap-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Poseidon",
@@ -43935,9 +43935,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Ad",
+    "eq": "Ju หรือ Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "",
@@ -43949,7 +43949,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Meridian",
@@ -43961,7 +43961,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Aries Point",
@@ -43973,7 +43973,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Sun",
@@ -43985,7 +43985,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Ascendant",
@@ -43997,7 +43997,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Moon",
@@ -44009,7 +44009,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Node",
@@ -44021,7 +44021,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Mercury",
@@ -44033,7 +44033,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Venus",
@@ -44045,7 +44045,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Mars",
@@ -44057,7 +44057,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Saturn",
@@ -44069,7 +44069,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Uranus",
@@ -44081,7 +44081,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Neptune",
@@ -44093,7 +44093,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Pluto",
@@ -44105,7 +44105,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Cupido",
@@ -44117,7 +44117,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Hades",
@@ -44129,7 +44129,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Zeus",
@@ -44141,7 +44141,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Kronos",
@@ -44153,7 +44153,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Apollon",
@@ -44165,7 +44165,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Vulcanus",
@@ -44177,7 +44177,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Ad-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Poseidon",
@@ -44187,9 +44187,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Vu",
+    "eq": "Ju หรือ Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "",
@@ -44201,7 +44201,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Meridian",
@@ -44213,7 +44213,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Aries Point",
@@ -44225,7 +44225,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Sun",
@@ -44237,7 +44237,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Ascendant",
@@ -44249,7 +44249,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Moon",
@@ -44261,7 +44261,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Node",
@@ -44273,7 +44273,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Mercury",
@@ -44285,7 +44285,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Venus",
@@ -44297,7 +44297,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Mars",
@@ -44309,7 +44309,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Saturn",
@@ -44321,7 +44321,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Uranus",
@@ -44333,7 +44333,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Neptune",
@@ -44345,7 +44345,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Pluto",
@@ -44357,7 +44357,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Cupido",
@@ -44369,7 +44369,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Hades",
@@ -44381,7 +44381,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Zeus",
@@ -44393,7 +44393,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Kronos",
@@ -44405,7 +44405,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Apollon",
@@ -44417,7 +44417,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Admetos",
@@ -44429,7 +44429,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Vu-Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Poseidon",
@@ -44439,9 +44439,9 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ju/Po",
+    "eq": "Ju หรือ Po",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "",
@@ -44453,7 +44453,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-M",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Meridian",
@@ -44465,7 +44465,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ar",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Aries Point",
@@ -44477,7 +44477,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Su",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Sun",
@@ -44489,7 +44489,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-As",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Ascendant",
@@ -44501,7 +44501,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Mo",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Moon",
@@ -44513,7 +44513,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-No",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Node",
@@ -44525,7 +44525,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Me",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Mercury",
@@ -44537,7 +44537,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ve",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Venus",
@@ -44549,7 +44549,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Sa",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Saturn",
@@ -44561,7 +44561,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ur",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Uranus",
@@ -44573,7 +44573,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ne",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Neptune",
@@ -44585,7 +44585,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Pl",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Pluto",
@@ -44597,7 +44597,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Cu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Cupido",
@@ -44609,7 +44609,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ha",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Hades",
@@ -44621,7 +44621,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ze",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Zeus",
@@ -44633,7 +44633,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Kr",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Kronos",
@@ -44645,7 +44645,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ap",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Apollon",
@@ -44657,7 +44657,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ad",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Admetos",
@@ -44669,7 +44669,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Vu",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Vulcanus",
@@ -44681,7 +44681,7 @@ const PLANETARY_DB = [
   {
     "eq": "Ju+Po-Ma",
     "a_en": "Jupiter",
-    "a_th": "พฤหัสบดี",
+    "a_th": "พฤหัส",
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Mars",
@@ -44691,7 +44691,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Sa",
+    "eq": "Sa หรือ Sa",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Saturn",
@@ -44817,7 +44817,7 @@ const PLANETARY_DB = [
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money losses. To have no luck. Losses of real estate.",
     "desc_th": "การสูญเสียเงิน การไม่มีโชค การสูญเสียอสังหาริมทรัพย์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -44955,7 +44955,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ur",
+    "eq": "Sa หรือ Ur",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Uranus",
@@ -45010,7 +45010,7 @@ const PLANETARY_DB = [
     "b_th": "ยูเรนัส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
-    "desc_en": "Sudden separation from other people. Grave misunderstandings with others. Minus Ma/Sa, by death.",
+    "desc_en": "Sudden separation from other people. Grave misunderstandings with others. Minus Ma หรือ Sa, by death.",
     "desc_th": "การพลัดพรากฉับพลันจากผู้อื่น ความเข้าใจผิดอันร้ายแรงกับผู้อื่น ลบอังคาร หรือ เสาร์คือด้วยความตาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -45071,7 +45071,7 @@ const PLANETARY_DB = [
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Sudden end thru injury. Sudden separating acts or actions. Equals Ju, lucky in misfortune.",
-    "desc_th": "การสิ้นสุดฉับพลันผ่านการบาดเจ็บ การกระทำหรือการดำเนินการที่แยกจากกันฉับพลัน เทียบเท่าพฤหัสบดีคือโชคดีในเคราะห์ร้าย",
+    "desc_th": "การสิ้นสุดฉับพลันผ่านการบาดเจ็บ การกระทำหรือการดำเนินการที่แยกจากกันฉับพลัน เทียบเท่าพฤหัสคือโชคดีในเคราะห์ร้าย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -45081,7 +45081,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden separation from happiness. Sudden losses of money or real estate.",
     "desc_th": "การพลัดพรากฉับพลันจากความสุข การสูญเสียเงินหรืออสังหาริมทรัพย์ฉับพลัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -45207,7 +45207,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ne",
+    "eq": "Sa หรือ Ne",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Neptune",
@@ -45333,8 +45333,8 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
-    "desc_en": "Disease of the lungs. Equals Ma, pneumonia. Equals Ur/Sa, gas poisoning.",
+    "c_th": "พฤหัส",
+    "desc_en": "Disease of the lungs. Equals Ma, pneumonia. Equals Ur หรือ Sa, gas poisoning.",
     "desc_th": "โรคของปอด เทียบเท่าอังคารคือปอดบวม เทียบเท่ายูเรนัส หรือ เสาร์คือพิษจากแก๊ส",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -45351,7 +45351,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ur",
+    "eq": "Ne หรือ Ur",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Uranus",
@@ -45359,7 +45359,7 @@ const PLANETARY_DB = [
     "c_en": "",
     "c_th": "",
     "desc_en": "Gas poisoning. Equals Jupiter.",
-    "desc_th": "พิษจากแก๊ส เทียบเท่าพฤหัสบดี",
+    "desc_th": "พิษจากแก๊ส เทียบเท่าพฤหัส",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -45407,7 +45407,7 @@ const PLANETARY_DB = [
     "c_en": "Kronos",
     "c_th": "โครนอส",
     "desc_en": "Infection of the ancestors, of the father. Chronic dissolutions in the government. Equals Ju, lack of money of the government. Equals Mo, national sick-insurance.",
-    "desc_th": "การติดเชื้อของบรรพบุรุษ ของบิดา การล่มสลายเรื้อรังในรัฐบาล เทียบเท่าพฤหัสบดีคือการขาดแคลนเงินของรัฐบาล เทียบเท่าจันทร์คือประกันสุขภาพแห่งชาติ",
+    "desc_th": "การติดเชื้อของบรรพบุรุษ ของบิดา การล่มสลายเรื้อรังในรัฐบาล เทียบเท่าพฤหัสคือการขาดแคลนเงินของรัฐบาล เทียบเท่าจันทร์คือประกันสุขภาพแห่งชาติ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -45471,7 +45471,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Pl",
+    "eq": "Sa หรือ Pl",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Pluto",
@@ -45597,7 +45597,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Slow separation favored by good fortune. A developing separation ending in a fortunate decision.",
     "desc_th": "การพลัดพรากอย่างช้าๆ ที่เอื้อด้วยโชคดี การพลัดพรากที่กำลังพัฒนาซึ่งจบลงด้วยการตัดสินใจที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -45723,7 +45723,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Cu",
+    "eq": "Sa หรือ Cu",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Cupido",
@@ -45849,7 +45849,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Divorce associated with good fortune. To quit one organization to join another. To refuse to join, which proves later to have been very fortunate.",
     "desc_th": "การหย่าร้างที่เกี่ยวข้องกับโชคดี การลาออกจากองค์กรหนึ่งเพื่อเข้าร่วมอีกองค์กรหนึ่ง การปฏิเสธที่จะเข้าร่วม ซึ่งภายหลังพิสูจน์ว่าโชคดีมาก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -45975,7 +45975,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ha",
+    "eq": "Sa หรือ Ha",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Hades",
@@ -45994,7 +45994,7 @@ const PLANETARY_DB = [
     "b_th": "ฮาเดส",
     "c_en": "Meridian",
     "c_th": "เมอริเดียน",
-    "desc_en": "To become seriously ill. Great poverty. To suffer losses thru diseases and hostility. To be depressed and resigned thru terrible events. Equals Su/Ma, death of male persons. Melancholic disposition.",
+    "desc_en": "To become seriously ill. Great poverty. To suffer losses thru diseases and hostility. To be depressed and resigned thru terrible events. Equals Su หรือ Ma, death of male persons. Melancholic disposition.",
     "desc_th": "การล้มป่วยอย่างร้ายแรง ความยากจนอย่างมาก การทนทุกข์จากการสูญเสียผ่านโรคภัยและความเป็นศัตรู ความหดหู่และการยอมจำนนผ่านเหตุการณ์เลวร้าย เทียบเท่าอาทิตย์ หรือ อังคารคือการเสียชีวิตของเพศชาย อุปนิสัยโศกเศร้าหมองหม่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -46101,7 +46101,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Tuberculosis of the lungs. Shortage of money. Lover troubles. Severe money losses. Losses of material or other property. Destruction of valuables thru enemies.",
     "desc_th": "วัณโรคปอด การขาดแคลนเงิน ปัญหาคนรัก การสูญเสียเงินอย่างรุนแรง การสูญเสียวัตถุหรือทรัพย์สินอื่น การทำลายของมีค่าโดยศัตรู",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -46235,11 +46235,11 @@ const PLANETARY_DB = [
     "c_en": "",
     "c_th": "",
     "desc_en": "To note: When Jupiter is strong in a horoscope, i.e. culminating, while Saturn and Hades are below the horizon in cadent houses, the formula Sa plus Ha equals Ju can mean also that hostilities can turn, change to fortunate, and enemies become friends. The house position should always be considered in the delineation of the planets.",
-    "desc_th": "ข้อสังเกต: เมื่อพฤหัสบดีเข้มแข็งในดวงชะตา กล่าวคือ อยู่ตำแหน่งกึ่งกลางฟ้า ในขณะที่เสาร์และฮาเดสอยู่ใต้ขอบฟ้าในเรือนคาเดนต์ (เรือนที่ 3,6,9,12) สูตรเสาร์บวกฮาเดส เทียบเท่าพฤหัสบดี อาจหมายความได้ว่าความเป็นศัตรูสามารถพลิกผัน เปลี่ยนเป็นโชคดี และศัตรูกลายเป็นมิตรได้ ตำแหน่งเรือนควรได้รับการพิจารณาเสมอในการตีความดาว",
+    "desc_th": "ข้อสังเกต: เมื่อพฤหัสเข้มแข็งในดวงชะตา กล่าวคือ อยู่ตำแหน่งกึ่งกลางฟ้า ในขณะที่เสาร์และฮาเดสอยู่ใต้ขอบฟ้าในเรือนคาเดนต์ (เรือนที่ 3,6,9,12) สูตรเสาร์บวกฮาเดส เทียบเท่าพฤหัส อาจหมายความได้ว่าความเป็นศัตรูสามารถพลิกผัน เปลี่ยนเป็นโชคดี และศัตรูกลายเป็นมิตรได้ ตำแหน่งเรือนควรได้รับการพิจารณาเสมอในการตีความดาว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ze",
+    "eq": "Sa หรือ Ze",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Zeus",
@@ -46365,7 +46365,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Losses of money by fire. To cross the ideas of others successfully and convert them to the own ideas.",
     "desc_th": "การสูญเสียเงินจากไฟไหม้ การขัดขวางความคิดของผู้อื่นอย่างประสบความสำเร็จและเปลี่ยนให้เป็นความคิดของตนเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -46491,7 +46491,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Kr",
+    "eq": "Sa หรือ Kr",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Kronos",
@@ -46617,7 +46617,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money losses thru loans. Credit taker. A fortune is diminished or hindered by the authority.",
     "desc_th": "การสูญเสียเงินผ่านเงินกู้ ผู้กู้ยืม โชคลาภถูกลดทอนหรือขัดขวางโดยเจ้าหน้าที่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -46743,7 +46743,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ap",
+    "eq": "Sa หรือ Ap",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Apollon",
@@ -46869,7 +46869,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Many enjoy a separation, parting festivities. Successful method.",
     "desc_th": "หลายคนเพลิดเพลินกับการพลัดพราก งานเลี้ยงอำลา วิธีการที่ประสบความสำเร็จ",
     "conf": "ปานกลาง (ต้นฉบับพิมพ์คลาดเคลื่อน หรือ label ผิดปกติ แต่อนุมานได้จากบริบทและลำดับดาว)"
@@ -46995,7 +46995,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Ad",
+    "eq": "Sa หรือ Ad",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Admetos",
@@ -47121,7 +47121,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness, resting of a matter. Lucky in narrow circumstances. Modest fortune. To find a way out of a misfortune.",
     "desc_th": "ความสุข การพักของเรื่องราว โชคดีในสถานการณ์ที่จำกัด โชคลาภพอประมาณ การหาทางออกจากเคราะห์ร้าย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -47247,7 +47247,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Vu",
+    "eq": "Sa หรือ Vu",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Vulcanus",
@@ -47373,7 +47373,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To take measures of precaution, to be careful. Equals Ha, to overlook or leave out precaution.",
     "desc_th": "การใช้มาตรการป้องกัน ความระมัดระวัง เทียบเท่าฮาเดสคือการมองข้ามหรือละเลยความระมัดระวัง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -47499,7 +47499,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Sa/Po",
+    "eq": "Sa หรือ Po",
     "a_en": "Saturn",
     "a_th": "เสาร์",
     "b_en": "Poseidon",
@@ -47625,7 +47625,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To appeal as the teacher to the good senses and instincts of the pupils. Successes of an educator. The good example. The good behavior. The high rating, being transferred to a higher grade.",
     "desc_th": "การเรียกร้องในฐานะครูต่อสามัญสำนึกและสัญชาตญาณที่ดีของศิษย์ ความสำเร็จของผู้ให้การศึกษา แบบอย่างที่ดี พฤติกรรมที่ดี การได้รับคะแนนสูง การถูกเลื่อนขึ้นชั้นที่สูงกว่า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -47751,7 +47751,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ur",
+    "eq": "Ur หรือ Ur",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Uranus",
@@ -47877,7 +47877,7 @@ const PLANETARY_DB = [
     "b_en": "Uranus",
     "b_th": "ยูเรนัส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fortunate events.",
     "desc_th": "เหตุการณ์ที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -48015,7 +48015,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
@@ -48027,7 +48027,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ne",
+    "eq": "Ur หรือ Ne",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Neptune",
@@ -48153,9 +48153,9 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Unexpected, easily acquired money. Inheritance. Plus Ju equals Ar, unexpected sudden death of several people.",
-    "desc_th": "เงินที่ไม่คาดคิดและได้มาง่าย มรดก บวกพฤหัสบดี เทียบเท่าจุดเมษคือความตายฉับพลันที่ไม่คาดคิดของหลายคน",
+    "desc_th": "เงินที่ไม่คาดคิดและได้มาง่าย มรดก บวกพฤหัส เทียบเท่าจุดเมษคือความตายฉับพลันที่ไม่คาดคิดของหลายคน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -48171,7 +48171,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ha",
+    "eq": "Ne หรือ Ha",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Hades",
@@ -48315,7 +48315,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Pl",
+    "eq": "Ur หรือ Pl",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Pluto",
@@ -48441,7 +48441,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden fortunate change.",
     "desc_th": "การเปลี่ยนแปลงที่โชคดีฉับพลัน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -48567,7 +48567,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Cu",
+    "eq": "Ur หรือ Cu",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Cupido",
@@ -48693,7 +48693,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden marriage contracted happily. Happy times in married life.",
     "desc_th": "การแต่งงานฉับพลันที่ทำสัญญาอย่างมีความสุข ช่วงเวลาที่มีความสุขในชีวิตสมรส",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -48819,7 +48819,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ha",
+    "eq": "Ur หรือ Ha",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Hades",
@@ -48934,7 +48934,7 @@ const PLANETARY_DB = [
     "b_th": "ฮาเดส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "Attempted murder. Sudden death by weapons or other objects. Death thru injuries. Sudden mean deeds. Equals Mo/Ze, death from burns. Death in a mine.",
+    "desc_en": "Attempted murder. Sudden death by weapons or other objects. Death thru injuries. Sudden mean deeds. Equals Mo หรือ Ze, death from burns. Death in a mine.",
     "desc_th": "ความพยายามฆาตกรรม ความตายฉับพลันด้วยอาวุธหรือวัตถุอื่น ความตายจากการบาดเจ็บ การกระทำใจร้ายฉับพลัน เทียบเท่าจันทร์ หรือ เซอุสคือความตายจากการถูกเผาไหม้ ความตายในเหมือง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -48945,7 +48945,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Quick death by murder or accident. To be lucky in dangerous things or assignments. To avoid or to escape danger.",
     "desc_th": "ความตายอย่างรวดเร็วจากการฆาตกรรมหรืออุบัติเหตุ การโชคดีในสิ่งอันตรายหรืองานที่ได้รับมอบหมาย การหลีกเลี่ยงหรือหนีจากอันตราย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -49071,7 +49071,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ze",
+    "eq": "Ur หรือ Ze",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Zeus",
@@ -49197,7 +49197,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Beneficent powers. Tropical rainstorms.",
     "desc_th": "พลังอันเป็นมงคล พายุฝนเขตร้อน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -49323,7 +49323,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Kr",
+    "eq": "Ur หรือ Kr",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Kronos",
@@ -49449,7 +49449,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Decrees and enactments concerning finances.",
     "desc_th": "กฤษฎีกาและกฎหมายเกี่ยวกับการเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -49575,7 +49575,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ap",
+    "eq": "Ur หรือ Ap",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Apollon",
@@ -49701,7 +49701,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be happily tense and excited. Happy excitement thru successes in astrology.",
     "desc_th": "ความตึงเครียดและตื่นเต้นอย่างมีความสุข ความตื่นเต้นอันสุขสันต์จากความสำเร็จในโหราศาสตร์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -49827,7 +49827,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ad",
+    "eq": "Ur หรือ Ad",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Admetos",
@@ -49953,7 +49953,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Sudden material damages. Losses of valuable things thru inattention or thru indifference, excitement and restlessness thru these losses.",
     "desc_th": "ความเสียหายทางวัตถุฉับพลัน การสูญเสียสิ่งของมีค่าจากความไม่ใส่ใจหรือความเฉยเมย ความตื่นเต้นและความกระวนกระวายจากการสูญเสียดังกล่าว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -50079,7 +50079,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Vu",
+    "eq": "Ur หรือ Vu",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Vulcanus",
@@ -50205,7 +50205,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Crowded with joy and happiness (blissfulness).",
     "desc_th": "เปี่ยมล้นด้วยความปีติและความสุข (ความสุขสมบูรณ์)",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -50331,7 +50331,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Po",
+    "eq": "Ur หรือ Po",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Poseidon",
@@ -50457,7 +50457,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck thru carefulness and diligence. To be conscientious. Happiness and success.",
     "desc_th": "โชคจากความรอบคอบและความขยันหมั่นเพียร ความมีสติรอบคอบ ความสุขและความสำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -50583,7 +50583,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ne",
+    "eq": "Ne หรือ Ne",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Neptune",
@@ -50709,7 +50709,7 @@ const PLANETARY_DB = [
     "b_en": "Neptune",
     "b_th": "เนปจูน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money transactions. Speculations. Imagined happiness. Uncertain possession.",
     "desc_th": "ธุรกรรมทางการเงิน การเก็งกำไร ความสุขในจินตนาการ การครอบครองที่ไม่แน่นอน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -50854,24 +50854,24 @@ const PLANETARY_DB = [
     "b_th": "เสาร์",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
-    "desc_en": "Ma plus Sa equals Su, death in an airship, or -Ma/Sa equals Su.",
+    "desc_en": "Ma plus Sa equals Su, death in an airship, or -Ma หรือ Sa equals Su.",
     "desc_th": "อังคารบวกเสาร์เทียบเท่าอาทิตย์ คือความตายในเรือเหาะ หรือ อังคาร หรือ เสาร์ เทียบเท่าอาทิตย์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ha+Ma/Sa",
+    "eq": "Ne หรือ Ha+Ma หรือ Sa",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "Ne/Ha plus Ma/Sa, death in the sea.",
+    "desc_en": "Ne หรือ Ha plus Ma หรือ Sa, death in the sea.",
     "desc_th": "เนปจูน หรือ ฮาเดส บวก อังคาร หรือ เสาร์ คือความตายในทะเล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Pl",
+    "eq": "Ne หรือ Pl",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Pluto",
@@ -50997,7 +50997,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The beginning of a fortunate change, which is not recognized at once. To hide something successfully.",
     "desc_th": "จุดเริ่มต้นของการเปลี่ยนแปลงอันเป็นมงคลซึ่งไม่ถูกรับรู้ในทันที การซ่อนบางสิ่งได้สำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -51123,7 +51123,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Cu",
+    "eq": "Ne หรือ Cu",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Cupido",
@@ -51226,8 +51226,8 @@ const PLANETARY_DB = [
     "b_th": "คิวปิโด",
     "c_en": "Venus",
     "c_th": "ศุกร์",
-    "desc_en": "Deception in love. Breach of promise to marry. Inharmony in love marriage. Equals Ju/Pl, getting better living quarters.",
-    "desc_th": "การหลอกลวงในความรัก การผิดสัญญาแต่งงาน ความไม่กลมกลืนในชีวิตสมรสด้วยความรัก เทียบเท่าพฤหัสบดี หรือ พลูโตคือการได้ที่อยู่อาศัยที่ดีขึ้น",
+    "desc_en": "Deception in love. Breach of promise to marry. Inharmony in love marriage. Equals Ju หรือ Pl, getting better living quarters.",
+    "desc_th": "การหลอกลวงในความรัก การผิดสัญญาแต่งงาน ความไม่กลมกลืนในชีวิตสมรสด้วยความรัก เทียบเท่าพฤหัส หรือ พลูโตคือการได้ที่อยู่อาศัยที่ดีขึ้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -51249,7 +51249,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Extravagance (dissipation) in unhappy married life. Housing shortage.",
     "desc_th": "ความฟุ่มเฟือย (การผลาญทรัพย์) ในชีวิตสมรสที่ไม่มีความสุข การขาดแคลนที่อยู่อาศัย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -51375,7 +51375,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ha",
+    "eq": "Ne หรือ Ha",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Hades",
@@ -51501,7 +51501,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Swindle enterprises. Waste. Tuberculosis of the lungs. Good luck in water catastrophes. Bathing. Equals Sa, to fall into the water, to jump into water. To be lucky with water or liquids.",
     "desc_th": "กิจการหลอกลวง ความสูญเปล่า วัณโรคปอด โชคดีในภัยพิบัติทางน้ำ การอาบน้ำ เทียบเท่าเสาร์คือการตกลงไปในน้ำ การกระโดดลงน้ำ การโชคดีเกี่ยวกับน้ำหรือของเหลว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -51627,19 +51627,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ma/Sa",
+    "eq": "Ma หรือ Sa",
     "a_en": "Mars",
     "a_th": "อังคาร",
     "b_en": "Saturn",
     "b_th": "เสาร์",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Ma/Sa: Death by drowning.",
+    "desc_en": "Ma หรือ Sa: Death by drowning.",
     "desc_th": "อังคาร หรือ เสาร์ คือความตายจากการจมน้ำ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ze",
+    "eq": "Ne หรือ Ze",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Zeus",
@@ -51754,7 +51754,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Mars",
     "c_th": "อังคาร",
-    "desc_en": "Energy or power produced by burning gas or liquid. Equals Sa/M, to be killed by burning gas or motor power. Undirected or uncontrolled powers. Anarchy. Equals Ha, chloroformed, to be put to sleep. Motive power destroyed by water.",
+    "desc_en": "Energy or power produced by burning gas or liquid. Equals Sa หรือ M, to be killed by burning gas or motor power. Undirected or uncontrolled powers. Anarchy. Equals Ha, chloroformed, to be put to sleep. Motive power destroyed by water.",
     "desc_th": "พลังงานหรือกำลังที่เกิดจากการเผาไหม้แก๊สหรือของเหลว เทียบเท่าเสาร์ หรือ เมอริเดียนคือการถูกฆ่าด้วยแก๊สเผาไหม้หรือกำลังเครื่องยนต์ พลังที่ไร้ทิศทางหรือไม่ถูกควบคุม ความไร้ระเบียบ เทียบเท่าฮาเดสคือการถูกวางยาสลบด้วยคลอโรฟอร์ม กำลังขับเคลื่อนถูกทำลายด้วยน้ำ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -51765,7 +51765,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Productive oil wells. Unexpected gain. Luck in alcohol.",
     "desc_th": "บ่อน้ำมันที่ให้ผลผลิตดี ผลกำไรที่ไม่คาดคิด โชคเกี่ยวกับแอลกอฮอล์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -51826,7 +51826,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Hades",
     "c_th": "ฮาเดส",
-    "desc_en": "Damages caused by choke-damp. Fire losses by gas mixtures. Equals Ma, hindrance or destruction of work-power. Equals Sa/Su, losses by fire damage (air). Illuminating gas. Damage to steam engines.",
+    "desc_en": "Damages caused by choke-damp. Fire losses by gas mixtures. Equals Ma, hindrance or destruction of work-power. Equals Sa หรือ Su, losses by fire damage (air). Illuminating gas. Damage to steam engines.",
     "desc_th": "ความเสียหายจากแก๊สอันตรายในเหมือง ความเสียหายจากไฟจากส่วนผสมแก๊ส เทียบเท่าอังคารคือการขัดขวางหรือทำลายกำลังแรงงาน เทียบเท่าเสาร์ หรือ อาทิตย์คือการสูญเสียจากความเสียหายจากไฟ (ทางอากาศ) แก๊สให้แสงสว่าง ความเสียหายต่อเครื่องจักรไอน้ำ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -51891,19 +51891,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Me/Mo",
+    "eq": "Me หรือ Mo",
     "a_en": "Mercury",
     "a_th": "พุธ",
     "b_en": "Moon",
     "b_th": "จันทร์",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Me/Mo: Automobile.",
+    "desc_en": "Me หรือ Mo: Automobile.",
     "desc_th": "พุธ หรือ จันทร์ คือรถยนต์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Kr",
+    "eq": "Ne หรือ Kr",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Kronos",
@@ -52029,7 +52029,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great extravagance. Shrinking of property or holdings (inflation). Money comes easy and goes easy. Equals M, fortunate diplomatic leadership.",
     "desc_th": "ความฟุ่มเฟือยครั้งใหญ่ การหดตัวของทรัพย์สินหรือการถือครอง (ภาวะเงินเฟ้อ) เงินมาง่ายและไปง่าย เทียบเท่าเมอริเดียนคือความเป็นผู้นำด้านการทูตที่โชคดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -52155,19 +52155,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ur/Ha",
+    "eq": "Ur หรือ Ha",
     "a_en": "Uranus",
     "a_th": "ยูเรนัส",
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Ur/Ha: Accident in aeronautics with death as a consequence.",
+    "desc_en": "Ur หรือ Ha: Accident in aeronautics with death as a consequence.",
     "desc_th": "ยูเรนัส หรือ ฮาเดส คืออุบัติเหตุทางการบินซึ่งนำไปสู่ความตาย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ap",
+    "eq": "Ne หรือ Ap",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Apollon",
@@ -52293,7 +52293,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To live under a fortunate illusion. To seek one's happiness in occult science. To penetrate and absorb a new science successfully.",
     "desc_th": "การใช้ชีวิตภายใต้มายาคติอันเป็นมงคล การแสวงหาความสุขในศาสตร์ลี้ลับ การเจาะลึกและซึมซับวิทยาศาสตร์ใหม่ได้สำเร็จ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -52419,7 +52419,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Ad",
+    "eq": "Ne หรือ Ad",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Admetos",
@@ -52545,7 +52545,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy and fortunate changes in relation to living conditions.",
     "desc_th": "การเปลี่ยนแปลงที่มีความสุขและเป็นมงคลในความสัมพันธ์กับสภาพความเป็นอยู่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -52671,7 +52671,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Vu",
+    "eq": "Ne หรือ Vu",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Vulcanus",
@@ -52797,7 +52797,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be pleasantly disappointed. Unexpected easily earned money also money losses.",
     "desc_th": "ความผิดหวังที่กลับกลายเป็นเรื่องดี เงินที่ได้มาง่ายอย่างไม่คาดคิด รวมถึงการสูญเสียเงินด้วย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -52923,7 +52923,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ne/Po",
+    "eq": "Ne หรือ Po",
     "a_en": "Neptune",
     "a_th": "เนปจูน",
     "b_en": "Poseidon",
@@ -53049,7 +53049,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To remain hidden. To successfully pretend. To be fortunate in highly placed mental matters.",
     "desc_th": "การซ่อนตัวอยู่ การแสร้งทำได้สำเร็จ ความโชคดีในเรื่องทางจิตใจระดับสูง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -53175,7 +53175,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Pl",
+    "eq": "Pl หรือ Pl",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Pluto",
@@ -53301,7 +53301,7 @@ const PLANETARY_DB = [
     "b_en": "Pluto",
     "b_th": "พลูโต",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The fortunate development.",
     "desc_th": "พัฒนาการอันเป็นมงคล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -53439,7 +53439,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Cu",
+    "eq": "Pl หรือ Cu",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Cupido",
@@ -53565,7 +53565,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy and fortunate development of familiar and social relations. Happy and fortunate family.",
     "desc_th": "พัฒนาการอันมีความสุขและเป็นมงคลของความสัมพันธ์ในครอบครัวและทางสังคม ครอบครัวที่มีความสุขและเป็นมงคล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -53691,7 +53691,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Ha",
+    "eq": "Pl หรือ Ha",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Hades",
@@ -53817,7 +53817,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "A fortunate turn in a bad situation. To correct and eliminate mistakes.",
     "desc_th": "จุดเปลี่ยนอันเป็นมงคลในสถานการณ์ที่เลวร้าย การแก้ไขและขจัดความผิดพลาด",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -53943,7 +53943,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Ze",
+    "eq": "Pl หรือ Ze",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Zeus",
@@ -54069,7 +54069,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Gladly accepted duties. Satisfaction out of performance of duty.",
     "desc_th": "หน้าที่ที่ยอมรับด้วยความยินดี ความพึงพอใจจากการปฏิบัติหน้าที่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -54195,7 +54195,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Kr",
+    "eq": "Pl หรือ Kr",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Kronos",
@@ -54250,7 +54250,7 @@ const PLANETARY_DB = [
     "b_th": "โครนอส",
     "c_en": "Ascendant",
     "c_th": "ลัคนา",
-    "desc_en": "To experience thru others or with others a great change. Great changes at the place. To be developed together with others. Equals Mo/Ze, to start the years of apprenticeship.",
+    "desc_en": "To experience thru others or with others a great change. Great changes at the place. To be developed together with others. Equals Mo หรือ Ze, to start the years of apprenticeship.",
     "desc_th": "การประสบการเปลี่ยนแปลงครั้งใหญ่ผ่านหรือร่วมกับผู้อื่น การเปลี่ยนแปลงครั้งใหญ่ ณ สถานที่นั้น การได้รับการพัฒนาร่วมกับผู้อื่น เทียบเท่าจันทร์ หรือ เซอุสคือการเริ่มต้นปีแห่งการฝึกงาน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -54321,7 +54321,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The beginning of a fortunate development. Favors thru the boss or superiors.",
     "desc_th": "จุดเริ่มต้นของพัฒนาการอันเป็นมงคล ความโปรดปรานจากเจ้านายหรือผู้บังคับบัญชา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -54459,7 +54459,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Ap",
+    "eq": "Pl หรือ Ap",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Apollon",
@@ -54585,7 +54585,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "One time gain. An event with pleasant consequences.",
     "desc_th": "ผลกำไรครั้งเดียว เหตุการณ์ที่มีผลลัพธ์อันน่ายินดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -54711,7 +54711,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Ad",
+    "eq": "Pl หรือ Ad",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Admetos",
@@ -54837,7 +54837,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The fortunate change of destiny. Caution: Make sure that the radical Pluto is not found in bad pictures.",
     "desc_th": "การเปลี่ยนแปลงโชคชะตาอันเป็นมงคล ข้อควรระวัง: ต้องแน่ใจว่าพลูโตซึ่งเป็นดาวแห่งการเปลี่ยนแปลงถึงรากถึงโคนนี้ไม่ปรากฏในสมการที่ไม่ดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -54971,11 +54971,11 @@ const PLANETARY_DB = [
     "c_en": "",
     "c_th": "",
     "desc_en": "To note: During the election of President Eisenhower, the directional arc of the USA was a few minutes less than 174 degrees. Jupiter directed equalled the cardinals radix. Pluto directed equalled Kronos radix. The USA meridian directed minus Admetos radix. Pluto plus Admetos minus Kronos, a new boss. Also, Pl(d) plus Ad(d) equals Kr(d) plus Ad. or Pl(d) plus Ad(d) minus Kr(D) equals Ad radix. The most important point is, the constellation radix reads: Pluto plus Admetos equals Kronos plus Meridian (7 deg 05 min = 6 deg 54 min). The radix meridian is the complement, the fourth element in our equation and equalled directed Admetos radix during election. We deal here with an almost exact equation, and the personal point is the Meridian.",
-    "desc_th": "หมายเหตุ: ระหว่างการเลือกตั้งประธานาธิบดีไอเซนฮาวร์ ส่วนโค้งทิศทาง (directional arc) ของสหรัฐอเมริกาน้อยกว่า 174 องศาอยู่ไม่กี่ลิปดา พฤหัสบดีที่กำกับทิศทาง (directed) เท่ากับตำแหน่งเดิมของจุดคาร์ดินัล (cardinals radix) พลูโตที่กำกับทิศทางเท่ากับตำแหน่งเดิมของโครนอส เมอริเดียนของสหรัฐฯ ที่กำกับทิศทางลบด้วยตำแหน่งเดิมของแอดเมตอส สมการพลูโต หรือ แอดเมตอส-โครนอส หมายถึงเจ้านายคนใหม่ นอกจากนี้ Pl(d)/Ad(d) เทียบเท่า Kr(d)/Ad หรือ Pl(d)/Ad(d)-Kr(D) เทียบเท่าตำแหน่งเดิมของแอดเมตอส ประเด็นสำคัญที่สุดคือ สมการตำแหน่งเดิม (radix) อ่านได้ว่า พลูโต หรือ แอดเมตอส เทียบเท่า โครนอส หรือ เมอริเดียน (7 องศา 05 ลิปดา เท่ากับ 6 องศา 54 ลิปดา) เมอริเดียนในตำแหน่งเดิมเป็นส่วนเติมเต็ม ซึ่งเป็นองค์ประกอบที่สี่ในสมการนี้ และเท่ากับตำแหน่งเดิมของแอดเมตอสที่กำกับทิศทางในช่วงเลือกตั้ง นี่คือสมการที่เกือบจะแม่นยำสมบูรณ์ และจุดสำคัญส่วนบุคคลคือเมอริเดียน",
+    "desc_th": "หมายเหตุ: ระหว่างการเลือกตั้งประธานาธิบดีไอเซนฮาวร์ ส่วนโค้งทิศทาง (directional arc) ของสหรัฐอเมริกาน้อยกว่า 174 องศาอยู่ไม่กี่ลิปดา พฤหัสที่กำกับทิศทาง (directed) เท่ากับตำแหน่งเดิมของจุดคาร์ดินัล (cardinals radix) พลูโตที่กำกับทิศทางเท่ากับตำแหน่งเดิมของโครนอส เมอริเดียนของสหรัฐฯ ที่กำกับทิศทางลบด้วยตำแหน่งเดิมของแอดเมตอส สมการพลูโต หรือ แอดเมตอส-โครนอส หมายถึงเจ้านายคนใหม่ นอกจากนี้ Pl(d) Ad(d) เทียบเท่า Kr(d) Ad หรือ Pl(d) Ad(d)-Kr(D) เทียบเท่าตำแหน่งเดิมของแอดเมตอส ประเด็นสำคัญที่สุดคือ สมการตำแหน่งเดิม (radix) อ่านได้ว่า พลูโต หรือ แอดเมตอส เทียบเท่า โครนอส หรือ เมอริเดียน (7 องศา 05 ลิปดา เท่ากับ 6 องศา 54 ลิปดา) เมอริเดียนในตำแหน่งเดิมเป็นส่วนเติมเต็ม ซึ่งเป็นองค์ประกอบที่สี่ในสมการนี้ และเท่ากับตำแหน่งเดิมของแอดเมตอสที่กำกับทิศทางในช่วงเลือกตั้ง นี่คือสมการที่เกือบจะแม่นยำสมบูรณ์ และจุดสำคัญส่วนบุคคลคือเมอริเดียน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Vu",
+    "eq": "Pl หรือ Vu",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Vulcanus",
@@ -55101,7 +55101,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To experience a great pleasant change.",
     "desc_th": "การประสบการเปลี่ยนแปลงอันยิ่งใหญ่และน่ายินดี",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -55227,7 +55227,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Pl/Po",
+    "eq": "Pl หรือ Po",
     "a_en": "Pluto",
     "a_th": "พลูโต",
     "b_en": "Poseidon",
@@ -55353,7 +55353,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Reason and good judgement lead to a very fortunate change or transformation in the religious attitude as well as in the attitude towards the world.",
     "desc_th": "เหตุผลและวิจารณญาณที่ดีนำไปสู่การเปลี่ยนแปลงหรือการแปรเปลี่ยนอันเป็นมงคลอย่างมากในทัศนคติทางศาสนา รวมถึงทัศนคติต่อโลก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -55479,7 +55479,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Cu",
+    "eq": "Cu หรือ Cu",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Cupido",
@@ -55605,7 +55605,7 @@ const PLANETARY_DB = [
     "b_en": "Cupido",
     "b_th": "คิวปิโด",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money or gains thru arts. Money thru marriage. Money thru members of the family. Feeling of happiness in or thru company.",
     "desc_th": "เงินหรือผลกำไรผ่านศิลปะ เงินผ่านการแต่งงาน เงินผ่านสมาชิกในครอบครัว ความรู้สึกมีความสุขในหรือผ่านการอยู่ร่วมกับผู้อื่น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -55743,7 +55743,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Ha",
+    "eq": "Cu หรือ Ha",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Hades",
@@ -55869,7 +55869,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Money thru popular or vulgar art. Windfalls in miss-mated marriage. To be and feel happy in sad surroundings.",
     "desc_th": "เงินผ่านศิลปะที่ได้รับความนิยมหรือหยาบคาย โชคลาภในชีวิตสมรสที่ไม่เหมาะสมกัน การมีความสุขในสภาพแวดล้อมที่น่าเศร้า",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -55919,7 +55919,7 @@ const PLANETARY_DB = [
     "c_en": "Pluto",
     "c_th": "พลูโต",
     "desc_en": "Change in sad surroundings. Equals Ju, to come into more pleasant surroundings. The present surroundings become more pleasant.",
-    "desc_th": "การเปลี่ยนแปลงในสภาพแวดล้อมที่น่าเศร้า เทียบเท่าพฤหัสบดีคือการเข้าสู่สภาพแวดล้อมที่น่ายินดีขึ้น สภาพแวดล้อมปัจจุบันดีขึ้น",
+    "desc_th": "การเปลี่ยนแปลงในสภาพแวดล้อมที่น่าเศร้า เทียบเท่าพฤหัสคือการเข้าสู่สภาพแวดล้อมที่น่ายินดีขึ้น สภาพแวดล้อมปัจจุบันดีขึ้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -55995,7 +55995,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Ze",
+    "eq": "Cu หรือ Ze",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Zeus",
@@ -56121,7 +56121,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The forming of banks and other financial institutions. Fortunate artistic creation.",
     "desc_th": "การก่อตั้งธนาคารและสถาบันการเงินอื่นๆ การสร้างสรรค์ทางศิลปะอันเป็นมงคล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -56146,7 +56146,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Uranus",
     "c_th": "ยูเรนัส",
-    "desc_en": "Corporation steps suddenly into existence. The foundation of a technical establishment. Military organizations (uproar). Equals Ma/Sa, death by a member of these organizations.",
+    "desc_en": "Corporation steps suddenly into existence. The foundation of a technical establishment. Military organizations (uproar). Equals Ma หรือ Sa, death by a member of these organizations.",
     "desc_th": "บริษัทถือกำเนิดขึ้นฉับพลัน การก่อตั้งสถาบันด้านเทคนิค องค์กรทหาร (การจลาจล) เทียบเท่าอังคาร หรือ เสาร์คือความตายของสมาชิกองค์กรเหล่านี้",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -56247,7 +56247,7 @@ const PLANETARY_DB = [
     "conf": "ต่ำ (ต้นฉบับสแกนซีดจางมาก อ่านได้เพียงบางส่วน ตรวจสอบกับภาพสแกนแล้วแต่ยังไม่สามารถอ่านครบทุกคำ)"
   },
   {
-    "eq": "Cu/Kr",
+    "eq": "Cu หรือ Kr",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Kronos",
@@ -56373,7 +56373,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The art of finance. National bank. Financiers. Signing of a document. Signing of a marriage license. To be happy in the company of cultured people.",
     "desc_th": "ศิลปะแห่งการเงิน ธนาคารแห่งชาติ นักการเงิน การลงนามในเอกสาร การลงนามในใบทะเบียนสมรส ความสุขในหมู่ผู้มีวัฒนธรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -56499,7 +56499,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Ap",
+    "eq": "Cu หรือ Ap",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Apollon",
@@ -56625,7 +56625,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The fortune and the happiness of peace. To be joined with many in a fortunate community or association. Fortune thru art, science or commerce.",
     "desc_th": "โชคลาภและความสุขแห่งสันติ การรวมตัวกับผู้คนมากมายในชุมชนหรือสมาคมที่โชคดี โชคลาภผ่านศิลปะ วิทยาศาสตร์ หรือการพาณิชย์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -56751,7 +56751,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Ad",
+    "eq": "Cu หรือ Ad",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Admetos",
@@ -56877,7 +56877,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Passing pleasant company or comradship.",
     "desc_th": "มิตรภาพหรือความเป็นเพื่อนอันน่าพึงใจที่ผ่านมาชั่วคราว",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -57003,7 +57003,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Vu",
+    "eq": "Cu หรือ Vu",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Vulcanus",
@@ -57129,7 +57129,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Mighty luck or fortune of the family. Great artistic successes. Happiness thru enjoying art.",
     "desc_th": "โชคลาภหรือความรุ่งเรืองอันยิ่งใหญ่ของครอบครัว ความสำเร็จทางศิลปะอันยิ่งใหญ่ ความสุขจากการเสพศิลปะ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -57255,7 +57255,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Cu/Po",
+    "eq": "Cu หรือ Po",
     "a_en": "Cupido",
     "a_th": "คิวปิโด",
     "b_en": "Poseidon",
@@ -57381,7 +57381,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be happy in one's own faith. Luck and success with or thru such associations.",
     "desc_th": "ความสุขในศรัทธาของตนเอง โชคลาภและความสำเร็จผ่านการรวมกลุ่มเช่นนั้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -57507,7 +57507,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha/Ha",
+    "eq": "Ha หรือ Ha",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Hades",
@@ -57633,7 +57633,7 @@ const PLANETARY_DB = [
     "b_en": "Hades",
     "b_th": "ฮาเดส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Dirty financial transactions. Lack of money. Bargaining. Equals Neptune, fraud.",
     "desc_th": "การทำธุรกรรมทางการเงินที่สกปรก การขาดแคลนเงิน การต่อรอง เทียบเท่าเนปจูน คือการฉ้อโกง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -57771,7 +57771,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha/Ze",
+    "eq": "Ha หรือ Ze",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Zeus",
@@ -57897,7 +57897,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Fraudulent enterprise. Good beginning with a bad ending. Equals Meridian, fire insurance agent. In the 10th house, good fortune in occupation with fire or heating power.",
     "desc_th": "กิจการฉ้อโกง จุดเริ่มต้นที่ดีแต่จบลงอย่างเลวร้าย เทียบเท่าเมอริเดียน คือตัวแทนประกันอัคคีภัย ในเรือนที่ 10 คือโชคดีในอาชีพที่เกี่ยวกับไฟหรือพลังงานความร้อน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -58023,19 +58023,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha+Ze-Ma/Sa",
+    "eq": "Ha+Ze-Ma หรือ Sa",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Zeus",
     "b_th": "เซอุส",
-    "c_en": "Mars/Saturn",
+    "c_en": "Mars หรือ Saturn",
     "c_th": "อังคาร หรือ เสาร์",
     "desc_en": "To be killed by fire.",
     "desc_th": "การถูกฆ่าตายด้วยไฟ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง) [สูตรเสริมพิเศษนอกเหนือจากรายการปัจจัย C มาตรฐาน 21 ตัว ปรากฏเพิ่มเติมท้ายบทในต้นฉบับ]"
   },
   {
-    "eq": "Ha/Kr",
+    "eq": "Ha หรือ Kr",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Kronos",
@@ -58161,7 +58161,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Finance scandals. Collapse of banks. Inflation. To escape mean plots. To get away with a black eye.",
     "desc_th": "เรื่องอื้อฉาวทางการเงิน การล่มสลายของธนาคาร ภาวะเงินเฟ้อ การหลบหนีจากแผนการชั่วร้าย การรอดพ้นด้วยความเสียหายเพียงเล็กน้อย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -58287,19 +58287,19 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha+Kr-Ma/Sa",
+    "eq": "Ha+Kr-Ma หรือ Sa",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Kronos",
     "b_th": "โครนอส",
-    "c_en": "Mars/Saturn",
+    "c_en": "Mars หรือ Saturn",
     "c_th": "อังคาร หรือ เสาร์",
     "desc_en": "Equals Meridian, to be charged by the police for murder.",
     "desc_th": "เทียบเท่าเมอริเดียน คือการถูกตำรวจตั้งข้อหาฆาตกรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง) [สูตรเสริมพิเศษนอกเหนือจากรายการปัจจัย C มาตรฐาน 21 ตัว ปรากฏเพิ่มเติมท้ายบทในต้นฉบับ]"
   },
   {
-    "eq": "Ha/Ap",
+    "eq": "Ha หรือ Ap",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Apollon",
@@ -58425,7 +58425,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Luck and success in antiquity and history science. To be well taken care of in hard times. Income of money thru collecting rags and junk. Luck and success in occult science and magic.",
     "desc_th": "โชคลาภและความสำเร็จในศาสตร์แห่งโบราณคดีและประวัติศาสตร์ การได้รับการดูแลอย่างดีในยามยากลำบาก รายได้จากการเก็บรวบรวมเศษผ้าและของเก่า โชคลาภและความสำเร็จในศาสตร์ลี้ลับและเวทมนตร์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -58551,7 +58551,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha/Ad",
+    "eq": "Ha หรือ Ad",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Admetos",
@@ -58677,7 +58677,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be well taken care of in spite of the lack of raw material and frugal conditions. Not to feel any needs.",
     "desc_th": "การได้รับการดูแลอย่างดีแม้จะขาดแคลนวัตถุดิบและอยู่ในสภาพประหยัด การไม่รู้สึกขาดแคลนสิ่งใด",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -58803,7 +58803,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ha/Vu",
+    "eq": "Ha หรือ Vu",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Vulcanus",
@@ -58929,7 +58929,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To escape evil attempts. To find the necessary protection to avert danger.",
     "desc_th": "การหลบหนีจากความพยายามชั่วร้าย การหาความคุ้มครองที่จำเป็นเพื่อหลีกเลี่ยงอันตราย",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -59055,7 +59055,7 @@ const PLANETARY_DB = [
     "conf": "ปานกลาง (ป้ายกำกับในต้นฉบับพิมพ์ผิดเป็น \"-Ap\" ซ้ำกับบรรทัดก่อนหน้า แต่จากลำดับปัจจัยมาตรฐานและการที่โพไซดอนไม่ปรากฏที่ใดในหน้านี้เลย คาดว่าเป็นความคลาดเคลื่อนในการพิมพ์สำหรับ \"-Po\")"
   },
   {
-    "eq": "Ha/Po",
+    "eq": "Ha หรือ Po",
     "a_en": "Hades",
     "a_th": "ฮาเดส",
     "b_en": "Poseidon",
@@ -59181,7 +59181,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness thru mental isolation.",
     "desc_th": "ความสุขผ่านความโดดเดี่ยวทางความคิด",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -59307,7 +59307,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Ze",
+    "eq": "Ze หรือ Ze",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Zeus",
@@ -59350,7 +59350,7 @@ const PLANETARY_DB = [
     "b_th": "เซอุส",
     "c_en": "Sun",
     "c_th": "อาทิตย์",
-    "desc_en": "To be obliged to function. If equals Mars/Saturn, to kill. To feel physically a strong urge to do something.",
+    "desc_en": "To be obliged to function. If equals Mars หรือ Saturn, to kill. To feel physically a strong urge to do something.",
     "desc_th": "ความจำเป็นต้องปฏิบัติหน้าที่ หากเทียบเท่าอังคาร หรือ เสาร์ คือการสังหาร ความรู้สึกทางกายที่ถูกกระตุ้นอย่างแรงกล้าให้ลงมือทำสิ่งใดสิ่งหนึ่ง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -59433,7 +59433,7 @@ const PLANETARY_DB = [
     "b_en": "Zeus",
     "b_th": "เซอุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Beneficial acts. To be compelled to give. Time of fortunate activity. To be fortunate in connection with machines.",
     "desc_th": "การกระทำอันเป็นประโยชน์ ความจำเป็นต้องให้ ช่วงเวลาแห่งกิจกรรมที่โชคดี ความโชคดีที่เกี่ยวข้องกับเครื่องจักร",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -59571,7 +59571,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Kr",
+    "eq": "Ze หรือ Kr",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Kronos",
@@ -59697,7 +59697,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Big financial institutions. Good luck in warfare. Great successful accomplishments.",
     "desc_th": "สถาบันการเงินขนาดใหญ่ โชคดีในสงคราม ความสำเร็จอันยิ่งใหญ่และงดงาม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -59823,7 +59823,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Ap",
+    "eq": "Ze หรือ Ap",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Apollon",
@@ -59949,7 +59949,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness and success thru learning, studying and searching. Luck and success in the arts and works of peace like science, commerce, trades or industry.",
     "desc_th": "ความสุขและความสำเร็จผ่านการเรียนรู้ ศึกษา และค้นคว้า โชคลาภและความสำเร็จในศิลปะและงานแห่งสันติภาพ เช่น วิทยาศาสตร์ การพาณิชย์ การค้า หรืออุตสาหกรรม",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -60075,7 +60075,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Ad",
+    "eq": "Ze หรือ Ad",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Admetos",
@@ -60201,7 +60201,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happy and contented activity under different conditions. Satisfactory new situation.",
     "desc_th": "กิจกรรมที่มีความสุขและพึงพอใจภายใต้สภาพการณ์ที่แตกต่าง สถานการณ์ใหม่ที่น่าพอใจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -60327,7 +60327,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Vu",
+    "eq": "Ze หรือ Vu",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Vulcanus",
@@ -60453,7 +60453,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Mighty successful efforts. Important increase of good fortune thru luck or one's own efforts.",
     "desc_th": "ความพยายามที่ประสบความสำเร็จอย่างยิ่งใหญ่ การเพิ่มพูนโชคลาภที่สำคัญผ่านโชคชะตาหรือความพยายามของตนเอง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -60579,7 +60579,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ze/Po",
+    "eq": "Ze หรือ Po",
     "a_en": "Zeus",
     "a_th": "เซอุส",
     "b_en": "Poseidon",
@@ -60705,7 +60705,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joy and happiness over the correctness of one's own opinion, conviction, reason and wisdom. The successful proof. To prove the correctness of something.",
     "desc_th": "ความสุขและความปีติต่อความถูกต้องของความคิดเห็น ความเชื่อมั่น เหตุผล และปัญญาของตน การพิสูจน์ที่ประสบความสำเร็จ การพิสูจน์ความถูกต้องของสิ่งใดสิ่งหนึ่ง",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -60831,7 +60831,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Kr/Kr",
+    "eq": "Kr หรือ Kr",
     "a_en": "Kronos",
     "a_th": "โครนอส",
     "b_en": "Kronos",
@@ -60947,7 +60947,7 @@ const PLANETARY_DB = [
     "c_en": "Mars",
     "c_th": "อังคาร",
     "desc_en": "Police authority. Penal law. Equals Jupiter, sentence.",
-    "desc_th": "อำนาจตำรวจ กฎหมายอาญา เทียบเท่าพฤหัสบดี คือคำพิพากษา",
+    "desc_th": "อำนาจตำรวจ กฎหมายอาญา เทียบเท่าพฤหัส คือคำพิพากษา",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
@@ -60957,7 +60957,7 @@ const PLANETARY_DB = [
     "b_en": "Kronos",
     "b_th": "โครนอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Regulation for the money system, for the national bank. Great luck and fortune.",
     "desc_th": "กฎระเบียบสำหรับระบบการเงิน สำหรับธนาคารชาติ โชคลาภและความรุ่งเรืองอันยิ่งใหญ่",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -61095,7 +61095,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Kr/Ap",
+    "eq": "Kr หรือ Ap",
     "a_en": "Kronos",
     "a_th": "โครนอส",
     "b_en": "Apollon",
@@ -61221,7 +61221,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joy, happiness or satisfaction thru a leading position or success in science or commerce.",
     "desc_th": "ความปีติ ความสุข หรือความพึงพอใจผ่านตำแหน่งผู้นำหรือความสำเร็จในวิทยาศาสตร์หรือการพาณิชย์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -61347,7 +61347,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Kr/Ad",
+    "eq": "Kr หรือ Ad",
     "a_en": "Kronos",
     "a_th": "โครนอส",
     "b_en": "Admetos",
@@ -61461,7 +61461,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be or to feel happy in a secluded or odd position.",
     "desc_th": "ความสุขหรือความรู้สึกพึงพอใจในสถานะสันโดษหรือพิลึก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -61587,7 +61587,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Kr/Vu",
+    "eq": "Kr หรือ Vu",
     "a_en": "Kronos",
     "a_th": "โครนอส",
     "b_en": "Vulcanus",
@@ -61713,7 +61713,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "The lucky and fortunate or successful power of the state. Successful politics. Increase in territory and growth of the power of the state. Allowances thru the power of the state.",
     "desc_th": "อำนาจของรัฐที่โชคดี รุ่งเรือง หรือประสบความสำเร็จ การเมืองที่ประสบความสำเร็จ การขยายอาณาเขตและการเติบโตของอำนาจรัฐ สวัสดิการผ่านอำนาจของรัฐ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -61827,7 +61827,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Kr/Po",
+    "eq": "Kr หรือ Po",
     "a_en": "Kronos",
     "a_th": "โครนอส",
     "b_en": "Poseidon",
@@ -61953,7 +61953,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness and success thru agreements in highminded and cultural matters with superiors, the boss, the state.",
     "desc_th": "ความสุขและความสำเร็จผ่านข้อตกลงในเรื่องอันสูงส่งและวัฒนธรรมกับผู้บังคับบัญชา เจ้านาย หรือรัฐ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -62079,7 +62079,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ap/Ap",
+    "eq": "Ap หรือ Ap",
     "a_en": "Apollon",
     "a_th": "อพอลลอน",
     "b_en": "Apollon",
@@ -62205,7 +62205,7 @@ const PLANETARY_DB = [
     "b_en": "Apollon",
     "b_th": "อพอลลอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Much happiness and great joy. Money in quantities. Luck and success in all personal peaceful enterprises.",
     "desc_th": "ความสุขและความปีติยินดีอย่างมาก เงินทองจำนวนมาก โชคลาภและความสำเร็จในกิจการส่วนตัวที่สงบสุขทั้งหมด",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -62343,7 +62343,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ap/Ad",
+    "eq": "Ap หรือ Ad",
     "a_en": "Apollon",
     "a_th": "อพอลลอน",
     "b_en": "Admetos",
@@ -62469,7 +62469,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To feel happy and content in one's habits.",
     "desc_th": "ความสุขและความพึงพอใจในกิจนิสัยของตน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -62595,14 +62595,14 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ap/Vu",
+    "eq": "Ap หรือ Vu",
     "a_en": "Apollon",
     "a_th": "อพอลลอน",
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "",
     "c_th": "",
-    "desc_en": "Vast/immense force, energy or power. Elemental force. High tension. Compulsion. Might.",
+    "desc_en": "Vast หรือ immense force, energy or power. Elemental force. High tension. Compulsion. Might.",
     "desc_th": "พลัง แรง หรืออำนาจอันมหาศาล พลังแห่งธรรมชาติดั้งเดิม แรงตึงเครียดสูง การบังคับ อำนาจ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
@@ -62721,7 +62721,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great fortune, wealth and power. Very fortunate, happy events.",
     "desc_th": "โชคลาภ ทรัพย์สมบัติ และอำนาจอันยิ่งใหญ่ เหตุการณ์อันน่ายินดีและโชคดีอย่างมาก",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -62859,7 +62859,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ap/Po",
+    "eq": "Ap หรือ Po",
     "a_en": "Apollon",
     "a_th": "อพอลลอน",
     "b_en": "Poseidon",
@@ -62973,7 +62973,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To be happy with the same state of mind with the mental and emotional disposition.",
     "desc_th": "ความสุขจากการมีสภาวะจิตใจแบบเดียวกันกับอุปนิสัยทางความคิดและอารมณ์",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -63099,7 +63099,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ad/Ad",
+    "eq": "Ad หรือ Ad",
     "a_en": "Admetos",
     "a_th": "แอดเมตอส",
     "b_en": "Admetos",
@@ -63225,7 +63225,7 @@ const PLANETARY_DB = [
     "b_en": "Admetos",
     "b_th": "แอดเมตอส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Expenses, losses, no income. Rest.",
     "desc_th": "ค่าใช้จ่าย การขาดทุน การไม่มีรายได้ การพักผ่อน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -63363,7 +63363,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ad/Vu",
+    "eq": "Ad หรือ Vu",
     "a_en": "Admetos",
     "a_th": "แอดเมตอส",
     "b_en": "Vulcanus",
@@ -63489,7 +63489,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "To escape great blows of fate. To be lucky to escape.",
     "desc_th": "การหลีกหนีจากการกระหน่ำอันรุนแรงของโชคชะตา ความโชคดีที่ได้หลีกหนีพ้น",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -63615,7 +63615,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Ad/Po",
+    "eq": "Ad หรือ Po",
     "a_en": "Admetos",
     "a_th": "แอดเมตอส",
     "b_en": "Poseidon",
@@ -63741,7 +63741,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Joy, happiness and success thru education or training.",
     "desc_th": "ความปีติยินดี ความสุข และความสำเร็จผ่านการศึกษาหรือการฝึกฝน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -63867,7 +63867,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Vu/Vu",
+    "eq": "Vu หรือ Vu",
     "a_en": "Vulcanus",
     "a_th": "วัลคานุส",
     "b_en": "Vulcanus",
@@ -63993,7 +63993,7 @@ const PLANETARY_DB = [
     "b_en": "Vulcanus",
     "b_th": "วัลคานุส",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Great luck. Optimism. Confidence. Credit. Financial power.",
     "desc_th": "โชคลาภอันยิ่งใหญ่ การมองโลกในแง่ดี ความมั่นใจ เครดิต อำนาจทางการเงิน",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -64131,7 +64131,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Vu/Po",
+    "eq": "Vu หรือ Po",
     "a_en": "Vulcanus",
     "a_th": "วัลคานุส",
     "b_en": "Poseidon",
@@ -64257,7 +64257,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Happiness and joy over honor, dignity and esteem.",
     "desc_th": "ความสุขและความปีติยินดีจากเกียรติยศ ศักดิ์ศรี และความนับถือ",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
@@ -64383,7 +64383,7 @@ const PLANETARY_DB = [
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"
   },
   {
-    "eq": "Po/Po",
+    "eq": "Po หรือ Po",
     "a_en": "Poseidon",
     "a_th": "โพไซดอน",
     "b_en": "Poseidon",
@@ -64509,7 +64509,7 @@ const PLANETARY_DB = [
     "b_en": "Poseidon",
     "b_th": "โพไซดอน",
     "c_en": "Jupiter",
-    "c_th": "พฤหัสบดี",
+    "c_th": "พฤหัส",
     "desc_en": "Understanding, wisdom and reason.",
     "desc_th": "ความเข้าใจ ปัญญา และเหตุผล",
     "conf": "สูง (ตรวจสอบตรงกับ PDF สแกนต้นฉบับจริง)"

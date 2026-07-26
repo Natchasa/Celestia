@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Symbols:wght@400;500;600;700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css?v=152">
+    <link rel="stylesheet" href="styles.css?v=153">
 </head>
 <body class="auth-locked">
     <!-- Access Gate: lightweight shared-password overlay + admin login notification (auth.js) -->
@@ -131,10 +131,13 @@
                 <div class="transit-sub-tabs-bar" style="margin-bottom: 18px;">
                     <div class="transit-sub-tabs">
                         <button class="sub-tab-btn active" id="subtab-transit-house" data-subtab="house">
-                            <span>🪐 Transit</span>
+                            <span>🪐 Planet</span>
                         </button>
                         <button class="sub-tab-btn" id="subtab-transit-aspect" data-subtab="aspect">
                             <span>📐 Aspect</span>
+                        </button>
+                        <button class="sub-tab-btn" id="subtab-transit-lord" data-subtab="lord">
+                            <span>👑 House Ruler</span>
                         </button>
                     </div>
                 </div>
@@ -238,6 +241,108 @@
 
                     <!-- Search Results Index List for Aspect -->
                     <div class="aspect-search-results-list" id="aspect-search-results-list" style="display: none;">
+                        <!-- Injected by app.js -->
+                    </div>
+                </div>
+
+                <!-- Sub-view 3: House Lord Transits & Rulership -->
+                <div class="transit-subview" id="subview-transit-lord" style="display: none;">
+                    <!-- Top-Right Clear Selection Button -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button class="house-clear-btn" id="btn-lord-clear" title="ล้างการเลือก เพื่อเริ่มเลือกใหม่">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>ล้างการเลือก</span>
+                        </button>
+                    </div>
+
+                    <!-- 5-Parameter House Lord Transit Selector -->
+                    <div class="lord-selector-card" style="margin-bottom: 20px;">
+                        <div class="lord-selector-grid">
+                            <div class="search-field">
+                                <label class="search-field-label">ดาว</label>
+                                <select class="search-input" id="lord-select-planet">
+                                    <option value="อาทิตย์">อาทิตย์</option>
+                                    <option value="จันทร์">จันทร์</option>
+                                    <option value="พุธ">พุธ</option>
+                                    <option value="ศุกร์">ศุกร์</option>
+                                    <option value="อังคาร">อังคาร</option>
+                                    <option value="พฤหัส" selected>พฤหัส</option>
+                                    <option value="เสาร์">เสาร์</option>
+                                    <option value="ยูเรนัส">ยูเรนัส</option>
+                                    <option value="เนปจูน">เนปจูน</option>
+                                    <option value="พลูโต">พลูโต</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <label class="search-field-label">เจ้าเรือนที่</label>
+                                <select class="search-input" id="lord-select-hx">
+                                    <!-- Injected 1 - 12 by app.js -->
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <label class="search-field-label">ราศี</label>
+                                <select class="search-input" id="lord-select-sign-m">
+                                    <option value="เมษ">เมษ</option>
+                                    <option value="พฤษภ">พฤษภ</option>
+                                    <option value="มิถุน">มิถุน</option>
+                                    <option value="กรกฎ">กรกฎ</option>
+                                    <option value="สิงห์">สิงห์</option>
+                                    <option value="กันย์">กันย์</option>
+                                    <option value="ตุลย์">ตุลย์</option>
+                                    <option value="พิจิก">พิจิก</option>
+                                    <option value="ธนู" selected>ธนู</option>
+                                    <option value="มกร">มกร</option>
+                                    <option value="กุมภ์">กุมภ์</option>
+                                    <option value="มีน">มีน</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <label class="search-field-label">จร เรือนที่</label>
+                                <select class="search-input" id="lord-select-hn">
+                                    <!-- Injected 1 - 12 by app.js -->
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <label class="search-field-label">ราศี</label>
+                                <select class="search-input" id="lord-select-sign-n">
+                                    <option value="เมษ">เมษ</option>
+                                    <option value="พฤษภ">พฤษภ</option>
+                                    <option value="มิถุน">มิถุน</option>
+                                    <option value="กรกฎ">กรกฎ</option>
+                                    <option value="สิงห์">สิงห์</option>
+                                    <option value="กันย์">กันย์</option>
+                                    <option value="ตุลย์">ตุลย์</option>
+                                    <option value="พิจิก">พิจิก</option>
+                                    <option value="ธนู" selected>ธนู</option>
+                                    <option value="มกร">มกร</option>
+                                    <option value="กุมภ์">กุมภ์</option>
+                                    <option value="มีน">มีน</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lord Keyword Search Box -->
+                    <div class="search-inputs-grid" style="margin-top: 15px; margin-bottom: 15px;">
+                        <div class="search-field" style="width: 100%;">
+                            <label class="search-field-label">ค้นหาความหมายดาวเจ้าเรือนเมื่อถูกจร:</label>
+                            <div class="search-bar-container">
+                                <input type="text" class="search-input" id="search-input-lord" placeholder="ค้นหาด้วยคำสำคัญ เช่น ร่างกาย, เงิน, ความมั่นคง, งาน, คู่ครอง..." maxlength="100" autocomplete="off">
+                                <button class="search-clear-btn" id="search-clear-lord" style="display: none;">✕</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interpretation Output Card for Lord -->
+                    <div class="lord-interpretation-card" id="lord-interpretation-results">
+                        <!-- Injected by app.js -->
+                    </div>
+
+                    <!-- Search Results Index List for Lord -->
+                    <div class="lord-search-results-list" id="lord-search-results-list" style="display: none;">
                         <!-- Injected by app.js -->
                     </div>
                 </div>
@@ -383,18 +488,18 @@
                         <label class="search-field-label">ค้นจากราศี</label>
                         <select class="search-input" id="search-select-asteroid-sign">
                             <option value="">ทุกราศี</option>
-                            <option value="เมษ">เมษ (Aries)</option>
-                            <option value="พฤษภ">พฤษภ (Taurus)</option>
-                            <option value="มิถุน">มิถุน (Gemini)</option>
-                            <option value="กรกฎ">กรกฎ (Cancer)</option>
-                            <option value="สิงห์">สิงห์ (Leo)</option>
-                            <option value="กันย์">กันย์ (Virgo)</option>
-                            <option value="ตุลย์">ตุลย์ (Libra)</option>
-                            <option value="พิจิก">พิจิก (Scorpio)</option>
-                            <option value="ธนู">ธนู (Sagittarius)</option>
-                            <option value="มกร">มกร (Capricorn)</option>
-                            <option value="กุมภ์">กุมภ์ (Aquarius)</option>
-                            <option value="มีน">มีน (Pisces)</option>
+                            <option value="เมษ">เมษ</option>
+                            <option value="พฤษภ">พฤษภ</option>
+                            <option value="มิถุน">มิถุน</option>
+                            <option value="กรกฎ">กรกฎ</option>
+                            <option value="สิงห์">สิงห์</option>
+                            <option value="กันย์">กันย์</option>
+                            <option value="ตุลย์">ตุลย์</option>
+                            <option value="พิจิก">พิจิก</option>
+                            <option value="ธนู">ธนู</option>
+                            <option value="มกร">มกร</option>
+                            <option value="กุมภ์">กุมภ์</option>
+                            <option value="มีน">มีน</option>
                         </select>
                     </div>
                 </div>
@@ -434,8 +539,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="auth.js?v=5"></script>
-    <script src="database.js?v=111"></script>
-    <script src="database_extra.js?v=125"></script>
-    <script src="app.js?v=177"></script>
+    <script src="database.js?v=112"></script>
+    <script src="database_extra.js?v=131"></script>
+    <script src="app.js?v=184"></script>
 </body>
 </html>

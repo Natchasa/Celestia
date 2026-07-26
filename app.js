@@ -226,7 +226,7 @@ const PLANETS = [
 
         nameEN: 'Jupiter',
 
-        nameTH: 'พฤหัสบดี',
+        nameTH: 'พฤหัส',
 
         isPersonal: false,
 
@@ -655,22 +655,29 @@ function initDOMCache() {
 
 
     // Aspect DOMs
-
     DOM.btnAspectClear = document.getElementById('btn-aspect-clear');
-
     DOM.aspectTransitPlanetsGrid = document.getElementById('aspect-transit-planets-grid');
-
     DOM.aspectTypesGrid = document.getElementById('aspect-types-grid');
-
     DOM.aspectNatalPlanetsGrid = document.getElementById('aspect-natal-planets-grid');
-
     DOM.searchInputAspect = document.getElementById('search-input-aspect');
-
     DOM.searchClearAspect = document.getElementById('search-clear-aspect');
-
     DOM.aspectInterpretationResults = document.getElementById('aspect-interpretation-results');
-
     DOM.aspectSearchResultsList = document.getElementById('aspect-search-results-list');
+
+    // Lord DOMs
+    DOM.subtabTransitLord = document.getElementById('subtab-transit-lord');
+    DOM.subviewTransitLord = document.getElementById('subview-transit-lord');
+    DOM.btnLordClear = document.getElementById('btn-lord-clear');
+    DOM.lordHousesGrid = document.getElementById('lord-houses-grid');
+    DOM.lordSelectPlanet = document.getElementById('lord-select-planet');
+    DOM.lordSelectHx = document.getElementById('lord-select-hx');
+    DOM.lordSelectSignM = document.getElementById('lord-select-sign-m');
+    DOM.lordSelectHn = document.getElementById('lord-select-hn');
+    DOM.lordSelectSignN = document.getElementById('lord-select-sign-n');
+    DOM.searchInputLord = document.getElementById('search-input-lord');
+    DOM.searchClearLord = document.getElementById('search-clear-lord');
+    DOM.lordInterpretationResults = document.getElementById('lord-interpretation-results');
+    DOM.lordSearchResultsList = document.getElementById('lord-search-results-list');
 
 
 
@@ -1561,17 +1568,52 @@ function setupEventListeners() {
 
 
     // Transit sub-tab listeners
-
     if (DOM.subtabTransitHouse) {
-
         DOM.subtabTransitHouse.addEventListener('click', () => switchTransitSubtab('house'));
-
+    }
+    if (DOM.subtabTransitAspect) {
+        DOM.subtabTransitAspect.addEventListener('click', () => switchTransitSubtab('aspect'));
+    }
+    if (DOM.subtabTransitLord) {
+        DOM.subtabTransitLord.addEventListener('click', () => switchTransitSubtab('lord'));
     }
 
-    if (DOM.subtabTransitAspect) {
+    // Lord listeners
+    if (DOM.btnLordClear) {
+        DOM.btnLordClear.addEventListener('click', clearLordSelection);
+    }
 
-        DOM.subtabTransitAspect.addEventListener('click', () => switchTransitSubtab('aspect'));
+    const lordDropdownKeys = ['lordSelectPlanet', 'lordSelectHx', 'lordSelectSignM', 'lordSelectHn', 'lordSelectSignN'];
+    lordDropdownKeys.forEach(domKey => {
+        if (DOM[domKey]) {
+            DOM[domKey].addEventListener('change', () => {
+                if (DOM.lordSelectPlanet) LORD_STATE.planet = DOM.lordSelectPlanet.value;
+                if (DOM.lordSelectHx) LORD_STATE.hx = parseInt(DOM.lordSelectHx.value, 10);
+                if (DOM.lordSelectSignM) LORD_STATE.signM = DOM.lordSelectSignM.value;
+                if (DOM.lordSelectHn) LORD_STATE.hn = parseInt(DOM.lordSelectHn.value, 10);
+                if (DOM.lordSelectSignN) LORD_STATE.signN = DOM.lordSelectSignN.value;
+                LORD_STATE.searchQuery = '';
+                if (DOM.searchInputLord) DOM.searchInputLord.value = '';
+                if (DOM.searchClearLord) DOM.searchClearLord.style.display = 'none';
+                renderLordInterpretation();
+            });
+        }
+    });
 
+    if (DOM.searchInputLord) {
+        DOM.searchInputLord.addEventListener('input', (e) => {
+            LORD_STATE.searchQuery = e.target.value;
+            if (DOM.searchClearLord) DOM.searchClearLord.style.display = e.target.value ? 'flex' : 'none';
+            renderLordInterpretation();
+        });
+    }
+    if (DOM.searchClearLord) {
+        DOM.searchClearLord.addEventListener('click', () => {
+            LORD_STATE.searchQuery = '';
+            if (DOM.searchInputLord) DOM.searchInputLord.value = '';
+            DOM.searchClearLord.style.display = 'none';
+            renderLordInterpretation();
+        });
     }
 
 
@@ -1805,31 +1847,23 @@ function switchTab(tabId) {
 
 
 function switchTransitSubtab(subtab) {
-
     TRANSIT_STATE.subtab = subtab;
 
     if (DOM.subtabTransitHouse) DOM.subtabTransitHouse.classList.toggle('active', subtab === 'house');
-
     if (DOM.subtabTransitAspect) DOM.subtabTransitAspect.classList.toggle('active', subtab === 'aspect');
-
-    
+    if (DOM.subtabTransitLord) DOM.subtabTransitLord.classList.toggle('active', subtab === 'lord');
 
     if (DOM.subviewTransitHouse) DOM.subviewTransitHouse.style.display = subtab === 'house' ? 'block' : 'none';
-
     if (DOM.subviewTransitAspect) DOM.subviewTransitAspect.style.display = subtab === 'aspect' ? 'block' : 'none';
-
-
+    if (DOM.subviewTransitLord) DOM.subviewTransitLord.style.display = subtab === 'lord' ? 'block' : 'none';
 
     if (subtab === 'house') {
-
         renderTransitTab();
-
     } else if (subtab === 'aspect') {
-
         renderAspectTab();
-
+    } else if (subtab === 'lord') {
+        renderLordTab();
     }
-
 }
 
 
@@ -2894,23 +2928,271 @@ function selectAspectMatch(transitTh, aspectTh, natalTh) {
 
 
 function clearAspectSelection() {
-
     ASPECT_STATE.transitPlanet = 'อาทิตย์';
-
     ASPECT_STATE.aspect = null;
-
     ASPECT_STATE.natalPlanet = 'อาทิตย์';
 
     if (DOM.searchInputAspect) {
-
         DOM.searchInputAspect.value = '';
-
         if (DOM.searchClearAspect) DOM.searchClearAspect.style.display = 'none';
-
     }
 
     renderAspectTab();
+}
 
+
+// 7.3 Lord of House Transits & Rulership Logic
+const LORD_STATE = {
+    planet: 'พฤหัส',
+    hx: 1,
+    signM: 'ธนู',
+    hn: 1,
+    signN: 'ธนู',
+    searchQuery: ''
+};
+
+const NATURAL_HOUSE_RULERS = {
+    1: { sign: 'เมษ (Aries)', ruler: 'อังคาร' },
+    2: { sign: 'พฤษภ (Taurus)', ruler: 'ศุกร์' },
+    3: { sign: 'มิถุน (Gemini)', ruler: 'พุธ' },
+    4: { sign: 'กรกฎ (Cancer)', ruler: 'จันทร์' },
+    5: { sign: 'สิงห์ (Leo)', ruler: 'อาทิตย์' },
+    6: { sign: 'กันย์ (Virgo)', ruler: 'พุธ' },
+    7: { sign: 'ตุลย์ (Libra)', ruler: 'ศุกร์' },
+    8: { sign: 'พิจิก (Scorpio)', ruler: 'อังคาร / พลูโต' },
+    9: { sign: 'ธนู (Sagittarius)', ruler: 'พฤหัส' },
+    10: { sign: 'มกร (Capricorn)', ruler: 'เสาร์' },
+    11: { sign: 'กุมภ์ (Aquarius)', ruler: 'เสาร์ / ยูเรนัส' },
+    12: { sign: 'มีน (Pisces)', ruler: 'พฤหัส / เนปจูน' }
+};
+
+const HOUSE_TITLES_SHORT = {
+    1: 'ตัวตน/ร่างกาย',
+    2: 'การเงิน/จิตใจ',
+    3: 'การสื่อสาร/พี่น้อง',
+    4: 'บ้าน/ครอบครัว',
+    5: 'ความรัก/บุตร',
+    6: 'งาน/สุขภาพ',
+    7: 'คู่ครอง/หุ้นส่วน',
+    8: 'การเปลี่ยนแปลง',
+    9: 'การเรียน/เดินทาง',
+    10: 'อาชีพ/สถานะ',
+    11: 'เพื่อน/สังคม',
+    12: 'จิตสัมผัส/สิ่งที่ซ่อน'
+};
+
+const SIGN_FLAVORS = {
+    'เมษ': 'สไตล์รวดเร็ว กล้าหาญ และเป็นผู้ริเริ่ม (ธาตุไฟ)',
+    'พฤษภ': 'สไตล์มั่นคง อดทน ประณีต และเป็นรูปธรรม (ธาตุดิน)',
+    'มิถุน': 'ผ่านการสื่อสาร แลกเปลี่ยนความคิด และความยืดหยุ่น (ธาตุลม)',
+    'กรกฎ': 'ด้วยความใส่ใจ ละเอียดอ่อน ผูกพัน และใช้อารมณ์สัญชาตญาณ (ธาตุน้ำ)',
+    'สิงห์': 'อย่างโดดเด่น มีศักดิ์ศรี มั่นใจ และสร้างสรรค์ (ธาตุไฟ)',
+    'กันย์': 'อย่างมีระบบ ละเอียด รอบคอบ และใส่ใจในรายละเอียด (ธาตุดิน)',
+    'ตุลย์': 'ด้วยความละมุนละม่อม ประสานประโยชน์ และสร้างความสมดุล (ธาตุลม)',
+    'พิจิก': 'ด้วยความลึกซึ้ง มุ่งมั่น ทุ่มเท และลุ่มลึก (ธาตุน้ำ)',
+    'ธนู': 'ด้วยความกว้างไกล มองการณ์ไกล แสวงหาปัญญา และเปิดกว้าง (ธาตุไฟ)',
+    'มกร': 'อย่างจริงจัง มีระเบียบแบบแผน และมุ่งหวังความสำเร็จระยะยาว (ธาตุดิน)',
+    'กุมภ์': 'ด้วยความคิดแปลกใหม่ เป็นอิสระ และมองภาพรวมเพื่ออนาคต (ธาตุลม)',
+    'มีน': 'ด้วยความละเอียดอ่อน เมตตา เห็นอกเห็นใจ และใช้จินตนาการ (ธาตุน้ำ)'
+};
+
+function populateLordHouseDropdowns() {
+    if (!DOM.lordSelectHx) return;
+    if (DOM.lordSelectHx.children.length > 0) return;
+
+    let html = '';
+    for (let h = 1; h <= 12; h++) {
+        html += `<option value="${h}">${h}</option>`;
+    }
+    DOM.lordSelectHx.innerHTML = html;
+    DOM.lordSelectHn.innerHTML = html;
+
+    if (DOM.lordSelectPlanet) DOM.lordSelectPlanet.value = LORD_STATE.planet;
+    if (DOM.lordSelectHx) DOM.lordSelectHx.value = LORD_STATE.hx;
+    if (DOM.lordSelectSignM) DOM.lordSelectSignM.value = LORD_STATE.signM;
+    if (DOM.lordSelectHn) DOM.lordSelectHn.value = LORD_STATE.hn;
+    if (DOM.lordSelectSignN) DOM.lordSelectSignN.value = LORD_STATE.signN;
+}
+
+function renderLordTab() {
+    populateLordHouseDropdowns();
+    renderLordInterpretation();
+}
+
+function selectLordHouseCombo(hx, hn) {
+    LORD_STATE.hx = hx;
+    LORD_STATE.hn = hn;
+    if (DOM.lordSelectHx) DOM.lordSelectHx.value = hx;
+    if (DOM.lordSelectHn) DOM.lordSelectHn.value = hn;
+    LORD_STATE.searchQuery = '';
+    if (DOM.searchInputLord) DOM.searchInputLord.value = '';
+    if (DOM.searchClearLord) DOM.searchClearLord.style.display = 'none';
+    renderLordInterpretation();
+}
+
+function getRulershipBadges(planet, signM, signN, hx) {
+    const badges = [];
+    const db = typeof RULERSHIP_DB !== 'undefined' ? RULERSHIP_DB : [];
+    const normPlanet = planet.replace('บดี', '');
+
+    // Check Natal Sign M
+    const signMItem = db.find(x => x.sign_th === signM);
+    if (signMItem) {
+        const tradMatch = signMItem.trad_th && signMItem.trad_th.includes(normPlanet);
+        const modMatch = signMItem.mod_th && signMItem.mod_th.includes(normPlanet);
+        if (tradMatch || modMatch) {
+            badges.push({ text: `👑 เกษตรเดิม: ดาว${planet} ครองราศี${signM}`, type: 'highlight' });
+        }
+    }
+
+    // Check Transit Sign N
+    const signNItem = db.find(x => x.sign_th === signN);
+    if (signNItem) {
+        const tradMatch = signNItem.trad_th && signNItem.trad_th.includes(normPlanet);
+        const modMatch = signNItem.mod_th && signNItem.mod_th.includes(normPlanet);
+        if (tradMatch || modMatch) {
+            badges.push({ text: `🪐 เกษตรจร: ดาว${planet} ครองราศี${signN}`, type: 'highlight' });
+        }
+    }
+
+    // Natural House Ruler
+    const natRuler = NATURAL_HOUSE_RULERS[hx];
+    if (natRuler && natRuler.ruler.includes(normPlanet)) {
+        badges.push({ text: `🏠 ดาวประจำเรือนธรรมชาติ H${hx}`, type: 'standard' });
+    }
+
+    return badges;
+}
+
+function renderLordInterpretation() {
+    if (!DOM.lordInterpretationResults) return;
+
+    const query = sanitizeSearchQuery(LORD_STATE.searchQuery);
+    
+    if (query) {
+        // Render search results across combination DB & transit DB
+        if (DOM.lordSearchResultsList) DOM.lordSearchResultsList.style.display = 'block';
+        DOM.lordInterpretationResults.style.display = 'none';
+
+        const combDb = typeof HOUSE_RULER_COMB_DB !== 'undefined' ? HOUSE_RULER_COMB_DB : [];
+        const matches = combDb.filter(item => {
+            const synth = item.synth_th || '';
+            const ax = item.area_x || '';
+            const an = item.area_n || '';
+            return synth.includes(query) || ax.includes(query) || an.includes(query);
+        });
+
+        if (matches.length === 0) {
+            DOM.lordSearchResultsList.innerHTML = `<div class="search-meta" style="padding: 15px; color: #FDC94D;">ไม่พบข้อมูลดาวเจ้าเรือนตรงกับคำว่า "${escapeHtml(query)}"</div>`;
+        } else {
+            let listHtml = `<div class="search-meta" style="padding: 10px 0; color: #FDC94D;">พบ ${matches.length} รายการสำหรับ "${escapeHtml(query)}"</div>`;
+            matches.forEach(item => {
+                let cleanItemSynth = item.synth_th || '';
+                if (cleanItemSynth.includes(' — ')) {
+                    cleanItemSynth = cleanItemSynth.split(' — ')[1].trim();
+                }
+                listHtml += `
+                    <div class="search-result-item" style="cursor: pointer; margin-bottom: 10px; background: rgba(30, 8, 50, 0.7); border: 1px solid rgba(253, 201, 77, 0.3); padding: 12px; border-radius: var(--border-radius-md);" onclick="selectLordHouseCombo(${item.hx}, ${item.hn})">
+                        <div style="font-weight: 700; color: #FDC94D; margin-bottom: 4px;">👑 เจ้าเรือนที่ ${item.hx} ➔ เรือนที่ ${item.hn}</div>
+                        <div style="font-size: 0.9rem; color: #FDF4DC;">${escapeHtml(cleanItemSynth)}</div>
+                    </div>
+                `;
+            });
+            DOM.lordSearchResultsList.innerHTML = listHtml;
+        }
+        return;
+    }
+
+    // Normal mode: display sentence header + interpretation card
+    if (DOM.lordSearchResultsList) DOM.lordSearchResultsList.style.display = 'none';
+    DOM.lordInterpretationResults.style.display = 'block';
+
+    const planet = LORD_STATE.planet;
+    const hx = LORD_STATE.hx;
+    const signM = LORD_STATE.signM;
+    const hn = LORD_STATE.hn;
+    const signN = LORD_STATE.signN;
+    const normPlanet = planet.replace('บดี', '');
+
+    // ตัวแปรของดาว (แก่นดาว — ใช้ในบรรทัดสรุปตัวแปรเท่านั้น)
+    const pkpDb = typeof PLANET_KEY_PRINCIPLE_DB !== 'undefined' ? PLANET_KEY_PRINCIPLE_DB : [];
+    const pkpItem = pkpDb.find(x => x.planet_th === planet || x.planet_th === normPlanet) || {};
+    const planetNature = pkpItem.nature_th || 'ชีวิต พลังขับเคลื่อน และแก่นธรรมชาติ';
+
+    // ตัวแปรของคู่เรือน X→N (เจ้าเรือนถูกจร) — synth_th คือบรรทัดสรุปเดียว, bullets คือมุมตีความย่อย
+    const combDb = typeof HOUSE_RULER_COMB_DB !== 'undefined' ? HOUSE_RULER_COMB_DB : [];
+    const combItem = combDb.find(x => x.hx === hx && x.hn === hn) || {
+        hx: hx,
+        hn: hn,
+        area_x: HOUSE_TITLES_SHORT[hx] || '',
+        area_n: HOUSE_TITLES_SHORT[hn] || '',
+        synth_th: `เจ้าเรือนที่ ${hx} เคลื่อนเข้าเรือนที่ ${hn} — ส่งผลต่อบริบทของเรือนที่ ${hn} อย่างชัดเจน`,
+        bullets: []
+    };
+    const areaX = combItem.area_x || HOUSE_TITLES_SHORT[hx] || '';
+    const areaN = combItem.area_n || HOUSE_TITLES_SHORT[hn] || '';
+
+    const signMFlavor = SIGN_FLAVORS[signM] || 'บรรยากาศตามราศีสถิตเดิม';
+    const signNFlavor = SIGN_FLAVORS[signN] || 'บรรยากาศตามราศีจร';
+
+    // สรุปตัวแปร: bullet กระชับทีละตัวแปร — ไม่ใส่ label นำหน้า (ดาว/เรือนเดิม/ฯลฯ)
+    // เพราะซ้ำกับ lord-sentence-banner ด้านบนอยู่แล้ว อาศัยลำดับ (เรือนเดิม+ราศีเดิม มาก่อน เรือนจร+ราศีจร ตามหลัง) แทน
+    // หมายเหตุ: SIGN_FLAVORS มีวงเล็บ (ธาตุ) ติดมาในตัวเองแล้ว — เป็นวงเล็บเดียวที่จำเป็น จึงไม่ครอบซ้อนวงเล็บอื่นเพิ่ม
+    const variableBullets = [
+        `${planet} — ${planetNature}`,
+        `เรือนที่ ${hx} — ${areaX}`,
+        `${signM} — ${signMFlavor}`,
+        `เรือนที่ ${hn} — ${areaN}`,
+        `${signN} — ${signNFlavor}`,
+    ];
+    const variableBulletsHtml = variableBullets.map(b => `<li style="line-height: 1.6; font-size: 0.92rem; margin-bottom: 6px;">${escapeHtml(b)}</li>`).join('');
+
+    // ความหมายของการจร: มุมตีความย่อยทั้งหมดเป็น bullet ล้วน (จาก HOUSE_RULER_COMB_DB.bullets) ไม่มีย่อหน้าแทรก
+    const extraBullets = Array.isArray(combItem.bullets) ? combItem.bullets : [];
+    const bulletsHtml = extraBullets.map(b => `<li style="line-height: 1.75; font-size: 0.95rem; margin-bottom: 10px;">${escapeHtml(b)}</li>`).join('');
+
+    DOM.lordInterpretationResults.innerHTML = `
+        <div class="lord-sentence-banner">
+            ดาว <span class="hl-planet">${escapeHtml(planet)}</span> เจ้าเรือนที่ <span class="hl-house">${hx}</span> ราศี <span class="hl-sign">${escapeHtml(signM)}</span> จร เรือนที่ <span class="hl-house">${hn}</span> ราศี <span class="hl-sign">${escapeHtml(signN)}</span>
+        </div>
+
+        <div class="lord-card" style="margin-top: 0;">
+            <div class="lord-area-box" style="margin-bottom: 14px; border-left-color: #FDC94D; font-size: 0.92rem;">
+                <ul style="margin: 0; padding-left: 20px; padding-right: 10px; color: var(--text-color);">
+                    ${variableBulletsHtml}
+                </ul>
+            </div>
+
+            <div style="font-weight: 700; color: #FDC94D; font-size: 0.95rem; margin-bottom: 10px; padding-left: 2px;">
+                ความหมายของการจรเรือนที่ ${hx} ไปเรือนที่ ${hn}
+            </div>
+
+            <div class="lord-bullets-box">
+                <ul class="lord-bullets-list">
+                    ${bulletsHtml}
+                </ul>
+            </div>
+        </div>
+    `;
+}
+
+function clearLordSelection() {
+    LORD_STATE.planet = 'พฤหัส';
+    LORD_STATE.hx = 1;
+    LORD_STATE.signM = 'ธนู';
+    LORD_STATE.hn = 1;
+    LORD_STATE.signN = 'ธนู';
+    LORD_STATE.searchQuery = '';
+
+    if (DOM.lordSelectPlanet) DOM.lordSelectPlanet.value = 'พฤหัส';
+    if (DOM.lordSelectHx) DOM.lordSelectHx.value = 1;
+    if (DOM.lordSelectSignM) DOM.lordSelectSignM.value = 'ธนู';
+    if (DOM.lordSelectHn) DOM.lordSelectHn.value = 1;
+    if (DOM.lordSelectSignN) DOM.lordSelectSignN.value = 'ธนู';
+    if (DOM.searchInputLord) DOM.searchInputLord.value = '';
+    if (DOM.searchClearLord) DOM.searchClearLord.style.display = 'none';
+
+    renderLordTab();
 }
 
 
@@ -4951,7 +5233,7 @@ const COMB_FACTORS = [
 
     { id: 'Ma', abbr: 'Ma', nameTH: 'อังคาร', nameEN: 'Mars' },
 
-    { id: 'Ju', abbr: 'Ju', nameTH: 'พฤหัสบดี', nameEN: 'Jupiter' },
+    { id: 'Ju', abbr: 'Ju', nameTH: 'พฤหัส', nameEN: 'Jupiter' },
 
     { id: 'Sa', abbr: 'Sa', nameTH: 'เสาร์', nameEN: 'Saturn' },
 

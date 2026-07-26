@@ -2706,3 +2706,316 @@ body.auth-locked .app-container {
     animation: fadeIn 0.4s ease;
 }
 
+/* ==========================================================================
+   Lord Sub-View & Zodiac Rulership Styles
+   ========================================================================== */
+.lord-selector-card {
+    background: rgba(30, 8, 50, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+    border-radius: var(--border-radius-lg);
+    padding: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.lord-selector-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .lord-selector-grid {
+        gap: 6px;
+    }
+    .lord-selector-grid .search-field-label {
+        font-size: 0.78rem;
+    }
+    .lord-selector-grid select.search-input {
+        padding: 8px 18px 8px 8px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .lord-selector-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4px;
+    }
+    .lord-selector-grid .search-field-label {
+        font-size: 0.68rem;
+    }
+    .lord-selector-grid select.search-input {
+        padding: 6px 14px 6px 4px !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+.lord-sentence-banner {
+    background: linear-gradient(135deg, rgba(75, 25, 120, 0.9) 0%, rgba(45, 12, 80, 0.9) 100%);
+    border: 1.5px solid #FDC94D;
+    border-radius: var(--border-radius-md);
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: clamp(1rem, 2.4vw, 1.3rem);
+    font-weight: 800;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(253, 201, 77, 0.3);
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+.lord-sentence-banner::-webkit-scrollbar {
+    display: none;
+}
+
+.lord-sentence-banner .hl-planet {
+    color: #FDC94D;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(253, 201, 77, 0.5);
+}
+
+.lord-sentence-banner .hl-house {
+    color: #E2C2FF;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(226, 194, 255, 0.5);
+}
+
+.lord-sentence-banner .hl-sign {
+    color: #72ECFC;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(114, 236, 252, 0.5);
+}
+
+.lord-houses-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .lord-houses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .lord-houses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.lord-house-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 6px;
+    background: linear-gradient(135deg, rgba(50, 16, 80, 0.9) 0%, rgba(30, 8, 50, 0.9) 100%);
+    border: 1px solid rgba(253, 201, 77, 0.4);
+    border-radius: var(--border-radius-md);
+    color: #FDF4DC;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.lord-house-btn:hover {
+    border-color: #FDC94D;
+    box-shadow: 0 0 15px rgba(253, 201, 77, 0.4);
+    background: linear-gradient(135deg, rgba(70, 24, 110, 0.95) 0%, rgba(45, 14, 75, 0.95) 100%);
+    transform: translateY(-2px);
+}
+
+.lord-house-btn.active {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 12px rgba(253, 201, 77, 0.4) !important;
+}
+
+.lord-house-btn-num {
+    font-family: var(--font-display, 'Cinzel', serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.lord-house-btn-title {
+    font-size: 0.75rem;
+    margin-top: 3px;
+    opacity: 0.9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.lord-house-btn.active .lord-house-btn-num,
+.lord-house-btn.active .lord-house-btn-title {
+    color: #1A0530 !important;
+    text-shadow: none !important;
+}
+
+/* Lord Interpretation Card */
+.lord-card {
+    background: rgba(30, 8, 50, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+    border-radius: var(--border-radius-lg);
+    padding: 22px;
+    margin-top: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.4s ease;
+}
+
+.lord-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(253, 201, 77, 0.25);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.lord-card-title {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FDC94D;
+    text-shadow: 0 0 10px rgba(253, 201, 77, 0.4);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lord-natural-ruler-badge {
+    background: rgba(253, 201, 77, 0.15);
+    border: 1px solid rgba(253, 201, 77, 0.4);
+    color: #FDC94D;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.lord-area-box {
+    background: rgba(45, 15, 75, 0.5);
+    border-left: 3px solid #FDC94D;
+    padding: 10px 14px;
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    margin-bottom: 16px;
+    font-size: 0.92rem;
+    color: #FDF4DC;
+}
+
+.lord-meaning-box {
+    background: rgba(20, 5, 35, 0.6);
+    border: 1px solid rgba(253, 201, 77, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: 16px;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+
+
+/* Rulership Reference Table */
+.lord-section-title {
+    font-size: 1.1rem;
+    color: #FDC94D;
+    margin-bottom: 12px;
+    text-shadow: 0 0 10px rgba(253, 201, 77, 0.3);
+}
+
+.lord-rulership-table-container {
+    overflow-x: auto;
+    background: rgba(25, 6, 42, 0.8);
+    border: 1px solid rgba(253, 201, 77, 0.3);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rulership-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.88rem;
+}
+
+.rulership-table th {
+    background: rgba(50, 16, 80, 0.9);
+    color: #FDC94D;
+    font-weight: 700;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(253, 201, 77, 0.3);
+    white-space: nowrap;
+}
+
+.rulership-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(253, 201, 77, 0.1);
+    color: #FDF4DC;
+    vertical-align: middle;
+}
+
+.rulership-table tr:hover {
+    background: rgba(70, 24, 110, 0.3);
+}
+
+.ruler-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.ruler-pill.trad {
+    background: rgba(253, 201, 77, 0.2);
+    border: 1px solid rgba(253, 201, 77, 0.5);
+    color: #FDC94D;
+}
+
+.ruler-pill.mod {
+    background: rgba(160, 90, 240, 0.25);
+    border: 1px solid rgba(180, 120, 255, 0.6);
+    color: #E2C2FF;
+}
+
+
+
+
+/* Lord Bullets Alignment & Container Styling */
+.lord-bullets-box {
+    background: rgba(20, 5, 35, 0.45);
+    border: 1px solid rgba(253, 201, 77, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: 16px 18px 6px 18px;
+    margin-top: 6px;
+}
+
+.lord-bullets-list {
+    margin: 0;
+    padding-left: 22px;
+    padding-right: 12px;
+    color: var(--text-color);
+}
+
+.lord-bullets-list li {
+    line-height: 1.75;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+}

@@ -1827,75 +1827,94 @@ p, span, div, label {
     transform: translateY(-1px);
 }
 
-/* Mobile Navigation Bar and Header Layout */
+/* Mobile Frozen Header (Top) & Bottom Navigation Bar (Bottom) for 5 Tabs */
 @media (max-width: 680px) {
     .app-container {
-        padding-top: 16px !important;
-        padding-bottom: 24px !important;
+        padding-top: calc(56px + env(safe-area-inset-top, 0px)) !important;
+        padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
     }
 
     .app-header {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        margin-bottom: 14px !important;
-        padding: 4px 0 !important;
-        background: transparent !important;
-        border-bottom: none !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9990 !important;
+        margin: 0 !important;
+        padding: calc(6px + env(safe-area-inset-top, 0px)) 12px 6px 12px !important;
+        background: rgba(18, 3, 34, 0.96) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border-bottom: 1px solid rgba(253, 201, 77, 0.25) !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .logo-container {
-        margin-bottom: 4px !important;
+        margin-bottom: 0 !important;
     }
 
     .celestia-lockup-img {
-        max-height: 46px !important;
+        max-height: 38px !important;
         width: auto !important;
     }
 
     .header-divider {
-        display: block !important;
-        margin: 12px auto 0 auto !important;
+        display: none !important;
     }
 
+    /* Fixed Bottom Navigation Bar for 5 Tabs */
     .mode-tabs {
-        position: relative !important;
+        position: fixed !important;
+        bottom: 0 !important;
         top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        margin: 0 0 20px 0 !important;
-        border-radius: var(--border-radius-md) !important;
-        padding: 4px !important;
-        background: rgba(36, 12, 60, 0.85) !important;
-        border: 1px solid rgba(253, 201, 77, 0.45) !important;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 8px rgba(253, 201, 77, 0.1) !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9990 !important;
+        margin: 0 !important;
+        border-radius: 18px 18px 0 0 !important;
+        padding: 5px 6px calc(6px + env(safe-area-inset-bottom, 0px)) 6px !important;
+        background: rgba(22, 6, 42, 0.96) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border-top: 1.5px solid rgba(253, 201, 77, 0.45) !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(122, 44, 184, 0.35) !important;
         display: flex !important;
         flex-direction: row !important;
-        gap: 4px !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch;
+        justify-content: space-around !important;
+        align-items: center !important;
+        gap: 3px !important;
     }
 
     .tab-btn {
-        flex: 1 0 auto !important;
-        flex-direction: row !important;
-        gap: 4px !important;
-        font-size: 0.78rem !important;
-        padding: 8px 6px !important;
+        flex: 1 1 0px !important;
+        flex-direction: column !important;
+        gap: 2px !important;
+        font-size: 0.68rem !important;
+        font-weight: 600 !important;
+        padding: 5px 2px !important;
         border-radius: 10px !important;
+        text-align: center !important;
+        min-width: 0 !important;
     }
 
     .tab-icon {
-        font-size: 0.88rem !important;
+        font-size: 1.05rem !important;
+        line-height: 1 !important;
+        display: block !important;
     }
 
     .main-content {
-        padding-bottom: 20px !important;
+        padding-bottom: 12px !important;
     }
 
     .app-footer {
-        padding-bottom: 20px !important;
+        padding-bottom: 16px !important;
     }
 }
 

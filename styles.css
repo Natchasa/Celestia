@@ -178,9 +178,10 @@ body {
 }
 
 .celestia-lockup-img {
-    width: 100%;
+    height: 58px;
+    max-height: 58px;
+    width: auto;
     max-width: 100%;
-    height: auto;
     object-fit: contain;
     border-radius: 18px;
     filter: drop-shadow(0 4px 14px rgba(51, 20, 82, 0.2)) drop-shadow(0 0 12px rgba(253, 201, 77, 0.35));
@@ -748,14 +749,16 @@ body.auth-locked {
     -webkit-backdrop-filter: blur(8px);
     border: 1.5px solid rgba(253, 201, 77, 0.35); /* Elegant gold border */
     border-radius: var(--border-radius-sm);
-    padding: 10px 4px;
+    padding: 4px 2px;
     cursor: pointer;
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 64px;
+    min-height: 52px;
+    height: 52px;
+    box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(122, 44, 184, 0.04), inset 0 2px 4px rgba(255, 255, 255, 0.65), inset 0 -2px 4px rgba(0, 0, 0, 0.02);
     position: relative;
     user-select: none;
@@ -769,8 +772,8 @@ body.auth-locked {
     box-shadow: 0 4px 15px rgba(253, 201, 77, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.7), inset 0 -2px 4px rgba(0, 0, 0, 0.02);
 }
 .planet-btn.personal .planet-btn-icon {
-    background: #ffffff;
-    border-color: rgba(253, 201, 77, 0.22);
+    background: var(--gold-gradient);
+    border-color: rgba(253, 201, 77, 0.55);
 }
 .planet-btn.personal .planet-btn-label {
     color: var(--text-color);
@@ -820,25 +823,19 @@ body.auth-locked {
 
 /* Button UI variations depending on toggle mode */
 .planet-btn-icon {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: var(--gold-gradient); /* Always gold coin background */
     border: 1px solid rgba(255, 255, 255, 0.35); /* Elegant white/gold border */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
     transition: var(--transition-smooth);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1.5px 2px rgba(255, 255, 255, 0.4), inset 0 -1.5px 2px rgba(0, 0, 0, 0.1);
-    /* iOS Safari fix: .planet-btn (ancestor) uses backdrop-filter, and the
-       .planet-img-icon child below uses filter (brightness+drop-shadow).
-       WebKit has a known compositing bug where a `filter` on a descendant of
-       a `backdrop-filter` element fails to paint at all (element goes fully
-       invisible) on iPhone Safari specifically. `isolation: isolate` forces
-       this icon circle into its own stacking context so its child's filter
-       composites independently of the ancestor's backdrop-filter layer. */
     isolation: isolate;
+    box-sizing: border-box;
 }
 
 .planet-btn.personal .planet-btn-icon {
@@ -853,6 +850,10 @@ body.auth-locked {
     box-shadow: 0 3px 8px rgba(122, 44, 184, 0.25), inset 0 1.5px 2px rgba(255, 255, 255, 0.4);
 }
 
+.planet-img-icon {
+    width: 20px;
+    height: 20px;
+}
 
 .planet-svg {
     width: 22px;
@@ -862,12 +863,15 @@ body.auth-locked {
 }
 
 .planet-btn-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 500;
     text-align: center;
-    /* Regular (non-personal) buttons sit on a light lavender background,
-       so a dark purple reads far better here than the light --text-muted. */
     color: var(--purple-dark);
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .planet-btn.selected .planet-btn-label {
@@ -952,6 +956,24 @@ body.auth-locked {
     position: relative;
     overflow: hidden;
     transition: var(--transition-smooth);
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-word;
+}
+
+.card p,
+.card div:not(.interp-header):not(.card-header-title),
+.interp-thai-desc,
+.interp-en-desc,
+.search-item-desc,
+.asteroid-desc-th,
+.house-general-card,
+.house-interpretation-card,
+.transit-interpretation-card,
+.aspect-interpretation-card {
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-word;
 }
 
 .card:hover {
@@ -1805,44 +1827,863 @@ p, span, div, label {
     transform: translateY(-1px);
 }
 
-/* Mobile Bottom Navigation Bar for 3 Main Tabs */
+/* Mobile Navigation Bar and Header Layout */
 @media (max-width: 680px) {
-    .mode-tabs {
-        position: fixed !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 9990 !important;
-        margin: 0 !important;
-        border-radius: 18px 18px 0 0 !important;
-        padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px)) 12px !important;
-        background: rgba(22, 6, 42, 0.95) !important;
-        backdrop-filter: blur(16px) !important;
-        -webkit-backdrop-filter: blur(16px) !important;
-        border-top: 1.5px solid rgba(253, 201, 77, 0.5) !important;
-        border-left: none !important;
-        border-right: none !important;
+    .app-container {
+        padding-top: 16px !important;
+        padding-bottom: 24px !important;
+    }
+
+    .app-header {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin-bottom: 14px !important;
+        padding: 4px 0 !important;
+        background: transparent !important;
         border-bottom: none !important;
-        box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.7), 0 0 15px rgba(122, 44, 184, 0.4) !important;
+    }
+
+    .logo-container {
+        margin-bottom: 4px !important;
+    }
+
+    .celestia-lockup-img {
+        max-height: 46px !important;
+        width: auto !important;
+    }
+
+    .header-divider {
+        display: block !important;
+        margin: 12px auto 0 auto !important;
+    }
+
+    .mode-tabs {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin: 0 0 20px 0 !important;
+        border-radius: var(--border-radius-md) !important;
+        padding: 4px !important;
+        background: rgba(36, 12, 60, 0.85) !important;
+        border: 1px solid rgba(253, 201, 77, 0.45) !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 8px rgba(253, 201, 77, 0.1) !important;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 4px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
     }
 
     .tab-btn {
-        flex-direction: column !important;
-        gap: 2px !important;
-        font-size: 0.7rem !important;
-        padding: 6px 2px !important;
+        flex: 1 0 auto !important;
+        flex-direction: row !important;
+        gap: 4px !important;
+        font-size: 0.78rem !important;
+        padding: 8px 6px !important;
         border-radius: 10px !important;
     }
 
     .tab-icon {
-        font-size: 1.15rem !important;
+        font-size: 0.88rem !important;
     }
 
     .main-content {
-        padding-bottom: 80px !important;
+        padding-bottom: 20px !important;
     }
 
     .app-footer {
-        padding-bottom: 75px !important;
+        padding-bottom: 20px !important;
     }
 }
+
+/* ==========================================================================
+   TRANSIT TAB STYLES
+   ========================================================================== */
+.transit-controls-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+/* Sub Navigation Tabs for Transit Tab */
+.transit-sub-tabs-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.transit-sub-tabs {
+    display: flex;
+    gap: 6px;
+    background: rgba(253, 201, 77, 0.06);
+    padding: 4px;
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(253, 201, 77, 0.25);
+    width: 100%;
+}
+
+.sub-tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: calc(var(--border-radius-md) - 2px);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.sub-tab-btn:hover {
+    color: #FFFFFF;
+    background: rgba(122, 44, 184, 0.2);
+}
+
+.sub-tab-btn.active {
+    background: linear-gradient(135deg, #7A2CB8 0%, #4A1578 100%) !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FDC94D !important;
+    box-shadow: 0 2px 8px rgba(122, 44, 184, 0.5), 0 0 10px rgba(253, 201, 77, 0.25) !important;
+    font-weight: 700;
+}
+
+/* Transit planets grid button sizing: EXACTLY equal to Tab House (keyboard-grid) */
+.transit-planets-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+}
+
+/* Transit planets grid button styling: Deep Purple Default & Glowing Gold Selected */
+.transit-planets-grid .planet-btn {
+    min-height: 52px;
+    padding: 6px 2px;
+    background: linear-gradient(135deg, rgba(50, 18, 75, 0.92) 0%, rgba(30, 8, 50, 0.92) 100%);
+    border: 1.5px solid rgba(253, 201, 77, 0.45);
+}
+
+.transit-planets-grid .planet-btn .planet-btn-label {
+    color: #FFFFFF;
+}
+
+.transit-planets-grid .planet-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.4), 0 0 12px rgba(253, 201, 77, 0.3) !important;
+}
+
+.transit-planets-grid .planet-btn.selected .planet-btn-label {
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+}
+
+/* Slot 6 House Dropdown Grid Card Styling (Glowing Gold Accent) */
+.transit-house-select-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%);
+    border: 1.5px solid #FFFFFF;
+    border-radius: var(--border-radius-sm);
+    padding: 4px 2px;
+    min-height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.7);
+    user-select: none;
+    transition: var(--transition-smooth);
+}
+
+.transit-house-select-card:hover {
+    background: linear-gradient(135deg, #FFE07D 0%, #F5B82E 100%);
+    box-shadow: 0 0 14px rgba(253, 201, 77, 0.5);
+    transform: translateY(-1px);
+}
+
+.transit-house-card-label {
+    font-family: var(--font-sans);
+    font-size: 0.58rem;
+    font-weight: 800;
+    color: #1A0530;
+    margin-bottom: 2px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.transit-house-dropdown-select {
+    font-family: var(--font-sans);
+    width: 88%;
+    padding: 2px 0;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 6px;
+    background: rgba(26, 5, 48, 0.92);
+    color: #FDC94D;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.transit-house-dropdown-select option {
+    font-family: var(--font-sans);
+    background: #1A0530;
+    color: #FDC94D;
+}
+
+@media (max-width: 520px) {
+    .transit-house-select-card {
+        min-height: 48px;
+        padding: 3px 1px;
+    }
+    .transit-house-card-label {
+        font-size: 0.52rem;
+    }
+    .transit-house-dropdown-select {
+        font-size: 0.72rem;
+        padding: 1px 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .transit-house-select-card {
+        min-height: 44px;
+        padding: 2px 1px;
+    }
+    .transit-house-card-label {
+        font-size: 0.46rem;
+    }
+    .transit-house-dropdown-select {
+        font-size: 0.65rem;
+    }
+}
+
+/* Slot 12 Clear Selection Button Styling (Icon-only) */
+.transit-clear-grid-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(65, 25, 95, 0.85) 0%, rgba(40, 12, 65, 0.85) 100%);
+    border: 1.5px solid rgba(253, 201, 77, 0.55);
+    border-radius: var(--border-radius-sm);
+    padding: 0;
+    min-height: 52px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    user-select: none;
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.transit-clear-grid-btn:hover {
+    border-color: #FF6E6E;
+    background: linear-gradient(135deg, rgba(90, 20, 50, 0.95) 0%, rgba(60, 10, 35, 0.95) 100%);
+    box-shadow: 0 0 12px rgba(255, 110, 110, 0.35);
+    transform: translateY(-1px);
+}
+
+.transit-clear-grid-btn:active {
+    transform: translateY(0);
+}
+
+.transit-clear-icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 110, 110, 0.15);
+    border: 1px solid rgba(255, 110, 110, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+}
+
+.transit-clear-grid-btn:hover .transit-clear-icon-circle {
+    background: rgba(255, 110, 110, 0.35);
+    border-color: #FF6E6E;
+}
+
+@media (max-width: 520px) {
+    .transit-clear-grid-btn {
+        min-height: 48px;
+    }
+    .transit-clear-icon-circle {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 380px) {
+    .transit-clear-grid-btn {
+        min-height: 44px;
+    }
+    .transit-clear-icon-circle {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.transit-planet-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+/* Aspect 3-Column Vertical Selector Layout (ดาวจร | มุม | ดาวกำเนิด) */
+.aspect-selector-3col-container {
+    display: grid;
+    grid-template-columns: 2fr 1.25fr 2fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.aspect-col-box {
+    background: rgba(20, 10, 35, 0.45);
+    border: 1px solid rgba(253, 201, 77, 0.22);
+    border-radius: var(--border-radius-md);
+    padding: 10px 8px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.aspect-col-title {
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed rgba(253, 201, 77, 0.3);
+    letter-spacing: 0.5px;
+}
+
+/* Sub-grids */
+.aspect-transit-planets-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.aspect-types-grid-1col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+
+.aspect-natal-planets-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+/* Ensure Aspect 3-Column Planet Buttons & Aspect Buttons EXACTLY match Tab House button sizes */
+.aspect-transit-planets-grid-2col .planet-btn,
+.aspect-natal-planets-grid-2col .planet-btn,
+.aspect-types-grid-1col .aspect-type-btn {
+    min-height: 52px;
+    height: 52px;
+    padding: 4px 2px;
+    box-sizing: border-box;
+}
+
+.aspect-transit-planets-grid-2col .planet-btn-icon,
+.aspect-natal-planets-grid-2col .planet-btn-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+}
+
+.aspect-transit-planets-grid-2col .planet-img-icon,
+.aspect-natal-planets-grid-2col .planet-img-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.aspect-transit-planets-grid-2col .planet-btn-label,
+.aspect-natal-planets-grid-2col .planet-btn-label {
+    font-size: 0.6rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.aspect-types-grid-1col .aspect-type-btn {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.aspect-types-grid-1col .aspect-symbol {
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.aspect-types-grid-1col .aspect-label {
+    font-size: 0.58rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .aspect-selector-3col-container {
+        gap: 5px;
+        grid-template-columns: 2fr 1.2fr 2fr;
+    }
+    .aspect-col-box {
+        padding: 6px 3px;
+    }
+    .aspect-col-title {
+        font-size: 0.72rem;
+        margin-bottom: 6px;
+    }
+    .aspect-transit-planets-grid-2col,
+    .aspect-natal-planets-grid-2col {
+        gap: 4px;
+    }
+    .aspect-types-grid-1col {
+        gap: 4px;
+    }
+    .aspect-transit-planets-grid-2col .planet-btn,
+    .aspect-natal-planets-grid-2col .planet-btn {
+        min-height: 48px;
+        height: 48px;
+        padding: 4px 1px;
+    }
+    .aspect-types-grid-1col .aspect-type-btn {
+        min-height: 48px;
+        height: 48px;
+        padding: 0 6px;
+    }
+    .aspect-transit-planets-grid-2col .planet-btn-icon,
+    .aspect-natal-planets-grid-2col .planet-btn-icon {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 2px;
+    }
+    .aspect-transit-planets-grid-2col .planet-img-icon,
+    .aspect-natal-planets-grid-2col .planet-img-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .aspect-transit-planets-grid-2col .planet-btn-label,
+    .aspect-natal-planets-grid-2col .planet-btn-label {
+        font-size: 0.54rem;
+    }
+    .aspect-types-grid-1col .aspect-symbol {
+        font-size: 1.25rem;
+    }
+    .aspect-types-grid-1col .aspect-label {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .aspect-transit-planets-grid-2col .planet-btn,
+    .aspect-natal-planets-grid-2col .planet-btn,
+    .aspect-types-grid-1col .aspect-type-btn {
+        min-height: 44px;
+        height: 44px;
+        padding: 3px 1px;
+    }
+    .aspect-transit-planets-grid-2col .planet-btn-icon,
+    .aspect-natal-planets-grid-2col .planet-btn-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 1px;
+    }
+    .aspect-transit-planets-grid-2col .planet-img-icon,
+    .aspect-natal-planets-grid-2col .planet-img-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .aspect-transit-planets-grid-2col .planet-btn-label,
+    .aspect-natal-planets-grid-2col .planet-btn-label {
+        font-size: 0.48rem;
+    }
+}
+
+/* Aspect 3-Column Planet Buttons: Deep Purple Default & Glowing Gold Selected */
+.aspect-transit-planets-grid-2col .planet-btn,
+.aspect-natal-planets-grid-2col .planet-btn {
+    background: linear-gradient(135deg, rgba(50, 18, 75, 0.92) 0%, rgba(30, 8, 50, 0.92) 100%);
+    border: 1.5px solid rgba(253, 201, 77, 0.45);
+    color: #FFFFFF;
+}
+
+.aspect-transit-planets-grid-2col .planet-btn .planet-btn-label,
+.aspect-natal-planets-grid-2col .planet-btn .planet-btn-label {
+    color: #FFFFFF;
+}
+
+.aspect-transit-planets-grid-2col .planet-btn.selected,
+.aspect-natal-planets-grid-2col .planet-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.4), 0 0 12px rgba(253, 201, 77, 0.3) !important;
+}
+
+.aspect-transit-planets-grid-2col .planet-btn.selected .planet-btn-label,
+.aspect-natal-planets-grid-2col .planet-btn.selected .planet-btn-label {
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+}
+
+/* Aspect Type Buttons: Light Purple / Lavender Default & Glowing Gold Selected */
+.aspect-type-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(230, 210, 245, 0.88) 0%, rgba(195, 170, 222, 0.88) 100%);
+    border: 1.5px solid rgba(160, 110, 210, 0.65);
+    border-radius: var(--border-radius-sm);
+    padding: 0 10px;
+    min-height: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    color: #2A0B45;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    user-select: none;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(160, 110, 210, 0.15), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.aspect-type-btn:hover {
+    background: linear-gradient(135deg, rgba(240, 220, 252, 0.95) 0%, rgba(210, 185, 235, 0.95) 100%);
+    box-shadow: 0 0 12px rgba(180, 130, 230, 0.4);
+    transform: translateY(-1px);
+}
+
+.aspect-type-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    box-shadow: 0 4px 15px rgba(253, 201, 77, 0.4), 0 0 12px rgba(253, 201, 77, 0.3) !important;
+}
+
+.aspect-symbol {
+    font-size: 1.45rem;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #2A0B45;
+    font-weight: 800;
+}
+
+.aspect-type-btn.selected .aspect-symbol {
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+}
+
+.aspect-label {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: #2A0B45;
+    white-space: nowrap;
+}
+
+.aspect-type-btn.selected .aspect-label {
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+}
+
+@media (max-width: 520px) {
+    .aspect-types-grid {
+        gap: 4px;
+    }
+    .aspect-type-btn {
+        min-height: 48px;
+        padding: 4px 1px;
+    }
+    .aspect-symbol {
+        font-size: 1rem;
+    }
+    .aspect-label {
+        font-size: 0.54rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .aspect-types-grid {
+        gap: 3px;
+    }
+    .aspect-type-btn {
+        min-height: 44px;
+        padding: 3px 1px;
+    }
+    .aspect-symbol {
+        font-size: 0.85rem;
+    }
+    .aspect-label {
+        font-size: 0.48rem;
+    }
+}
+
+.transit-planet-btn.selected .tp-en {
+    color: #331200;
+}
+
+.tp-symbol {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+.tp-th {
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.tp-en {
+    font-size: 0.62rem;
+    color: var(--text-muted);
+}
+
+.transit-houses-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+@media (max-width: 520px) {
+    .transit-houses-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 6px;
+    }
+
+    .transit-house-btn {
+        padding: 9px 0 !important;
+        font-size: 0.9rem !important;
+        border-radius: 8px !important;
+    }
+}
+
+.transit-house-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 2px;
+    background: linear-gradient(135deg, rgba(50, 16, 80, 0.9) 0%, rgba(30, 8, 50, 0.9) 100%);
+    border: 1px solid rgba(253, 201, 77, 0.4);
+    border-radius: var(--border-radius-sm);
+    color: #FDF4DC;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.transit-house-btn:hover {
+    border-color: #FDC94D;
+    box-shadow: 0 0 12px rgba(253, 201, 77, 0.4);
+    transform: translateY(-1px);
+}
+
+.transit-house-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+.transit-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.transit-card-header {
+    background: rgba(36, 12, 60, 0.95);
+    border: 1px solid rgba(253, 201, 77, 0.5);
+    border-radius: var(--border-radius-md);
+    padding: 16px;
+    text-align: center;
+    box-shadow: var(--shadow-soft), var(--purple-glow);
+}
+
+.transit-title-main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.transit-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 600px) {
+    .transit-dual-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.transit-pos-card {
+    background: rgba(16, 44, 32, 0.85);
+    border: 1px solid rgba(80, 220, 150, 0.45);
+    border-radius: var(--border-radius-md);
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 12px rgba(80, 220, 150, 0.2);
+}
+
+.transit-pos-title {
+    color: #50DC96;
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.transit-neg-card {
+    background: rgba(48, 16, 24, 0.85);
+    border: 1px solid rgba(255, 110, 110, 0.45);
+    border-radius: var(--border-radius-md);
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 110, 110, 0.2);
+}
+
+.transit-neg-title {
+    color: #FF6E6E;
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.transit-desc-text {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: #F0E6FF;
+}
+
+.transit-source-foot {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: right;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+body.auth-locked .app-container {
+    display: none !important;
+}
+
+/* Zodiac Sign Grid & Combination Subview Styling */
+.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .zodiac-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .zodiac-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+}
+
+.zodiac-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 4px;
+    background: linear-gradient(135deg, rgba(60, 20, 95, 0.9) 0%, rgba(30, 8, 55, 0.9) 100%);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+    border-radius: var(--border-radius-sm);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.zodiac-btn:hover {
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 10px rgba(253, 201, 77, 0.3);
+    transform: translateY(-1px);
+}
+
+.zodiac-btn.selected {
+    background: linear-gradient(135deg, #FDC94D 0%, #E2A718 100%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    color: #1A0530 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(253, 201, 77, 0.3) !important;
+}
+
+.zodiac-symbol {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.zodiac-name-th {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.zodiac-btn.selected .zodiac-name-th {
+    color: #1A0530 !important;
+}
+
+.zodiac-element-tag {
+    font-size: 0.62rem;
+    opacity: 0.8;
+}
+
+.comb-subview {
+    display: none;
+}
+
+.comb-subview.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.sign-subview {
+    display: none;
+}
+
+.sign-subview.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+

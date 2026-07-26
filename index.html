@@ -15,18 +15,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Symbols:wght@400;500;600;700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css?v=114">
+    <link rel="stylesheet" href="styles.css?v=151">
 </head>
 <body class="auth-locked">
     <!-- Access Gate: lightweight shared-password overlay + admin login notification (auth.js) -->
     <div class="auth-overlay" id="auth-overlay">
         <div class="auth-card">
             <div class="auth-logo">
-                <img src="celestia-lockup-header.png?v=111" alt="Celestia" class="auth-logo-img">
+                <img src="celestia-lockup-header.png?v=113" alt="Celestia" class="auth-logo-img">
             </div>
             <p class="auth-subtitle">กรุณากรอกรหัสผ่านเพื่อเข้าใช้งาน</p>
             <form id="auth-form" class="auth-form" autocomplete="off">
-                <input type="password" class="auth-input" id="auth-password-input" placeholder="รหัสผ่าน" autocomplete="current-password" required>
+                <div class="auth-input-wrapper" style="position: relative; width: 100%; margin-bottom: 12px;">
+                    <input type="password" class="auth-input" id="auth-password-input" placeholder="รหัสผ่าน" maxlength="64" autocomplete="current-password" required style="width: 100%; padding-right: 42px; margin-bottom: 0; box-sizing: border-box;">
+                    <button type="button" class="auth-toggle-pwd-btn" id="auth-toggle-pwd" title="แสดง/ซ่อนรหัสผ่าน" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #FDC94D; cursor: pointer; padding: 4px; display: flex; align-items: center; justify-content: center; opacity: 0.85;">
+                        <svg id="eye-icon-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <svg id="eye-icon-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px; display: none;">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                        </svg>
+                    </button>
+                </div>
                 <p class="auth-error" id="auth-error" style="display:none;"></p>
                 <button type="submit" class="auth-submit-btn" id="auth-submit-btn">เข้าสู่ระบบ</button>
             </form>
@@ -41,16 +53,24 @@
 
         <header class="app-header">
             <div class="logo-container">
-                <img src="celestia-lockup-header.png?v=111" alt="Celestia" class="celestia-lockup-img">
+                <img src="celestia-lockup-header.png?v=114" alt="Celestia" class="celestia-lockup-img">
             </div>
             <div class="header-divider"></div>
         </header>
 
         <!-- Navigation Tabs -->
         <nav class="mode-tabs">
-            <button class="tab-btn active" data-tab="uranian" id="tab-uranian">
+            <button class="tab-btn active" data-tab="sign" id="tab-sign">
+                <span class="tab-icon">♈</span>
+                <span>Sign</span>
+            </button>
+            <button class="tab-btn" data-tab="transit" id="tab-transit">
                 <span class="tab-icon">🪐</span>
-                <span>Planetary</span>
+                <span>Transit</span>
+            </button>
+            <button class="tab-btn" data-tab="uranian" id="tab-uranian">
+                <span class="tab-icon">🌌</span>
+                <span>Uranian</span>
             </button>
             <button class="tab-btn" data-tab="house" id="tab-house">
                 <span class="tab-icon">🏠</span>
@@ -63,8 +83,168 @@
         </nav>
 
         <main class="main-content">
-            <!-- Planetary Tab View (Combined Builder & Search) -->
-            <section class="tab-view active" id="uranian-view">
+            <!-- Planet in Sign Main Tab View -->
+            <section class="tab-view active" id="sign-view">
+                <!-- Top-Right Clear Selection Button (Matching Tab Transit) -->
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                    <button class="house-clear-btn" id="btn-sign-clear" title="ล้างการเลือกดาวและราศี เพื่อเริ่มเลือกใหม่">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                        <span>ล้างการเลือก</span>
+                    </button>
+                </div>
+
+                <!-- Planet Selector Grid + Sign Dropdown Picker -->
+                <div class="keyboard-section" style="margin-bottom: 20px;">
+                    <div class="transit-planets-grid" id="sign-planets-grid">
+                        <!-- Injected by app.js (13 Planets + Sign Dropdown Picker) -->
+                    </div>
+                </div>
+
+                <!-- Sign Keyword Search Box -->
+                <div class="search-inputs-grid" style="margin-top: 15px; margin-bottom: 15px;">
+                    <div class="search-field" style="width: 100%;">
+                        <label class="search-field-label">ค้นหาความหมายดาวสถิตราศี:</label>
+                        <div class="search-bar-container">
+                            <input type="text" class="search-input" id="search-input-sign" placeholder="ค้นหาด้วยคำสำคัญ เช่น การงาน, ความรัก, อารมณ์, เงิน, อีโก้..." maxlength="100" autocomplete="off">
+                            <button class="search-clear-btn" id="search-clear-sign" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interpretation Results Container -->
+                <div class="transit-interpretation-card" id="sign-interpretation-results">
+                    <!-- Dynamic interpretation cards injected by app.js -->
+                </div>
+
+                <!-- Search Results Index List for Sign -->
+                <div class="transit-search-results-list" id="sign-search-results-list" style="display: none;">
+                    <!-- Keyword search matches injected by app.js -->
+                </div>
+            </section>
+
+            <!-- Transit Main Tab View (Planets in Transit & Aspects) -->
+            <section class="tab-view" id="transit-view">
+                <!-- Sub Navigation Tabs for Transit vs Aspect -->
+                <div class="transit-sub-tabs-bar" style="margin-bottom: 18px;">
+                    <div class="transit-sub-tabs">
+                        <button class="sub-tab-btn active" id="subtab-transit-house" data-subtab="house">
+                            <span>🪐 Transit</span>
+                        </button>
+                        <button class="sub-tab-btn" id="subtab-transit-aspect" data-subtab="aspect">
+                            <span>📐 Aspect</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sub-view 1: Transit in House -->
+                <div class="transit-subview active" id="subview-transit-house">
+                    <!-- Top-Right Clear Selection Button (Matching Tab Aspect) -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button class="house-clear-btn" id="btn-transit-clear" title="ล้างการเลือกดาวจรและเรือนชะตา เพื่อเริ่มเลือกใหม่">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>ล้างการเลือก</span>
+                        </button>
+                    </div>
+
+                    <!-- Transiting Planet Selector Grid + House Dropdown in slot 6 -->
+                    <div class="keyboard-section" style="margin-bottom: 20px;">
+                        <div class="transit-planets-grid" id="transit-planets-grid">
+                            <!-- Injected by app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Transit Keyword Search Box -->
+                    <div class="search-inputs-grid" style="margin-top: 15px; margin-bottom: 15px;">
+                        <div class="search-field" style="width: 100%;">
+                            <label class="search-field-label">ค้นหาความหมายดาวจรในเรือนชะตา:</label>
+                            <div class="search-bar-container">
+                                <input type="text" class="search-input" id="search-input-transit" placeholder="ค้นหาด้วยคำสำคัญ เช่น การงาน, ความรัก, อารมณ์, เงิน..." maxlength="100" autocomplete="off">
+                                <button class="search-clear-btn" id="search-clear-transit" style="display: none;">✕</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interpretation Cards (Positive & Negative) -->
+                    <div class="transit-interpretation-card" id="transit-interpretation-results">
+                        <!-- Injected by app.js -->
+                    </div>
+
+                    <!-- Search Results Index List for Transit -->
+                    <div class="transit-search-results-list" id="transit-search-results-list" style="display: none;">
+                        <!-- Keyword search matches injected by app.js -->
+                    </div>
+                </div>
+
+                <!-- Sub-view 2: Transit Aspects (3 Column Vertical Layout: ดาวจร | มุม | ดาวกำเนิด) -->
+                <div class="transit-subview" id="subview-transit-aspect" style="display: none;">
+                    <!-- Top-Right Clear Selection Button -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button class="house-clear-btn" id="btn-aspect-clear" title="ล้างการเลือกมุมดาว เพื่อเริ่มเลือกใหม่">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>ล้างการเลือก</span>
+                        </button>
+                    </div>
+
+                    <div class="aspect-selector-3col-container" style="margin-bottom: 20px;">
+                        <!-- Column 1: ดาวจร -->
+                        <div class="aspect-col-box">
+                            <div class="aspect-col-title">ดาวจร</div>
+                            <div class="aspect-transit-planets-grid-2col" id="aspect-transit-planets-grid">
+                                <!-- Injected by app.js (10 planets, 2x5) -->
+                            </div>
+                        </div>
+
+                        <!-- Column 2: มุม -->
+                        <div class="aspect-col-box">
+                            <div class="aspect-col-title">มุม</div>
+                            <div class="aspect-types-grid-1col" id="aspect-types-grid">
+                                <!-- Injected by app.js (5 aspects, 1x5) -->
+                            </div>
+                        </div>
+
+                        <!-- Column 3: ดาวกำเนิด -->
+                        <div class="aspect-col-box">
+                            <div class="aspect-col-title">ดาวกำเนิด</div>
+                            <div class="aspect-natal-planets-grid-2col" id="aspect-natal-planets-grid">
+                                <!-- Injected by app.js (12 factors, 2x6) -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aspect Keyword Search Box -->
+                    <div class="search-inputs-grid" style="margin-top: 15px; margin-bottom: 15px;">
+                        <div class="search-field" style="width: 100%;">
+                            <label class="search-field-label">ค้นหาความหมายมุมดาวจร:</label>
+                            <div class="search-bar-container">
+                                <input type="text" class="search-input" id="search-input-aspect" placeholder="ค้นหาด้วยคำสำคัญ เช่น ความรัก, การงาน, ท้าทาย, โอกาส..." maxlength="100" autocomplete="off">
+                                <button class="search-clear-btn" id="search-clear-aspect" style="display: none;">✕</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interpretation Output Card for Aspect -->
+                    <div class="aspect-interpretation-card" id="aspect-interpretation-results">
+                        <!-- Injected by app.js -->
+                    </div>
+
+                    <!-- Search Results Index List for Aspect -->
+                    <div class="aspect-search-results-list" id="aspect-search-results-list" style="display: none;">
+                        <!-- Injected by app.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Uranian Tab View (Combined Builder & Search) -->
+            <section class="tab-view" id="uranian-view">
                 <!-- Search Inputs Area -->
                 <div class="search-inputs-grid" style="margin-bottom: 15px; grid-template-columns: 1fr;">
                     <div class="search-field">
@@ -73,11 +253,12 @@
                             <button class="search-type-btn" id="search-type-keyword" data-search-type="keyword">🔍 ค้นจากคีย์เวิร์ด</button>
                         </div>
                         <div class="search-bar-container" id="search-bar-key-container">
-                            <input type="text" class="search-input" id="search-input-key" placeholder="พิมพ์คีย์เวิร์ดความหมาย เช่น ความรัก, สุขภาพ, การเงิน...">
+                            <input type="text" class="search-input" id="search-input-key" placeholder="พิมพ์คีย์เวิร์ดความหมาย เช่น ความรัก, สุขภาพ, การเงิน..." maxlength="100" autocomplete="off">
                             <button class="search-clear-btn" id="search-clear-key" style="display: none;">✕</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Active Equation Display Bar -->
                 <div class="equation-display-card" id="equation-display-card" style="margin-bottom: 15px;">
                     <div class="equation-builder-row">
@@ -121,6 +302,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- House Tab View -->
             <section class="tab-view" id="house-view">
                 <div class="house-controls-toolbar">
                     <button class="house-clear-btn" id="btn-house-clear" title="ล้างการเลือกเรือนและดาว เพื่อเริ่มค้นหาใหม่">
@@ -157,7 +340,7 @@
                     <div class="search-field" style="width: 100%;">
                         <label class="search-field-label">ค้นหาความหมายในเรือนชะตา:</label>
                         <div class="search-bar-container">
-                            <input type="text" class="search-input" id="search-input-house" placeholder="ค้นหาด้วยคำสำคัญ เช่น การเงิน, ความรัก, โชคชะตา...">
+                            <input type="text" class="search-input" id="search-input-house" placeholder="ค้นหาด้วยคำสำคัญ เช่น การเงิน, ความรัก, โชคชะตา..." maxlength="100" autocomplete="off">
                             <button class="search-clear-btn" id="search-clear-house" style="display: none;">✕</button>
                         </div>
                     </div>
@@ -221,7 +404,7 @@
                     <div class="search-field" style="width: 100%;">
                         <label class="search-field-label">ค้นจากคีย์เวิร์ด</label>
                         <div class="search-bar-container">
-                            <input type="text" class="search-input" id="search-input-asteroid-keyword" placeholder="ค้นจากคีย์เวิร์ด เช่น ความรัก, สุขภาพ, การเงิน...">
+                            <input type="text" class="search-input" id="search-input-asteroid-keyword" placeholder="ค้นจากคีย์เวิร์ด เช่น ความรัก, สุขภาพ, การเงิน..." maxlength="100" autocomplete="off">
                             <button class="search-clear-btn" id="search-clear-asteroid-keyword" style="display: none;">✕</button>
                         </div>
                     </div>
@@ -245,15 +428,14 @@
 
         <footer class="app-footer">
             <p id="footer-text">CELESTIA © 2026</p>
-            <p class="footer-note" id="footer-note">ฐานข้อมูลอ้างอิงจากคัมภีร์สูตรดาวพระเคราะห์สนธิ คำแปลดาวเคราะห์น้อยโดย Martha Lang-Wescott และระบบเรือนชะตาอ้างอิงจาก "Methodik der Astrologischen Häuser" โดย แฮร์มันน์ เลอเฟลด์ท (Hermann Lefeldt), Witte-Verlag Hamburg</p>
         </footer>
     </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="auth.js?v=1"></script>
-    <script src="database.js?v=110"></script>
-    <script src="database_extra.js?v=113"></script>
-    <script src="app.js?v=117"></script>
+    <script src="auth.js?v=5"></script>
+    <script src="database.js?v=111"></script>
+    <script src="database_extra.js?v=125"></script>
+    <script src="app.js?v=177"></script>
 </body>
 </html>

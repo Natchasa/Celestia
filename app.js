@@ -596,6 +596,8 @@ function initDOMCache() {
 
     DOM.tabAsteroid = document.getElementById('tab-asteroid');
 
+    DOM.tabAstrocartography = document.getElementById('tab-astrocartography');
+
 
 
     DOM.signView = document.getElementById('sign-view');
@@ -607,6 +609,8 @@ function initDOMCache() {
     DOM.houseView = document.getElementById('house-view');
 
     DOM.asteroidView = document.getElementById('asteroid-view');
+
+    DOM.astrocartographyView = document.getElementById('astrocartography-view');
 
 
 
@@ -754,6 +758,28 @@ function initDOMCache() {
     DOM.asteroidList = document.getElementById('asteroid-list');
 
     DOM.asteroidDetailPanel = document.getElementById('asteroid-detail-panel');
+
+
+
+    // Astrocartography DOMs
+
+    DOM.btnAstroClear = document.getElementById('btn-astro-clear');
+
+    // DOM.astroAngleSelect is NOT cached here — the <select> is now injected as
+    // slot 11 of #astro-planets-grid (after Pluto) by initAstrocartographyTab(),
+    // which sets DOM.astroAngleSelect itself once that element exists.
+
+    DOM.astroPlanetsGrid = document.getElementById('astro-planets-grid');
+
+    DOM.astroGeneralCard = document.getElementById('astro-general-card');
+
+    DOM.astroInterpretationResults = document.getElementById('astro-interpretation-results');
+
+    DOM.searchInputAstro = document.getElementById('search-input-astro');
+
+    DOM.searchClearAstro = document.getElementById('search-clear-astro');
+
+    DOM.astroSearchResultsList = document.getElementById('astro-search-results-list');
 
 }
 
@@ -1529,6 +1555,8 @@ function setupEventListeners() {
 
     if (DOM.tabSign) DOM.tabSign.addEventListener('click', () => switchTab('sign'));
 
+    if (DOM.tabAstrocartography) DOM.tabAstrocartography.addEventListener('click', () => switchTab('astrocartography'));
+
     if (DOM.tabUranian) DOM.tabUranian.addEventListener('click', () => switchTab('uranian'));
 
     if (DOM.tabTransit) DOM.tabTransit.addEventListener('click', () => switchTab('transit'));
@@ -1780,6 +1808,34 @@ function setupEventListeners() {
 
     }
 
+
+
+    // Astrocartography listeners
+
+    if (DOM.searchInputAstro) DOM.searchInputAstro.addEventListener('input', debounce(handleAstroSearchInput, 200));
+
+    if (DOM.searchClearAstro) {
+
+        DOM.searchClearAstro.addEventListener('click', () => {
+
+            DOM.searchInputAstro.value = '';
+
+            DOM.searchClearAstro.style.display = 'none';
+
+            if (DOM.astroSearchResultsList) DOM.astroSearchResultsList.style.display = 'none';
+
+            DOM.searchInputAstro.focus();
+
+        });
+
+    }
+
+    if (DOM.btnAstroClear) {
+
+        DOM.btnAstroClear.addEventListener('click', clearAstroSelection);
+
+    }
+
 }
 
 
@@ -1802,7 +1858,9 @@ function switchTab(tabId) {
 
     if (DOM.tabAsteroid) DOM.tabAsteroid.classList.toggle('active', tabId === 'asteroid');
 
-    
+    if (DOM.tabAstrocartography) DOM.tabAstrocartography.classList.toggle('active', tabId === 'astrocartography');
+
+
 
     if (DOM.signView) DOM.signView.style.display = tabId === 'sign' ? 'block' : 'none';
 
@@ -1813,6 +1871,8 @@ function switchTab(tabId) {
     if (DOM.houseView) DOM.houseView.style.display = tabId === 'house' ? 'block' : 'none';
 
     if (DOM.asteroidView) DOM.asteroidView.style.display = tabId === 'asteroid' ? 'block' : 'none';
+
+    if (DOM.astrocartographyView) DOM.astrocartographyView.style.display = tabId === 'astrocartography' ? 'block' : 'none';
 
     
 
@@ -1839,6 +1899,10 @@ function switchTab(tabId) {
         renderAsteroidList();
 
         renderAsteroidDetails();
+
+    } else if (tabId === 'astrocartography') {
+
+        renderAstrocartographyTab();
 
     }
 
@@ -4578,6 +4642,319 @@ function selectAsteroidSign(sign) {
 
 
 // ==========================================
+// 10.1 Astrocartography Tab Logic & Rendering
+// Data source: ASTROCARTOGRAPHY_DB (database_extra.js), extracted from
+// Planetary.xlsx sheet "Astrocartography" (Astrolocality Astrology by
+// Martin Davis, Appendix 1 by Jeff Jawer, + supplementary book notes).
+// ==========================================
+
+const ASTRO_STATE = { planet: null, angle: 'Ascendant' };
+
+const ASTRO_CATEGORY_PLANET_LINE = 'เส้นดาว-มุม ACG (Jeff Jawer)';
+const ASTRO_CATEGORY_QUOTE = 'คำพูดอ้างอิงของ Jim Lewis';
+const ASTRO_CATEGORY_DEFINITION = 'คำนิยามพื้นฐาน (ACG)';
+
+// Maps any topic_en value that starts with an angle name (whether the terse
+// planet-line form "Ascendant"/"IC"/"Descendant"/"MC" or the fuller definition-row
+// form "Ascendant / Rising Line"/"IC (Imum Coeli)"/etc.) to its short abbreviation.
+const ASTRO_ANGLE_ABBR_LIST = [
+    { match: 'Ascendant', abbr: 'ASC' },
+    { match: 'IC', abbr: 'IC' },
+    { match: 'Descendant', abbr: 'DC' },
+    { match: 'MC', abbr: 'MC' }
+];
+function getAstroAngleAbbr(topicEn) {
+    if (!topicEn) return null;
+    const found = ASTRO_ANGLE_ABBR_LIST.find(a => topicEn.indexOf(a.match) === 0);
+    return found ? found.abbr : null;
+}
+
+function initAstrocartographyTab() {
+    if (!DOM.astroPlanetsGrid) return;
+
+    DOM.astroPlanetsGrid.innerHTML = '';
+
+    const row1Planets = TRANSIT_PLANETS.slice(0, 5);
+    const row2Planets = TRANSIT_PLANETS.slice(5, 10);
+
+    row1Planets.forEach(p => {
+        DOM.astroPlanetsGrid.appendChild(createAstroPlanetButton(p));
+    });
+
+    // Slot 6 (right after the first 5 planets): Angle dropdown — same
+    // dropdown-in-grid pattern used by the Sign/Transit tabs.
+    const angleCard = document.createElement('div');
+    angleCard.className = `transit-house-select-card ${ASTRO_STATE.angle ? 'selected' : ''}`;
+    angleCard.innerHTML = `
+        <label class="transit-house-card-label">มุม</label>
+        <select class="transit-house-dropdown-select" id="astro-angle-select">
+            <option value="Ascendant" ${ASTRO_STATE.angle === 'Ascendant' ? 'selected' : ''}>ASC</option>
+            <option value="IC" ${ASTRO_STATE.angle === 'IC' ? 'selected' : ''}>IC</option>
+            <option value="Descendant" ${ASTRO_STATE.angle === 'Descendant' ? 'selected' : ''}>DC</option>
+            <option value="MC" ${ASTRO_STATE.angle === 'MC' ? 'selected' : ''}>MC</option>
+        </select>
+    `;
+    DOM.astroPlanetsGrid.appendChild(angleCard);
+
+    DOM.astroAngleSelect = angleCard.querySelector('#astro-angle-select');
+    if (DOM.astroAngleSelect) {
+        DOM.astroAngleSelect.addEventListener('change', () => {
+            ASTRO_STATE.angle = DOM.astroAngleSelect.value || null;
+            renderAstrocartographyTab();
+        });
+    }
+
+    // Row 2: remaining 5 planets, after the angle dropdown
+    row2Planets.forEach(p => {
+        DOM.astroPlanetsGrid.appendChild(createAstroPlanetButton(p));
+    });
+
+    renderAstroGeneralCard();
+    renderAstroResults();
+}
+
+function createAstroPlanetButton(planet) {
+    const btn = document.createElement('button');
+    btn.className = `planet-btn ${planet.isPersonal ? 'personal' : ''} ${ASTRO_STATE.planet === planet.nameEN ? 'selected' : ''}`;
+    btn.id = `astro-planet-btn-${planet.id}`;
+
+    const iconContent = `<img src="${planet.imagePath}?v=110" class="planet-img-icon" alt="${planet.nameEN}">`;
+    const label = mapDisplayAbbr(planet.abbr);
+    btn.innerHTML = `
+        <div class="planet-btn-icon">${iconContent}</div>
+        <div class="planet-btn-label">${label}</div>
+    `;
+
+    btn.addEventListener('click', () => {
+        ASTRO_STATE.planet = planet.nameEN;
+        renderAstrocartographyTab();
+    });
+
+    return btn;
+}
+
+function renderAstrocartographyTab() {
+    if (DOM.astroAngleSelect) {
+        DOM.astroAngleSelect.value = ASTRO_STATE.angle || '';
+        const angleCard = DOM.astroAngleSelect.closest('.transit-house-select-card');
+        if (angleCard) angleCard.classList.toggle('selected', !!ASTRO_STATE.angle);
+    }
+
+    TRANSIT_PLANETS.forEach(p => {
+        const btn = document.getElementById(`astro-planet-btn-${p.id}`);
+        if (btn) btn.classList.toggle('selected', ASTRO_STATE.planet === p.nameEN);
+    });
+
+    renderAstroGeneralCard();
+    renderAstroResults();
+}
+
+// Central results dispatcher:
+// - Angle only (no planet clicked): show every planet's interpretation for that
+//   angle at once (e.g. Su/ASC, Mo/ASC ... Pl/ASC when ASC is selected).
+// - Angle + a specific planet clicked: narrow down to just that one card
+//   (e.g. Moon/ASC only).
+// - Neither set: nothing to show.
+function renderAstroResults() {
+    if (ASTRO_STATE.angle && ASTRO_STATE.planet) {
+        const row = ASTROCARTOGRAPHY_DB.find(r =>
+            r.category === ASTRO_CATEGORY_PLANET_LINE &&
+            r.planet_en === ASTRO_STATE.planet &&
+            r.topic_en === ASTRO_STATE.angle
+        );
+        renderAstroInterpretationCard(row || null);
+    } else if (ASTRO_STATE.angle) {
+        renderAstroAngleAllPlanets(ASTRO_STATE.angle, ASTRO_STATE.planet);
+    } else {
+        renderAstroInterpretationCard(null);
+    }
+}
+
+const ASTRO_PLANET_ORDER = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
+
+// Renders all 10 planets' interpretations for one angle (ASC/IC/DC/MC) in a
+// single card, highlighting the planet currently selected/clicked, if any, so
+// the user can see every possibility for that angle at a glance.
+function renderAstroAngleAllPlanets(angleEN, activePlanetEN) {
+    if (!DOM.astroInterpretationResults) return;
+    const card = DOM.astroInterpretationResults;
+
+    const rows = ASTRO_PLANET_ORDER
+        .map(planet => ASTROCARTOGRAPHY_DB.find(r =>
+            r.category === ASTRO_CATEGORY_PLANET_LINE &&
+            r.planet_en === planet &&
+            r.topic_en === angleEN
+        ))
+        .filter(Boolean);
+
+    if (rows.length === 0) {
+        card.innerHTML = '';
+        card.style.display = 'none';
+        return;
+    }
+    card.style.display = '';
+
+    const angleLabel = getAstroAngleAbbr(angleEN) || angleEN;
+
+    const sections = rows.map(row => {
+        const isActive = row.planet_en === activePlanetEN;
+
+        const boxStyle = isActive
+            ? 'background: rgba(253,201,77,0.10); border: 1px solid rgba(253,201,77,0.45);'
+            : 'border: 1px solid rgba(255,255,255,0.08);';
+
+        return `
+            <div style="margin-bottom: 14px; padding: 12px; border-radius: 8px; ${boxStyle}">
+                <h4 style="font-size: 1rem; color: var(--gold-dark); margin-bottom: 4px;">${escapeHtml(row.planet_en)}/${escapeHtml(angleLabel)}${isActive ? ' ★' : ''}</h4>
+                ${row.keyword ? `<p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; font-style: italic;">${escapeHtml(row.keyword)}</p>` : ''}
+                ${row.desc_th ? `<p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-color); margin-bottom: 8px;">${escapeHtml(row.desc_th)}</p>` : ''}
+                ${row.desc_en ? `<p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted);">${escapeHtml(row.desc_en)}</p>` : ''}
+            </div>
+        `;
+    }).join('');
+
+    card.innerHTML = `
+        <div class="card">
+            ${sections}
+        </div>
+    `;
+}
+
+// Static glossary/reference card — always visible regardless of planet/angle selection,
+// mirrors the "general house meaning" card pattern used in the House tab.
+function renderAstroGeneralCard() {
+    if (!DOM.astroGeneralCard) return;
+
+    const defs = ASTROCARTOGRAPHY_DB.filter(r =>
+        r.category === ASTRO_CATEGORY_DEFINITION && r.topic_en !== 'Astro*Carto*Graphy (ACG)'
+    );
+    const items = defs.map(d => `
+        <div style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 0.85rem; color: var(--gold-dark); font-weight: 600;">${escapeHtml(getAstroAngleAbbr(d.topic_en) || d.topic_th)}</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; margin-top: 3px;">${escapeHtml(d.desc_th)}</div>
+        </div>
+    `).join('');
+
+    DOM.astroGeneralCard.innerHTML = `
+        <div class="card">
+            <h3 class="interp-eq-title" style="font-size: 1rem; color: var(--gold-dark); margin-bottom: 10px;">คำนิยามพื้นฐาน</h3>
+            ${items}
+        </div>
+    `;
+}
+
+// Renders one interpretation row (planet-line, definition, advanced concept, quote,
+// or supplementary book note) into the main result card. If a planet-line row is
+// passed, also looks up and appends a matching Jim Lewis direct quote, if one exists.
+function renderAstroInterpretationCard(row) {
+    if (!DOM.astroInterpretationResults) return;
+    const card = DOM.astroInterpretationResults;
+
+    if (!row) {
+        card.innerHTML = '';
+        card.style.display = 'none';
+        return;
+    }
+    card.style.display = '';
+
+    const angleLabel = getAstroAngleAbbr(row.topic_en) || row.topic_th || row.topic_en;
+    const title = (row.planet_en && row.planet_th && row.category === ASTRO_CATEGORY_PLANET_LINE)
+        ? `${row.planet_en}/${angleLabel} (${row.planet_th}บนเส้น ${angleLabel})`
+        : ((row.planet_th && row.topic_th) ? `${row.planet_th} บน ${row.topic_th}` : (row.topic_th || row.topic_en));
+
+    card.innerHTML = `
+        <div class="card">
+            <h3 class="interp-eq-title" style="font-size: 1.1rem; color: var(--gold-dark); margin-bottom: 6px;">${escapeHtml(title)}</h3>
+            ${row.keyword ? `<p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px; font-style: italic;">${escapeHtml(row.keyword)}</p>` : ''}
+            ${row.desc_th ? `<p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-color); margin-bottom: 10px;">${escapeHtml(row.desc_th)}</p>` : ''}
+            ${row.desc_en ? `<p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-muted);">${escapeHtml(row.desc_en)}</p>` : ''}
+        </div>
+    `;
+}
+
+function clearAstroSelection() {
+    ASTRO_STATE.planet = null;
+    ASTRO_STATE.angle = 'Ascendant';
+    if (DOM.searchInputAstro) DOM.searchInputAstro.value = '';
+    if (DOM.searchClearAstro) DOM.searchClearAstro.style.display = 'none';
+    if (DOM.astroSearchResultsList) {
+        DOM.astroSearchResultsList.style.display = 'none';
+        DOM.astroSearchResultsList.innerHTML = '';
+    }
+    renderAstrocartographyTab();
+}
+
+// Free-text search across all 60 rows (definitions, advanced concepts, planet-line
+// interpretations, Jim Lewis quotes, and supplementary book notes) — matches Thai
+// and English text alike.
+function handleAstroSearchInput() {
+    const rawQuery = DOM.searchInputAstro ? DOM.searchInputAstro.value : '';
+    const query = sanitizeSearchQuery(rawQuery).toLowerCase();
+
+    if (DOM.searchClearAstro) DOM.searchClearAstro.style.display = query ? 'block' : 'none';
+
+    const resultsList = DOM.astroSearchResultsList;
+    if (!resultsList) return;
+
+    if (!query) {
+        resultsList.style.display = 'none';
+        resultsList.innerHTML = '';
+        return;
+    }
+
+    const matches = ASTROCARTOGRAPHY_DB.filter(r => {
+        const haystack = [r.topic_en, r.topic_th, r.planet_en, r.planet_th, r.keyword, r.desc_th, r.desc_en, r.source]
+            .join(' ')
+            .toLowerCase();
+        return haystack.includes(query);
+    }).slice(0, 40);
+
+    resultsList.style.display = 'block';
+
+    if (matches.length === 0) {
+        resultsList.innerHTML = `
+            <div style="padding: 16px; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+                ไม่พบผลลัพธ์สำหรับ "${escapeHtml(rawQuery.trim())}"
+            </div>
+        `;
+        return;
+    }
+
+    resultsList.innerHTML = matches.map((r, idx) => {
+        const label = (r.planet_th && r.topic_th) ? `${r.planet_th} บน ${r.topic_th}` : (r.topic_th || r.topic_en);
+        return `
+            <div class="astro-search-result-item" data-idx="${idx}" style="padding: 10px 14px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <div style="font-size: 0.88rem; color: var(--text-color);">${escapeHtml(label)}</div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">${escapeHtml(r.category)}</div>
+            </div>
+        `;
+    }).join('');
+
+    resultsList.querySelectorAll('.astro-search-result-item').forEach(el => {
+        el.addEventListener('click', () => {
+            const idx = Number(el.getAttribute('data-idx'));
+            const row = matches[idx];
+            if (!row) return;
+
+            if (row.category === ASTRO_CATEGORY_PLANET_LINE && row.planet_en) {
+                ASTRO_STATE.planet = row.planet_en;
+                ASTRO_STATE.angle = row.topic_en;
+                renderAstrocartographyTab();
+            } else {
+                renderAstroInterpretationCard(row);
+            }
+
+            resultsList.style.display = 'none';
+            resultsList.innerHTML = '';
+            if (DOM.searchInputAstro) DOM.searchInputAstro.value = '';
+            if (DOM.searchClearAstro) DOM.searchClearAstro.style.display = 'none';
+        });
+    });
+}
+
+
+
+// ==========================================
 
 // 8. Sign Tab Logic & Rendering (House-style Tone & Planet-Sign DB)
 
@@ -5600,6 +5977,8 @@ function initApp() {
     if (DOM.transitPlanetsGrid) initTransitTab();
 
     if (DOM.aspectTransitPlanetsGrid) initAspectTab();
+
+    if (DOM.astroPlanetsGrid) initAstrocartographyTab();
 
 
 

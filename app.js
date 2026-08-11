@@ -801,27 +801,14 @@ function runWhenDomReady(fn) {
     }
 }
 
-runWhenDomReady(() => {
-
-    initTransitTab();
-
-    initKeyboard();
-
-    setupEventListeners();
-
-    initHouseTab();
-
-    initAsteroidTab();
-
-    updateBuilderUI();
-
-    queryDatabase();
-
-    updateSearchModeVisibility(STATE.searchType);
-
-    updateUranianResultsVisibility();
-
-});
+// NOTE: the old direct calls to initTransitTab()/initKeyboard()/etc. that
+// used to live in this block were removed — they ran BEFORE initDOMCache()
+// (which only happens inside initApp(), below) had ever populated the DOM
+// cache, so e.g. queryDatabase() would throw on `DOM.interpretationResults`
+// being undefined. That throw silently aborted the rest of this script,
+// which meant initApp() (the real, DOM-cache-aware initializer) never even
+// ran. initApp() alone — called from the runWhenDomReady() block further
+// down — is the single correct entry point.
 
 
 

@@ -1,135 +1,123 @@
-// Celestia Access Gate + Admin Login Notification
+// Celestia Access Gate — Email-Link Verified Registration + Admin Approval
+// + Worker-Gated Data Load (Firebase + Cloudflare Worker)
 // -------------------------------------------------------------------------
-// IMPORTANT LIMITATION: Celestia is a static, client-side page with no
-// server. This gate is a lightweight visitor filter, NOT strong security.
-// The password is compared against a SHA-256 hash stored below (not
-// plaintext), but anyone who opens browser DevTools can read this file's
-// source, see the hash, and brute-force or intercept it. Use this to keep
-// casual/accidental visitors out — not to protect sensitive data.
+// Flow:
+//   1. Visitor enters email -> a "pending" request is written to Firestore
+//      (registrations/{email}) so the admin sees it in admin.html right away,
+//      AND a real Firebase "email link" sign-in email is sent to that inbox.
+//   2. Visitor must click that link (proves they actually own the inbox) to
+//      complete sign-in and receive a genuine Firebase Auth session.
+//   3. Once signed in, this page listens in real time for the admin's
+//      approve/reject decision.
+//   4. Only once BOTH (a) signed in via the email link and (b) status =
+//      approved are true, this page calls the Cloudflare Worker with a
+//      Firebase ID token to fetch the actual protected astrology database.
+//      The Worker re-verifies both conditions server-side before releasing
+//      anything — nothing sensitive is ever sent to a browser that hasn't
+//      cleared both checks.
 //
-// To change the password: open any browser console and run:
-//   crypto.subtle.digest('SHA-256', new TextEncoder().encode('your-new-password'))
-//     .then(buf => console.log(Array.from(new Uint8Array(buf))
-//       .map(b => b.toString(16).padStart(2, '0')).join('')));
-// then replace AUTH_PASSWORD_HASH below with the printed 64-character value.
+// Requires firebase-config.js and firebase-init.js (type="module") to be
+// loaded before this script. See FIREBASE_SETUP.md and WORKER_SETUP.md.
 
-const AUTH_PASSWORD_HASH = 'ba184282d3250dc69fd2cfe6adfa1feb8aa2001c0ecd00f6b39b69819d2e0122'; // celestia2026
-const AUTH_SESSION_KEY = 'celestia_authenticated';
-const SESSION_MAX_AGE_MS = 86400000; // 24 hours
+const EMAIL_FOR_SIGNIN_KEY = 'celestia_email_for_signin';
+const REG_COOLDOWN_KEY = 'celestia_reg_last_submit';
+const SUBMIT_COOLDOWN_MS = 15000; // 15 seconds between registration/resend attempts
 
-// --- EmailJS admin login-notification config ---
+// --- EmailJS admin registration-notification config (optional) ---
+// Leave blank to skip automatic email pings — you can still see/approve
+// requests in admin.html either way.
 const EMAILJS_PUBLIC_KEY = '';
 const EMAILJS_SERVICE_ID = '';
 const EMAILJS_TEMPLATE_ID = '';
 const ADMIN_NOTIFY_EMAIL = 'pla_y_girl@hotmail.com';
 
-// Rate Limiting & Security Configuration
-const MAX_FAILED_ATTEMPTS = 5;
-const INITIAL_LOCKOUT_MS = 30000; // 30 seconds
-const KEY_FAILED_ATTEMPTS = 'celestia_auth_attempts';
-const KEY_LOCKOUT_UNTIL = 'celestia_auth_lockout';
+let unsubscribeStatusListener = null;
+let pendingLinkCompletion = false; // true when the link was opened without a locally-remembered email
 
-let lockoutInterval = null;
+function $(id) {
+    return document.getElementById(id);
+}
 
-function getLockoutRemainingMs() {
-    try {
-        const lockoutUntil = parseInt(localStorage.getItem(KEY_LOCKOUT_UNTIL) || '0', 10);
-        const now = Date.now();
-        return lockoutUntil > now ? lockoutUntil - now : 0;
-    } catch (e) {
-        return 0;
+function showPanel(name) {
+    ['loading', 'register', 'checkemail', 'pending', 'rejected', 'unlocking', 'dataerror'].forEach((p) => {
+        const el = $(`auth-panel-${p}`);
+        if (el) el.style.display = (p === name) ? 'block' : 'none';
+    });
+}
+
+function setRegisterError(msg) {
+    const errEl = $('auth-register-error');
+    if (errEl) {
+        errEl.textContent = msg || '';
+        errEl.style.display = msg ? 'block' : 'none';
+    }
+    const input = $('auth-email-input');
+    if (input && msg) {
+        input.classList.add('auth-input-shake');
+        setTimeout(() => input.classList.remove('auth-input-shake'), 400);
     }
 }
 
-function checkLockoutState() {
-    const remainingMs = getLockoutRemainingMs();
-    const input = document.getElementById('auth-password-input');
-    const btn = document.getElementById('auth-submit-btn');
+function unlockApp() {
+    const overlay = $('auth-overlay');
+    if (overlay) {
+        overlay.classList.add('auth-overlay-hidden');
+        setTimeout(() => overlay.remove(), 400);
+    }
+    document.body.classList.remove('auth-locked');
+    console.log('%cCelestia: Access approved', 'color: #FDC94D; font-size: 14px; font-weight: bold;');
+}
 
-    if (remainingMs > 0) {
-        if (input) input.disabled = true;
-        if (btn) btn.disabled = true;
-        const seconds = Math.ceil(remainingMs / 1000);
-        showAuthError(`กรอกรหัสผ่านผิดเกินกำหนด ระบบถูกล็อคชั่วคราว โปรดลองใหม่ในอีก ${seconds} วินาที`);
+function loadAppScript() {
+    return new Promise((resolve, reject) => {
+        if (window.__celestiaAppLoaded) { resolve(); return; }
+        const s = document.createElement('script');
+        s.src = 'app.js?v=200';
+        s.onload = () => { window.__celestiaAppLoaded = true; resolve(); };
+        s.onerror = () => reject(new Error('โหลด app.js ไม่สำเร็จ'));
+        document.body.appendChild(s);
+    });
+}
 
-        if (!lockoutInterval) {
-            lockoutInterval = setInterval(() => {
-                const rem = getLockoutRemainingMs();
-                if (rem <= 0) {
-                    clearInterval(lockoutInterval);
-                    lockoutInterval = null;
-                    if (input) input.disabled = false;
-                    if (btn) btn.disabled = false;
-                    const errEl = document.getElementById('auth-error');
-                    if (errEl) errEl.style.display = 'none';
-                    if (input) input.focus();
-                } else {
-                    const secs = Math.ceil(rem / 1000);
-                    showAuthError(`กรอกรหัสผ่านผิดเกินกำหนด ระบบถูกล็อคชั่วคราว โปรดลองใหม่ในอีก ${secs} วินาที`);
-                }
-            }, 1000);
+async function finalizeUnlock(user) {
+    showPanel('unlocking');
+    const fb = window.CelestiaFirebase;
+    try {
+        if (!fb.workerUrl || fb.workerUrl.indexOf('PASTE_') === 0) {
+            throw new Error('ยังไม่ได้ตั้งค่า CELESTIA_WORKER_URL ใน firebase-config.js');
         }
-        return true;
+        const idToken = await user.getIdToken();
+        const res = await fetch(fb.workerUrl, {
+            headers: { Authorization: `Bearer ${idToken}` }
+        });
+        if (!res.ok) throw new Error(`โหลดข้อมูลไม่สำเร็จ (HTTP ${res.status})`);
+        const data = await res.json();
+        Object.keys(data).forEach((key) => { window[key] = data[key]; });
+        await loadAppScript();
+        unlockApp();
+    } catch (err) {
+        console.error('[Celestia] ปลดล็อกไม่สำเร็จ:', err);
+        showPanel('dataerror');
     }
-    return false;
 }
 
-function recordFailedAttempt() {
-    try {
-        let attempts = parseInt(localStorage.getItem(KEY_FAILED_ATTEMPTS) || '0', 10) + 1;
-        localStorage.setItem(KEY_FAILED_ATTEMPTS, attempts.toString());
-
-        if (attempts >= MAX_FAILED_ATTEMPTS) {
-            const lockoutDuration = INITIAL_LOCKOUT_MS * Math.pow(2, Math.min(attempts - MAX_FAILED_ATTEMPTS, 3));
-            const lockoutUntil = Date.now() + lockoutDuration;
-            localStorage.setItem(KEY_LOCKOUT_UNTIL, lockoutUntil.toString());
-            checkLockoutState();
-        } else {
-            const remaining = MAX_FAILED_ATTEMPTS - attempts;
-            showAuthError(`รหัสผ่านไม่ถูกต้อง (เหลือโอกาสลองอีก ${remaining} ครั้ง)`);
+function waitForFirebase() {
+    if (window.CelestiaFirebase) return Promise.resolve(true);
+    return new Promise((resolve) => {
+        function cleanup() {
+            window.removeEventListener('celestia-firebase-ready', onReady);
+            window.removeEventListener('celestia-firebase-error', onError);
         }
-    } catch (e) {
-        showAuthError('รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่');
-    }
+        function onReady() { cleanup(); resolve(true); }
+        function onError() { cleanup(); resolve(false); }
+        window.addEventListener('celestia-firebase-ready', onReady, { once: true });
+        window.addEventListener('celestia-firebase-error', onError, { once: true });
+    });
 }
 
-function resetFailedAttempts() {
-    try {
-        localStorage.removeItem(KEY_FAILED_ATTEMPTS);
-        localStorage.removeItem(KEY_LOCKOUT_UNTIL);
-    } catch (e) { /* ignore */ }
-}
-
-async function sha256Hex(text) {
-    const enc = new TextEncoder().encode(text);
-    const buf = await crypto.subtle.digest('SHA-256', enc);
-    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function generateSessionToken() {
-    const ts = Date.now().toString();
-    const tokenRaw = `${AUTH_PASSWORD_HASH}:${ts}:${navigator.userAgent}`;
-    const hash = await sha256Hex(tokenRaw);
-    return `${ts}.${hash}`;
-}
-
-async function verifySessionToken() {
-    try {
-        const stored = sessionStorage.getItem(AUTH_SESSION_KEY);
-        if (!stored || !stored.includes('.')) return false;
-        const [ts, hash] = stored.split('.');
-        const now = Date.now();
-        if (now - parseInt(ts, 10) > SESSION_MAX_AGE_MS) return false;
-        const expectedHash = await sha256Hex(`${AUTH_PASSWORD_HASH}:${ts}:${navigator.userAgent}`);
-        return hash === expectedHash;
-    } catch (e) {
-        return false;
-    }
-}
-
-function notifyAdminOfLogin() {
+function notifyAdminOfRegistration(email) {
     if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
-        console.info('[Celestia] EmailJS ยังไม่ได้ตั้งค่า — ข้ามการแจ้งเตือนอีเมล admin');
+        console.info('[Celestia] EmailJS ยังไม่ได้ตั้งค่า — ข้ามการแจ้งเตือนอีเมล admin (เช็คคำขอได้ที่ admin.html)');
         return;
     }
     if (typeof emailjs === 'undefined') {
@@ -138,7 +126,8 @@ function notifyAdminOfLogin() {
     }
     const params = {
         to_email: ADMIN_NOTIFY_EMAIL,
-        login_time: new Date().toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' }),
+        registrant_email: email,
+        requested_time: new Date().toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' }),
         user_agent: navigator.userAgent,
         page_url: window.location.href
     };
@@ -146,104 +135,253 @@ function notifyAdminOfLogin() {
         emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
             .then(() => console.info('[Celestia] แจ้งเตือน admin สำเร็จ'))
-            .catch(err => console.warn('[Celestia] แจ้งเตือน admin ไม่สำเร็จ:', err));
+            .catch((err) => console.warn('[Celestia] แจ้งเตือน admin ไม่สำเร็จ:', err));
     } catch (err) {
         console.warn('[Celestia] แจ้งเตือน admin ไม่สำเร็จ:', err);
     }
 }
 
-function unlockApp() {
-    const overlay = document.getElementById('auth-overlay');
-    if (overlay) {
-        overlay.classList.add('auth-overlay-hidden');
-        setTimeout(() => overlay.remove(), 400);
+function attachStatusListener(email) {
+    const fb = window.CelestiaFirebase;
+    if (unsubscribeStatusListener) {
+        unsubscribeStatusListener();
+        unsubscribeStatusListener = null;
     }
-    document.body.classList.remove('auth-locked');
-    console.log('%cCelestia Security Shield Active: Grade A+ Hardened', 'color: #FDC94D; font-size: 14px; font-weight: bold;');
+    const ref = fb.doc(fb.db, 'registrations', fb.emailToDocId(email));
+    unsubscribeStatusListener = fb.onSnapshot(
+        ref,
+        (snap) => {
+            if (!snap.exists()) {
+                showPanel('register');
+                return;
+            }
+            const data = snap.data();
+            if (data.status === 'approved') {
+                const user = fb.auth.currentUser;
+                if (user) {
+                    finalizeUnlock(user);
+                } else {
+                    const el = $('auth-pending-email');
+                    if (el) el.textContent = email;
+                    showPanel('pending');
+                }
+            } else if (data.status === 'rejected') {
+                const el = $('auth-rejected-email');
+                if (el) el.textContent = email;
+                showPanel('rejected');
+            } else {
+                const el = $('auth-pending-email');
+                if (el) el.textContent = email;
+                showPanel('pending');
+            }
+        },
+        (err) => {
+            console.error('[Celestia] เช็คสถานะการลงทะเบียนไม่สำเร็จ:', err);
+            showPanel('register');
+            setRegisterError('เชื่อมต่อระบบตรวจสอบสถานะไม่สำเร็จ กรุณาลองใหม่');
+        }
+    );
 }
 
-function showAuthError(msg) {
-    const errEl = document.getElementById('auth-error');
-    if (errEl) {
-        errEl.textContent = msg;
-        errEl.style.display = 'block';
-    }
-    const input = document.getElementById('auth-password-input');
-    if (input) {
-        input.classList.add('auth-input-shake');
-        setTimeout(() => input.classList.remove('auth-input-shake'), 400);
-        input.select();
-    }
+function isOnCooldown() {
+    let last = 0;
+    try { last = parseInt(localStorage.getItem(REG_COOLDOWN_KEY) || '0', 10); } catch (e) { /* ignore */ }
+    return (Date.now() - last) < SUBMIT_COOLDOWN_MS;
 }
 
-async function attemptLogin() {
-    if (checkLockoutState()) return;
+function markCooldown() {
+    try { localStorage.setItem(REG_COOLDOWN_KEY, Date.now().toString()); } catch (e) { /* ignore */ }
+}
 
-    const input = document.getElementById('auth-password-input');
-    const btn = document.getElementById('auth-submit-btn');
-    if (!input) return;
-    const value = (input.value || '').trim();
-    if (!value) {
-        showAuthError('กรุณากรอกรหัสผ่าน');
+async function submitRegistration(rawEmail) {
+    const fb = window.CelestiaFirebase;
+    if (!fb) {
+        setRegisterError('ไม่สามารถเชื่อมต่อระบบได้ในขณะนี้ กรุณาลองใหม่ภายหลัง');
         return;
     }
+
+    const email = fb.normalizeEmail(rawEmail);
+    if (!fb.isValidEmail(email)) {
+        setRegisterError('กรุณากรอกอีเมลให้ถูกต้อง');
+        return;
+    }
+
+    if (isOnCooldown()) {
+        setRegisterError('กรุณารอสักครู่ก่อนลองใหม่อีกครั้ง');
+        return;
+    }
+
+    const btn = $('auth-register-btn');
     if (btn) btn.disabled = true;
+    setRegisterError('');
+
     try {
-        const hash = await sha256Hex(value);
-        if (hash === AUTH_PASSWORD_HASH) {
-            resetFailedAttempts();
-            try {
-                const token = await generateSessionToken();
-                sessionStorage.setItem(AUTH_SESSION_KEY, token);
-            } catch (e) { /* sessionStorage unavailable — non-fatal */ }
-            unlockApp();
-            notifyAdminOfLogin();
-        } else {
-            recordFailedAttempt();
+        // 1) Upsert the pending request so the admin sees it immediately,
+        //    independent of whether/when the visitor clicks the email link.
+        const ref = fb.doc(fb.db, 'registrations', fb.emailToDocId(email));
+        const existing = await fb.getDoc(ref);
+        if (!existing.exists()) {
+            await fb.setDoc(ref, {
+                email,
+                status: 'pending',
+                requestedAt: fb.serverTimestamp(),
+                userAgent: navigator.userAgent
+            });
+            notifyAdminOfRegistration(email);
         }
+
+        // 2) Send the real sign-in link to that inbox.
+        const actionCodeSettings = {
+            url: window.location.origin + window.location.pathname,
+            handleCodeInApp: true
+        };
+        await fb.sendSignInLinkToEmail(fb.auth, email, actionCodeSettings);
+        try { localStorage.setItem(EMAIL_FOR_SIGNIN_KEY, email); } catch (e) { /* ignore */ }
+        markCooldown();
+
+        const el = $('auth-checkemail-email');
+        if (el) el.textContent = email;
+        showPanel('checkemail');
+    } catch (err) {
+        console.error('[Celestia] ลงทะเบียนไม่สำเร็จ:', err);
+        setRegisterError('ลงทะเบียนไม่สำเร็จ กรุณาลองใหม่ภายหลัง');
     } finally {
-        if (btn && !checkLockoutState()) btn.disabled = false;
+        if (btn) btn.disabled = false;
+    }
+}
+
+async function resendLink() {
+    const fb = window.CelestiaFirebase;
+    let email = null;
+    try { email = localStorage.getItem(EMAIL_FOR_SIGNIN_KEY); } catch (e) { /* ignore */ }
+    if (!fb || !email) return;
+
+    if (isOnCooldown()) return;
+
+    try {
+        const actionCodeSettings = {
+            url: window.location.origin + window.location.pathname,
+            handleCodeInApp: true
+        };
+        await fb.sendSignInLinkToEmail(fb.auth, email, actionCodeSettings);
+        markCooldown();
+    } catch (err) {
+        console.error('[Celestia] ส่งลิงก์ใหม่ไม่สำเร็จ:', err);
+    }
+}
+
+function changeEmail() {
+    if (unsubscribeStatusListener) {
+        unsubscribeStatusListener();
+        unsubscribeStatusListener = null;
+    }
+    try { localStorage.removeItem(EMAIL_FOR_SIGNIN_KEY); } catch (e) { /* ignore */ }
+    pendingLinkCompletion = false;
+
+    const fb = window.CelestiaFirebase;
+    if (fb && fb.auth && fb.auth.currentUser) {
+        fb.signOut(fb.auth).catch(() => { /* ignore */ });
+    }
+
+    setRegisterError('');
+    showPanel('register');
+    const input = $('auth-email-input');
+    if (input) {
+        input.value = '';
+        input.focus();
     }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    let alreadyAuthed = false;
-    try {
-        alreadyAuthed = await verifySessionToken();
-    } catch (e) { /* ignore */ }
+    showPanel('loading');
 
-    if (alreadyAuthed) {
-        unlockApp();
+    const form = $('auth-form');
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const input = $('auth-email-input');
+            const rawEmail = input ? input.value : '';
+
+            if (pendingLinkCompletion) {
+                // Link was opened without a locally-remembered email (e.g. a
+                // different browser/device than where they registered).
+                // Complete sign-in with the email they just typed instead of
+                // sending a brand new link.
+                const fb = window.CelestiaFirebase;
+                const email = fb.normalizeEmail(rawEmail);
+                if (!fb.isValidEmail(email)) {
+                    setRegisterError('กรุณากรอกอีเมลให้ถูกต้อง');
+                    return;
+                }
+                try {
+                    await fb.signInWithEmailLink(fb.auth, email, window.location.href);
+                    pendingLinkCompletion = false;
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                } catch (err) {
+                    console.error('[Celestia] ยืนยันลิงก์ไม่สำเร็จ:', err);
+                    setRegisterError('ยืนยันไม่สำเร็จ อีเมลอาจไม่ตรงกับที่ลงทะเบียนไว้ หรือลิงก์หมดอายุ');
+                }
+                return;
+            }
+
+            submitRegistration(rawEmail);
+        });
+    }
+
+    [$('auth-change-email-btn'), $('auth-rejected-change-btn'), $('auth-checkemail-change-btn')].forEach((btn) => {
+        if (btn) btn.addEventListener('click', (e) => { e.preventDefault(); changeEmail(); });
+    });
+
+    const resendBtn = $('auth-resend-btn');
+    if (resendBtn) resendBtn.addEventListener('click', (e) => { e.preventDefault(); resendLink(); });
+
+    const firebaseReady = await waitForFirebase();
+    if (!firebaseReady) {
+        showPanel('register');
+        setRegisterError('ไม่สามารถเชื่อมต่อระบบได้ในขณะนี้ กรุณาลองรีเฟรชหน้านี้อีกครั้ง');
         return;
     }
+    const fb = window.CelestiaFirebase;
 
-    checkLockoutState();
-
-    const form = document.getElementById('auth-form');
-    const input = document.getElementById('auth-password-input');
-    const toggleBtn = document.getElementById('auth-toggle-pwd');
-
-    if (toggleBtn && input) {
-        toggleBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const isPassword = input.type === 'password';
-            input.type = isPassword ? 'text' : 'password';
-            const showIcon = document.getElementById('eye-icon-show');
-            const hideIcon = document.getElementById('eye-icon-hide');
-            if (showIcon && hideIcon) {
-                showIcon.style.display = isPassword ? 'none' : 'block';
-                hideIcon.style.display = isPassword ? 'block' : 'none';
+    // Drive the UI off Firebase's own auth session — this reacts both to a
+    // returning already-signed-in visitor AND to sign-in completing below.
+    fb.onAuthStateChanged(fb.auth, (user) => {
+        if (!user) {
+            let awaitingEmail = null;
+            try { awaitingEmail = localStorage.getItem(EMAIL_FOR_SIGNIN_KEY); } catch (e) { /* ignore */ }
+            if (awaitingEmail && !pendingLinkCompletion) {
+                const el = $('auth-checkemail-email');
+                if (el) el.textContent = awaitingEmail;
+                showPanel('checkemail');
+            } else if (!pendingLinkCompletion) {
+                showPanel('register');
             }
-        });
-    }
+            return;
+        }
+        const email = (user.email || '').trim().toLowerCase();
+        attachStatusListener(email);
+    });
 
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            attemptLogin();
-        });
-    }
-    if (input && !checkLockoutState()) {
-        input.focus();
+    // If this page load IS the visitor clicking their email link, complete
+    // sign-in now (this will trigger onAuthStateChanged above on success).
+    if (fb.isSignInWithEmailLink(fb.auth, window.location.href)) {
+        let email = null;
+        try { email = localStorage.getItem(EMAIL_FOR_SIGNIN_KEY); } catch (e) { /* ignore */ }
+
+        if (!email) {
+            pendingLinkCompletion = true;
+            showPanel('register');
+            setRegisterError('กรุณากรอกอีเมลเดิมอีกครั้งเพื่อยืนยันการเข้าสู่ระบบ (เปิดลิงก์นี้จากเบราว์เซอร์/อุปกรณ์อื่น)');
+        } else {
+            try {
+                await fb.signInWithEmailLink(fb.auth, email, window.location.href);
+                try { localStorage.removeItem(EMAIL_FOR_SIGNIN_KEY); } catch (e) { /* ignore */ }
+            } catch (err) {
+                console.error('[Celestia] ยืนยันลิงก์ไม่สำเร็จ:', err);
+                showPanel('register');
+                setRegisterError('ลิงก์ยืนยันหมดอายุหรือไม่ถูกต้อง กรุณาลงทะเบียนใหม่');
+            }
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
     }
 });

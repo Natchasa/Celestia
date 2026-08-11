@@ -7,41 +7,70 @@
          script-src has NO 'unsafe-inline'/'unsafe-eval' so injected <script> or on*= handlers cannot execute.
          style-src keeps 'unsafe-inline' because the app renders many inline style="" attributes from app.js;
          narrowing that further would require moving those into styles.css classes. -->
-    <!-- script-src/connect-src widened to allow the EmailJS SDK (admin login-notification) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;">
+    <!-- script-src/connect-src widened for: EmailJS SDK (optional admin notification) + Firebase
+         (gstatic for the SDK modules, firestore/identitytoolkit/securetoken for the actual calls)
+         + the Cloudflare Worker that gates the real database (*.workers.dev covers the default
+         deploy URL — replace with your exact Worker URL from WORKER_SETUP.md if you use a custom domain). -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.workers.dev; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Celestia - ระบบค้นหาสมการและแปลความหมายสูตรดาวเคราะห์ยูเรเนียน</title>
     <!-- Fonts: Cinzel (Classic Serif), Noto Sans Symbols, and Sarabun (Clean Thai sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Symbols:wght@400;500;600;700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css?v=153">
+    <link rel="stylesheet" href="styles.css?v=155">
 </head>
 <body class="auth-locked">
-    <!-- Access Gate: lightweight shared-password overlay + admin login notification (auth.js) -->
+    <!-- Access Gate: email registration + admin approval (auth.js + Firebase) -->
     <div class="auth-overlay" id="auth-overlay">
         <div class="auth-card">
             <div class="auth-logo">
                 <img src="celestia-lockup-header.png?v=113" alt="Celestia" class="auth-logo-img">
             </div>
-            <p class="auth-subtitle">กรุณากรอกรหัสผ่านเพื่อเข้าใช้งาน</p>
-            <form id="auth-form" class="auth-form" autocomplete="off">
-                <div class="auth-input-wrapper" style="position: relative; width: 100%; margin-bottom: 12px;">
-                    <input type="password" class="auth-input" id="auth-password-input" placeholder="รหัสผ่าน" maxlength="64" autocomplete="current-password" required style="width: 100%; padding-right: 42px; margin-bottom: 0; box-sizing: border-box;">
-                    <button type="button" class="auth-toggle-pwd-btn" id="auth-toggle-pwd" title="แสดง/ซ่อนรหัสผ่าน" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #FDC94D; cursor: pointer; padding: 4px; display: flex; align-items: center; justify-content: center; opacity: 0.85;">
-                        <svg id="eye-icon-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-                        <svg id="eye-icon-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px; display: none;">
-                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
-                            <line x1="1" y1="1" x2="23" y2="23"></line>
-                        </svg>
-                    </button>
-                </div>
-                <p class="auth-error" id="auth-error" style="display:none;"></p>
-                <button type="submit" class="auth-submit-btn" id="auth-submit-btn">เข้าสู่ระบบ</button>
-            </form>
+
+            <!-- Loading: shown briefly while Firebase connects / checks a remembered email -->
+            <div id="auth-panel-loading">
+                <p class="auth-subtitle">กำลังตรวจสอบสถานะ...</p>
+            </div>
+
+            <!-- Registration form -->
+            <div id="auth-panel-register" style="display:none;">
+                <p class="auth-subtitle">กรุณากรอกอีเมลเพื่อลงทะเบียนใช้งาน<br>ระบบจะส่งลิงก์ยืนยันเข้าอีเมล และทีมงานจะตรวจสอบก่อนอนุมัติ</p>
+                <form id="auth-form" class="auth-form" autocomplete="off">
+                    <input type="email" class="auth-input" id="auth-email-input" placeholder="อีเมลของคุณ" maxlength="120" autocomplete="email" required style="width: 100%; box-sizing: border-box;">
+                    <p class="auth-error" id="auth-register-error" style="display:none;"></p>
+                    <button type="submit" class="auth-submit-btn" id="auth-register-btn">ลงทะเบียน</button>
+                </form>
+            </div>
+
+            <!-- Check email: magic link sent, waiting for the visitor to click it -->
+            <div id="auth-panel-checkemail" style="display:none;">
+                <p class="auth-subtitle">ส่งลิงก์ยืนยันไปที่ <strong id="auth-checkemail-email"></strong> แล้ว<br>กรุณาเปิดอีเมลและคลิกลิงก์เพื่อยืนยันตัวตน จากนั้นรอแอดมินอนุมัติ</p>
+                <button type="button" class="auth-link-btn" id="auth-resend-btn">ส่งลิงก์อีกครั้ง</button>
+                <button type="button" class="auth-link-btn" id="auth-checkemail-change-btn">ไม่ใช่คุณ? เปลี่ยนอีเมล</button>
+            </div>
+
+            <!-- Pending approval (signed in, waiting on admin) -->
+            <div id="auth-panel-pending" style="display:none;">
+                <p class="auth-subtitle">อีเมล <strong id="auth-pending-email"></strong> ยืนยันตัวตนแล้ว อยู่ระหว่างรออนุมัติ<br>หน้านี้จะปลดล็อกให้อัตโนมัติเมื่อแอดมินอนุมัติ</p>
+                <button type="button" class="auth-link-btn" id="auth-change-email-btn">ไม่ใช่คุณ? เปลี่ยนอีเมล</button>
+            </div>
+
+            <!-- Rejected -->
+            <div id="auth-panel-rejected" style="display:none;">
+                <p class="auth-subtitle">คำขอของอีเมล <strong id="auth-rejected-email"></strong> ไม่ได้รับการอนุมัติ<br>กรุณาติดต่อแอดมินหากคิดว่านี่เป็นความผิดพลาด</p>
+                <button type="button" class="auth-link-btn" id="auth-rejected-change-btn">ลงทะเบียนด้วยอีเมลอื่น</button>
+            </div>
+
+            <!-- Unlocking: fetching the protected database from the Worker -->
+            <div id="auth-panel-unlocking" style="display:none;">
+                <p class="auth-subtitle">ได้รับอนุมัติแล้ว กำลังโหลดข้อมูล...</p>
+            </div>
+
+            <!-- Data load failed -->
+            <div id="auth-panel-dataerror" style="display:none;">
+                <p class="auth-subtitle">โหลดข้อมูลไม่สำเร็จ กรุณารีเฟรชหน้านี้อีกครั้ง<br>หากยังไม่สำเร็จ กรุณาติดต่อแอดมิน</p>
+            </div>
         </div>
     </div>
 
@@ -589,10 +618,13 @@
     </div>
 
     <!-- Scripts -->
+    <!-- database.js / database_extra.js / app.js are NO LONGER loaded here.
+         The actual astrology database now lives behind the Cloudflare Worker
+         gate (see cloudflare-worker/) and is fetched + injected by auth.js
+         only after email-link sign-in + admin approval both succeed. -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="auth.js?v=5"></script>
-    <script src="database.js?v=112"></script>
-    <script src="database_extra.js?v=136"></script>
-    <script src="app.js?v=199"></script>
+    <script src="firebase-config.js?v=2"></script>
+    <script type="module" src="firebase-init.js?v=2"></script>
+    <script src="auth.js?v=7"></script>
 </body>
 </html>

@@ -3019,3 +3019,221 @@ body.auth-locked .app-container {
     overflow-wrap: break-word;
     text-align: left;
 }
+
+/* ============================================================
+   Access Gate: registration / pending / rejected panels (auth.js)
+   ============================================================ */
+
+#auth-panel-pending strong,
+#auth-panel-rejected strong {
+    color: var(--gold-primary);
+    word-break: break-all;
+}
+
+.auth-link-btn {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.auth-link-btn:hover {
+    color: var(--gold-primary);
+}
+
+.auth-link-btn + .auth-link-btn {
+    margin-top: 6px;
+}
+
+/* ============================================================
+   Admin Dashboard (admin.html / admin.js)
+   ============================================================ */
+
+.admin-body {
+    background: radial-gradient(circle at 50% 0%, #2A0E45 0%, #120322 75%, #0A0114 100%) no-repeat fixed;
+    min-height: 100vh;
+}
+
+.admin-container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px 16px 60px;
+    box-sizing: border-box;
+}
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-title {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.admin-logout-btn {
+    padding: 8px 16px;
+    border-radius: var(--border-radius-sm);
+    border: var(--gold-border);
+    background: transparent;
+    color: var(--gold-primary);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.admin-logout-btn:hover {
+    background: rgba(253, 201, 77, 0.08);
+}
+
+.admin-login-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+.admin-empty {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 40px 12px;
+}
+
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-row {
+    background: var(--card-bg);
+    border: var(--purple-border);
+    border-radius: var(--border-radius-md);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.admin-row-info {
+    flex: 1 1 220px;
+    min-width: 0;
+}
+
+.admin-row-email {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    word-break: break-all;
+}
+
+.admin-row-meta {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.admin-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-top: 6px;
+}
+
+.admin-badge-pending {
+    background: rgba(253, 201, 77, 0.15);
+    color: var(--gold-primary);
+    border: 1px solid rgba(253, 201, 77, 0.35);
+}
+
+.admin-badge-approved {
+    background: rgba(88, 214, 141, 0.15);
+    color: #58D68D;
+    border: 1px solid rgba(88, 214, 141, 0.35);
+}
+
+.admin-badge-rejected {
+    background: rgba(224, 92, 92, 0.15);
+    color: #E05C5C;
+    border: 1px solid rgba(224, 92, 92, 0.35);
+}
+
+.admin-row-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.admin-btn {
+    padding: 8px 14px;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.admin-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.admin-btn-approve {
+    background: linear-gradient(135deg, #58D68D 0%, #2ECC71 100%);
+    color: #0A2E1A;
+}
+
+.admin-btn-approve:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(88, 214, 141, 0.3);
+}
+
+.admin-btn-reject {
+    background: linear-gradient(135deg, #E97C7C 0%, #E05C5C 100%);
+    color: #3A0A0A;
+}
+
+.admin-btn-reject:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(224, 92, 92, 0.3);
+}
+
+.admin-btn-revoke {
+    background: transparent;
+    border: 1px solid rgba(212, 194, 234, 0.35);
+    color: var(--text-muted);
+}
+
+.admin-btn-revoke:hover:not(:disabled) {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}

@@ -1,0 +1,42 @@
+rules_version = '2';
+// Celestia registration/approval rules.
+// Paste this into Firebase Console > Firestore Database > Rules > Publish.
+// See FIREBASE_SETUP.md for the full walkthrough.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      // Must match CELESTIA_ADMIN_EMAIL in firebase-config.js exactly.
+      return request.auth != null
+             && request.auth.token.email == 'pla_y_girl@hotmail.com';
+    }
+
+    match /registrations/{docId} {
+      // Anyone can check the status of ONE registration they already know
+      // the exact email/doc-id for (this is how a returning visitor's
+      // browser checks "am I approved yet?"). They can never list/enumerate
+      // every registrant this way.
+      allow get: if true;
+      allow list: if isAdmin();
+
+      // A visitor may create their own pending request, but only as
+      // "pending" — they can never set themselves to approved. The doc id
+      // must equal the email field (both lowercased client-side) so nobody
+      // can register a mismatched id/email pair.
+      allow create: if request.resource.data.status == 'pending'
+                    && request.resource.data.email == docId
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() > 3
+                    && request.resource.data.keys().hasOnly(['email', 'status', 'requestedAt', 'userAgent']);
+
+      // Only the admin can approve/reject/revoke or delete a request.
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // Deny everything else by default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

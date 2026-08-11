@@ -3,7 +3,10 @@ import json
 import os
 
 excel_path = r"C:\Users\pla_y\.gemini\antigravity\scratch\Celestia\Planetary.xlsx"
-output_dir = r"C:\Users\pla_y\.gemini\antigravity\scratch\Celestia"
+# NOTE: output_dir points at non-github/ on purpose — database_extra.js holds
+# the real proprietary astrology data and must never land in the top-level
+# folder that gets pushed to the public GitHub repo. See non-github/database_extra.js.
+output_dir = r"C:\Users\pla_y\.gemini\antigravity\scratch\Celestia\non-github"
 db_extra_path = os.path.join(output_dir, "database_extra.js")
 
 print("Loading workbook...")

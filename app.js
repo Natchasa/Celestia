@@ -787,7 +787,21 @@ function initDOMCache() {
 
 // 3. Initialization
 
-document.addEventListener('DOMContentLoaded', () => {
+// app.js is now injected dynamically (by auth.js) only AFTER the visitor is
+// approved and signed in — which is always well after 'DOMContentLoaded' has
+// already fired once for the page shell. A plain DOMContentLoaded listener
+// registered at that point would never run. runWhenDomReady() covers both
+// cases: if the DOM is already parsed (the normal case for us), it runs the
+// callback immediately; otherwise it falls back to waiting for the event.
+function runWhenDomReady(fn) {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fn);
+    } else {
+        fn();
+    }
+}
+
+runWhenDomReady(() => {
 
     initTransitTab();
 
@@ -5994,7 +6008,7 @@ function initApp() {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+runWhenDomReady(() => {
 
     if (document.querySelector('.app-container')) {
 

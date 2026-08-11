@@ -72,7 +72,7 @@ function loadAppScript() {
     return new Promise((resolve, reject) => {
         if (window.__celestiaAppLoaded) { resolve(); return; }
         const s = document.createElement('script');
-        s.src = 'app.js?v=200';
+        s.src = 'app.js?v=201';
         s.onload = () => { window.__celestiaAppLoaded = true; resolve(); };
         s.onerror = () => reject(new Error('โหลด app.js ไม่สำเร็จ'));
         document.body.appendChild(s);

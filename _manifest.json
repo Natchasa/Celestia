@@ -1,0 +1,110 @@
+[
+  {
+    "key": "PLANETARY_DB",
+    "sourceFile": "database.js",
+    "bytes": 3313719,
+    "entries": 5387
+  },
+  {
+    "key": "HOUSE_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 1355591,
+    "entries": 1152
+  },
+  {
+    "key": "ASTEROID_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 75801,
+    "entries": 104
+  },
+  {
+    "key": "ASTEROID_SIGN_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 1168158,
+    "entries": 1248
+  },
+  {
+    "key": "HOUSE_OVERVIEW_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 22364,
+    "entries": 12
+  },
+  {
+    "key": "HOUSE_GROUPS_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 18198,
+    "entries": 12
+  },
+  {
+    "key": "TRANSIT_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 96561,
+    "entries": 120
+  },
+  {
+    "key": "ASPECT_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 1084385,
+    "entries": 600
+  },
+  {
+    "key": "COMBINATION_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 557931,
+    "entries": 78
+  },
+  {
+    "key": "ZODIAC_SIGN_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 14479,
+    "entries": 12
+  },
+  {
+    "key": "PLANET_SIGN_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 293532,
+    "entries": 144
+  },
+  {
+    "key": "ASPECT_COOKBOOK_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 120818,
+    "entries": 43
+  },
+  {
+    "key": "RULERSHIP_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 2900,
+    "entries": 12
+  },
+  {
+    "key": "HOUSE_RULER_TRANSIT_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 7394,
+    "entries": 12
+  },
+  {
+    "key": "HOUSE_RULER_COMB_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 385880,
+    "entries": 144
+  },
+  {
+    "key": "PLANET_KEY_PRINCIPLE_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 6457,
+    "entries": 10
+  },
+  {
+    "key": "PLANET_HOUSE_RULER_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 272601,
+    "entries": 120
+  },
+  {
+    "key": "ASTROCARTOGRAPHY_DB",
+    "sourceFile": "database_extra.js",
+    "bytes": 82282,
+    "entries": 60
+  }
+]

@@ -68,6 +68,27 @@ function unlockApp() {
     console.log('%cCelestia: Access approved', 'color: #FDC94D; font-size: 14px; font-weight: bold;');
 }
 
+// Sends the Firebase sign-in link via the Cloudflare Worker's /send-link
+// endpoint (which uses Brevo) instead of Firebase Auth's own mailer — the
+// built-in mailer is capped at 5 emails/day on the free Spark plan, which
+// this project hit during testing. See EMAIL_SENDING.md and
+// cloudflare-worker/worker.js's /send-link handler.
+async function sendSignInLinkViaWorker(email) {
+    const fb = window.CelestiaFirebase;
+    if (!fb.workerUrl || fb.workerUrl.indexOf('PASTE_') === 0) {
+        throw new Error('ยังไม่ได้ตั้งค่า CELESTIA_WORKER_URL ใน firebase-config.js');
+    }
+    const res = await fetch(`${fb.workerUrl}/send-link`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+    });
+    if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || `ส่งอีเมลไม่สำเร็จ (HTTP ${res.status})`);
+    }
+}
+
 function loadAppScript() {
     return new Promise((resolve, reject) => {
         if (window.__celestiaAppLoaded) { resolve(); return; }
@@ -230,12 +251,9 @@ async function submitRegistration(rawEmail) {
             notifyAdminOfRegistration(email);
         }
 
-        // 2) Send the real sign-in link to that inbox.
-        const actionCodeSettings = {
-            url: window.location.origin + window.location.pathname,
-            handleCodeInApp: true
-        };
-        await fb.sendSignInLinkToEmail(fb.auth, email, actionCodeSettings);
+        // 2) Send the real sign-in link to that inbox — via our own Worker
+        //    endpoint (Brevo) rather than Firebase's rate-limited mailer.
+        await sendSignInLinkViaWorker(email);
         try { localStorage.setItem(EMAIL_FOR_SIGNIN_KEY, email); } catch (e) { /* ignore */ }
         markCooldown();
 
@@ -259,11 +277,7 @@ async function resendLink() {
     if (isOnCooldown()) return;
 
     try {
-        const actionCodeSettings = {
-            url: window.location.origin + window.location.pathname,
-            handleCodeInApp: true
-        };
-        await fb.sendSignInLinkToEmail(fb.auth, email, actionCodeSettings);
+        await sendSignInLinkViaWorker(email);
         markCooldown();
     } catch (err) {
         console.error('[Celestia] ส่งลิงก์ใหม่ไม่สำเร็จ:', err);

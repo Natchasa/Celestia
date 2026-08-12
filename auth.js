@@ -81,7 +81,13 @@ async function sendSignInLinkViaWorker(email) {
     const res = await fetch(`${fb.workerUrl}/send-link`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+        body: JSON.stringify({
+            email,
+            // Same value the old client-side sendSignInLinkToEmail() used —
+            // makes sure the emailed link lands back on THIS exact page
+            // (e.g. .../Celestia/), not just the bare github.io origin.
+            continueUrl: window.location.origin + window.location.pathname
+        })
     });
     if (!res.ok) {
         const data = await res.json().catch(() => ({}));
